@@ -1,0 +1,25 @@
+Started by user [8mha:////4HSKTYekCqJtgUzvE/X25d7VYiaybRQPqPlqTWr6Yj8mAAAAmR+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAz+EgZe/dLi1CL9xOKMzOKMPAD2nB5TwgAAAA==[0mAshish Nanotkar
+Building in workspace /var/lib/jenkins/workspace/system/haproxy
+ERROR: Build step failed with exception
+[8mha:////4A9Q6UfVWredEx5ZECSAQetQN0FUve+DAHspCfTkJesfAAAAVx+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P08vOT+vOD8nVc8DzHWtSE4tKMnMz/PLL0mV3NWzufebKBsTA0NFEYMUmgZnCA1SyAABjCCFBQC2xNaiYAAAAA==[0mjava.lang.IllegalArgumentException: Illegal choice for parameter SERVICE: haproxy
+	at hudson.model.ChoiceParameterDefinition.checkValue(ChoiceParameterDefinition.java:80)
+	at hudson.model.ChoiceParameterDefinition.createValue(ChoiceParameterDefinition.java:92)
+	at hudson.model.ChoiceParameterDefinition.createValue(ChoiceParameterDefinition.java:20)
+	at hudson.plugins.parameterizedtrigger.ProjectSpecificParameterValuesActionTransform.convertToDefinedType(ProjectSpecificParameterValuesActionTransform.java:82)
+	at hudson.plugins.parameterizedtrigger.ProjectSpecificParameterValuesActionTransform.transformParametersAction(ProjectSpecificParameterValuesActionTransform.java:33)
+	at hudson.plugins.parameterizedtrigger.ProjectSpecificParametersActionFactory.getProjectSpecificBuildActions(ProjectSpecificParametersActionFactory.java:33)
+	at hudson.plugins.parameterizedtrigger.BuildTriggerConfig.getBuildActions(BuildTriggerConfig.java:376)
+	at hudson.plugins.parameterizedtrigger.BuildTriggerConfig.perform3(BuildTriggerConfig.java:461)
+	at hudson.plugins.parameterizedtrigger.BlockableBuildTriggerConfig.perform3(BlockableBuildTriggerConfig.java:67)
+	at hudson.plugins.parameterizedtrigger.TriggerBuilder.perform(TriggerBuilder.java:93)
+	at hudson.tasks.BuildStepMonitor$1.perform(BuildStepMonitor.java:20)
+	at hudson.model.AbstractBuild$AbstractBuildExecution.perform(AbstractBuild.java:736)
+	at hudson.model.Build$BuildExecution.build(Build.java:206)
+	at hudson.model.Build$BuildExecution.doRun(Build.java:163)
+	at hudson.model.AbstractBuild$AbstractBuildExecution.run(AbstractBuild.java:496)
+	at hudson.model.Run.execute(Run.java:1737)
+	at hudson.model.FreeStyleBuild.run(FreeStyleBuild.java:43)
+	at hudson.model.ResourceController.execute(ResourceController.java:97)
+	at hudson.model.Executor.run(Executor.java:419)
+Build step 'Trigger/call builds on other projects' marked build as failure
+Finished: FAILURE

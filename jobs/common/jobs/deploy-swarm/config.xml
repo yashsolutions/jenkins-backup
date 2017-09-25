@@ -1,0 +1,218 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<project>
+  <actions/>
+  <description></description>
+  <keepDependencies>false</keepDependencies>
+  <properties>
+    <com.sonyericsson.rebuild.RebuildSettings plugin="rebuild@1.25">
+      <autoRebuild>false</autoRebuild>
+      <rebuildDisabled>false</rebuildDisabled>
+    </com.sonyericsson.rebuild.RebuildSettings>
+    <hudson.model.ParametersDefinitionProperty>
+      <parameterDefinitions>
+        <hudson.model.ChoiceParameterDefinition>
+          <name>DEPLOY_ENV</name>
+          <description>environment name to deploy service</description>
+          <choices class="java.util.Arrays$ArrayList">
+            <a class="string-array">
+              <string>dev</string>
+              <string>qa</string>
+              <string>stage</string>
+              <string>prod</string>
+              <string>system</string>
+            </a>
+          </choices>
+        </hudson.model.ChoiceParameterDefinition>
+        <hudson.model.ChoiceParameterDefinition>
+          <name>REPLICATION_MODE</name>
+          <description>docker swarm replication mode</description>
+          <choices class="java.util.Arrays$ArrayList">
+            <a class="string-array">
+              <string>replicated</string>
+              <string>global</string>
+            </a>
+          </choices>
+        </hudson.model.ChoiceParameterDefinition>
+        <hudson.model.StringParameterDefinition>
+          <name>REPLICAS</name>
+          <description>number of containers to be deployed if REPLICATION_MODE set to replicated</description>
+          <defaultValue>1</defaultValue>
+        </hudson.model.StringParameterDefinition>
+        <hudson.model.StringParameterDefinition>
+          <name>SERVICE</name>
+          <description>name of service to be deployed</description>
+          <defaultValue></defaultValue>
+        </hudson.model.StringParameterDefinition>
+        <hudson.model.StringParameterDefinition>
+          <name>IMAGE</name>
+          <description>docker image url</description>
+          <defaultValue></defaultValue>
+        </hudson.model.StringParameterDefinition>
+        <hudson.model.StringParameterDefinition>
+          <name>GIT_COMMIT</name>
+          <description>git commit sha of application code that was used to build docker image</description>
+          <defaultValue>latest</defaultValue>
+        </hudson.model.StringParameterDefinition>
+        <hudson.model.StringParameterDefinition>
+          <name>PORT</name>
+          <description>port to be exposed from the service</description>
+          <defaultValue>0</defaultValue>
+        </hudson.model.StringParameterDefinition>
+        <hudson.model.StringParameterDefinition>
+          <name>VOLUME</name>
+          <description>volume to be mounted inside docker container</description>
+          <defaultValue>0</defaultValue>
+        </hudson.model.StringParameterDefinition>
+        <hudson.model.StringParameterDefinition>
+          <name>VIRTUAL_HOST</name>
+          <description>dns record that points to this service. 0 stands for default &quot;service.env.yashsolutions.com&quot;</description>
+          <defaultValue>0</defaultValue>
+        </hudson.model.StringParameterDefinition>
+        <hudson.model.ChoiceParameterDefinition>
+          <name>RESET_SERVICE</name>
+          <description>reset service deletes the service and redeploys it.</description>
+          <choices class="java.util.Arrays$ArrayList">
+            <a class="string-array">
+              <string>0</string>
+              <string>1</string>
+            </a>
+          </choices>
+        </hudson.model.ChoiceParameterDefinition>
+        <hudson.model.ChoiceParameterDefinition>
+          <name>PUBLISH_PORT</name>
+          <description>whether or not to publish a port for direct access</description>
+          <choices class="java.util.Arrays$ArrayList">
+            <a class="string-array">
+              <string>0</string>
+              <string>1</string>
+            </a>
+          </choices>
+        </hudson.model.ChoiceParameterDefinition>
+        <hudson.model.StringParameterDefinition>
+          <name>CONSTRAINT</name>
+          <description>constraints to be applied on docker swarm service deployment &quot;--constraint&quot;</description>
+          <defaultValue>0</defaultValue>
+        </hudson.model.StringParameterDefinition>
+        <hudson.model.StringParameterDefinition>
+          <name>ENV_VARS</name>
+          <description>environment vars as &quot;key1=value1,key2=value2&quot;</description>
+          <defaultValue>&quot;&quot;</defaultValue>
+        </hudson.model.StringParameterDefinition>
+      </parameterDefinitions>
+    </hudson.model.ParametersDefinitionProperty>
+  </properties>
+  <scm class="hudson.scm.NullSCM"/>
+  <canRoam>true</canRoam>
+  <disabled>false</disabled>
+  <blockBuildWhenDownstreamBuilding>false</blockBuildWhenDownstreamBuilding>
+  <blockBuildWhenUpstreamBuilding>false</blockBuildWhenUpstreamBuilding>
+  <triggers/>
+  <concurrentBuild>false</concurrentBuild>
+  <builders>
+    <hudson.plugins.python.Python plugin="python@1.3">
+      <command>#!/usr/bin/python
+import json
+import uuid
+import os
+import sys
+import redis
+
+class RedisQueue(object):
+    &quot;&quot;&quot;Simple Queue with Redis Backend&quot;&quot;&quot;
+    def __init__(self, name, namespace=&apos;queue&apos;, **redis_kwargs):
+        &quot;&quot;&quot;The default connection parameters are: host=&apos;localhost&apos;, port=6379, db=0&quot;&quot;&quot;
+        self.__db = redis.Redis(**redis_kwargs)
+        self.key = &apos;%s:%s&apos; %(namespace, name)
+
+    def qsize(self):
+        &quot;&quot;&quot;Return the approximate size of the queue.&quot;&quot;&quot;
+        return self.__db.llen(self.key)
+
+    def empty(self):
+        &quot;&quot;&quot;Return True if the queue is empty, False otherwise.&quot;&quot;&quot;
+        return self.qsize() == 0
+
+    def put(self, item):
+        &quot;&quot;&quot;Put item into the queue.&quot;&quot;&quot;
+        self.__db.rpush(self.key, item)
+
+    def get(self, block=True, timeout=None):
+        &quot;&quot;&quot;Remove and return an item from the queue.
+        If optional args block is true and timeout is None (the default), block
+        if necessary until an item is available.&quot;&quot;&quot;
+        if block:
+            item = self.__db.blpop(self.key, timeout=timeout)
+        else:
+            item = self.__db.lpop(self.key)
+
+        if item:
+            item = item[1]
+        return item
+
+    def get_nowait(self):
+        &quot;&quot;&quot;Equivalent to get(False).&quot;&quot;&quot;
+        return self.get(False)
+response_id = str(uuid.uuid4())
+
+container_env = {}
+if os.environ[&apos;VIRTUAL_HOST&apos;] == &apos;0&apos;:
+        container_env[&apos;VIRTUAL_HOST&apos;] = os.environ[&apos;SERVICE&apos;]+&apos;.&apos;+os.environ[&apos;DEPLOY_ENV&apos;]+&apos;.yashsolutions.com&apos;
+
+if os.environ[&apos;PORT&apos;] != &apos;0&apos;:
+        container_env[&apos;SERVICE_PORTS&apos;] = os.environ[&apos;PORT&apos;]
+
+if os.environ[&apos;ENV_VARS&apos;]:
+        separator = &quot;;&quot; if &quot;;&quot; in os.environ[&apos;ENV_VARS&apos;] else &quot;,&quot;
+        strings = os.environ[&apos;ENV_VARS&apos;].split(separator)
+        for string in strings:
+                key = string.split(&quot;=&quot;)
+                if len(key) &gt; 1:
+                        container_env[key[0].strip().strip(&apos;&quot;&apos;).strip(&quot;&apos;&quot;)] = &apos;=&apos;.join(key[1:]).strip().strip(&apos;&quot;&apos;).strip(&quot;&apos;&quot;)
+
+
+q = RedisQueue(&apos;messages&apos;, namespace=&apos;ansible&apos;, host=&apos;internal-redis.ovmdvp.0001.use2.cache.amazonaws.com&apos;, port=6379, db=1)
+q.put(json.dumps({
+                &apos;job&apos;: os.environ[&apos;JOB_NAME&apos;],
+                &apos;build_id&apos;: os.environ[&apos;BUILD_ID&apos;],
+                &apos;call_id&apos;: 0,
+                &apos;action&apos;: &apos;run_playbook&apos;,
+                &apos;playbook&apos;: &apos;prod_deploy_to_swarm&apos; if &apos;prod&apos; == os.environ[&apos;DEPLOY_ENV&apos;] else &apos;deploy_to_swarm&apos;,
+                &apos;response_id&apos;: response_id,
+                &apos;service_env&apos;: os.environ[&apos;DEPLOY_ENV&apos;],
+                &apos;service&apos;: os.environ[&apos;SERVICE&apos;],
+                &apos;replication_mode&apos;: os.environ[&apos;REPLICATION_MODE&apos;],
+                &apos;replicas&apos;: os.environ[&apos;REPLICAS&apos;],
+                &apos;network&apos;: &apos;services&apos;,
+                &apos;image&apos;: os.environ[&apos;IMAGE&apos;],
+                &apos;git_commit&apos;: os.environ[&apos;GIT_COMMIT&apos;],
+                &apos;port&apos;: os.environ[&apos;PORT&apos;],
+                &apos;volume&apos;: os.environ[&apos;VOLUME&apos;],
+                &apos;virtual_host&apos;: container_env[&apos;VIRTUAL_HOST&apos;],
+                &apos;reset_service&apos;: os.environ[&apos;RESET_SERVICE&apos;],
+                &apos;publish_port&apos;: os.environ[&apos;PUBLISH_PORT&apos;],
+                &apos;constraint&apos;: os.environ[&apos;CONSTRAINT&apos;],
+                &apos;container_env&apos;: container_env
+        }))
+
+q = RedisQueue(response_id, namespace=&apos;ansible&apos;, host=&apos;internal-redis.ovmdvp.0001.use2.cache.amazonaws.com&apos;, port=6379, db=1)
+
+is_success = False
+
+while True:
+        log = q.get()
+        message = json.loads(log)
+        print message[&apos;payload&apos;].encode(&apos;utf-8&apos;).strip()
+
+        if message[&apos;type&apos;] == &apos;end&apos;:
+                break
+        else:
+                if &quot;failed=0&quot; in message[&apos;payload&apos;]:
+                        is_success = True
+
+if not is_success:
+        sys.exit(1)</command>
+    </hudson.plugins.python.Python>
+  </builders>
+  <publishers/>
+  <buildWrappers/>
+</project>

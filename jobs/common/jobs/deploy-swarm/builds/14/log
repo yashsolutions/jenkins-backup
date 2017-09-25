@@ -1,0 +1,23 @@
+Started by upstream project "[8mha:////4P6mXP7+VOngeX5+OUBLwPz/wxyV8uq0UkNxtlGQ3rG/AAAApB+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzBEgZp/az8JP3i1KKyzOTUYjCnJD8lXzexoEAfAP1K6LbQAAAA[0mservices/todo-app" build number [8mha:////4ITS2yldxdQ94Z/PWDucdwidUaoz1nPOvHGfrlvz9hYNAAAApB+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLQIwSBhn9rPwk/eLUorLM5NRiMKckPyVfN7GgQN8SADpmgqHRAAAA[0m9
+originally caused by:
+ Started by user [8mha:////4HSKTYekCqJtgUzvE/X25d7VYiaybRQPqPlqTWr6Yj8mAAAAmR+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAz+EgZe/dLi1CL9xOKMzOKMPAD2nB5TwgAAAA==[0mAshish Nanotkar
+Building in workspace /var/lib/jenkins/workspace/common/deploy-swarm
+[deploy-swarm] $ python /tmp/jenkins6524182898370290886.py
+Traceback (most recent call last):
+  File "/tmp/jenkins6524182898370290886.py", line 82, in <module>
+    'container_env': container_env
+  File "/tmp/jenkins6524182898370290886.py", line 25, in put
+    self.__db.rpush(self.key, item)
+  File "/usr/local/lib/python2.7/dist-packages/redis/client.py", line 1388, in rpush
+    return self.execute_command('RPUSH', name, *values)
+  File "/usr/local/lib/python2.7/dist-packages/redis/client.py", line 673, in execute_command
+    connection.send_command(*args)
+  File "/usr/local/lib/python2.7/dist-packages/redis/connection.py", line 610, in send_command
+    self.send_packed_command(self.pack_command(*args))
+  File "/usr/local/lib/python2.7/dist-packages/redis/connection.py", line 585, in send_packed_command
+    self.connect()
+  File "/usr/local/lib/python2.7/dist-packages/redis/connection.py", line 489, in connect
+    raise ConnectionError(self._error_message(e))
+redis.exceptions.ConnectionError: Error 110 connecting to internal-redis.ovmdvp.0001.use2.cache.amazonaws.com:6379. Connection timed out.
+Build step 'Execute Python script' marked build as failure
+Finished: FAILURE

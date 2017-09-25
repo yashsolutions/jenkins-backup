@@ -1,0 +1,90 @@
+Started by user [8mha:////4HSKTYekCqJtgUzvE/X25d7VYiaybRQPqPlqTWr6Yj8mAAAAmR+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAz+EgZe/dLi1CL9xOKMzOKMPAD2nB5TwgAAAA==[0mAshish Nanotkar
+Building in workspace /var/lib/jenkins/workspace/system/logstash-es-indexer
+ > git rev-parse --is-inside-work-tree # timeout=10
+Fetching changes from the remote Git repository
+ > git config remote.origin.url git@github.com:yashsolutions/dockerfiles.git # timeout=10
+Fetching upstream changes from git@github.com:yashsolutions/dockerfiles.git
+ > git --version # timeout=10
+ > git fetch --tags --progress git@github.com:yashsolutions/dockerfiles.git +refs/heads/*:refs/remotes/origin/*
+ > git rev-parse refs/remotes/origin/master^{commit} # timeout=10
+ > git rev-parse refs/remotes/origin/origin/master^{commit} # timeout=10
+Checking out Revision 731df44ba142d75578a948f193f58a042a96fbcf (refs/remotes/origin/master)
+Commit message: "updated forwarder to new redis instance"
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f 731df44ba142d75578a948f193f58a042a96fbcf
+ > git rev-list 731df44ba142d75578a948f193f58a042a96fbcf # timeout=10
+[logstash-es-indexer] $ /bin/sh -xe /tmp/jenkins8551553785798985819.sh
++ aws ecr get-login --region us-east-2
++ docker login -u AWS -p eyJwYXlsb2FkIjoiYWtIanZkdzE4S3kxbzMxVXdpdzJzeHppb2dYNHBjOWs3VVVCM2wycVRkM29kRGZlUGc1RjVZb0FqdkhvREpMSTR1UEQ3R3hIQVB3anlVeXhnS2VkeWZhQUdnYVZJbXd3UFlxMnVQd2lGS204SnFjUnNSc1g0YmJ5NW9XSEZhVS9HZW9scTM4RHQ0ZVdRUzlsWEM4K1BodEQxMnNSTFJHdG9LVDN2UU5uVjNOU1ViQVMxYlpkTER2ckxiWE9LeEhjUlZjQ1VJanFvdVVEa1FvVEtTSFd0REkvVDhvS0dmN3dMUDZNRjl4SktTWUFnKzFldFRQWXJVK1IyV2Frc2UxY2IvRzVsRm1JbHpiVmdxb3l0OVBDUC96d3YrUkdoMGVwVWJkZDJocWJiUWltN0VWdzB4ZGc3SnVMNUZ6K1cwNjBnd0dpR1JkaFpWNlQzdGxRME42RGNXQ1FLNzBIS1IxcHB4UFhxL21zQTF0RHF2WDVaaVk2YzNncDIrWXV1NHNJdzFhMUdyZG1oRERydUJRWDc0dE9LZGp6YWFmTWY5QVp5NTE3ZC81eW10S3FsZ3FHZldaSlFsbXNJOFN4UG12aDVSZjVCYnU0N05ibmVEZ1VaV1NlOVZCZkZGWmhjYXo3c1pVQmtJYzdxUVJhOTdqZTBGRTdlV3lmQmFudldlenhVSXcrZUhBVUQwODhEUU8xTm1aSGJZdWZnQVJFWjJ1RzB6S1NjYXVsV3lOd3YwR1BORmdNSlBvWTdzU3pob2pEanQ1VEwyR3FBWngrQzBxeExJUjZKeFJXdG82Y3BDYllRa0x4bHRobEJQYUZ2dmJtdzVHMm5DYStLM01uUEt0RFgrQXBMWkptVlNYZExnV3ZmS3hJSlpHRWkwV3ovZWZWOHBwYUNFWDZHU3V1QjRsZmNjcW5NWktVU1R2T0VEcm8vU2o5eHhDb0FqYmlrNVpaZXJvMjMreGtCdm5NV0FsQkJRMXM5VUxUM0lFL0NYWFBiZmMwNHhJWlpmTDZ0RTZya05QZ2h4TlFyanhxZGZrTmVZRHJZL2NMMGIySWJqOVV0U2Jvb3ZjVmd4cWowdFpxM3QwOHdjc0hTZ1pRMXFBRFRmdFNLSTEzblYzcCszU0hMaDQ5TmttcitIWjRMZTFCdkNIS2JzM3dIUjE1MElJb280VEZiK3J6UUdrVHQ0UWVVWUo5M3ZBVkxuWnZUSkxMKy9GMGxDUlAwNEtuTWc5SVhvTmtjNytVa2NMdytmMW01OHhPN0JVeUF1a25DbEFySFgxUWlTWXcvbExmZnFReDB3ZC9WYnRVTU8yamhTdW9VTEkyU215ZVhBNDJWMnI0OG04SjRiRkRQNzZlVmJqaG8vcHpscERtSnJIUnJWZjdZSEdCUVFQd09DR08zRHZxeWl5dFI5bmFRa3RrbklFendkU2V0ei9sQnA5UiIsImRhdGFrZXkiOiJBUUVCQUhqQjcvaWd3TWc0TlB3YXVyeFNJWXg0SGZueHVHYy80OGJEd3Z3RHBOWVdaZ0FBQUg0d2ZBWUpLb1pJaHZjTkFRY0dvRzh3YlFJQkFEQm9CZ2txaGtpRzl3MEJCd0V3SGdZSllJWklBV1VEQkFFdU1CRUVEQlhhbW1nNFk1K3d1djk5TlFJQkVJQTdjekswcWhkMFd6L0RzaWd0YTRKQis3bndNQUoxenBNcVl2M2tOUFZoaTJKTTdyT1YxWmY1TUNqZnRRRG0raEdybm1Wd0JscHh4WHVIWG1BPSIsInZlcnNpb24iOiIxIiwidHlwZSI6IkRBVEFfS0VZIn0= -e none https://364238614392.dkr.ecr.us-east-2.amazonaws.com
+Flag --email has been deprecated, will be removed in 17.06.
+Login Succeeded
++ cd logstash-es-indexer
++ docker build -t system/logstash-es-indexer .
+Sending build context to Docker daemon  10.24kB
+Step 1/4 : FROM docker.elastic.co/logstash/logstash:5.2.2
+ ---> eb145c1bfb1d
+Step 2/4 : RUN rm -f /usr/share/logstash/pipeline/logstash.conf
+ ---> Using cache
+ ---> ffe7453c48f4
+Step 3/4 : ADD es-indexer.conf /usr/share/logstash/pipeline/es-indexer.conf
+ ---> Using cache
+ ---> 39a4ba65a3c8
+Step 4/4 : RUN echo "xpack.monitoring.enabled: false" >> /usr/share/logstash/config/logstash.yml
+ ---> Using cache
+ ---> 1cc2057b3046
+Successfully built 1cc2057b3046
+Successfully tagged system/logstash-es-indexer:latest
++ docker tag system/logstash-es-indexer:latest 364238614392.dkr.ecr.us-east-2.amazonaws.com/system/logstash-es-indexer:731df44ba142d75578a948f193f58a042a96fbcf
++ docker push 364238614392.dkr.ecr.us-east-2.amazonaws.com/system/logstash-es-indexer:731df44ba142d75578a948f193f58a042a96fbcf
+The push refers to a repository [364238614392.dkr.ecr.us-east-2.amazonaws.com/system/logstash-es-indexer]
+d5c5e42c78cf: Preparing
+0cf04f25a7bd: Preparing
+160138c6f3cc: Preparing
+9e38456e2a98: Preparing
+3dad108e46a7: Preparing
+ee07a3635fe5: Preparing
+3c7470006923: Preparing
+de44c29ed505: Preparing
+345e1b71dd4e: Preparing
+cd83687ffe8b: Preparing
+7aeacbe84453: Preparing
+01fe1e145b60: Preparing
+56827159aa8b: Preparing
+440e02c3dcde: Preparing
+29660d0e5bb2: Preparing
+85782553e37a: Preparing
+745f5be9952c: Preparing
+cd83687ffe8b: Waiting
+7aeacbe84453: Waiting
+01fe1e145b60: Waiting
+56827159aa8b: Waiting
+440e02c3dcde: Waiting
+29660d0e5bb2: Waiting
+85782553e37a: Waiting
+745f5be9952c: Waiting
+ee07a3635fe5: Waiting
+3c7470006923: Waiting
+de44c29ed505: Waiting
+345e1b71dd4e: Waiting
+d5c5e42c78cf: Pushed
+160138c6f3cc: Pushed
+0cf04f25a7bd: Pushed
+3dad108e46a7: Pushed
+9e38456e2a98: Pushed
+3c7470006923: Pushed
+ee07a3635fe5: Pushed
+de44c29ed505: Pushed
+345e1b71dd4e: Pushed
+7aeacbe84453: Pushed
+56827159aa8b: Pushed
+440e02c3dcde: Pushed
+29660d0e5bb2: Pushed
+85782553e37a: Pushed
+745f5be9952c: Pushed
+cd83687ffe8b: Pushed
+01fe1e145b60: Pushed
+731df44ba142d75578a948f193f58a042a96fbcf: digest: sha256:cd7d3c9af9e2f595ef88143ebf3769168d02b7b8e734261654a3000c3315ee02 size: 3862
+Waiting for the completion of [8mha:////4KVeDeas30zMuguFUM6SjZ9KrVZgYGE7Zkobsbj6ccD5AAAAmh+LCAAAAAAAAP9b85aBtbiIQSajNKU4P08vOT+vOD8nVc+jsiC1KCczL9svvyTVzHb1RttJBUeZGJg8GdhyUvPSSzJ8GJhLi3JKGIR8shLLEvVzEvPS9YNLijLz0q0rihik0IxzhtAgwxgggJGJgaGiAMgQLWGQ1c/KT9JPzs/Nzc8DM1NSC3LyK3WLyxOLcvUBHxq2+qIAAAA=[0mcommon » deploy-swarm
+[8mha:////4HQVuH5lzI2RUX/JHelRPH1SYOhVDZhOGT0ZQkzhPFioAAAAnR+LCAAAAAAAAP9b85aBtbiIQSajNKU4P08vOT+vOD8nVc+jsiC1KCczL9svvyTVzHb1RttJBUeZGJg8GdhyUvPSSzJ8GJhLi3JKGIR8shLLEvVzEvPS9YNLijLz0q0rihik0IxzhtAgwxgggJGJgaGiAMiQLGFQ0M/KT9JPzs/Nzc8DM1NSC3LyK3WLyxOLcvWNzPQB3fU3B6UAAAA=[0mcommon » deploy-swarm #26 completed. Result was SUCCESS
+Build step 'Trigger/call builds on other projects' changed build result to SUCCESS
+Finished: SUCCESS

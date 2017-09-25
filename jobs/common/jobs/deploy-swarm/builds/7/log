@@ -1,0 +1,13 @@
+Started by upstream project "[8mha:////4P6mXP7+VOngeX5+OUBLwPz/wxyV8uq0UkNxtlGQ3rG/AAAApB+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzBEgZp/az8JP3i1KKyzOTUYjCnJD8lXzexoEAfAP1K6LbQAAAA[0mservices/todo-app" build number [8mha:////4Lz/egL5iNzvG8Pke2/fhySWjLy+WX1XvPsuDNHDLXwhAAAApB+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLQIwSBhn9rPwk/eLUorLM5NRiMKckPyVfN7GgQN8CAKxWhdbRAAAA[0m8
+originally caused by:
+ Started by user [8mha:////4HSKTYekCqJtgUzvE/X25d7VYiaybRQPqPlqTWr6Yj8mAAAAmR+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAz+EgZe/dLi1CL9xOKMzOKMPAD2nB5TwgAAAA==[0mAshish Nanotkar
+Building in workspace /var/lib/jenkins/workspace/common/deploy-swarm
+[deploy-swarm] $ python /tmp/jenkins2963683812016291033.py
+Traceback (most recent call last):
+  File "/tmp/jenkins2963683812016291033.py", line 52, in <module>
+    if os.environ['ENV_VARS']:
+  File "/usr/lib/python2.7/UserDict.py", line 40, in __getitem__
+    raise KeyError(key)
+KeyError: 'ENV_VARS'
+Build step 'Execute Python script' marked build as failure
+Finished: FAILURE

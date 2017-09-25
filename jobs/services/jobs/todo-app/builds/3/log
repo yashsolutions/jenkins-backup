@@ -1,0 +1,38 @@
+Started by user [8mha:////4HSKTYekCqJtgUzvE/X25d7VYiaybRQPqPlqTWr6Yj8mAAAAmR+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAz+EgZe/dLi1CL9xOKMzOKMPAD2nB5TwgAAAA==[0mAshish Nanotkar
+Building in workspace /var/lib/jenkins/workspace/services/todo-app
+ > git rev-parse --is-inside-work-tree # timeout=10
+Fetching changes from the remote Git repository
+ > git config remote.origin.url git@github.com:yashsolutions/todo-app.git # timeout=10
+Fetching upstream changes from git@github.com:yashsolutions/todo-app.git
+ > git --version # timeout=10
+ > git fetch --tags --progress git@github.com:yashsolutions/todo-app.git +refs/heads/*:refs/remotes/origin/*
+ERROR: Error fetching remote repo 'origin'
+[8mha:////4A9Q6UfVWredEx5ZECSAQetQN0FUve+DAHspCfTkJesfAAAAVx+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P08vOT+vOD8nVc8DzHWtSE4tKMnMz/PLL0mV3NWzufebKBsTA0NFEYMUmgZnCA1SyAABjCCFBQC2xNaiYAAAAA==[0mhudson.plugins.git.GitException: Failed to fetch from git@github.com:yashsolutions/todo-app.git
+	at hudson.plugins.git.GitSCM.fetchFrom(GitSCM.java:817)
+	at hudson.plugins.git.GitSCM.retrieveChanges(GitSCM.java:1084)
+	at hudson.plugins.git.GitSCM.checkout(GitSCM.java:1115)
+	at hudson.scm.SCM.checkout(SCM.java:495)
+	at hudson.model.AbstractProject.checkout(AbstractProject.java:1212)
+	at hudson.model.AbstractBuild$AbstractBuildExecution.defaultCheckout(AbstractBuild.java:566)
+	at jenkins.scm.SCMCheckoutStrategy.checkout(SCMCheckoutStrategy.java:86)
+	at hudson.model.AbstractBuild$AbstractBuildExecution.run(AbstractBuild.java:491)
+	at hudson.model.Run.execute(Run.java:1737)
+	at hudson.model.FreeStyleBuild.run(FreeStyleBuild.java:43)
+	at hudson.model.ResourceController.execute(ResourceController.java:97)
+	at hudson.model.Executor.run(Executor.java:419)
+Caused by: hudson.plugins.git.GitException: Command "git fetch --tags --progress git@github.com:yashsolutions/todo-app.git +refs/heads/*:refs/remotes/origin/*" returned status code 128:
+stdout: 
+stderr: Host key verification failed.
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+
+	at org.jenkinsci.plugins.gitclient.CliGitAPIImpl.launchCommandIn(CliGitAPIImpl.java:1924)
+	at org.jenkinsci.plugins.gitclient.CliGitAPIImpl.launchCommandWithCredentials(CliGitAPIImpl.java:1643)
+	at org.jenkinsci.plugins.gitclient.CliGitAPIImpl.access$300(CliGitAPIImpl.java:71)
+	at org.jenkinsci.plugins.gitclient.CliGitAPIImpl$1.execute(CliGitAPIImpl.java:352)
+	at hudson.plugins.git.GitSCM.fetchFrom(GitSCM.java:815)
+	... 11 more
+ERROR: Error fetching remote repo 'origin'
+[8mha:////4A9Q6UfVWredEx5ZECSAQetQN0FUve+DAHspCfTkJesfAAAAVx+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P08vOT+vOD8nVc8DzHWtSE4tKMnMz/PLL0mV3NWzufebKBsTA0NFEYMUmgZnCA1SyAABjCCFBQC2xNaiYAAAAA==[0mFinished: FAILURE

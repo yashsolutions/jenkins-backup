@@ -1,0 +1,20 @@
+Started by user [8mha:////4HSKTYekCqJtgUzvE/X25d7VYiaybRQPqPlqTWr6Yj8mAAAAmR+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAz+EgZe/dLi1CL9xOKMzOKMPAD2nB5TwgAAAA==[0mAshish Nanotkar
+Building in workspace /var/lib/jenkins/workspace/services/todo-app
+ > git rev-parse --is-inside-work-tree # timeout=10
+Fetching changes from the remote Git repository
+ > git config remote.origin.url git@github.com:yashsolutions/todo-app.git # timeout=10
+Fetching upstream changes from git@github.com:yashsolutions/todo-app.git
+ > git --version # timeout=10
+ > git fetch --tags --progress git@github.com:yashsolutions/todo-app.git +refs/heads/*:refs/remotes/origin/*
+ > git rev-parse refs/remotes/origin/master^{commit} # timeout=10
+ > git rev-parse refs/remotes/origin/origin/master^{commit} # timeout=10
+Checking out Revision 9abd15e23d4bfe3957cc27c30f1106e82d4013e1 (refs/remotes/origin/master)
+Commit message: "Preparing Homepage for demo"
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f 9abd15e23d4bfe3957cc27c30f1106e82d4013e1
+First time build. Skipping changelog.
+[todo-app] $ /bin/sh -xe /tmp/jenkins9204522979761430226.sh
++ aws ecr get-login --no-include-email --region us-east-2
+/tmp/jenkins9204522979761430226.sh: 2: /tmp/jenkins9204522979761430226.sh: aws: not found
+Build step 'Execute shell' marked build as failure
+Finished: FAILURE

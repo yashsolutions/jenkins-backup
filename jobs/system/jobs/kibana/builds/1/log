@@ -1,0 +1,29 @@
+Started by user [8mha:////4HSKTYekCqJtgUzvE/X25d7VYiaybRQPqPlqTWr6Yj8mAAAAmR+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAz+EgZe/dLi1CL9xOKMzOKMPAD2nB5TwgAAAA==[0mAshish Nanotkar
+Building in workspace /var/lib/jenkins/workspace/system/kibana
+Cloning the remote Git repository
+Cloning repository git@github.com:yashsolutions/dockerfiles.git
+ > git init /var/lib/jenkins/workspace/system/kibana # timeout=10
+Fetching upstream changes from git@github.com:yashsolutions/dockerfiles.git
+ > git --version # timeout=10
+ > git fetch --tags --progress git@github.com:yashsolutions/dockerfiles.git +refs/heads/*:refs/remotes/origin/*
+ > git config remote.origin.url git@github.com:yashsolutions/dockerfiles.git # timeout=10
+ > git config --add remote.origin.fetch +refs/heads/*:refs/remotes/origin/* # timeout=10
+ > git config remote.origin.url git@github.com:yashsolutions/dockerfiles.git # timeout=10
+Fetching upstream changes from git@github.com:yashsolutions/dockerfiles.git
+ > git fetch --tags --progress git@github.com:yashsolutions/dockerfiles.git +refs/heads/*:refs/remotes/origin/*
+ > git rev-parse refs/remotes/origin/master^{commit} # timeout=10
+ > git rev-parse refs/remotes/origin/origin/master^{commit} # timeout=10
+Checking out Revision e0a118bdd1105b7e0f05172ca872572026df1607 (refs/remotes/origin/master)
+Commit message: "conflict fix during repo merge"
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f e0a118bdd1105b7e0f05172ca872572026df1607
+First time build. Skipping changelog.
+[kibana] $ /bin/sh -xe /tmp/jenkins9121732912292620571.sh
++ aws ecr get-login --region us-east-2
++ docker login -u AWS -p eyJwYXlsb2FkIjoiTjdhczFJTGkwSkVYVURCN3M1YU5ycHI4a0xJTVRCSzBQWVdkK3M3TjhRZW5iWVRERkxCQWxlRmxRajB3QTFKMm1ZTDJ2N1FtR05FNDJRN0YwKzltRlp3QWNnZnJtMGRVMjk0RUljNU5GSTZhdmFzNVRvazY5ZDNXN3dIRE16UVdrZlJQN3FxRWNPK3lWWEdqNWxPVWNIN2poaERaWXY5aU5LRTBYdU52ZXlzTlZ1dHhiTkRGUXQ2T1NBblludGNnNkJQZVVjQUxOQTFKam9PRVZ3M0U2U1ZMeFVVc3Y4bThDOEx1dGxnTWlFbEdEWktJVmxoa0UySTRhQ2llWDFQTXQ5TkJwOWlnNi81M0VzYXVSWVBoUkJkMjRvSTZZWFdRdDNqa1VtTGhRbGhNWlc2SmlHOVBnZnp4QUpkZ0dDcUQwaFU4bEUxTUJESkt1d0JVM1BiS2RvUFNRN1NVR1NPK01nWDBNVS9aWDJpK2c1Zm5uMHRnVW5IcEhBdmY0eDlNa0pBdG5YZTYydk84OW00N2grSU8yN2FLWk54MGtyNWdoc1BNU0xTT1QzR3J2b2haRzU4L1hLNXJjdTdjSnR1VTF2VzFOcHloeGNSeTRmWGRLSXUyaTlGUkY4d0JDQWFpR0s2NExxYWQvcWVYS1FTQzZscnF1WXhBTzRTUStqRG56bjZ4SnlualgvdkxUYk90eE42L2UzNnpONlJLZkV4R1VqUmhIemptMDBmMFhTYy9Vc1BNRkxyN2tiU2NOTm05N1R4Vkhmaks2dmlhVFhIVk1iR2JkR3Y3Mk5GV3FUTkpyUEwyL1NzRFBrMGxOc3IwcFpwQm4rdkxYaDEvamxyUnBTTnBhbUlmbW5jTjd0NmtPeGdzQ3p1SnFsV3VnMkRCd3VzdjZuMTZzNGVtbkRKS0RLT3dWbjZkNzNSMVVsY0t0WWxXMnBzWE5BaG04RlRuTi9aRzVrWTlnRFc3aFdpU0dJMGxEOGpkdy9UV3pya2Nwc0RTanc1M25QVU50OHp0Wm4zU0MwbGQvK2NERE1URTA4ekRPM3k4Q3JYWUMxR3BTWWEvbUNKNVI0bVNBL2dJMVB4SlpUYUdOczlpemdLVktzbEZ3L0owczZnNldiYjVSNWgwM0RCMW10OVVwaFZYYnowaTFvWVBpVmxDeHJxN3dhUGM3SStQUFZMVmg5VG4yNGFTYTdlaHp4NmtRcC9HSmphZjhVcjRlNTcwcmxUaFp4TE9Va3cwbzZjbGNDSjRrOWZ3bmFMTTZxZEJyZVFkY0V5VUx6b01VL2tkT2xGdDAzVjB3dWVPZFUyaThkcnJ4ajJRTUl0bEZTMDBWdGJFazQ5OElQbTZGc0pNakM4Ukg4bjhoQnV4QVF0TzdxaXhsb0MzTTBWWE5FM3lEQjl0Y1N0MnBCcmY1dlowZmdENi83bUxYdmxWMFpVQkdSNXFMdzlmZzZxK0Uvcy8iLCJkYXRha2V5IjoiQVFFQkFIakI3L2lnd01nNE5Qd2F1cnhTSVl4NEhmbnh1R2MvNDhiRHd2d0RwTllXWmdBQUFINHdmQVlKS29aSWh2Y05BUWNHb0c4d2JRSUJBREJvQmdrcWhraUc5dzBCQndFd0hnWUpZSVpJQVdVREJBRXVNQkVFRElCSmNGWmxuZWxZcXVmdnhBSUJFSUE3Z1cydnRZdlJYeGNWZUdOL0d2YnBpOVQwTlNVS3lXZDNQUlBOWm9UQUs4a2s5R0hoWXhVa2FkWmlYU1RkZGQyeDlyNHIwd2hUMXlTWkdOYz0iLCJ2ZXJzaW9uIjoiMSIsInR5cGUiOiJEQVRBX0tFWSJ9 -e none https://364238614392.dkr.ecr.us-east-2.amazonaws.com
+Flag --email has been deprecated, will be removed in 17.06.
+Login Succeeded
++ docker build -t system/kibana .
+unable to prepare context: unable to evaluate symlinks in Dockerfile path: lstat /var/lib/jenkins/workspace/system/kibana/Dockerfile: no such file or directory
+Build step 'Execute shell' marked build as failure
+Finished: FAILURE

@@ -1,0 +1,88 @@
+Started by user [8mha:////4HSKTYekCqJtgUzvE/X25d7VYiaybRQPqPlqTWr6Yj8mAAAAmR+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAz+EgZe/dLi1CL9xOKMzOKMPAD2nB5TwgAAAA==[0mAshish Nanotkar
+Building in workspace /var/lib/jenkins/workspace/system/kibana
+ > git rev-parse --is-inside-work-tree # timeout=10
+Fetching changes from the remote Git repository
+ > git config remote.origin.url git@github.com:yashsolutions/dockerfiles.git # timeout=10
+Fetching upstream changes from git@github.com:yashsolutions/dockerfiles.git
+ > git --version # timeout=10
+ > git fetch --tags --progress git@github.com:yashsolutions/dockerfiles.git +refs/heads/*:refs/remotes/origin/*
+ > git rev-parse refs/remotes/origin/master^{commit} # timeout=10
+ > git rev-parse refs/remotes/origin/origin/master^{commit} # timeout=10
+Checking out Revision e0a118bdd1105b7e0f05172ca872572026df1607 (refs/remotes/origin/master)
+Commit message: "conflict fix during repo merge"
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f e0a118bdd1105b7e0f05172ca872572026df1607
+ > git rev-list e0a118bdd1105b7e0f05172ca872572026df1607 # timeout=10
+[kibana] $ /bin/sh -xe /tmp/jenkins6103407159269379966.sh
++ aws ecr get-login --region us-east-2
++ docker login -u AWS -p eyJwYXlsb2FkIjoiSFVHWU5oZ2RjZ21UQ0w4ektyRGd3ZkpXOEVDMzE0ZUZWVC9Seis1OFFkRUFjWStzRE9PQU5pZE1iandubmpNbEpMeWxxM0xBY1puNDdFdFhTVTl1V2pwTklDN2N4WlVxcjNTQU9ibUhNNlJtSmk3aUJRM1Y5azlqd0RIVitxamttcVdDcWJyZExRaXBHWVhhQmxmejlTYmJkOElFaXZYOUFiQ1hkaDlXNGVpNHVodG1URkZaOUdsVlluQzNQWGg1cFVnejRwTUhkT2R5YW1RRVVrbUNWRk12bVQ3RENldVJMZ3lFNyt3bWdrUzFLcTFZOGxKUTdCSTZGbjdPVSsvWWw3SUJoMmpIY1NJT3dJY01Cc3VMb1hyOERnUzI0NmVzZUU5RWgzLzkxMitGMmQwOWhUOEdQbmdrR2NqYWs2OGlUazZMa3VkVzJkNWYrU2ovMVBxTDBRVHFqcU0vQXlBRUdtZGkxN3c5YkJWakYxeE1rU0NCdFBxZWVta2QzeW1rcmFKa1ZSMzBVNEk3b29rN3g0Zm1ZTXlCMEFDeGdiUnRwRGJqQURFdXVObVE4NS9obXZzTjllMWNtRVlNNXl4bjRzZXVxQmhJb1ZOajl4YjBnMkFEK21SYkNYc0ppc0xITFc5NWN1MVAzNmJnYTBFNEVibjZNYjFIcGZMRVVkS0JHdEJQeTJveVEyaytPd21pci8rMU1ONnd6ekt6RVQwL3VCZldUYzVITmhUTGxVZWNxc3d2OW5EcnhoOGpUMnVBM2ppOXY4N2oya2tjT3N2UUd4OHdrR0lidGFsVExQYzVETHFoUkJuRlNQc2VoUUkyT0UzVWVWaUlBaG8zempQaHJRdlN1NEk0L3dYc0JiendId2NFT3JoOUs4WDAxV1pTU0tTMEp4TVNXQWRmbERHd1QzZUcvdEZyOTVNQTBreFNvc3dsbTBranRjb1pva29YcHFRbGxtcnhKM2hrR1R1THpJVGxvU0ZER0JvSGxpalJPS0xiM21lUm4xV3RrNWorYUlCa3NzbnRSdko3Rjk4ZDluMUVVSVpFTll3SHZPZnRGUWh5dEQ0L2NVZUhYbzRlQzZQbjEvWUs4NHFhT1F0Z3NDWFk0YytWdldGWHFSc2NVcGk1dnZSZ0s0eExzU0JqMVl4Z1kyaHI4ZjVQWll1dWZjS1RFUVhYOG1URFJTVUtrMzBDSG9FOHF1QUVPc09qQ25kREcydnVWdDU1VDVCcWpSV2xZTy9vS0tUS2JCazMwNGtSY1J5ZGNoUzh0VStoT0N3N2trWklHenFGN3NXSTdmMXd6NjhtbU14VjFodTNtZ1VEQjVDSkxtSUFTUjhiZzdJdFpPakxFRUlraWtWUXJ3VmFvdE8vc3pvQmppSkJPb3lYMmx4U2UrS3RLc2FyVW1lY1lXUUFROW1BY2NnN1hRODZFNTJXWlVaZyIsImRhdGFrZXkiOiJBUUVCQUhqQjcvaWd3TWc0TlB3YXVyeFNJWXg0SGZueHVHYy80OGJEd3Z3RHBOWVdaZ0FBQUg0d2ZBWUpLb1pJaHZjTkFRY0dvRzh3YlFJQkFEQm9CZ2txaGtpRzl3MEJCd0V3SGdZSllJWklBV1VEQkFFdU1CRUVES3h5YmtzblNxaGR1cElOMEFJQkVJQTdYblJncDN6OHlHS2g5bkkvMytta2xlL2tvS3dxRXVvUkhLNmg0WXpsOWRWTmRrTW9qSnkxSUdQTWFBV0NiUTZBMU9CREJiUXhKMnBWMERRPSIsInZlcnNpb24iOiIxIiwidHlwZSI6IkRBVEFfS0VZIn0= -e none https://364238614392.dkr.ecr.us-east-2.amazonaws.com
+Flag --email has been deprecated, will be removed in 17.06.
+Login Succeeded
++ cd kibana
++ docker build -t system/kibana .
+Sending build context to Docker daemon  10.24kB
+Step 1/3 : FROM docker.elastic.co/kibana/kibana:5.3.1
+ ---> 569e1ba02112
+Step 2/3 : ADD kibana.yml /usr/share/kibana/config/kibana.yml
+ ---> Using cache
+ ---> e51fe69584bd
+Step 3/3 : EXPOSE 8003
+ ---> Using cache
+ ---> 289502011b74
+Successfully built 289502011b74
+Successfully tagged system/kibana:latest
++ docker tag system/kibana:latest 364238614392.dkr.ecr.us-east-2.amazonaws.com/system/kibana:e0a118bdd1105b7e0f05172ca872572026df1607
++ docker push 364238614392.dkr.ecr.us-east-2.amazonaws.com/system/kibana:e0a118bdd1105b7e0f05172ca872572026df1607
+The push refers to a repository [364238614392.dkr.ecr.us-east-2.amazonaws.com/system/kibana]
+6975727163ad: Preparing
+c39e30f2bf2c: Preparing
+04096b0b6190: Preparing
+457f6b505c31: Preparing
+161c4f5f683e: Preparing
+f66babed3477: Preparing
+70206aa1fa07: Preparing
+b5ad783e5456: Preparing
+7dc73542bbd7: Preparing
+80d9072a98f6: Preparing
+5f70bf18a086: Preparing
+0184e31d4eba: Preparing
+19a8383d6948: Preparing
+5f70bf18a086: Preparing
+0738910e0455: Preparing
+21df36b5c775: Preparing
+315fe8388056: Preparing
+7f4734de8e3d: Preparing
+f66babed3477: Waiting
+70206aa1fa07: Waiting
+b5ad783e5456: Waiting
+7dc73542bbd7: Waiting
+80d9072a98f6: Waiting
+5f70bf18a086: Waiting
+0184e31d4eba: Waiting
+19a8383d6948: Waiting
+0738910e0455: Waiting
+21df36b5c775: Waiting
+315fe8388056: Waiting
+7f4734de8e3d: Waiting
+c39e30f2bf2c: Layer already exists
+457f6b505c31: Layer already exists
+6975727163ad: Layer already exists
+161c4f5f683e: Layer already exists
+04096b0b6190: Layer already exists
+f66babed3477: Layer already exists
+7dc73542bbd7: Layer already exists
+b5ad783e5456: Layer already exists
+70206aa1fa07: Layer already exists
+80d9072a98f6: Layer already exists
+5f70bf18a086: Layer already exists
+0184e31d4eba: Layer already exists
+19a8383d6948: Layer already exists
+21df36b5c775: Layer already exists
+0738910e0455: Layer already exists
+7f4734de8e3d: Layer already exists
+315fe8388056: Layer already exists
+e0a118bdd1105b7e0f05172ca872572026df1607: digest: sha256:b3a35659fea752f19f54b91e2fc6ae2532e71d4d50e36122a48ddf6f5471a87d size: 4074
+Waiting for the completion of [8mha:////4KVeDeas30zMuguFUM6SjZ9KrVZgYGE7Zkobsbj6ccD5AAAAmh+LCAAAAAAAAP9b85aBtbiIQSajNKU4P08vOT+vOD8nVc+jsiC1KCczL9svvyTVzHb1RttJBUeZGJg8GdhyUvPSSzJ8GJhLi3JKGIR8shLLEvVzEvPS9YNLijLz0q0rihik0IxzhtAgwxgggJGJgaGiAMgQLWGQ1c/KT9JPzs/Nzc8DM1NSC3LyK3WLyxOLcvUBHxq2+qIAAAA=[0mcommon » deploy-swarm
+[8mha:////4FOnv0NYSJ3kQ4aJEKlybq4e9ACu8EbP1pI28j7DcQ2JAAAAnR+LCAAAAAAAAP9b85aBtbiIQSajNKU4P08vOT+vOD8nVc+jsiC1KCczL9svvyTVzHb1RttJBUeZGJg8GdhyUvPSSzJ8GJhLi3JKGIR8shLLEvVzEvPS9YNLijLz0q0rihik0IxzhtAgwxgggJGJgaGiAMiQLGFQ0M/KT9JPzs/Nzc8DM1NSC3LyK3WLyxOLcvWNTPUBHqYaLKUAAAA=[0mcommon » deploy-swarm #25 completed. Result was SUCCESS
+Build step 'Trigger/call builds on other projects' changed build result to SUCCESS
+Finished: SUCCESS

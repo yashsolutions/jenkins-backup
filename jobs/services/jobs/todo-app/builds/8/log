@@ -1,0 +1,74 @@
+Started by user [8mha:////4HSKTYekCqJtgUzvE/X25d7VYiaybRQPqPlqTWr6Yj8mAAAAmR+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAz+EgZe/dLi1CL9xOKMzOKMPAD2nB5TwgAAAA==[0mAshish Nanotkar
+Building in workspace /var/lib/jenkins/workspace/services/todo-app
+ > git rev-parse --is-inside-work-tree # timeout=10
+Fetching changes from the remote Git repository
+ > git config remote.origin.url git@github.com:yashsolutions/todo-app.git # timeout=10
+Fetching upstream changes from git@github.com:yashsolutions/todo-app.git
+ > git --version # timeout=10
+ > git fetch --tags --progress git@github.com:yashsolutions/todo-app.git +refs/heads/*:refs/remotes/origin/*
+ > git rev-parse refs/remotes/origin/master^{commit} # timeout=10
+ > git rev-parse refs/remotes/origin/origin/master^{commit} # timeout=10
+Checking out Revision 9abd15e23d4bfe3957cc27c30f1106e82d4013e1 (refs/remotes/origin/master)
+Commit message: "Preparing Homepage for demo"
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f 9abd15e23d4bfe3957cc27c30f1106e82d4013e1
+ > git rev-list 9abd15e23d4bfe3957cc27c30f1106e82d4013e1 # timeout=10
+[todo-app] $ /bin/sh -xe /tmp/jenkins9081555062965821027.sh
++ aws ecr get-login --region us-east-2
++ docker login -u AWS -p eyJwYXlsb2FkIjoiTjlhbmlEc3IyTUk3enFBM09qWUw5aFZ6SVBHcndvaEp6akRPQklwcWhSa2tacEVyUXpsUkE2SlBPSmUxQWFIb2c3b3o5UnBuUEIvVzFWTU1kLy8xcUVlSmVMZVBTS0VhVmRpYmEvelZGTlEwQkhldW9EUnNSSEN1dTc4R0tZWkVCYjYvLytwVFJ2ZGtxWGZ4OENoTzdjczV1UUh5b0E1NmpCdkZnOVRSSVJHRzl4cHJ1dHBOaExsM3I0WFlML09UeXhIeXFWdHduNm9ESVd5OS9yY0FIV3BYMU9QQ1FhMlhUTWFiREhVd0QycVNpL1hYdzVXa1B1WVZ5MW9xaDU0SHh4RkFHenUxOXIwQ2piSUZpK2dqZDRuNkZBSHR6eWlUTlAzUmJac2VXZnV6dDFCNTc4c1d5anFWMERURHJhNi9OVTllZlRYWkNoV3AxNU5zN2dqWmh4K1BOaldEVFVZRkF6dGdPU0k1UFhQWlZnRTZrV3ZGZm1lZEFoQVVvQ0Y4OTJnZ012cVUzSjluTGJyeWtvdEJxR1ZqNW9IQmMwM2F3NFdnWG8zd0RXblRaYmViS3ZSSXhPenBQZUtqUkNzK215dENMbHJERlRiTldYWmlNNkVrWklHMEl6TG9TL0djVEFEN1ZzL3pPZVp0UXErMExsZmlsdXJTUWJqdlVlSzJMWHZQMm95aXMzd0JBampkYzVUV3FUYUoxdXF0NzUwMFp4ZVBzL2FqaHJnZDJmYk05RE5JOG9oSFRSYWREcllCN3NkaFFmdTN4M1RZaGx6Q3IvakxHNEhFc2xhTjRJMnFzN01xalpQRjFOcjFZK29HSkx4S29wcVYvLzQzdEZOU0ZLc2dhMWNMWTNlOS9nTG9ZV0l6MDd1UTljVWMwSTBtelY1TGl4K25Bam5keGhnV1Y5emhuaGNoM0Exb0krNmczbng0a3QrUGduV21ULy8yWFkrUjFDWWhLTnFWQ252cUd5a3E4ejFycFhhY1lWR2thMVpnYkVuNG91Zmp1YjI2dzlDMmw2NlNsWHBEM2JrTE95ZStEb2tCV3NDMXBmOGM1ZmxnS3YzZVVuNkJGU05kOXRTVmdHcTV1eGo2R1lZWURxWkxrcXlXS3VEQ25OeC9OajVNWW42NXloN29EcUVQeCtzUWZSdlZqNm5DclRZaFJBaDFEV1hhbHdxQ2wyQTVhYk45YTNYMVMxZkgxYnF6a3ZpT2cwdWhVb0xJYmNOdWVUUWs1ZTNpTzZVRDhGVjhVa0RENlBMbmJ1cnFuNy9RZHZEVEI1NnQ2M0NDeWl1R0JXYU9mamtLT3BLbkpCcGxYTElDaDIvM3N0bW0zL2JsODRJbGNndEFUZ0lhUHgxRGVqTENWcnNwanBHQ3N3cWhHQWZqckhwWTVrV1BFNlRLRzJmTjB0ZFp0UFhuRFpQK3UxZE1oSk9XODNvS3QwK2RwT01OK2JQLzlqMUIiLCJkYXRha2V5IjoiQVFFQkFIakI3L2lnd01nNE5Qd2F1cnhTSVl4NEhmbnh1R2MvNDhiRHd2d0RwTllXWmdBQUFINHdmQVlKS29aSWh2Y05BUWNHb0c4d2JRSUJBREJvQmdrcWhraUc5dzBCQndFd0hnWUpZSVpJQVdVREJBRXVNQkVFRFAzdGRJbnlVN2FwZ0pMU2NBSUJFSUE3bG5rb2N4UU5jdW1pL3BRbnhOVXRibXRHUU03NmpZbTJQd2x5N3RTM2RyS1pFVlNGQkZ0ZDB1TEljYUtZYnFjTzE1UW9pR1IzSnRaUmJmST0iLCJ2ZXJzaW9uIjoiMSIsInR5cGUiOiJEQVRBX0tFWSJ9 -e none https://364238614392.dkr.ecr.us-east-2.amazonaws.com
+Flag --email has been deprecated, will be removed in 17.06.
+Login Succeeded
++ docker build -t services/todo-app .
+Sending build context to Docker daemon  158.2kB
+Step 1/6 : FROM node
+ ---> de1099630c13
+Step 2/6 : ADD ./ /app/
+ ---> Using cache
+ ---> 50b0fea26217
+Step 3/6 : WORKDIR /app
+ ---> Using cache
+ ---> 2d40f92973fc
+Step 4/6 : RUN npm install
+ ---> Using cache
+ ---> 522cdcf516bd
+Step 5/6 : EXPOSE 80
+ ---> Using cache
+ ---> 1faff6328302
+Step 6/6 : CMD node server.js
+ ---> Using cache
+ ---> 7da982272366
+Successfully built 7da982272366
+Successfully tagged services/todo-app:latest
++ docker tag services/todo-app:latest 364238614392.dkr.ecr.us-east-2.amazonaws.com/services/todo-app:9abd15e23d4bfe3957cc27c30f1106e82d4013e1
++ docker push 364238614392.dkr.ecr.us-east-2.amazonaws.com/services/todo-app:9abd15e23d4bfe3957cc27c30f1106e82d4013e1
+The push refers to a repository [364238614392.dkr.ecr.us-east-2.amazonaws.com/services/todo-app]
+0c753af0b234: Preparing
+8f34f57b24a6: Preparing
+eaf747b8be7f: Preparing
+3a9f3dd4c49c: Preparing
+1d13cfbbfeb2: Preparing
+bfa30f97c0f4: Preparing
+7381522c58b0: Preparing
+ecd70829ec3d: Preparing
+d70ce8b0dad6: Preparing
+18f9b4e2e1bc: Preparing
+bfa30f97c0f4: Waiting
+7381522c58b0: Waiting
+ecd70829ec3d: Waiting
+d70ce8b0dad6: Waiting
+18f9b4e2e1bc: Waiting
+eaf747b8be7f: Layer already exists
+3a9f3dd4c49c: Layer already exists
+1d13cfbbfeb2: Layer already exists
+0c753af0b234: Layer already exists
+8f34f57b24a6: Layer already exists
+7381522c58b0: Layer already exists
+bfa30f97c0f4: Layer already exists
+ecd70829ec3d: Layer already exists
+d70ce8b0dad6: Layer already exists
+18f9b4e2e1bc: Layer already exists
+9abd15e23d4bfe3957cc27c30f1106e82d4013e1: digest: sha256:73e87a9c1a18ecb343055385cbe1bf89fa08a67ae14c4c6e651ba5dcf59f80dd size: 2426
+Waiting for the completion of [8mha:////4KVeDeas30zMuguFUM6SjZ9KrVZgYGE7Zkobsbj6ccD5AAAAmh+LCAAAAAAAAP9b85aBtbiIQSajNKU4P08vOT+vOD8nVc+jsiC1KCczL9svvyTVzHb1RttJBUeZGJg8GdhyUvPSSzJ8GJhLi3JKGIR8shLLEvVzEvPS9YNLijLz0q0rihik0IxzhtAgwxgggJGJgaGiAMgQLWGQ1c/KT9JPzs/Nzc8DM1NSC3LyK3WLyxOLcvUBHxq2+qIAAAA=[0mcommon » deploy-swarm
+[8mha:////4EppMkqHDWybLFhV6Y9Khs662nUDxvkiEUpzk4OB7T7kAAAAnB+LCAAAAAAAAP9b85aBtbiIQSajNKU4P08vOT+vOD8nVc+jsiC1KCczL9svvyTVzHb1RttJBUeZGJg8GdhyUvPSSzJ8GJhLi3JKGIR8shLLEvVzEvPS9YNLijLz0q0rihik0IxzhtAgwxgggJGJgaGiAMiQKGGQ18/KT9JPzs/Nzc8DM1NSC3LyK3WLyxOLcvWN9AH/nsSCpAAAAA==[0mcommon » deploy-swarm #2 completed. Result was FAILURE
+Build step 'Trigger/call builds on other projects' marked build as failure
+Finished: FAILURE

@@ -1,0 +1,148 @@
+Started by user [8mha:////4HSKTYekCqJtgUzvE/X25d7VYiaybRQPqPlqTWr6Yj8mAAAAmR+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAz+EgZe/dLi1CL9xOKMzOKMPAD2nB5TwgAAAA==[0mAshish Nanotkar
+Building in workspace /var/lib/jenkins/workspace/system/logstash-es-indexer
+Cloning the remote Git repository
+Cloning repository git@github.com:yashsolutions/dockerfiles.git
+ > git init /var/lib/jenkins/workspace/system/logstash-es-indexer # timeout=10
+Fetching upstream changes from git@github.com:yashsolutions/dockerfiles.git
+ > git --version # timeout=10
+ > git fetch --tags --progress git@github.com:yashsolutions/dockerfiles.git +refs/heads/*:refs/remotes/origin/*
+ > git config remote.origin.url git@github.com:yashsolutions/dockerfiles.git # timeout=10
+ > git config --add remote.origin.fetch +refs/heads/*:refs/remotes/origin/* # timeout=10
+ > git config remote.origin.url git@github.com:yashsolutions/dockerfiles.git # timeout=10
+Fetching upstream changes from git@github.com:yashsolutions/dockerfiles.git
+ > git fetch --tags --progress git@github.com:yashsolutions/dockerfiles.git +refs/heads/*:refs/remotes/origin/*
+ > git rev-parse refs/remotes/origin/master^{commit} # timeout=10
+ > git rev-parse refs/remotes/origin/origin/master^{commit} # timeout=10
+Checking out Revision 731df44ba142d75578a948f193f58a042a96fbcf (refs/remotes/origin/master)
+Commit message: "updated forwarder to new redis instance"
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f 731df44ba142d75578a948f193f58a042a96fbcf
+First time build. Skipping changelog.
+[logstash-es-indexer] $ /bin/sh -xe /tmp/jenkins2338227137237368650.sh
++ aws ecr get-login --region us-east-2
++ docker login -u AWS -p eyJwYXlsb2FkIjoiamQ1QUJYUHhsdkVObnNxc2s0Z3JjcU9UR3hNUThYWWkrOVlBaldTMjl5bDc3SkVMeWZYbEIvcXRaanVOT3lOREh3cGVIbkY1dy9uYTBmNHZMc0lBRm1vODFuOC84UEJ4UWZBYjU3MzY1K1UwZnFkdXlPUXk2TzhmSmJBRkl2SU0xejFxblBIUzk1TndGZlh6eGhyOG1BV0U4bkNvcUtSTm43aVJnU01OeE5ldzJ1c2JzRmdKSHYyUXcrY1lLWWxKeHZlQkxVQzl6MHY1R1l6MjlJTENhekptTUIza3lzU1pGL3gvVHdrZSt4cmQzaGtLVjVQUG41TW8zMGZaM1ZldzVTaC9zdFVXb09UeFh1ek9kYndvdlhUNXFraTRmd0lwSEpkeEViS1IweGRLNkdaUHpoaGRYdmJFMWlGV3dSTlcySC9paDQrazM4OG9HcVR1RXJLRzJKMEpYajVSbnQzN0NvWWR1aXA1U3pxRE9TMmw0dUJ6azByaGJsZSt3M1BINjczbUFZcXRxWWdEWFNBQWZMRWZodUNvckt0RlJEdTNxMG5ZWjdTSnMwRkpFZmN1MmZ6RkRDQ1hYZ2U4K1d5OEtRalpqQ0NkMlcxTy9LZXFKbnhjM0J5cTh2dmNBcm9Ja3hCaTkzTVVWQ291enRkMG5vUGlvT1AzamNJMko3d1RTS3llS1hvZktKdC9GR09xZlllVFAyU3F1WjluTzI0YkRSUlYrRndXRTNvT2NSVUdUZ3NEcURmZ2tTMUJsSWdycWRRQ09JbTFZL2czbHcwZTR3ZFZGdEdtM0hzQ0huMjBOTjFLM3pKc3ppc2JyWW1UTnFTSmpNdkgzUUVLR0xjeXl0b3p6THpHWEt3bGhLeDN2R0djZ3QyVU53MVg0anJzK2p6bVBNV2d3bndtdXhlOXRNWjl6SzlVVmJidzFaTDJnM0VNVVpOMi9zNzkwUThMYllyQU1TcjVWWjN1T2RpWFJJSnZGaTNNOS81dUY3cTNKb21Kc0ZneGY1YncwYUhrZ2RiZ2ZVeExsQm1GTEZZaXAxMjJmdEdtNS9uNVR4QWRSbzl0YzZlNGYxWjE2NU5xeXJrUVBWbWNMcTg3Wm9rL2FIRG9HVklYWUx4WDQxT21xWUE3VjN0ODJiSHBGeUo5ditJSkZVZEFVbU5vWEF6aWZxTlU0WVFhV1dBaUl3MDJrbXIvZTdhUndlbGtEdFhKQmp6ZzZMRTBINmg2Yk5PMFZjMERTVndady8yNnJaSEEyT2VFN2oyNERkNUs5SkZ4Zm1TSFFpWVpKYWJNbnpaakE2eG5BMy81ZHozQ0JwREJaYTFqK1dac0VpRUo2S0JQUm53dFBRMnhyNnVuS2xXQk16dVB4cTNOMm5aVm0ybGdmM1ZUTm9NZjVHekpEdlRjTnhQTmUwOC9qbnpieFM3VGhTeFV0NG5ycy91aCIsImRhdGFrZXkiOiJBUUVCQUhqQjcvaWd3TWc0TlB3YXVyeFNJWXg0SGZueHVHYy80OGJEd3Z3RHBOWVdaZ0FBQUg0d2ZBWUpLb1pJaHZjTkFRY0dvRzh3YlFJQkFEQm9CZ2txaGtpRzl3MEJCd0V3SGdZSllJWklBV1VEQkFFdU1CRUVESktJWUZOc0VMcFUrWGFYbGdJQkVJQTdtbUtoa3ZUSEpSZVE2SUFGK3Qyc3lUM3cvc2ZVaUluUm1rR2pmSUplb25Kb2JBV1dKTW9nZU04TnR2UnlZNnlxVytTWE1UT2luTGlmRkVRPSIsInZlcnNpb24iOiIxIiwidHlwZSI6IkRBVEFfS0VZIn0= -e none https://364238614392.dkr.ecr.us-east-2.amazonaws.com
+Flag --email has been deprecated, will be removed in 17.06.
+Login Succeeded
++ cd logstash-es-indexer
++ docker build -t system/logstash-es-indexer .
+Sending build context to Docker daemon  10.24kB
+Step 1/4 : FROM docker.elastic.co/logstash/logstash:5.2.2
+5.2.2: Pulling from logstash/logstash
+fec6b243e075: Pulling fs layer
+190e0e9a3e79: Pulling fs layer
+0d79cf192e4c: Pulling fs layer
+38398c307b51: Pulling fs layer
+356665655a72: Pulling fs layer
+82c5b9c24770: Pulling fs layer
+9e33b261d163: Pulling fs layer
+79d9770846fa: Pulling fs layer
+fe8bda19f0ba: Pulling fs layer
+3fd556e1511c: Pulling fs layer
+d4f2fdcdc412: Pulling fs layer
+7232a5cad18e: Pulling fs layer
+8f5ae5ea361a: Pulling fs layer
+439ce4506a87: Pulling fs layer
+38398c307b51: Waiting
+356665655a72: Waiting
+82c5b9c24770: Waiting
+9e33b261d163: Waiting
+79d9770846fa: Waiting
+fe8bda19f0ba: Waiting
+3fd556e1511c: Waiting
+d4f2fdcdc412: Waiting
+7232a5cad18e: Waiting
+8f5ae5ea361a: Waiting
+439ce4506a87: Waiting
+190e0e9a3e79: Verifying Checksum
+190e0e9a3e79: Download complete
+0d79cf192e4c: Verifying Checksum
+0d79cf192e4c: Download complete
+38398c307b51: Verifying Checksum
+38398c307b51: Download complete
+356665655a72: Verifying Checksum
+356665655a72: Download complete
+9e33b261d163: Verifying Checksum
+9e33b261d163: Download complete
+fec6b243e075: Verifying Checksum
+fec6b243e075: Download complete
+fe8bda19f0ba: Verifying Checksum
+fe8bda19f0ba: Download complete
+3fd556e1511c: Verifying Checksum
+3fd556e1511c: Download complete
+d4f2fdcdc412: Verifying Checksum
+d4f2fdcdc412: Download complete
+7232a5cad18e: Verifying Checksum
+7232a5cad18e: Download complete
+8f5ae5ea361a: Verifying Checksum
+8f5ae5ea361a: Download complete
+82c5b9c24770: Verifying Checksum
+82c5b9c24770: Download complete
+439ce4506a87: Verifying Checksum
+439ce4506a87: Download complete
+79d9770846fa: Verifying Checksum
+79d9770846fa: Download complete
+fec6b243e075: Pull complete
+190e0e9a3e79: Pull complete
+0d79cf192e4c: Pull complete
+38398c307b51: Pull complete
+356665655a72: Pull complete
+82c5b9c24770: Pull complete
+9e33b261d163: Pull complete
+79d9770846fa: Pull complete
+fe8bda19f0ba: Pull complete
+3fd556e1511c: Pull complete
+d4f2fdcdc412: Pull complete
+7232a5cad18e: Pull complete
+8f5ae5ea361a: Pull complete
+439ce4506a87: Pull complete
+Digest: sha256:246d50aaabcd1b1cb29f6f54f81cee9ffc459eff5c4694b39998f92e1af7d2e2
+Status: Downloaded newer image for docker.elastic.co/logstash/logstash:5.2.2
+ ---> eb145c1bfb1d
+Step 2/4 : RUN rm -f /usr/share/logstash/pipeline/logstash.conf
+ ---> Running in 7ed267225f2e
+ ---> ffe7453c48f4
+Removing intermediate container 7ed267225f2e
+Step 3/4 : ADD es-indexer.conf /usr/share/logstash/pipeline/es-indexer.conf
+ ---> 39a4ba65a3c8
+Removing intermediate container 56e7dccec5d7
+Step 4/4 : RUN echo "xpack.monitoring.enabled: false" >> /usr/share/logstash/config/logstash.yml
+ ---> Running in dbf62a1eda13
+ ---> 1cc2057b3046
+Removing intermediate container dbf62a1eda13
+Successfully built 1cc2057b3046
+Successfully tagged system/logstash-es-indexer:latest
++ docker tag system/logstash-es-indexer:latest 364238614392.dkr.ecr.us-east-2.amazonaws.com/system/logstash-es-indexer:731df44ba142d75578a948f193f58a042a96fbcf
++ docker push 364238614392.dkr.ecr.us-east-2.amazonaws.com/system/logstash-es-indexer:731df44ba142d75578a948f193f58a042a96fbcf
+The push refers to a repository [364238614392.dkr.ecr.us-east-2.amazonaws.com/system/logstash-es-indexer]
+d5c5e42c78cf: Preparing
+0cf04f25a7bd: Preparing
+160138c6f3cc: Preparing
+9e38456e2a98: Preparing
+3dad108e46a7: Preparing
+ee07a3635fe5: Preparing
+3c7470006923: Preparing
+de44c29ed505: Preparing
+345e1b71dd4e: Preparing
+cd83687ffe8b: Preparing
+7aeacbe84453: Preparing
+01fe1e145b60: Preparing
+56827159aa8b: Preparing
+440e02c3dcde: Preparing
+29660d0e5bb2: Preparing
+85782553e37a: Preparing
+745f5be9952c: Preparing
+ee07a3635fe5: Waiting
+3c7470006923: Waiting
+de44c29ed505: Waiting
+345e1b71dd4e: Waiting
+cd83687ffe8b: Waiting
+7aeacbe84453: Waiting
+01fe1e145b60: Waiting
+56827159aa8b: Waiting
+440e02c3dcde: Waiting
+29660d0e5bb2: Waiting
+85782553e37a: Waiting
+745f5be9952c: Waiting
+name unknown: The repository with name 'system/logstash-es-indexer' does not exist in the registry with id '364238614392'
+Build step 'Execute shell' marked build as failure
+Finished: FAILURE

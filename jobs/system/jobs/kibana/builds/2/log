@@ -1,0 +1,168 @@
+Started by user [8mha:////4HSKTYekCqJtgUzvE/X25d7VYiaybRQPqPlqTWr6Yj8mAAAAmR+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAz+EgZe/dLi1CL9xOKMzOKMPAD2nB5TwgAAAA==[0mAshish Nanotkar
+Building in workspace /var/lib/jenkins/workspace/system/kibana
+ > git rev-parse --is-inside-work-tree # timeout=10
+Fetching changes from the remote Git repository
+ > git config remote.origin.url git@github.com:yashsolutions/dockerfiles.git # timeout=10
+Fetching upstream changes from git@github.com:yashsolutions/dockerfiles.git
+ > git --version # timeout=10
+ > git fetch --tags --progress git@github.com:yashsolutions/dockerfiles.git +refs/heads/*:refs/remotes/origin/*
+ > git rev-parse refs/remotes/origin/master^{commit} # timeout=10
+ > git rev-parse refs/remotes/origin/origin/master^{commit} # timeout=10
+Checking out Revision e0a118bdd1105b7e0f05172ca872572026df1607 (refs/remotes/origin/master)
+Commit message: "conflict fix during repo merge"
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f e0a118bdd1105b7e0f05172ca872572026df1607
+ > git rev-list e0a118bdd1105b7e0f05172ca872572026df1607 # timeout=10
+[kibana] $ /bin/sh -xe /tmp/jenkins7742396788811364971.sh
++ aws ecr get-login --region us-east-2
++ docker login -u AWS -p eyJwYXlsb2FkIjoiMjFoVmJWczJZN0ZSMkQ1NFpqanIySlV2K2MvM0l6aDNTYUtEYzJkWk5tN3RQazg0TzJGSEdiWU1pS3U2a1hGNVZOVlVWMnB3Z2lQZ0k1Vlc1TkhOTlI0Tk5ORXZKb0Zldm1LMnE1enMzRVVGV294TGRmUm5Qck9SNTJhVWowL093UHdXSGF2NUduU01aUmZRZ0NsQTBwemhZUlFqL01WbnV4Z2hCSlhBOExIbC9uS0IvL04wUzlockRSRWtUZURpWVZ3NTFtT285b2F0ZzExUEFyQUptV29CcXRWQ3VBRndzMVQ2aFk4cHAzd3RaL3BUUW0vMlFEZk0rbTBQM1R4eEFZNi8vNnV2aVBIVzl0K2dvMEJTYXJBdkhFcVVZd25YQTZaclBmNEV6cUxTS0V0V3lBMGlwQmcyV1JNemxnNXJEQ2s0Y3c2TXh0UnozQktxaXdKdHlWc3BVS0RCc1RyQncxSWFWVGVvZGpqTDRKMFlUd1BiWlF2Z1BROHEwOVJGdUlnRmc4blZyamZxZjZwbytPMjdsdTlMVjRnMkY0QlhpdGxRcUFSKzVFdndGQlZwMVd4cE1ONUl3eEI4OVF3MkppZncxNzJOZUFPeDlLa0ZkYUNSVWdoNjkzaFkzRnF6Rjlsb3Vkb1VyYXpBNjBjM1hTUk9jaEkwQS84STJ3dmgzZnRnQ1diL0xTWElPd1FkVC9YZ0ZDWENERnRUNjJHbWhyQjF1dWg0U3FUY2JYaFFDNWV6NDlZR0xTeGZudjlHck9mam56c3BwN2lHOC91dUdwMDg1c0RJTlhVaUxNeGs2c3dRSzd1TjlPN1B0L25NUTdSMlB5aVU5TjkxK256QjZuQkFDZTFQMEpvc1hhck4rNmFYb2VQNkdNbUJ2VlFaVGZuNDBvalByY0phenNCbFRZQi9ma0wyckYvTnAwc2plRzFhbW44MDdxanpIY3E1M0NqN2o4bHZRUHVJcy8rSXJ2MnBOM2pCNnhNamNGSUNHQUpORk1kVE11RlpQUXQwQVRsSVlBRnhSRmNCR2JRMWF3RGVxdFNkakRDNXNTVmFmTlpIdlZMRHNZMDZMSGpvNk8wSmhJSWRHNGNGQkJ5cDRmZVlNOG9DbHNWMUtuaERLek10cklKellOL21aRTl2SGF3Q1h4aytrNVFJcEVrZnFZald3SWZTaDNQTlhYRHQ1TDBQUUlNcTUzT3lDUFQ1T3Fyd2ZhdEJWenZPMWVDbFU5MDEwSkY3TkJSY01TK202c2JMRllMZzdrbmpkN050Z1FXdXV6RFhMcUc1Q1c2dDd3bkoxekYxNiszczRPL2hVUmxRRkxQWHFKQXIxOHlMWmNlSUhtcmQyUUFseHNDbmp5VGI2R3hiUGYwKzhremtzbytpWkJ6V3hRaWJlRmU1ZXVQNDFHT0IvWHN4VHV4NzBvNHYrTDY5VFBLK21jLzg4MHBvcVZMcXBidzgiLCJkYXRha2V5IjoiQVFFQkFIakI3L2lnd01nNE5Qd2F1cnhTSVl4NEhmbnh1R2MvNDhiRHd2d0RwTllXWmdBQUFINHdmQVlKS29aSWh2Y05BUWNHb0c4d2JRSUJBREJvQmdrcWhraUc5dzBCQndFd0hnWUpZSVpJQVdVREJBRXVNQkVFRE4vOFlGeGV5ZWxvNXJYQnhBSUJFSUE3RmNQaFVjTDlJd2JNRXVCU1dndVdlWkR5RUFOQ0M3MmhHQjkyL3lNUGw1c0ZHOHYrTVFqYlBCNGtGT2JtbXIxT0Z4TzZ1VDkyNFhQSFZaWT0iLCJ2ZXJzaW9uIjoiMSIsInR5cGUiOiJEQVRBX0tFWSJ9 -e none https://364238614392.dkr.ecr.us-east-2.amazonaws.com
+Flag --email has been deprecated, will be removed in 17.06.
+Login Succeeded
++ cd kibana
++ docker build -t system/kibana .
+Sending build context to Docker daemon  10.24kB
+Step 1/3 : FROM docker.elastic.co/kibana/kibana:5.3.1
+5.3.1: Pulling from kibana/kibana
+dd5dd61c1a5a: Pulling fs layer
+16909a4b1f9f: Pulling fs layer
+29c53e794bb6: Pulling fs layer
+a9ed6f426f17: Pulling fs layer
+a3ed95caeb02: Pulling fs layer
+f3545d054f4a: Pulling fs layer
+3411b2e7dcef: Pulling fs layer
+697d9c974fd5: Pulling fs layer
+dd48b564831a: Pulling fs layer
+8cfa3486163f: Pulling fs layer
+b957c3f00ce3: Pulling fs layer
+cfff1f6ab196: Pulling fs layer
+accb4f5b19b9: Pulling fs layer
+34c8c265a4e1: Pulling fs layer
+de16797c180a: Pulling fs layer
+5c3cacf89d57: Pulling fs layer
+a9ed6f426f17: Waiting
+a3ed95caeb02: Waiting
+f3545d054f4a: Waiting
+3411b2e7dcef: Waiting
+697d9c974fd5: Waiting
+dd48b564831a: Waiting
+8cfa3486163f: Waiting
+b957c3f00ce3: Waiting
+cfff1f6ab196: Waiting
+accb4f5b19b9: Waiting
+34c8c265a4e1: Waiting
+de16797c180a: Waiting
+5c3cacf89d57: Waiting
+29c53e794bb6: Verifying Checksum
+29c53e794bb6: Download complete
+16909a4b1f9f: Verifying Checksum
+16909a4b1f9f: Download complete
+a9ed6f426f17: Verifying Checksum
+a9ed6f426f17: Download complete
+a3ed95caeb02: Verifying Checksum
+a3ed95caeb02: Download complete
+f3545d054f4a: Verifying Checksum
+f3545d054f4a: Download complete
+697d9c974fd5: Verifying Checksum
+697d9c974fd5: Download complete
+dd48b564831a: Verifying Checksum
+dd48b564831a: Download complete
+8cfa3486163f: Verifying Checksum
+8cfa3486163f: Download complete
+dd5dd61c1a5a: Download complete
+cfff1f6ab196: Verifying Checksum
+cfff1f6ab196: Download complete
+b957c3f00ce3: Verifying Checksum
+b957c3f00ce3: Download complete
+accb4f5b19b9: Verifying Checksum
+accb4f5b19b9: Download complete
+34c8c265a4e1: Verifying Checksum
+34c8c265a4e1: Download complete
+de16797c180a: Verifying Checksum
+de16797c180a: Download complete
+3411b2e7dcef: Verifying Checksum
+3411b2e7dcef: Download complete
+dd5dd61c1a5a: Pull complete
+16909a4b1f9f: Pull complete
+5c3cacf89d57: Verifying Checksum
+5c3cacf89d57: Download complete
+29c53e794bb6: Pull complete
+a9ed6f426f17: Pull complete
+a3ed95caeb02: Pull complete
+f3545d054f4a: Pull complete
+3411b2e7dcef: Pull complete
+697d9c974fd5: Pull complete
+dd48b564831a: Pull complete
+8cfa3486163f: Pull complete
+b957c3f00ce3: Pull complete
+cfff1f6ab196: Pull complete
+accb4f5b19b9: Pull complete
+34c8c265a4e1: Pull complete
+de16797c180a: Pull complete
+5c3cacf89d57: Pull complete
+Digest: sha256:717a00a99505c6058f916966d69cbe32c7664c7c1803fa9c737a27b804c255d0
+Status: Downloaded newer image for docker.elastic.co/kibana/kibana:5.3.1
+ ---> 569e1ba02112
+Step 2/3 : ADD kibana.yml /usr/share/kibana/config/kibana.yml
+ ---> e51fe69584bd
+Removing intermediate container 5569b68fadc4
+Step 3/3 : EXPOSE 8003
+ ---> Running in a5981ff0b980
+ ---> 289502011b74
+Removing intermediate container a5981ff0b980
+Successfully built 289502011b74
+Successfully tagged system/kibana:latest
++ docker tag system/kibana:latest 364238614392.dkr.ecr.us-east-2.amazonaws.com/system/kibana:e0a118bdd1105b7e0f05172ca872572026df1607
++ docker push 364238614392.dkr.ecr.us-east-2.amazonaws.com/system/kibana:e0a118bdd1105b7e0f05172ca872572026df1607
+The push refers to a repository [364238614392.dkr.ecr.us-east-2.amazonaws.com/system/kibana]
+6975727163ad: Preparing
+c39e30f2bf2c: Preparing
+04096b0b6190: Preparing
+457f6b505c31: Preparing
+161c4f5f683e: Preparing
+f66babed3477: Preparing
+70206aa1fa07: Preparing
+b5ad783e5456: Preparing
+7dc73542bbd7: Preparing
+80d9072a98f6: Preparing
+5f70bf18a086: Preparing
+0184e31d4eba: Preparing
+19a8383d6948: Preparing
+5f70bf18a086: Preparing
+0738910e0455: Preparing
+21df36b5c775: Preparing
+315fe8388056: Preparing
+7f4734de8e3d: Preparing
+5f70bf18a086: Waiting
+0184e31d4eba: Waiting
+19a8383d6948: Waiting
+0738910e0455: Waiting
+21df36b5c775: Waiting
+315fe8388056: Waiting
+7f4734de8e3d: Waiting
+70206aa1fa07: Waiting
+b5ad783e5456: Waiting
+7dc73542bbd7: Waiting
+80d9072a98f6: Waiting
+f66babed3477: Waiting
+04096b0b6190: Pushed
+161c4f5f683e: Pushed
+457f6b505c31: Pushed
+6975727163ad: Pushed
+f66babed3477: Pushed
+b5ad783e5456: Pushed
+7dc73542bbd7: Pushed
+5f70bf18a086: Pushed
+19a8383d6948: Pushed
+0738910e0455: Pushed
+21df36b5c775: Pushed
+315fe8388056: Pushed
+0184e31d4eba: Pushed
+80d9072a98f6: Pushed
+70206aa1fa07: Pushed
+c39e30f2bf2c: Pushed
+7f4734de8e3d: Pushed
+e0a118bdd1105b7e0f05172ca872572026df1607: digest: sha256:b3a35659fea752f19f54b91e2fc6ae2532e71d4d50e36122a48ddf6f5471a87d size: 4074
+Waiting for the completion of [8mha:////4KVeDeas30zMuguFUM6SjZ9KrVZgYGE7Zkobsbj6ccD5AAAAmh+LCAAAAAAAAP9b85aBtbiIQSajNKU4P08vOT+vOD8nVc+jsiC1KCczL9svvyTVzHb1RttJBUeZGJg8GdhyUvPSSzJ8GJhLi3JKGIR8shLLEvVzEvPS9YNLijLz0q0rihik0IxzhtAgwxgggJGJgaGiAMgQLWGQ1c/KT9JPzs/Nzc8DM1NSC3LyK3WLyxOLcvUBHxq2+qIAAAA=[0mcommon » deploy-swarm
+[8mha:////4ImD4W0ZYnmnCoRyMU2kjo2XhKTv+yST8XjKKcSFnB/PAAAAnR+LCAAAAAAAAP9b85aBtbiIQSajNKU4P08vOT+vOD8nVc+jsiC1KCczL9svvyTVzHb1RttJBUeZGJg8GdhyUvPSSzJ8GJhLi3JKGIR8shLLEvVzEvPS9YNLijLz0q0rihik0IxzhtAgwxgggJGJgaGiAMiQLGFQ0M/KT9JPzs/Nzc8DM1NSC3LyK3WLyxOLcvWNjPQB2TBbY6UAAAA=[0mcommon » deploy-swarm #22 completed. Result was FAILURE
+Build step 'Trigger/call builds on other projects' marked build as failure
+Finished: FAILURE

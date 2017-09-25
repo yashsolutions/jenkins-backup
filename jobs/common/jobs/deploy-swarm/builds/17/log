@@ -1,0 +1,14 @@
+Started by upstream project "[8mha:////4P6mXP7+VOngeX5+OUBLwPz/wxyV8uq0UkNxtlGQ3rG/AAAApB+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzBEgZp/az8JP3i1KKyzOTUYjCnJD8lXzexoEAfAP1K6LbQAAAA[0mservices/todo-app" build number [8mha:////4HoCr5qgM1FFZsHY5hzGZBFEvrtWafCop3Qb9zA+VqgMAAAAph+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAymEgZZ/az8JP3i1KKyzOTUYjCnJD8lXzexoEDf0AAA4FzYndIAAAA=[0m10
+originally caused by:
+ Started by an SCM change
+Building in workspace /var/lib/jenkins/workspace/common/deploy-swarm
+[deploy-swarm] $ python /tmp/jenkins2048019152116304132.py
+
+PLAY [internal-swarm-01] *******************************************************
+skipping: no hosts matched
+
+PLAY RECAP *********************************************************************
+
+0
+Build step 'Execute Python script' marked build as failure
+Finished: FAILURE
