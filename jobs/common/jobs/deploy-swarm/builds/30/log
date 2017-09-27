@@ -1,0 +1,19 @@
+Started by upstream project "[8mha:////4P6mXP7+VOngeX5+OUBLwPz/wxyV8uq0UkNxtlGQ3rG/AAAApB+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzBEgZp/az8JP3i1KKyzOTUYjCnJD8lXzexoEAfAP1K6LbQAAAA[0mservices/todo-app" build number [8mha:////4LMltYX0/oxfZK9sxiGlSBzrwHLohGG0OJMlDP63aPB4AAAAph+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAymEgZZ/az8JP3i1KKyzOTUYjCnJD8lXzexoEDf0AgAzD3Wc9IAAAA=[0m12
+originally caused by:
+ Started by user [8mha:////4HSKTYekCqJtgUzvE/X25d7VYiaybRQPqPlqTWr6Yj8mAAAAmR+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAz+EgZe/dLi1CL9xOKMzOKMPAD2nB5TwgAAAA==[0mAshish Nanotkar
+Building in workspace /var/lib/jenkins/workspace/common/deploy-swarm
+[deploy-swarm] $ python /tmp/jenkins6017541157516919261.py
+[WARNING]: Found variable using reserved name: port
+[WARNING]: Found variable using reserved name: action
+
+PLAY [prod-swarm-01] ***********************************************************
+
+TASK [Gathering Facts] *********************************************************
+fatal: [prod-swarm-01]: UNREACHABLE! => {"changed": false, "msg": "Failed to connect to the host via ssh: ssh: Could not resolve hostname prod-swarm-01: Name or service not known\r\n", "unreachable": true}
+to retry, use: --limit @/home/ubuntu/ansible-bot/playbooks/prod_deploy_to_swarm.retry
+
+PLAY RECAP *********************************************************************
+prod-swarm-01              : ok=0    changed=0    unreachable=1    failed=0
+
+0
+Finished: SUCCESS

@@ -1,6 +1,13 @@
-Started at Mon Sep 25 14:18:55 UTC 2017
+Started at Wed Sep 27 15:07:41 UTC 2017
+Checking system » deploy
+Checking system » elastalert
 Checking system » haproxy
 Checking system » kibana
+Checking system » logstash-es-indexer
+Checking system » logstash-redis-forwarder
+Checking system » prometheus
+Checking system » status
 Checking services » todo-app
+Checking maintenance » jenkins-backup
 Checking common » deploy-swarm
-Finished at Mon Sep 25 14:18:55 UTC 2017. 6ms
+Finished at Wed Sep 27 15:07:42 UTC 2017. 3ms

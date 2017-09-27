@@ -1,0 +1,95 @@
+Started by user [8mha:////4HSKTYekCqJtgUzvE/X25d7VYiaybRQPqPlqTWr6Yj8mAAAAmR+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAz+EgZe/dLi1CL9xOKMzOKMPAD2nB5TwgAAAA==[0mAshish Nanotkar
+Building in workspace /var/lib/jenkins/workspace/services/todo-app
+ > git rev-parse --is-inside-work-tree # timeout=10
+Fetching changes from the remote Git repository
+ > git config remote.origin.url git@github.com:yashsolutions/todo-app.git # timeout=10
+Fetching upstream changes from git@github.com:yashsolutions/todo-app.git
+ > git --version # timeout=10
+ > git fetch --tags --progress git@github.com:yashsolutions/todo-app.git +refs/heads/*:refs/remotes/origin/*
+ > git rev-parse refs/remotes/origin/master^{commit} # timeout=10
+ > git rev-parse refs/remotes/origin/origin/master^{commit} # timeout=10
+Checking out Revision 412e2b84146446eedcbce771ccb61be57e6b54ee (refs/remotes/origin/master)
+Commit message: "changed the title"
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f 412e2b84146446eedcbce771ccb61be57e6b54ee
+ > git rev-list 412e2b84146446eedcbce771ccb61be57e6b54ee # timeout=10
+[todo-app] $ /bin/sh -xe /tmp/jenkins7213264114030975601.sh
++ echo service BUILD
+service BUILD
++ echo service UNIT TEST
+service UNIT TEST
++ echo service PACKAGE
+service PACKAGE
++ aws ecr get-login --region us-east-2
++ docker login -u AWS -p eyJwYXlsb2FkIjoiQkhaSEQzeHd0L0ZNZSsxUlZ6Q3VJZmQzZkFseFJieVJaeEdiOFdPbCt1bjcvQTV1dDRhdVpDOXIwOEUvRUhqaWdaRFIxUUdDSDlQeEYxdXBWbWdmbW9YVnQ5WG9Wa2NEUUp1M0xicDNGMUswQ1lZUENiWHhIcWR1amR5UEM2Ni9TY0d4VlczUHZacWVqbktBMUhsV0gvTU5TSWFQVElPazU3ZlppcHp3S0xSSzZhOSt1UkF4TSswOWg1L3pFWEJ5ZkJtZHZSRmdRSTh2K0plR3hKWjhvZGEzcENFSk90c3B5NTIzemRJaUl0dk5VYXdvQ1laaFVOSHprakxkVlV4M3FEbzM4WjUzTzBSUlhaeFB6a0xXM0tCVEdYb2ZKS1ZycWROaTdwUDIrRU1sWk9jdStTYndUbUdVV0FLTk9SdTg1NDN4aE9CdFRmMjVrNDlpaXg0bGw5MHhCVnkxVnVzV05EZTlMdHBuK0pXWmRYcFphc0FVbXU0L2FZVFR0ZVpEMXBIS1N1TkxsQTJUbllrT3NtdFNiU2plZkFQWmkva0E0N0FDTEg1eWNPUml6WHIyOE93U2J4enFUYXZtRm5qVS9JQU5YYW9ZbGFZSHNDZTdHUE1SSU0yTmxzVVFnOGZVUVhUblNxOCthQjlrWnM0d2s4Q2wzeWdlNUFERytjWjkzcXZ3RUY0ZjRQSGErb1puc01iQU1URWE3eVJuSUtZY0M1UisxeEFKVFR2ejNmTitiK0pUd1VydkZ4WjExNHNCTWxQSUp2UDZ1YjNSc1JSMExIS3hxQUtLRDJjb1JHVHJKNWxPVXBKVlVweDRXZ1Nzak5UZGVETnBoOHRCTGMwVUhwajhVNTBxMFhsMGRKMlFDeDdFVTIyaXFhODQxSmlGejh5ZWMzZ2lvc293Wkl0d1RBeVp5d0JtWmpzVmFndnJ6SGl2WjFkMS8yMHhvUTl2RVFGeTdGamxueTF1Y05RaTJTdmJLa3U3STUrR0hzemVRaVBnZ0lMQUNaakhhZmJnNkVrQ0FSV0YvWjRydVpFVWgramJoSUU5Mk8vZUF1MGpmaitVTnpGNEdoaUMzUlBGR0tEYzJvS1VTU2FwSnJRcWgydmVjU3RPbnpqOWxkOWNLN2tmVDdoR2pYKy9haFgvM1BwYXhwbHJmd053NEd5d3p3aEdUVjJJdmZndXZZdkFUc1JXUnV5amZUT05wZzJNd25yUG5iL3l5VUF1NHdKMlhnN3htSklpcUJKZytVR2p2bnBJUmRDSEJKNmorOElwUkNhTW1vSUFXWTNUNHIzQVlVR28vaHVMekQyc0VUSmlyWjZNSzhUdHc4QklxY0FTcHZ1aHI2V1M2d01vWEkzWXMvNEpOb3h0ZWcwMkdxaVFLWWVFRzZpa21xV3hWZi9oajZnVkIyWkkxZmx3T0xHWEd2MDAzU3pJcjB3WSIsImRhdGFrZXkiOiJBUUVCQUhqQjcvaWd3TWc0TlB3YXVyeFNJWXg0SGZueHVHYy80OGJEd3Z3RHBOWVdaZ0FBQUg0d2ZBWUpLb1pJaHZjTkFRY0dvRzh3YlFJQkFEQm9CZ2txaGtpRzl3MEJCd0V3SGdZSllJWklBV1VEQkFFdU1CRUVETTZxaCtTYlE4dzdxVW5ad1FJQkVJQTdNUWx2OUlXWVdqK0IwTEFqOFJmN2NWYlVJYi83RmdqYSs5NzNCamVidncyQ3B5bG5uWGN3ZnQrVGc3ajlUM1RLcVlZRVgxS25ZMWlaMFJnPSIsInZlcnNpb24iOiIxIiwidHlwZSI6IkRBVEFfS0VZIn0= -e none https://364238614392.dkr.ecr.us-east-2.amazonaws.com
+Flag --email has been deprecated, will be removed in 17.06.
+Login Succeeded
++ docker build -t services/todo-app .
+Sending build context to Docker daemon  165.9kB
+Step 1/6 : FROM node
+ ---> de1099630c13
+Step 2/6 : ADD ./ /app/
+ ---> Using cache
+ ---> 8f17a3f9788c
+Step 3/6 : WORKDIR /app
+ ---> Using cache
+ ---> 83b1ce731d93
+Step 4/6 : RUN npm install
+ ---> Using cache
+ ---> 5c2407ab74f8
+Step 5/6 : EXPOSE 80
+ ---> Using cache
+ ---> 23a4d582e1ea
+Step 6/6 : CMD node server.js
+ ---> Using cache
+ ---> a6af7fb836d0
+Successfully built a6af7fb836d0
+Successfully tagged services/todo-app:latest
++ docker tag services/todo-app:latest 364238614392.dkr.ecr.us-east-2.amazonaws.com/services/todo-app:412e2b84146446eedcbce771ccb61be57e6b54ee
++ docker push 364238614392.dkr.ecr.us-east-2.amazonaws.com/services/todo-app:412e2b84146446eedcbce771ccb61be57e6b54ee
+The push refers to a repository [364238614392.dkr.ecr.us-east-2.amazonaws.com/services/todo-app]
+d7d418524c62: Preparing
+24a0002c1913: Preparing
+eaf747b8be7f: Preparing
+3a9f3dd4c49c: Preparing
+1d13cfbbfeb2: Preparing
+bfa30f97c0f4: Preparing
+7381522c58b0: Preparing
+ecd70829ec3d: Preparing
+d70ce8b0dad6: Preparing
+18f9b4e2e1bc: Preparing
+bfa30f97c0f4: Waiting
+7381522c58b0: Waiting
+ecd70829ec3d: Waiting
+d70ce8b0dad6: Waiting
+18f9b4e2e1bc: Waiting
+eaf747b8be7f: Layer already exists
+24a0002c1913: Layer already exists
+1d13cfbbfeb2: Layer already exists
+d7d418524c62: Layer already exists
+3a9f3dd4c49c: Layer already exists
+bfa30f97c0f4: Layer already exists
+ecd70829ec3d: Layer already exists
+d70ce8b0dad6: Layer already exists
+18f9b4e2e1bc: Layer already exists
+7381522c58b0: Layer already exists
+412e2b84146446eedcbce771ccb61be57e6b54ee: digest: sha256:bd5e9e7b7c3218c0779a83822e0ddf2ac4a39002f464cd4653d92f7661285d71 size: 2426
++ echo service DEPLOY TO DEV
+service DEPLOY TO DEV
+Waiting for the completion of [8mha:////4KVeDeas30zMuguFUM6SjZ9KrVZgYGE7Zkobsbj6ccD5AAAAmh+LCAAAAAAAAP9b85aBtbiIQSajNKU4P08vOT+vOD8nVc+jsiC1KCczL9svvyTVzHb1RttJBUeZGJg8GdhyUvPSSzJ8GJhLi3JKGIR8shLLEvVzEvPS9YNLijLz0q0rihik0IxzhtAgwxgggJGJgaGiAMgQLWGQ1c/KT9JPzs/Nzc8DM1NSC3LyK3WLyxOLcvUBHxq2+qIAAAA=[0mcommon » deploy-swarm
+[8mha:////4OdNRtAQuh0T29bWoG6c6YKfd7KnM0GoAJBgf31wwlGrAAAAnR+LCAAAAAAAAP9b85aBtbiIQSajNKU4P08vOT+vOD8nVc+jsiC1KCczL9svvyTVzHb1RttJBUeZGJg8GdhyUvPSSzJ8GJhLi3JKGIR8shLLEvVzEvPS9YNLijLz0q0rihik0IxzhtAgwxgggJGJgaGiAMiQLGFQ0M/KT9JPzs/Nzc8DM1NSC3LyK3WLyxOLcvWNLPQBU9i0maUAAAA=[0mcommon » deploy-swarm #28 completed. Result was SUCCESS
+Build step 'Trigger/call builds on other projects' changed build result to SUCCESS
+[todo-app] $ /bin/sh -xe /tmp/jenkins8358598662834188697.sh
++ echo service INTEGRATION TEST
+service INTEGRATION TEST
++ echo service DEPLOY TO STAGE
+service DEPLOY TO STAGE
+Waiting for the completion of [8mha:////4KVeDeas30zMuguFUM6SjZ9KrVZgYGE7Zkobsbj6ccD5AAAAmh+LCAAAAAAAAP9b85aBtbiIQSajNKU4P08vOT+vOD8nVc+jsiC1KCczL9svvyTVzHb1RttJBUeZGJg8GdhyUvPSSzJ8GJhLi3JKGIR8shLLEvVzEvPS9YNLijLz0q0rihik0IxzhtAgwxgggJGJgaGiAMgQLWGQ1c/KT9JPzs/Nzc8DM1NSC3LyK3WLyxOLcvUBHxq2+qIAAAA=[0mcommon » deploy-swarm
+[8mha:////4M6bLPO37M8CcrJpg0qykPy+a+bkYPOhdLlISnamLt6xAAAAnR+LCAAAAAAAAP9b85aBtbiIQSajNKU4P08vOT+vOD8nVc+jsiC1KCczL9svvyTVzHb1RttJBUeZGJg8GdhyUvPSSzJ8GJhLi3JKGIR8shLLEvVzEvPS9YNLijLz0q0rihik0IxzhtAgwxgggJGJgaGiAMiQLGFQ0M/KT9JPzs/Nzc8DM1NSC3LyK3WLyxOLcvWNLPUBEumvgKUAAAA=[0mcommon » deploy-swarm #29 completed. Result was SUCCESS
+[todo-app] $ /bin/sh -xe /tmp/jenkins4264211168904750030.sh
++ echo service UAT / FUNCTIONAL TEST
+service UAT / FUNCTIONAL TEST
++ echo service DEPLOY TO PROD
+service DEPLOY TO PROD
+Triggering projects: [8mha:////4KVeDeas30zMuguFUM6SjZ9KrVZgYGE7Zkobsbj6ccD5AAAAmh+LCAAAAAAAAP9b85aBtbiIQSajNKU4P08vOT+vOD8nVc+jsiC1KCczL9svvyTVzHb1RttJBUeZGJg8GdhyUvPSSzJ8GJhLi3JKGIR8shLLEvVzEvPS9YNLijLz0q0rihik0IxzhtAgwxgggJGJgaGiAMgQLWGQ1c/KT9JPzs/Nzc8DM1NSC3LyK3WLyxOLcvUBHxq2+qIAAAA=[0mcommon » deploy-swarm
+Finished: SUCCESS

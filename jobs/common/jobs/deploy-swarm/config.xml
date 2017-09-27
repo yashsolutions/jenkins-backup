@@ -155,6 +155,7 @@ class RedisQueue(object):
 response_id = str(uuid.uuid4())
 
 container_env = {}
+container_env[&apos;DEPLOY_ENV&apos;] = os.environ[&apos;DEPLOY_ENV&apos;]
 if os.environ[&apos;VIRTUAL_HOST&apos;] == &apos;0&apos;:
         container_env[&apos;VIRTUAL_HOST&apos;] = os.environ[&apos;SERVICE&apos;]+&apos;.&apos;+os.environ[&apos;DEPLOY_ENV&apos;]+&apos;.yashsolutions.com&apos;
 
@@ -176,7 +177,7 @@ q.put(json.dumps({
                 &apos;build_id&apos;: os.environ[&apos;BUILD_ID&apos;],
                 &apos;call_id&apos;: 0,
                 &apos;action&apos;: &apos;run_playbook&apos;,
-                &apos;playbook&apos;: &apos;prod_deploy_to_swarm&apos; if &apos;prod&apos; == os.environ[&apos;DEPLOY_ENV&apos;] else &apos;deploy_to_swarm&apos;,
+                &apos;playbook&apos;: &apos;deploy_to_swarm&apos;,
                 &apos;response_id&apos;: response_id,
                 &apos;service_env&apos;: os.environ[&apos;DEPLOY_ENV&apos;],
                 &apos;service&apos;: os.environ[&apos;SERVICE&apos;],
@@ -206,7 +207,7 @@ while True:
         if message[&apos;type&apos;] == &apos;end&apos;:
                 break
         else:
-                if &quot;failed=0&quot; in message[&apos;payload&apos;]:
+                if &quot;failed=0&quot; in message[&apos;payload&apos;] and &quot;unreachable=0&quot; in message[&apos;payload&apos;]:
                         is_success = True
 
 if not is_success:
@@ -214,5 +215,11 @@ if not is_success:
     </hudson.plugins.python.Python>
   </builders>
   <publishers/>
-  <buildWrappers/>
+  <buildWrappers>
+    <org.jenkinsci.plugins.buildnamesetter.BuildNameSetter plugin="build-name-setter@1.6.7">
+      <template>${DEPLOY_ENV}-${SERVICE}</template>
+      <runAtStart>true</runAtStart>
+      <runAtEnd>true</runAtEnd>
+    </org.jenkinsci.plugins.buildnamesetter.BuildNameSetter>
+  </buildWrappers>
 </project>

@@ -1,0 +1,22 @@
+commit f0e1b454b04befb5290db73c9567b955973fb1fc
+tree 96f1366d9a13f49cd2927b2ac10e4518bf65bbd4
+parent 5b97b73c6f78e238d887e4431a0f372057850fc9
+author Ashish Nanotkar <nanotkarashish@users.noreply.github.com> 2017-09-27 18:32:53 +0530
+committer GitHub <noreply@github.com> 2017-09-27 18:32:53 +0530
+
+    updated redis server endpoint
+
+
+
+:100644 100644 1264efa9e0d70a7bad8d54985aeda91adf6fcdc7 c5f849a852039e27dc9a828552fb1ed56f53004c M	status/status_check.py
+commit 5b97b73c6f78e238d887e4431a0f372057850fc9
+tree 16f1817d907257c63a06941df6d9ee594044595e
+parent 577492121e31d77c4b67b1ec83b138729478b408
+author Ashish Nanotkar <nanotkarashish@users.noreply.github.com> 2017-09-27 18:32:09 +0530
+committer GitHub <noreply@github.com> 2017-09-27 18:32:09 +0530
+
+    updated redis server endpoint
+
+
+
+:100644 100644 04b102519076e44b2387571efdc26230feda5853 37309ab75957f32997f43fa1f9c5e597da9d8482 M	status/server.py

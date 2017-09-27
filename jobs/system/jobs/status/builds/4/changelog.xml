@@ -1,0 +1,11 @@
+commit 9330a6787ed41060ca4668aa2311918786698ea4
+tree a142ea71863b0f0face09880998909d0f08a5a2b
+parent f0e1b454b04befb5290db73c9567b955973fb1fc
+author Ashish Nanotkar <nanotkarashish@users.noreply.github.com> 2017-09-27 19:59:57 +0530
+committer GitHub <noreply@github.com> 2017-09-27 19:59:57 +0530
+
+    adding logo on status page
+
+
+
+:100644 100644 37309ab75957f32997f43fa1f9c5e597da9d8482 0fcd5d7eb4be07cd254255acf6ce500f95bb1e18 M	status/server.py

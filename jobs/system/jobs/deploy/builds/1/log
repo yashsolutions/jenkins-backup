@@ -1,0 +1,128 @@
+Started by user [8mha:////4HSKTYekCqJtgUzvE/X25d7VYiaybRQPqPlqTWr6Yj8mAAAAmR+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAz+EgZe/dLi1CL9xOKMzOKMPAD2nB5TwgAAAA==[0mAshish Nanotkar
+Building in workspace /var/lib/jenkins/workspace/system/deploy
+Cloning the remote Git repository
+Cloning repository git@github.com:yashsolutions/dockerfiles.git
+ > git init /var/lib/jenkins/workspace/system/deploy # timeout=10
+Fetching upstream changes from git@github.com:yashsolutions/dockerfiles.git
+ > git --version # timeout=10
+ > git fetch --tags --progress git@github.com:yashsolutions/dockerfiles.git +refs/heads/*:refs/remotes/origin/*
+ > git config remote.origin.url git@github.com:yashsolutions/dockerfiles.git # timeout=10
+ > git config --add remote.origin.fetch +refs/heads/*:refs/remotes/origin/* # timeout=10
+ > git config remote.origin.url git@github.com:yashsolutions/dockerfiles.git # timeout=10
+Fetching upstream changes from git@github.com:yashsolutions/dockerfiles.git
+ > git fetch --tags --progress git@github.com:yashsolutions/dockerfiles.git +refs/heads/*:refs/remotes/origin/*
+ > git rev-parse refs/remotes/origin/master^{commit} # timeout=10
+ > git rev-parse refs/remotes/origin/origin/master^{commit} # timeout=10
+Checking out Revision 981603414dc7b3f122438eb84e1602e8ba8264a5 (refs/remotes/origin/master)
+Commit message: "updating for demo"
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f 981603414dc7b3f122438eb84e1602e8ba8264a5
+First time build. Skipping changelog.
+[deploy] $ /bin/sh -xe /tmp/jenkins5351161114597394008.sh
++ aws ecr get-login --region us-east-2
++ docker login -u AWS -p eyJwYXlsb2FkIjoiMDhsTnB4MVlIdWIxa3EzVEkyc0dtc2dtcGhCTzU2bUNIYVFya25Scy9NaU9GUk1FcDM5MjAvVEFWZFFia3NwTVowMlUxVmZtVzhEbXFham1Pc3dGZCtKUzVLUllqL3hUTVZmTDBpRU50WkVYNVdMVUhmOGpjd0JYRDhtVDZqeC91a0VUb1o4dGcxWWI0bUZpYmxtellxZ1BDbFV6cG1pS2h1SkNXNE5aM2JyRVp1Y25GalhNU2FKbitwbmVHNjByZlVLZ3NYa3p3bnpCMW5vTnp4R3NTYkszbVVtTldNSnZ4aWRhRm96WXEwZkhSbXROWVc1M1hKSjhwQXg5NjgrUnpUT0tMTmlIS1JTUmlucjFJMW40ckNHRXVnUGFOYlMzcEx3eTgycCtWZ3pNbkE4OU5TYW9lYmtZZ0pTd1VHeUJiTEZzeDkzWGx1UEFHTzFYL0RJVDc5MGZIOWhhNUhlOTZ2T0lJSWZWS3FROUY0Z25lbnRhcTEvS01NeFFxdFJqRWRIeU1GU3BBQmJjQTNMNjJoUEJNenhxdk9uODNQdDR3WlJnVFpBS0FRVThVZkpDeGY0ZFJQVDV6M2E5dE9sL05MRGQzNW5EUHVjd1BwdEpZTXkrN1IzTkh5cVFjeVRGWjdLV29YZlZ5VnhOWCtmVU9GcFlJaHU1U1pKMlY5K3lCUVk5ZC8xamZFNXBFSnFITjdiZVF2Y2JHR3YxWTlzUXAyUjEwcTRhWWRhOXZXK2lPamEwa0JVa0x2OXFtM1UzVGZjemJqRnY3TlVadnltNXpMNzJSRzVKdGNnbmhESEN1c2pzcDdYL0ZGbmdtQUxpelZZSGM5eVB4T3lIdTMxSy9lbzhqMStjMkU5cXdVVkxjR21uVVpXT2ZwUzRYM2p6aCtMTGc2dTc0ZUNONC90dVVxYXB4MHVoS2FzelgvalQzcThvMkNHdUp1RlIraG5DcEZJK1lSdndFQTRMc3JyVitpQUFUQncyeWVpb290RTdnUHAxNXAwbTRxWEVqV1Z0NXAvVGNBZkpqK052aTE4NjVUa0JIQSttUGNiYkt6R0dnT3NhY3NJNWIyTjFZcHlWMmxSNy9sVmJidUlhbTdCL0dLUHF5MXZ3ZU1QL2d5ZzJvVGxIWTAvdDhwalcrU2J6bGdSUm83VURpcUMrL21SeUI3TENySE9OMEdTMXZTRUw1aC9EVEJ2U0U2MzBwTDJISTdvTXZWZ1pzVHJzV3E4ajVIYmZrTjRwVnlqTkM5NEpmWVFxYURiZm1OY21DTy8yeHVwNWp2TUpNcXROdlV4QnFFRC8zcU1saUVtL3JPd1ZSbVRkVkxveDRXakJhTXdFLzZrTU5YTS9EQ1hXL0wxMklpOVkwSEdmNHl1aG96Q3NkZ2hhSTlUeDRGUHlnWXdnV0ZwUnI3Y1h1YXRqM2s4Ykd5emVFMGJ5Y1FWUyIsImRhdGFrZXkiOiJBUUVCQUhqQjcvaWd3TWc0TlB3YXVyeFNJWXg0SGZueHVHYy80OGJEd3Z3RHBOWVdaZ0FBQUg0d2ZBWUpLb1pJaHZjTkFRY0dvRzh3YlFJQkFEQm9CZ2txaGtpRzl3MEJCd0V3SGdZSllJWklBV1VEQkFFdU1CRUVEQ2RMNWhXSHhDSGdaZHU2NVFJQkVJQTcwVXdWUnZ4UHN3V3NrNkZSbDU4SlhrcHB3TlVXelo1MEJlR0xLanF0ek1wTXM5VDEraCs4QXNYdWlEekE5bHl5bVUxNmZLeDQrN0dqNmUwPSIsInZlcnNpb24iOiIxIiwidHlwZSI6IkRBVEFfS0VZIn0= -e none https://364238614392.dkr.ecr.us-east-2.amazonaws.com
+Flag --email has been deprecated, will be removed in 17.06.
+Login Succeeded
++ cd deploy
++ docker build -t system/deploy .
+Sending build context to Docker daemon  11.26kB
+Step 1/8 : FROM ubuntu
+ ---> 2d696327ab2e
+Step 2/8 : RUN apt-get update && apt-get install -y python-pip supervisor iputils-ping
+ ---> Using cache
+ ---> c13beb289da1
+Step 3/8 : RUN pip install tornado redis requests python-jenkins
+ ---> Running in 71c5e2bdce6a
+Collecting tornado
+  Downloading tornado-4.5.2.tar.gz (483kB)
+Collecting redis
+  Downloading redis-2.10.6-py2.py3-none-any.whl (64kB)
+Collecting requests
+  Downloading requests-2.18.4-py2.py3-none-any.whl (88kB)
+Collecting python-jenkins
+  Downloading python_jenkins-0.4.15-py2-none-any.whl
+Collecting singledispatch (from tornado)
+  Downloading singledispatch-3.4.0.3-py2.py3-none-any.whl
+Collecting certifi (from tornado)
+  Downloading certifi-2017.7.27.1-py2.py3-none-any.whl (349kB)
+Collecting backports_abc>=0.4 (from tornado)
+  Downloading backports_abc-0.5-py2.py3-none-any.whl
+Collecting urllib3<1.23,>=1.21.1 (from requests)
+  Downloading urllib3-1.22-py2.py3-none-any.whl (132kB)
+Collecting idna<2.7,>=2.5 (from requests)
+  Downloading idna-2.6-py2.py3-none-any.whl (56kB)
+Collecting chardet<3.1.0,>=3.0.2 (from requests)
+  Downloading chardet-3.0.4-py2.py3-none-any.whl (133kB)
+Collecting pbr>=0.8.2 (from python-jenkins)
+  Downloading pbr-3.1.1-py2.py3-none-any.whl (99kB)
+Collecting six>=1.3.0 (from python-jenkins)
+  Downloading six-1.11.0-py2.py3-none-any.whl
+Collecting multi-key-dict (from python-jenkins)
+  Downloading multi_key_dict-2.0.3.tar.gz
+Building wheels for collected packages: tornado, multi-key-dict
+  Running setup.py bdist_wheel for tornado: started
+  Running setup.py bdist_wheel for tornado: finished with status 'done'
+  Stored in directory: /root/.cache/pip/wheels/b3/47/3a/96e12476829cb196adabc879fedb72f1bb2c8613b6961e78e7
+  Running setup.py bdist_wheel for multi-key-dict: started
+  Running setup.py bdist_wheel for multi-key-dict: finished with status 'done'
+  Stored in directory: /root/.cache/pip/wheels/7a/58/46/ded159f81ab3f2fce93eca7eea0b6d7db12375690acd8040f2
+Successfully built tornado multi-key-dict
+Installing collected packages: six, singledispatch, certifi, backports-abc, tornado, redis, urllib3, idna, chardet, requests, pbr, multi-key-dict, python-jenkins
+Successfully installed backports-abc-0.5 certifi-2017.7.27.1 chardet-3.0.4 idna-2.6 multi-key-dict-2.0.3 pbr-3.1.1 python-jenkins-0.4.15 redis-2.10.6 requests-2.18.4 singledispatch-3.4.0.3 six-1.11.0 tornado-4.5.2 urllib3-1.22
+[91mYou are using pip version 8.1.1, however version 9.0.1 is available.
+You should consider upgrading via the 'pip install --upgrade pip' command.
+[0m ---> 1ba4e2289a38
+Removing intermediate container 71c5e2bdce6a
+Step 4/8 : ADD server.py /server.py
+ ---> da7cdd770910
+Removing intermediate container c2a4b7f9c263
+Step 5/8 : RUN chmod +x /server.py
+ ---> Running in 9e3e25585bf7
+ ---> 78dfcaf6846b
+Removing intermediate container 9e3e25585bf7
+Step 6/8 : ADD server.conf /etc/supervisor/conf.d/server.conf
+ ---> 14217589bf09
+Removing intermediate container 8e83e22fe25a
+Step 7/8 : EXPOSE 9000
+ ---> Running in ecdeff23a5fd
+ ---> d746780435ca
+Removing intermediate container ecdeff23a5fd
+Step 8/8 : CMD /usr/bin/supervisord
+ ---> Running in c8445e8f1f66
+ ---> 0b49022f2e93
+Removing intermediate container c8445e8f1f66
+Successfully built 0b49022f2e93
+Successfully tagged system/deploy:latest
++ docker tag system/deploy:latest 364238614392.dkr.ecr.us-east-2.amazonaws.com/system/deploy:981603414dc7b3f122438eb84e1602e8ba8264a5
++ docker push 364238614392.dkr.ecr.us-east-2.amazonaws.com/system/deploy:981603414dc7b3f122438eb84e1602e8ba8264a5
+The push refers to a repository [364238614392.dkr.ecr.us-east-2.amazonaws.com/system/deploy]
+7b29f9de4975: Preparing
+b5cdafaf9bd0: Preparing
+a78092991855: Preparing
+124eefde3d63: Preparing
+0727f648d6d2: Preparing
+7f7a065d245a: Preparing
+f96e6b25195f: Preparing
+c56153825175: Preparing
+ae620432889d: Preparing
+a2022691bf95: Preparing
+7f7a065d245a: Waiting
+f96e6b25195f: Waiting
+c56153825175: Waiting
+ae620432889d: Waiting
+a2022691bf95: Waiting
+b5cdafaf9bd0: Pushed
+a78092991855: Pushed
+7b29f9de4975: Pushed
+7f7a065d245a: Pushed
+f96e6b25195f: Pushed
+c56153825175: Pushed
+124eefde3d63: Pushed
+ae620432889d: Pushed
+a2022691bf95: Pushed
+0727f648d6d2: Pushed
+981603414dc7b3f122438eb84e1602e8ba8264a5: digest: sha256:1cbb82abf53daab79a4fe57b7c0c24736cfed3dfdde45ac27f056d0659806460 size: 2404
+Waiting for the completion of [8mha:////4KVeDeas30zMuguFUM6SjZ9KrVZgYGE7Zkobsbj6ccD5AAAAmh+LCAAAAAAAAP9b85aBtbiIQSajNKU4P08vOT+vOD8nVc+jsiC1KCczL9svvyTVzHb1RttJBUeZGJg8GdhyUvPSSzJ8GJhLi3JKGIR8shLLEvVzEvPS9YNLijLz0q0rihik0IxzhtAgwxgggJGJgaGiAMgQLWGQ1c/KT9JPzs/Nzc8DM1NSC3LyK3WLyxOLcvUBHxq2+qIAAAA=[0mcommon » deploy-swarm
+[8mha:////4CCz1t1yWzjhEajYiEiuYHgsR/zeKbemPlYQEtpm5puXAAAAnR+LCAAAAAAAAP9b85aBtbiIQSajNKU4P08vOT+vOD8nVc+jsiC1KCczL9svvyTVzHb1RttJBUeZGJg8GdhyUvPSSzJ8GJhLi3JKGIR8shLLEvVzEvPS9YNLijLz0q0rihik0IxzhtAgwxgggJGJgaGiAMhQLmFQ0M/KT9JPzs/Nzc8DM1NSC3LyK3WLyxOLcvVNDfUBf8u7NKUAAAA=[0mcommon » deploy-swarm system-deploy completed. Result was SUCCESS
+Build step 'Trigger/call builds on other projects' changed build result to SUCCESS
+Finished: SUCCESS

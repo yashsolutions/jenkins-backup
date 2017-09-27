@@ -1,0 +1,133 @@
+Started by user [8mha:////4HSKTYekCqJtgUzvE/X25d7VYiaybRQPqPlqTWr6Yj8mAAAAmR+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAz+EgZe/dLi1CL9xOKMzOKMPAD2nB5TwgAAAA==[0mAshish Nanotkar
+Building in workspace /var/lib/jenkins/workspace/system/prometheus
+Cloning the remote Git repository
+Cloning repository git@github.com:yashsolutions/dockerfiles.git
+ > git init /var/lib/jenkins/workspace/system/prometheus # timeout=10
+Fetching upstream changes from git@github.com:yashsolutions/dockerfiles.git
+ > git --version # timeout=10
+ > git fetch --tags --progress git@github.com:yashsolutions/dockerfiles.git +refs/heads/*:refs/remotes/origin/*
+ > git config remote.origin.url git@github.com:yashsolutions/dockerfiles.git # timeout=10
+ > git config --add remote.origin.fetch +refs/heads/*:refs/remotes/origin/* # timeout=10
+ > git config remote.origin.url git@github.com:yashsolutions/dockerfiles.git # timeout=10
+Fetching upstream changes from git@github.com:yashsolutions/dockerfiles.git
+ > git fetch --tags --progress git@github.com:yashsolutions/dockerfiles.git +refs/heads/*:refs/remotes/origin/*
+ > git rev-parse refs/remotes/origin/master^{commit} # timeout=10
+ > git rev-parse refs/remotes/origin/origin/master^{commit} # timeout=10
+Checking out Revision 13e6006ba7930aa93fb1bb41841f86ba27dae2fd (refs/remotes/origin/master)
+Commit message: "config update for demo"
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f 13e6006ba7930aa93fb1bb41841f86ba27dae2fd
+First time build. Skipping changelog.
+[prometheus] $ /bin/sh -xe /tmp/jenkins3771288904305914843.sh
++ aws ecr get-login --region us-east-2
++ docker login -u AWS -p eyJwYXlsb2FkIjoiSDZ4UGhWMVRUTlZzdTNUeVJ0TTZlZEZQdXpTclptVVNBTkFFL245WjNMbHFEYTNxRXpDVE1Uam9Mc2ZaQ1c2cDR2QVZOMmY2dzBOK3ZMUE9pV1NzcmZZVnlpRjVxTkNNZ1BKVUo4MWJpU2crMm40cEpxdEFVMHFYckJxNVp0OGVxSGFTUFIyem5xaHFacDN6STFLL29QeHF4bDZyWEcvbVpqcWYxOHpOZURYTDY4dDYxbXhiY29pa3pyQjFmTmgwWUNZaGZKcjBQQkFqOExZcm5TNFVpcS9TcmRBVDdFdXIyTFVDbFNEdXpWTEFtUzVGL00vdW1sZ2c4V09NR1lKU3dFNU5KdFBTa3FMUy9ZR05oSnZFdWdtUEh1SW5aMkJSRjFWSzVuNEVWQ3JibjZ0TElSaW1KcDRRQWl2UVlYTHBydWV3bjVYSm5NaGJleVVER0dYQytOcnNqaVY5RnhENStyVnUvU2h0NmFER0UrRDlkN2ZGTkRwZ2JLQzBTYmdHMTh4czNUcUh4R1l5elE5d2o3SjFUSC9RQ1V5MXQ5V3pPYTU1Sm1ZSHhySW1QZkxla2dNdStJQk0vNzMySmpMT09Ld2owYzl3bXFyZ0tCNVpQREFYdTNXSzVKU3BpV0tBMjJZSVpNZU5Zc01BaWxaRjM3OXFXT0x5Qm1HeHpDSFZXLytub25JT3dQNGlmSHFZeTM4bUkzamJKanR5eFFUbHV6amtDQUZKV3M3aDZoWS9vaGY0eFZkV3ZRZ09YSUFkS1dPL25yaytvdjcveFN3SzRKd3pSSHlERHpORGgxMElpT25hbkNNejRGQkZBN2x4R3RsUWtNMCtJTmRsNkFYRGJnR05OREoxYm8vTUNUNmNSR0pjMS9aeFlaMlZFM3Z0TVB0RC9EYmFzaXdzSHUzNDdKTkE4bGtnU1hCQWZkUGRVTktpbU5GZlBQcDNZemJZWkthNkdCUlNJL3gyVWVoWlB6a1RBN3JBR3FrV2VoYzhPSDdvb1c4dE1kNnlQbFp4UHRyVUljcHZYWmR2OU9KLzBWN0F2UTEybjhVWEtxTGVZZGRscTNWaE9yTGI3YTcyVnljNEUxNUU3N3pEazFSR0ZCUHdMNEo5MEhuRTNlejU3UlpyV0U2Z0gzWElBdURKNUNxa0Zxc2paRFcxWVZ5NUQ0YWZVRlJpVjhDb252V3ArQTYyTGh1aitScGlLZmVYQXpCUWpna3B5M0JGOEtOZjlNOFU1dUxaNHI5dTdoL0VjMUJ0VlVGQWN0SXY3UWx6ck5zMUJGWWdtWDE3dE9KL2MxaDMyTFo1WGRXWUtCbWJFSXBzdWh0ZVUzZ3FlRkNXMVFyRS9saTJ4Z2xFeW52aHVaMzdWQUwyOXpNMER3SEZTQmhkMVJUZzhYejNRY01iODNJZkhOaDFFZ1MxeDRBaGpxazMvYTQrY3AvSyIsImRhdGFrZXkiOiJBUUVCQUhqQjcvaWd3TWc0TlB3YXVyeFNJWXg0SGZueHVHYy80OGJEd3Z3RHBOWVdaZ0FBQUg0d2ZBWUpLb1pJaHZjTkFRY0dvRzh3YlFJQkFEQm9CZ2txaGtpRzl3MEJCd0V3SGdZSllJWklBV1VEQkFFdU1CRUVEQWdiZkRtTTdtRTRPOXpadndJQkVJQTc4RkI4eHh5OXhMMFR0d3FvaWp4Y2xzZHJDVTh0R01nZGFFN1BIeUhBQlpoK2ZqMkh5a0N0WVl3YURYWnNCTEtlY08xbE5HV2s3dW9nVDVzPSIsInZlcnNpb24iOiIxIiwidHlwZSI6IkRBVEFfS0VZIn0= -e none https://364238614392.dkr.ecr.us-east-2.amazonaws.com
+Flag --email has been deprecated, will be removed in 17.06.
+Login Succeeded
++ cd prometheus
++ docker build -t system/prometheus .
+Sending build context to Docker daemon  6.144kB
+Step 1/5 : FROM prom/prometheus
+latest: Pulling from prom/prometheus
+aab39f0bc16d: Pulling fs layer
+a3ed95caeb02: Pulling fs layer
+2cd9e239cea6: Pulling fs layer
+6e58018ba337: Pulling fs layer
+715b5d2d5a6f: Pulling fs layer
+56099c7a685d: Pulling fs layer
+c2527f2d881e: Pulling fs layer
+6813296fb4f8: Pulling fs layer
+c7c7ee2e7054: Pulling fs layer
+c2527f2d881e: Waiting
+6813296fb4f8: Waiting
+c7c7ee2e7054: Waiting
+6e58018ba337: Waiting
+715b5d2d5a6f: Waiting
+56099c7a685d: Waiting
+a3ed95caeb02: Verifying Checksum
+a3ed95caeb02: Download complete
+2cd9e239cea6: Verifying Checksum
+2cd9e239cea6: Download complete
+aab39f0bc16d: Verifying Checksum
+aab39f0bc16d: Download complete
+aab39f0bc16d: Pull complete
+56099c7a685d: Verifying Checksum
+56099c7a685d: Download complete
+a3ed95caeb02: Pull complete
+c2527f2d881e: Verifying Checksum
+c2527f2d881e: Download complete
+715b5d2d5a6f: Verifying Checksum
+715b5d2d5a6f: Download complete
+2cd9e239cea6: Pull complete
+6e58018ba337: Verifying Checksum
+6e58018ba337: Download complete
+c7c7ee2e7054: Verifying Checksum
+c7c7ee2e7054: Download complete
+6813296fb4f8: Verifying Checksum
+6813296fb4f8: Download complete
+6e58018ba337: Pull complete
+715b5d2d5a6f: Pull complete
+56099c7a685d: Pull complete
+c2527f2d881e: Pull complete
+6813296fb4f8: Pull complete
+c7c7ee2e7054: Pull complete
+Digest: sha256:cb935313642707dbe6fe2ebf03e0390649d01f646c82284266de31b49bdf4b46
+Status: Downloaded newer image for prom/prometheus:latest
+ ---> 4ede871a94fd
+Step 2/5 : ADD prometheus.yml /etc/prometheus/
+ ---> e0a7c6a2e989
+Removing intermediate container e4dac7f216ef
+Step 3/5 : ADD alert.rules /etc/prometheus/
+ ---> 112f91523e56
+Removing intermediate container 39cca1a59f1e
+Step 4/5 : ENTRYPOINT /bin/prometheus
+ ---> Running in 219fb5db7dfa
+ ---> 631da5ebe611
+Removing intermediate container 219fb5db7dfa
+Step 5/5 : CMD -config.file=/etc/prometheus/prometheus.yml -alertmanager.url=http://prometheus-alertmanager.internal.aptitudelabs.com/
+ ---> Running in b82bfbd6eda5
+ ---> f91c819e8074
+Removing intermediate container b82bfbd6eda5
+Successfully built f91c819e8074
+Successfully tagged system/prometheus:latest
++ docker tag system/prometheus:latest 364238614392.dkr.ecr.us-east-2.amazonaws.com/system/prometheus:13e6006ba7930aa93fb1bb41841f86ba27dae2fd
++ docker push 364238614392.dkr.ecr.us-east-2.amazonaws.com/system/prometheus:13e6006ba7930aa93fb1bb41841f86ba27dae2fd
+The push refers to a repository [364238614392.dkr.ecr.us-east-2.amazonaws.com/system/prometheus]
+51af826a039e: Preparing
+8cdb2dce675c: Preparing
+5f70bf18a086: Preparing
+5f70bf18a086: Preparing
+5f70bf18a086: Preparing
+5f70bf18a086: Preparing
+5f70bf18a086: Preparing
+17f7ed02ceba: Preparing
+f4e74c91efea: Preparing
+655c5b7a6a82: Preparing
+76901493949f: Preparing
+360505affe58: Preparing
+575c0c27c256: Preparing
+5f70bf18a086: Preparing
+1692ded805c8: Preparing
+5f70bf18a086: Preparing
+6a749002dd6a: Preparing
+76901493949f: Waiting
+360505affe58: Waiting
+575c0c27c256: Waiting
+1692ded805c8: Waiting
+6a749002dd6a: Waiting
+655c5b7a6a82: Waiting
+51af826a039e: Pushed
+f4e74c91efea: Pushed
+8cdb2dce675c: Pushed
+17f7ed02ceba: Pushed
+655c5b7a6a82: Pushed
+76901493949f: Pushed
+5f70bf18a086: Pushed
+360505affe58: Pushed
+1692ded805c8: Pushed
+6a749002dd6a: Pushed
+575c0c27c256: Pushed
+13e6006ba7930aa93fb1bb41841f86ba27dae2fd: digest: sha256:83964a24f8fb83bc90770d01828f1bc201110d8077ad5eb3d72a322bf8c51ffa size: 3846
+Waiting for the completion of [8mha:////4KVeDeas30zMuguFUM6SjZ9KrVZgYGE7Zkobsbj6ccD5AAAAmh+LCAAAAAAAAP9b85aBtbiIQSajNKU4P08vOT+vOD8nVc+jsiC1KCczL9svvyTVzHb1RttJBUeZGJg8GdhyUvPSSzJ8GJhLi3JKGIR8shLLEvVzEvPS9YNLijLz0q0rihik0IxzhtAgwxgggJGJgaGiAMgQLWGQ1c/KT9JPzs/Nzc8DM1NSC3LyK3WLyxOLcvUBHxq2+qIAAAA=[0mcommon » deploy-swarm
+[8mha:////4NqazKd7rICeWP7hqXH/LhMGY/vfXqmF9SyaINexpE9NAAAAnR+LCAAAAAAAAP9b85aBtbiIQSajNKU4P08vOT+vOD8nVc+jsiC1KCczL9svvyTVzHb1RttJBUeZGJg8GdhyUvPSSzJ8GJhLi3JKGIR8shLLEvVzEvPS9YNLijLz0q0rihik0IxzhtAgwxgggJGJgaGiAMiQLGFQ0M/KT9JPzs/Nzc8DM1NSC3LyK3WLyxOLcvWNLfUBJYNtgaUAAAA=[0mcommon » deploy-swarm #39 completed. Result was SUCCESS
+Build step 'Trigger/call builds on other projects' changed build result to SUCCESS
+Finished: SUCCESS

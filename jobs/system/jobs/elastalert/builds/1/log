@@ -1,0 +1,1418 @@
+Started by user [8mha:////4HSKTYekCqJtgUzvE/X25d7VYiaybRQPqPlqTWr6Yj8mAAAAmR+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAz+EgZe/dLi1CL9xOKMzOKMPAD2nB5TwgAAAA==[0mAshish Nanotkar
+Building in workspace /var/lib/jenkins/workspace/system/elastalert
+Cloning the remote Git repository
+Cloning repository git@github.com:yashsolutions/dockerfiles.git
+ > git init /var/lib/jenkins/workspace/system/elastalert # timeout=10
+Fetching upstream changes from git@github.com:yashsolutions/dockerfiles.git
+ > git --version # timeout=10
+ > git fetch --tags --progress git@github.com:yashsolutions/dockerfiles.git +refs/heads/*:refs/remotes/origin/*
+ > git config remote.origin.url git@github.com:yashsolutions/dockerfiles.git # timeout=10
+ > git config --add remote.origin.fetch +refs/heads/*:refs/remotes/origin/* # timeout=10
+ > git config remote.origin.url git@github.com:yashsolutions/dockerfiles.git # timeout=10
+Fetching upstream changes from git@github.com:yashsolutions/dockerfiles.git
+ > git fetch --tags --progress git@github.com:yashsolutions/dockerfiles.git +refs/heads/*:refs/remotes/origin/*
+ > git rev-parse refs/remotes/origin/master^{commit} # timeout=10
+ > git rev-parse refs/remotes/origin/origin/master^{commit} # timeout=10
+Checking out Revision 577492121e31d77c4b67b1ec83b138729478b408 (refs/remotes/origin/master)
+Commit message: "config update for demo"
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f 577492121e31d77c4b67b1ec83b138729478b408
+First time build. Skipping changelog.
+[elastalert] $ /bin/sh -xe /tmp/jenkins372876466387205862.sh
++ aws ecr get-login --region us-east-2
++ docker login -u AWS -p eyJwYXlsb2FkIjoiTEFVQVFjM0pPRWI1M2tZMUg3NHhzY3lRUDN6c0ZhZ0Y2ckFyR01USzJpZ0wvRFlTRExBSk5KWDNzcWJpaFFhbUk0aldiTnRwUGpiZm8xTE9kRExxTmlMY00remR2Vm9IZ1p4Zk11ZE00UVFXMmFqYTc3dGNjWVVQUVNCL0xVZ29oUGFiVmxaV282RjVmamtPYWlrSXlZeDZvNjBFWURtVk9VcHVCalNKTWhyNnV4d2NnU0h6L2FSTEVUL3BqVU01QlFzR29YRFJuSkc2SjhVcTU5V0RnQ3lWM2o2aC9zYWNsdWRaNjhHN1VSQTJ6dFdLNG9jWElkWVlSbWMyeWltemtHN3pKUkttN3ptM1FTaVJ4VHkxZGx3VlVoM01oQnhnMnlYSmhFNUEyemV6L1ZsRDMwcmx2Uk44OWJsZzMzZWFGVWIvNTJoa2dQdGdVam9jS01RckhRaEROTllUeHU2VjZ0elZEazh1QVU3TmZmbGxCY3Qwb2hPSzZ1L3BNUG5DVmJJM3g5akIwVWpnV2lZc2JtaklIODhhWExIKzFIaEtNWTJoOEVKa0g5ZFFqK2RySXZPMWFqK1hMUFV2bE9kRlpvcWF0cEt2TjU2NmFBT2JUSVZaaTMvWTBzOGdGMFBBUU5hS1B0WGk1Q0ZqZUdzU1R1ZW9qTkUxbmtoaFlkbFRtb2Y1aGhiUVlPRnFQNjIwemlPcUpFZkZMWnBoMGRNUHlVN05FSHZ6RzN5dE1aQVNkalNCT0g1WTR0eDZhbGp4UW5OdlA4SnlRSWpyWmNlcU5DOUlQSDNKdXRXRVdSc2xHTzRFejlkQ0ZFbFM2SGtJMCtldE1ScS9nNDM3YkN2V05NbytLTW8ybS9sTksvUUdvajRYRkxBZHZNYVNGMGNKelpudFZ0WUYwSHBGQng1NVc4YWF5Mm11WlJrV09LTUxCMmhvaU8vdjNpRldJc2p6eHMwUmxMbUIzd3VHQmU1eTV3RjNUR01lS0ZhYlNjOWRYc0ZSQVdqS2w2NmtFT1htZUJsSDVmQ0hNUEhmZjg4OU83QmxBZ3hqVVJXNlZmUnBmWFNZZ0V3TVRPWVFMZEMxTGVZSWg4QzZDY0lJNHhFc3hRakVOQ2U1SHQveDVESU5YL1ROZ1d6TXptS0xtMmhQM0ZSVjd3VWdDVERRRUtjbFhpRUJWMXNOaUR3bEhoSnFlVzVUNFVZRGlFS21zRmZEZlBldkg3STVZZzNucFNSWERjZExteHhKVzgzUWh0di83T0lNcHBLd3UvNjNFc2RpdXBlblVFWXl6OUQvOEdrVktlT09BKzRudHdwTUFVSWhBL2FEWUNmN280SGdkeU0xcVAwa3pKY3pXRjNlbWVHMUhiemFFREY5blc5b3FNYUY5cFdzMVlaQUpaMEhmcEhUcW5uc1hybDdzcHVPWDBYUjJPZXUyTmtzME42QSIsImRhdGFrZXkiOiJBUUVCQUhqQjcvaWd3TWc0TlB3YXVyeFNJWXg0SGZueHVHYy80OGJEd3Z3RHBOWVdaZ0FBQUg0d2ZBWUpLb1pJaHZjTkFRY0dvRzh3YlFJQkFEQm9CZ2txaGtpRzl3MEJCd0V3SGdZSllJWklBV1VEQkFFdU1CRUVETHNqU3JLVlNoYkFQcmFRQWdJQkVJQTdpNzJheWFMRE5ONkRwV3lrQzlvU0Rha0hmZWpBV1A2Y0JveW14NFNBbXVGZVZ0d1BJbmlFbFovRFd5ZENNR1lNWUZCT2hGamdhRDZLamlBPSIsInZlcnNpb24iOiIxIiwidHlwZSI6IkRBVEFfS0VZIn0= -e none https://364238614392.dkr.ecr.us-east-2.amazonaws.com
+Flag --email has been deprecated, will be removed in 17.06.
+Login Succeeded
++ cd elastalert
++ docker build -t system/elastalert .
+Sending build context to Docker daemon  20.99kB
+Step 1/24 : FROM iron/python:2
+2: Pulling from iron/python
+c52e3ed763ff: Pulling fs layer
+789cf808491a: Pulling fs layer
+d1b635efed57: Pulling fs layer
+c52e3ed763ff: Verifying Checksum
+c52e3ed763ff: Download complete
+789cf808491a: Verifying Checksum
+789cf808491a: Download complete
+c52e3ed763ff: Pull complete
+d1b635efed57: Verifying Checksum
+d1b635efed57: Download complete
+789cf808491a: Pull complete
+d1b635efed57: Pull complete
+Digest: sha256:847c4758d101a0c0ea8827b4c9971bc0f15dedea1e51414ce04f88bcd5f0fc6b
+Status: Downloaded newer image for iron/python:2
+ ---> 4c72ca003fce
+Step 2/24 : ENV SET_CONTAINER_TIMEZONE false
+ ---> Running in 60634ffb3d03
+ ---> cba5ce14a732
+Removing intermediate container 60634ffb3d03
+Step 3/24 : ENV CONTAINER_TIMEZONE Asia/Kolkata
+ ---> Running in 42082f3b9b17
+ ---> 703104b0ecaa
+Removing intermediate container 42082f3b9b17
+Step 4/24 : ENV ELASTALERT_URL https://github.com/Yelp/elastalert/archive/master.zip
+ ---> Running in 95c963b322a6
+ ---> b6ec6952a6d4
+Removing intermediate container 95c963b322a6
+Step 5/24 : ENV CONFIG_DIR /opt/config
+ ---> Running in ec1ce92b0557
+ ---> edfd751394af
+Removing intermediate container ec1ce92b0557
+Step 6/24 : ENV RULES_DIRECTORY /opt/rules
+ ---> Running in 3cece51a658a
+ ---> ad1b0c325c2a
+Removing intermediate container 3cece51a658a
+Step 7/24 : ENV ELASTALERT_CONFIG ${CONFIG_DIR}/elastalert_config.yaml
+ ---> Running in 0e9d559245b0
+ ---> 6991cc6eb7f4
+Removing intermediate container 0e9d559245b0
+Step 8/24 : ENV LOG_DIR /opt/logs
+ ---> Running in 8ded4d869efd
+ ---> c895132ba74c
+Removing intermediate container 8ded4d869efd
+Step 9/24 : ENV ELASTALERT_DIRECTORY_NAME elastalert
+ ---> Running in cb351e5985b8
+ ---> c168d0973d7a
+Removing intermediate container cb351e5985b8
+Step 10/24 : ENV ELASTALERT_HOME /opt/${ELASTALERT_DIRECTORY_NAME}
+ ---> Running in 5641911ba496
+ ---> cb0b52d3824c
+Removing intermediate container 5641911ba496
+Step 11/24 : ENV ELASTALERT_SUPERVISOR_CONF ${CONFIG_DIR}/elastalert_supervisord.conf
+ ---> Running in 328e711e2259
+ ---> cc5c84ac80db
+Removing intermediate container 328e711e2259
+Step 12/24 : ENV ELASTICSEARCH_HOST 10.0.5.4
+ ---> Running in 80e929f4a570
+ ---> 2fb219f326ea
+Removing intermediate container 80e929f4a570
+Step 13/24 : ENV ELASTICSEARCH_PORT 9200
+ ---> Running in 6c44faadac7c
+ ---> 8429c5f31f5e
+Removing intermediate container 6c44faadac7c
+Step 14/24 : WORKDIR /opt
+ ---> 5aa1d7dbcaaa
+Removing intermediate container e31447fbc40a
+Step 15/24 : COPY ./start-elastalert.sh /opt/
+ ---> 9aca5db78c05
+Removing intermediate container 8a32eb32b4c5
+Step 16/24 : RUN apk update && apk upgrade
+ ---> Running in 2e49cb1acac6
+fetch http://dl-4.alpinelinux.org/alpine/v3.3/main/x86_64/APKINDEX.tar.gz
+fetch http://dl-4.alpinelinux.org/alpine/v3.3/community/x86_64/APKINDEX.tar.gz
+v3.3.3-347-g177eb88 [http://dl-4.alpinelinux.org/alpine/v3.3/main]
+v3.3.3-294-g70e4c85 [http://dl-4.alpinelinux.org/alpine/v3.3/community]
+OK: 5861 distinct packages available
+Upgrading critical system libraries and apk-tools:
+(1/1) Upgrading apk-tools (2.6.5-r1 -> 2.6.9-r0)
+Executing busybox-1.24.1-r7.trigger
+Continuing the upgrade transaction with new apk-tools:
+(1/13) Upgrading musl (1.1.12-r2 -> 1.1.12-r7)
+(2/13) Upgrading busybox (1.24.1-r7 -> 1.24.2-r1)
+Executing busybox-1.24.2-r1.post-upgrade
+(3/13) Upgrading zlib (1.2.8-r2 -> 1.2.11-r0)
+(4/13) Upgrading libcrypto1.0 (1.0.2f-r0 -> 1.0.2k-r0)
+(5/13) Upgrading libssl1.0 (1.0.2f-r0 -> 1.0.2k-r0)
+(6/13) Upgrading openssl (1.0.2f-r0 -> 1.0.2k-r0)
+(7/13) Upgrading ca-certificates (20160104-r2 -> 20161130-r0)
+(8/13) Upgrading musl-utils (1.1.12-r2 -> 1.1.12-r7)
+(9/13) Upgrading expat (2.1.0-r2 -> 2.2.0-r0)
+(10/13) Upgrading ncurses-terminfo-base (6.0-r6 -> 6.0-r7)
+(11/13) Upgrading ncurses-terminfo (6.0-r6 -> 6.0-r7)
+(12/13) Upgrading ncurses-libs (6.0-r6 -> 6.0-r7)
+(13/13) Upgrading python (2.7.11-r3 -> 2.7.12-r0)
+Executing busybox-1.24.2-r1.trigger
+Executing ca-certificates-20161130-r0.trigger
+OK: 53 MiB in 23 packages
+ ---> edca96a73fb2
+Removing intermediate container 2e49cb1acac6
+Step 17/24 : RUN apk add ca-certificates openssl-dev libffi-dev python-dev gcc musl-dev tzdata openntpd &&     rm -rf /var/cache/apk/* &&     wget https://bootstrap.pypa.io/get-pip.py &&     python get-pip.py &&     rm get-pip.py &&     wget ${ELASTALERT_URL} &&     unzip *.zip &&     rm *.zip &&     mv e* ${ELASTALERT_DIRECTORY_NAME}
+ ---> Running in 6513cfc063c2
+(1/20) Installing binutils-libs (2.25.1-r0)
+(2/20) Installing binutils (2.25.1-r0)
+(3/20) Installing gmp (6.1.0-r0)
+(4/20) Installing isl (0.14.1-r0)
+(5/20) Installing libgomp (5.3.0-r0)
+(6/20) Installing libatomic (5.3.0-r0)
+(7/20) Installing libgcc (5.3.0-r0)
+(8/20) Installing pkgconf (0.9.12-r0)
+(9/20) Installing pkgconfig (0.25-r1)
+(10/20) Installing mpfr3 (3.1.2-r0)
+(11/20) Installing mpc1 (1.0.3-r0)
+(12/20) Installing libstdc++ (5.3.0-r0)
+(13/20) Installing gcc (5.3.0-r0)
+(14/20) Installing libffi-dev (3.2.1-r2)
+(15/20) Installing musl-dev (1.1.12-r7)
+(16/20) Installing openntpd (5.7_p4-r1)
+Executing openntpd-5.7_p4-r1.pre-install
+(17/20) Installing zlib-dev (1.2.11-r0)
+(18/20) Installing openssl-dev (1.0.2k-r0)
+(19/20) Installing python-dev (2.7.12-r0)
+(20/20) Installing tzdata (2015g-r0)
+Executing busybox-1.24.2-r1.trigger
+OK: 152 MiB in 43 packages
+[91mConnecting to bootstrap.pypa.io (151.101.32.175:443)
+[0m[91mget-pip.py           100% |*******************************|  1558k  0:00:00 ETA
+[0mCollecting pip
+  Downloading pip-9.0.1-py2.py3-none-any.whl (1.3MB)
+Collecting setuptools
+  Downloading setuptools-36.5.0-py2.py3-none-any.whl (478kB)
+Collecting wheel
+  Downloading wheel-0.30.0-py2.py3-none-any.whl (49kB)
+Installing collected packages: pip, setuptools, wheel
+Successfully installed pip-9.0.1 setuptools-36.5.0 wheel-0.30.0
+[91mConnecting to github.com (192.30.253.113:443)
+[0m[91mConnecting to codeload.github.com (192.30.253.121:443)
+[0m[91mmaster.zip          [0m[91m 100% |*******************************|   167k  0:00:00 ETA
+[0mArchive:  master.zip
+   creating: elastalert-master/
+  inflating: elastalert-master/.gitignore
+  inflating: elastalert-master/.pre-commit-config.yaml
+  inflating: elastalert-master/.travis.yml
+  inflating: elastalert-master/Dockerfile-test
+  inflating: elastalert-master/LICENSE
+  inflating: elastalert-master/Makefile
+  inflating: elastalert-master/README.md
+  inflating: elastalert-master/changelog.md
+  inflating: elastalert-master/config.yaml.example
+  inflating: elastalert-master/docker-compose.yml
+   creating: elastalert-master/docs/
+  inflating: elastalert-master/docs/Makefile
+   creating: elastalert-master/docs/source/
+   creating: elastalert-master/docs/source/_static/
+  inflating: elastalert-master/docs/source/_static/.gitkeep
+  inflating: elastalert-master/docs/source/conf.py
+  inflating: elastalert-master/docs/source/elastalert.rst
+  inflating: elastalert-master/docs/source/elastalert_status.rst
+  inflating: elastalert-master/docs/source/index.rst
+   creating: elastalert-master/docs/source/recipes/
+  inflating: elastalert-master/docs/source/recipes/adding_alerts.rst
+  inflating: elastalert-master/docs/source/recipes/adding_enhancements.rst
+  inflating: elastalert-master/docs/source/recipes/adding_rules.rst
+  inflating: elastalert-master/docs/source/recipes/signing_requests.rst
+  inflating: elastalert-master/docs/source/recipes/writing_filters.rst
+  inflating: elastalert-master/docs/source/ruletypes.rst
+  inflating: elastalert-master/docs/source/running_elastalert.rst
+   creating: elastalert-master/elastalert/
+  inflating: elastalert-master/elastalert/__init__.py
+  inflating: elastalert-master/elastalert/alerts.py
+  inflating: elastalert-master/elastalert/auth.py
+  inflating: elastalert-master/elastalert/config.py
+  inflating: elastalert-master/elastalert/create_index.py
+  inflating: elastalert-master/elastalert/elastalert.py
+  inflating: elastalert-master/elastalert/enhancements.py
+  inflating: elastalert-master/elastalert/kibana.py
+  inflating: elastalert-master/elastalert/opsgenie.py
+  inflating: elastalert-master/elastalert/rule_from_kibana.py
+  inflating: elastalert-master/elastalert/ruletypes.py
+  inflating: elastalert-master/elastalert/schema.yaml
+  inflating: elastalert-master/elastalert/test_rule.py
+  inflating: elastalert-master/elastalert/util.py
+   creating: elastalert-master/example_rules/
+  inflating: elastalert-master/example_rules/example_cardinality.yaml
+  inflating: elastalert-master/example_rules/example_change.yaml
+  inflating: elastalert-master/example_rules/example_frequency.yaml
+  inflating: elastalert-master/example_rules/example_new_term.yaml
+  inflating: elastalert-master/example_rules/example_opsgenie_frequency.yaml
+  inflating: elastalert-master/example_rules/example_percentage_match.yaml
+  inflating: elastalert-master/example_rules/example_single_metric_agg.yaml
+  inflating: elastalert-master/example_rules/example_spike.yaml
+  inflating: elastalert-master/example_rules/jira_acct.txt
+  inflating: elastalert-master/requirements-dev.txt
+  inflating: elastalert-master/requirements.txt
+  inflating: elastalert-master/setup.cfg
+  inflating: elastalert-master/setup.py
+  inflating: elastalert-master/supervisord.conf.example
+   creating: elastalert-master/tests/
+  inflating: elastalert-master/tests/__init__.py
+  inflating: elastalert-master/tests/alerts_test.py
+  inflating: elastalert-master/tests/auth_test.py
+  inflating: elastalert-master/tests/base_test.py
+  inflating: elastalert-master/tests/config_test.py
+  inflating: elastalert-master/tests/conftest.py
+  inflating: elastalert-master/tests/kibana_test.py
+  inflating: elastalert-master/tests/rules_test.py
+  inflating: elastalert-master/tests/util_test.py
+  inflating: elastalert-master/tox.ini
+ ---> cf1fedf2bffc
+Removing intermediate container 6513cfc063c2
+Step 18/24 : WORKDIR ${ELASTALERT_HOME}
+ ---> 06e26195a808
+Removing intermediate container e100582f2bfb
+Step 19/24 : RUN python setup.py install &&     pip install -e . &&     pip uninstall twilio --yes &&     pip install twilio==6.0.0 &&     easy_install supervisor &&     chmod +x /opt/start-elastalert.sh &&     mkdir -p ${RULES_DIRECTORY} &&     mkdir -p ${LOG_DIR} &&     mkdir -p /var/empty
+ ---> Running in 01cba07f7af3
+running install
+running bdist_egg
+running egg_info
+creating elastalert.egg-info
+writing requirements to elastalert.egg-info/requires.txt
+writing elastalert.egg-info/PKG-INFO
+writing top-level names to elastalert.egg-info/top_level.txt
+writing dependency_links to elastalert.egg-info/dependency_links.txt
+writing entry points to elastalert.egg-info/entry_points.txt
+writing manifest file 'elastalert.egg-info/SOURCES.txt'
+reading manifest file 'elastalert.egg-info/SOURCES.txt'
+writing manifest file 'elastalert.egg-info/SOURCES.txt'
+installing library code to build/bdist.linux-x86_64/egg
+running install_lib
+running build_py
+creating build
+creating build/lib
+creating build/lib/elastalert
+copying elastalert/alerts.py -> build/lib/elastalert
+copying elastalert/ruletypes.py -> build/lib/elastalert
+copying elastalert/rule_from_kibana.py -> build/lib/elastalert
+copying elastalert/kibana.py -> build/lib/elastalert
+copying elastalert/util.py -> build/lib/elastalert
+copying elastalert/config.py -> build/lib/elastalert
+copying elastalert/auth.py -> build/lib/elastalert
+copying elastalert/__init__.py -> build/lib/elastalert
+copying elastalert/create_index.py -> build/lib/elastalert
+copying elastalert/elastalert.py -> build/lib/elastalert
+copying elastalert/opsgenie.py -> build/lib/elastalert
+copying elastalert/test_rule.py -> build/lib/elastalert
+copying elastalert/enhancements.py -> build/lib/elastalert
+creating build/lib/tests
+copying tests/config_test.py -> build/lib/tests
+copying tests/rules_test.py -> build/lib/tests
+copying tests/auth_test.py -> build/lib/tests
+copying tests/conftest.py -> build/lib/tests
+copying tests/base_test.py -> build/lib/tests
+copying tests/__init__.py -> build/lib/tests
+copying tests/kibana_test.py -> build/lib/tests
+copying tests/util_test.py -> build/lib/tests
+copying tests/alerts_test.py -> build/lib/tests
+copying elastalert/schema.yaml -> build/lib/elastalert
+creating build/bdist.linux-x86_64
+creating build/bdist.linux-x86_64/egg
+creating build/bdist.linux-x86_64/egg/elastalert
+copying build/lib/elastalert/alerts.py -> build/bdist.linux-x86_64/egg/elastalert
+copying build/lib/elastalert/ruletypes.py -> build/bdist.linux-x86_64/egg/elastalert
+copying build/lib/elastalert/rule_from_kibana.py -> build/bdist.linux-x86_64/egg/elastalert
+copying build/lib/elastalert/kibana.py -> build/bdist.linux-x86_64/egg/elastalert
+copying build/lib/elastalert/util.py -> build/bdist.linux-x86_64/egg/elastalert
+copying build/lib/elastalert/config.py -> build/bdist.linux-x86_64/egg/elastalert
+copying build/lib/elastalert/auth.py -> build/bdist.linux-x86_64/egg/elastalert
+copying build/lib/elastalert/__init__.py -> build/bdist.linux-x86_64/egg/elastalert
+copying build/lib/elastalert/create_index.py -> build/bdist.linux-x86_64/egg/elastalert
+copying build/lib/elastalert/elastalert.py -> build/bdist.linux-x86_64/egg/elastalert
+copying build/lib/elastalert/schema.yaml -> build/bdist.linux-x86_64/egg/elastalert
+copying build/lib/elastalert/opsgenie.py -> build/bdist.linux-x86_64/egg/elastalert
+copying build/lib/elastalert/test_rule.py -> build/bdist.linux-x86_64/egg/elastalert
+copying build/lib/elastalert/enhancements.py -> build/bdist.linux-x86_64/egg/elastalert
+creating build/bdist.linux-x86_64/egg/tests
+copying build/lib/tests/config_test.py -> build/bdist.linux-x86_64/egg/tests
+copying build/lib/tests/rules_test.py -> build/bdist.linux-x86_64/egg/tests
+copying build/lib/tests/auth_test.py -> build/bdist.linux-x86_64/egg/tests
+copying build/lib/tests/conftest.py -> build/bdist.linux-x86_64/egg/tests
+copying build/lib/tests/base_test.py -> build/bdist.linux-x86_64/egg/tests
+copying build/lib/tests/__init__.py -> build/bdist.linux-x86_64/egg/tests
+copying build/lib/tests/kibana_test.py -> build/bdist.linux-x86_64/egg/tests
+copying build/lib/tests/util_test.py -> build/bdist.linux-x86_64/egg/tests
+copying build/lib/tests/alerts_test.py -> build/bdist.linux-x86_64/egg/tests
+byte-compiling build/bdist.linux-x86_64/egg/elastalert/alerts.py to alerts.pyc
+byte-compiling build/bdist.linux-x86_64/egg/elastalert/ruletypes.py to ruletypes.pyc
+byte-compiling build/bdist.linux-x86_64/egg/elastalert/rule_from_kibana.py to rule_from_kibana.pyc
+byte-compiling build/bdist.linux-x86_64/egg/elastalert/kibana.py to kibana.pyc
+byte-compiling build/bdist.linux-x86_64/egg/elastalert/util.py to util.pyc
+byte-compiling build/bdist.linux-x86_64/egg/elastalert/config.py to config.pyc
+byte-compiling build/bdist.linux-x86_64/egg/elastalert/auth.py to auth.pyc
+byte-compiling build/bdist.linux-x86_64/egg/elastalert/__init__.py to __init__.pyc
+byte-compiling build/bdist.linux-x86_64/egg/elastalert/create_index.py to create_index.pyc
+byte-compiling build/bdist.linux-x86_64/egg/elastalert/elastalert.py to elastalert.pyc
+byte-compiling build/bdist.linux-x86_64/egg/elastalert/opsgenie.py to opsgenie.pyc
+byte-compiling build/bdist.linux-x86_64/egg/elastalert/test_rule.py to test_rule.pyc
+byte-compiling build/bdist.linux-x86_64/egg/elastalert/enhancements.py to enhancements.pyc
+byte-compiling build/bdist.linux-x86_64/egg/tests/config_test.py to config_test.pyc
+byte-compiling build/bdist.linux-x86_64/egg/tests/rules_test.py to rules_test.pyc
+byte-compiling build/bdist.linux-x86_64/egg/tests/auth_test.py to auth_test.pyc
+byte-compiling build/bdist.linux-x86_64/egg/tests/conftest.py to conftest.pyc
+byte-compiling build/bdist.linux-x86_64/egg/tests/base_test.py to base_test.pyc
+byte-compiling build/bdist.linux-x86_64/egg/tests/__init__.py to __init__.pyc
+byte-compiling build/bdist.linux-x86_64/egg/tests/kibana_test.py to kibana_test.pyc
+byte-compiling build/bdist.linux-x86_64/egg/tests/util_test.py to util_test.pyc
+byte-compiling build/bdist.linux-x86_64/egg/tests/alerts_test.py to alerts_test.pyc
+creating build/bdist.linux-x86_64/egg/EGG-INFO
+copying elastalert.egg-info/PKG-INFO -> build/bdist.linux-x86_64/egg/EGG-INFO
+copying elastalert.egg-info/SOURCES.txt -> build/bdist.linux-x86_64/egg/EGG-INFO
+copying elastalert.egg-info/dependency_links.txt -> build/bdist.linux-x86_64/egg/EGG-INFO
+copying elastalert.egg-info/entry_points.txt -> build/bdist.linux-x86_64/egg/EGG-INFO
+copying elastalert.egg-info/requires.txt -> build/bdist.linux-x86_64/egg/EGG-INFO
+copying elastalert.egg-info/top_level.txt -> build/bdist.linux-x86_64/egg/EGG-INFO
+[91mzip_safe flag not set; analyzing archive contents...
+[0m[91melastalert.config: module references __file__
+[0mcreating dist
+creating 'dist/elastalert-0.1.20-py2.7.egg' and adding 'build/bdist.linux-x86_64/egg' to it
+removing 'build/bdist.linux-x86_64/egg' (and everything under it)
+Processing elastalert-0.1.20-py2.7.egg
+creating /usr/lib/python2.7/site-packages/elastalert-0.1.20-py2.7.egg
+Extracting elastalert-0.1.20-py2.7.egg to /usr/lib/python2.7/site-packages
+Adding elastalert 0.1.20 to easy-install.pth file
+Installing elastalert-create-index script to /usr/bin
+Installing elastalert script to /usr/bin
+Installing elastalert-rule-from-kibana script to /usr/bin
+Installing elastalert-test-rule script to /usr/bin
+
+Installed /usr/lib/python2.7/site-packages/elastalert-0.1.20-py2.7.egg
+Processing dependencies for elastalert==0.1.20
+Searching for twilio<6.1,>=6.0.0
+Reading https://pypi.python.org/simple/twilio/
+Downloading https://pypi.python.org/packages/f6/20/c6d72e0f29030206342e4b5bef9f573bdb7c305615ea77c11c81f5c0196d/twilio-6.0.0.tar.gz#md5=7caacebc63295f93c1380175ce70e07a
+Best match: twilio 6.0.0
+Processing twilio-6.0.0.tar.gz
+Writing /tmp/easy_install-LeSaAT/twilio-6.0.0/setup.cfg
+Running twilio-6.0.0/setup.py -q bdist_egg --dist-dir /tmp/easy_install-LeSaAT/twilio-6.0.0/egg-dist-tmp-WNZgEL
+[91mzip_safe flag not set; analyzing archive contents...
+[0m[91mtwilio.http.__init__: module references __file__
+[0mcreating /usr/lib/python2.7/site-packages/twilio-6.0.0-py2.7.egg
+Extracting twilio-6.0.0-py2.7.egg to /usr/lib/python2.7/site-packages
+Adding twilio 6.0.0 to easy-install.pth file
+
+Installed /usr/lib/python2.7/site-packages/twilio-6.0.0-py2.7.egg
+Searching for texttable>=0.8.8
+Reading https://pypi.python.org/simple/texttable/
+Downloading https://pypi.python.org/packages/02/e1/2565e6b842de7945af0555167d33acfc8a615584ef7abd30d1eae00a4d80/texttable-0.9.1.tar.gz#md5=a712b5a5464d51c5fc43c64d9d2cd0de
+Best match: texttable 0.9.1
+Processing texttable-0.9.1.tar.gz
+Writing /tmp/easy_install-gZ7rL8/texttable-0.9.1/setup.cfg
+Running texttable-0.9.1/setup.py -q bdist_egg --dist-dir /tmp/easy_install-gZ7rL8/texttable-0.9.1/egg-dist-tmp-6oLotK
+[91mzip_safe flag not set; analyzing archive contents...
+[0mMoving texttable-0.9.1-py2.7.egg to /usr/lib/python2.7/site-packages
+Adding texttable 0.9.1 to easy-install.pth file
+
+Installed /usr/lib/python2.7/site-packages/texttable-0.9.1-py2.7.egg
+Searching for stomp.py>=4.1.17
+Reading https://pypi.python.org/simple/stomp.py/
+Downloading https://pypi.python.org/packages/26/5c/6b10498b29cf846727d7554f323ef317815ada748daf3e0fad077bb572e3/stomp.py-4.1.18.tar.gz#md5=edcc0e3246cb42b59f4199439665422e
+Best match: stomp.py 4.1.18
+Processing stomp.py-4.1.18.tar.gz
+Writing /tmp/easy_install-17YJcW/stomp.py-4.1.18/setup.cfg
+Running stomp.py-4.1.18/setup.py -q bdist_egg --dist-dir /tmp/easy_install-17YJcW/stomp.py-4.1.18/egg-dist-tmp-t13AND
+[91mwarning: no files found matching '*.dox'
+[0m[91mwarning: no previously-included files found matching 'stomp/test/*.pyc'
+[0m[91mzip_safe flag not set; analyzing archive contents...
+[0mMoving stomp.py-4.1.18-py2.7.egg to /usr/lib/python2.7/site-packages
+Adding stomp.py 4.1.18 to easy-install.pth file
+Installing stomp script to /usr/bin
+
+Installed /usr/lib/python2.7/site-packages/stomp.py-4.1.18-py2.7.egg
+Searching for simplejson>=3.10.0
+Reading https://pypi.python.org/simple/simplejson/
+Downloading https://pypi.python.org/packages/08/48/c97b668d6da7d7bebe7ea1817a6f76394b0ec959cb04214ca833c34359df/simplejson-3.11.1.tar.gz#md5=6e2f1bd5fb0a926facf5d89d217a7183
+Best match: simplejson 3.11.1
+Processing simplejson-3.11.1.tar.gz
+Writing /tmp/easy_install-0fc1Lt/simplejson-3.11.1/setup.cfg
+Running simplejson-3.11.1/setup.py -q bdist_egg --dist-dir /tmp/easy_install-0fc1Lt/simplejson-3.11.1/egg-dist-tmp-xP0R06
+[91mzip_safe flag not set; analyzing archive contents...
+[0m[91msimplejson.tests.__init__: module references __file__
+[0mcreating /usr/lib/python2.7/site-packages/simplejson-3.11.1-py2.7-linux-x86_64.egg
+Extracting simplejson-3.11.1-py2.7-linux-x86_64.egg to /usr/lib/python2.7/site-packages
+Adding simplejson 3.11.1 to easy-install.pth file
+
+Installed /usr/lib/python2.7/site-packages/simplejson-3.11.1-py2.7-linux-x86_64.egg
+Searching for requests>=2.10.0
+Reading https://pypi.python.org/simple/requests/
+Downloading https://pypi.python.org/packages/b0/e1/eab4fc3752e3d240468a8c0b284607899d2fbfb236a56b7377a329aa8d09/requests-2.18.4.tar.gz#md5=081412b2ef79bdc48229891af13f4d82
+Best match: requests 2.18.4
+Processing requests-2.18.4.tar.gz
+Writing /tmp/easy_install-4A3St6/requests-2.18.4/setup.cfg
+Running requests-2.18.4/setup.py -q bdist_egg --dist-dir /tmp/easy_install-4A3St6/requests-2.18.4/egg-dist-tmp-nir4bk
+[91mwarning: no files found matching 'NOTICE'
+[0mcreating /usr/lib/python2.7/site-packages/requests-2.18.4-py2.7.egg
+Extracting requests-2.18.4-py2.7.egg to /usr/lib/python2.7/site-packages
+Adding requests 2.18.4 to easy-install.pth file
+
+Installed /usr/lib/python2.7/site-packages/requests-2.18.4-py2.7.egg
+Searching for PyYAML>=3.12
+Reading https://pypi.python.org/simple/PyYAML/
+Downloading https://pypi.python.org/packages/6b/f0/a0250248ea260d55748fff586d89a32afbb22656f4498b08d2636a48d4ec/PyYAML-3.12.zip#md5=aa5e762e79b19bb80dbcf04f82178832
+Best match: PyYAML 3.12
+Processing PyYAML-3.12.zip
+Writing /tmp/easy_install-Q100U3/PyYAML-3.12/setup.cfg
+Running PyYAML-3.12/setup.py -q bdist_egg --dist-dir /tmp/easy_install-Q100U3/PyYAML-3.12/egg-dist-tmp-8vJyed
+[91mbuild/temp.linux-x86_64-2.7/check_libyaml.c:2:18: fatal error: yaml.h: No such file or directory
+compilation terminated.
+[0m[91m
+libyaml is not found or a compiler error: forcing --without-libyaml
+(if libyaml is installed correctly, you may need to
+ specify the option --include-dirs or uncomment and
+ modify the parameter include_dirs in setup.cfg)
+[0m[91mzip_safe flag not set; analyzing archive contents...
+[0mMoving PyYAML-3.12-py2.7-linux-x86_64.egg to /usr/lib/python2.7/site-packages
+Adding PyYAML 3.12 to easy-install.pth file
+
+Installed /usr/lib/python2.7/site-packages/PyYAML-3.12-py2.7-linux-x86_64.egg
+Searching for python-dateutil>=2.6.0
+Reading https://pypi.python.org/simple/python-dateutil/
+Downloading https://pypi.python.org/packages/54/bb/f1db86504f7a49e1d9b9301531181b00a1c7325dc85a29160ee3eaa73a54/python-dateutil-2.6.1.tar.gz#md5=db38f6b4511cefd76014745bb0cc45a4
+Best match: python-dateutil 2.6.1
+Processing python-dateutil-2.6.1.tar.gz
+Writing /tmp/easy_install-2LWxJG/python-dateutil-2.6.1/setup.cfg
+Running python-dateutil-2.6.1/setup.py -q bdist_egg --dist-dir /tmp/easy_install-2LWxJG/python-dateutil-2.6.1/egg-dist-tmp-4Uxy2o
+[91mwarning: no previously-included files matching '__pycache__' found anywhere in distribution
+[0m[91mwarning: no previously-included files matching '*.py[co]' found anywhere in distribution
+[0mMoving python_dateutil-2.6.1-py2.7.egg to /usr/lib/python2.7/site-packages
+Adding python-dateutil 2.6.1 to easy-install.pth file
+
+Installed /usr/lib/python2.7/site-packages/python_dateutil-2.6.1-py2.7.egg
+Searching for PyStaticConfiguration>=0.10.3
+Reading https://pypi.python.org/simple/PyStaticConfiguration/
+Downloading https://pypi.python.org/packages/6f/c6/e721b74c3eed4e06d59aec808b01280f78ddd9f0d5dfa63063b1cda8a762/PyStaticConfiguration-0.10.3.tar.gz#md5=e39ba01d30df9c548bf1a60913de14e4
+Best match: PyStaticConfiguration 0.10.3
+Processing PyStaticConfiguration-0.10.3.tar.gz
+Writing /tmp/easy_install-GZ2G8Q/PyStaticConfiguration-0.10.3/setup.cfg
+Running PyStaticConfiguration-0.10.3/setup.py -q bdist_egg --dist-dir /tmp/easy_install-GZ2G8Q/PyStaticConfiguration-0.10.3/egg-dist-tmp-35TMxA
+[91mzip_safe flag not set; analyzing archive contents...
+[0mMoving PyStaticConfiguration-0.10.3-py2.7.egg to /usr/lib/python2.7/site-packages
+Adding PyStaticConfiguration 0.10.3 to easy-install.pth file
+
+Installed /usr/lib/python2.7/site-packages/PyStaticConfiguration-0.10.3-py2.7.egg
+Searching for mock>=2.0.0
+Reading https://pypi.python.org/simple/mock/
+Downloading https://pypi.python.org/packages/0c/53/014354fc93c591ccc4abff12c473ad565a2eb24dcd82490fae33dbf2539f/mock-2.0.0.tar.gz#md5=0febfafd14330c9dcaa40de2d82d40ad
+Best match: mock 2.0.0
+Processing mock-2.0.0.tar.gz
+Writing /tmp/easy_install-e2EO5_/mock-2.0.0/setup.cfg
+Running mock-2.0.0/setup.py -q bdist_egg --dist-dir /tmp/easy_install-e2EO5_/mock-2.0.0/egg-dist-tmp-oj_9jZ
+
+Installed /tmp/easy_install-e2EO5_/mock-2.0.0/.eggs/pbr-3.1.1-py2.7.egg
+creating /usr/lib/python2.7/site-packages/mock-2.0.0-py2.7.egg
+Extracting mock-2.0.0-py2.7.egg to /usr/lib/python2.7/site-packages
+Adding mock 2.0.0 to easy-install.pth file
+
+Installed /usr/lib/python2.7/site-packages/mock-2.0.0-py2.7.egg
+Searching for jsonschema>=2.6.0
+Reading https://pypi.python.org/simple/jsonschema/
+Downloading https://pypi.python.org/packages/58/b9/171dbb07e18c6346090a37f03c7e74410a1a56123f847efed59af260a298/jsonschema-2.6.0.tar.gz#md5=50c6b69a373a8b55ff1e0ec6e78f13f4
+Best match: jsonschema 2.6.0
+Processing jsonschema-2.6.0.tar.gz
+Writing /tmp/easy_install-CxenTr/jsonschema-2.6.0/setup.cfg
+Running jsonschema-2.6.0/setup.py -q bdist_egg --dist-dir /tmp/easy_install-CxenTr/jsonschema-2.6.0/egg-dist-tmp-aw0vKt
+[91mzip_safe flag not set; analyzing archive contents...
+[0m
+Installed /tmp/easy_install-CxenTr/jsonschema-2.6.0/.eggs/vcversioner-2.16.0.0-py2.7.egg
+[91mzip_safe flag not set; analyzing archive contents...
+[0m[91mjsonschema.tests.test_jsonschema_test_suite: module references __file__
+[0mcreating /usr/lib/python2.7/site-packages/jsonschema-2.6.0-py2.7.egg
+Extracting jsonschema-2.6.0-py2.7.egg to /usr/lib/python2.7/site-packages
+Adding jsonschema 2.6.0 to easy-install.pth file
+Installing jsonschema script to /usr/bin
+
+Installed /usr/lib/python2.7/site-packages/jsonschema-2.6.0-py2.7.egg
+Searching for jira>=1.0.10
+Reading https://pypi.python.org/simple/jira/
+Downloading https://pypi.python.org/packages/f5/d3/2301c6ada2360119b8e99187979f488e3a5b203c122dd168c9fdb2e33394/jira-1.0.10.tar.gz#md5=22c0808a1409091b08f0d13229ccec50
+Best match: jira 1.0.10
+Processing jira-1.0.10.tar.gz
+Writing /tmp/easy_install-2jrmY6/jira-1.0.10/setup.cfg
+Running jira-1.0.10/setup.py -q bdist_egg --dist-dir /tmp/easy_install-2jrmY6/jira-1.0.10/egg-dist-tmp-ZiyDhW
+[91mzip_safe flag not set; analyzing archive contents...
+[0m
+Installed /tmp/easy_install-2jrmY6/jira-1.0.10/.eggs/pytest_runner-2.12.1-py2.7.egg
+Searching for pbr>=1.9
+Reading https://pypi.python.org/simple/pbr/
+Downloading https://pypi.python.org/packages/d5/d6/f2bf137d71e4f213b575faa9eb426a8775732432edb67588a8ee836ecb80/pbr-3.1.1.tar.gz#md5=4e82c2e07af544c56a5b71c801525b00
+Best match: pbr 3.1.1
+Processing pbr-3.1.1.tar.gz
+Writing /tmp/easy_install-2jrmY6/jira-1.0.10/temp/easy_install-wfBu6u/pbr-3.1.1/setup.cfg
+Running pbr-3.1.1/setup.py -q bdist_egg --dist-dir /tmp/easy_install-2jrmY6/jira-1.0.10/temp/easy_install-wfBu6u/pbr-3.1.1/egg-dist-tmp-HNUr4N
+creating /tmp/easy_install-2jrmY6/jira-1.0.10/.eggs/pbr-3.1.1-py2.7.egg
+Extracting pbr-3.1.1-py2.7.egg to /tmp/easy_install-2jrmY6/jira-1.0.10/.eggs
+
+Installed /tmp/easy_install-2jrmY6/jira-1.0.10/.eggs/pbr-3.1.1-py2.7.egg
+creating /usr/lib/python2.7/site-packages/jira-1.0.10-py2.7.egg
+Extracting jira-1.0.10-py2.7.egg to /usr/lib/python2.7/site-packages
+Adding jira 1.0.10 to easy-install.pth file
+Installing jirashell script to /usr/bin
+
+Installed /usr/lib/python2.7/site-packages/jira-1.0.10-py2.7.egg
+Searching for exotel>=0.1.3
+Reading https://pypi.python.org/simple/exotel/
+Downloading https://pypi.python.org/packages/c6/68/6373dedcc7f7eadc017f9629e2f1b33393e8f740fb9c801962a3ce4dfa91/exotel-0.1.5.tar.gz#md5=f42326e0150247137dd0c6f6271c7e37
+Best match: exotel 0.1.5
+Processing exotel-0.1.5.tar.gz
+Writing /tmp/easy_install-wxYTDd/exotel-0.1.5/setup.cfg
+Running exotel-0.1.5/setup.py -q bdist_egg --dist-dir /tmp/easy_install-wxYTDd/exotel-0.1.5/egg-dist-tmp-2k2TpO
+[91mzip_safe flag not set; analyzing archive contents...
+[0mMoving exotel-0.1.5-py2.7.egg to /usr/lib/python2.7/site-packages
+Adding exotel 0.1.5 to easy-install.pth file
+
+Installed /usr/lib/python2.7/site-packages/exotel-0.1.5-py2.7.egg
+Searching for envparse>=0.2.0
+Reading https://pypi.python.org/simple/envparse/
+Downloading https://pypi.python.org/packages/2f/8d/bee8a59732c169a455627ff1557d0db180f7c352b0274480267ad3e46875/envparse-0.2.0.tar.gz#md5=c236ef17971aea885d6d934d7ddeb144
+Best match: envparse 0.2.0
+Processing envparse-0.2.0.tar.gz
+Writing /tmp/easy_install-E7LuhA/envparse-0.2.0/setup.cfg
+Running envparse-0.2.0/setup.py -q bdist_egg --dist-dir /tmp/easy_install-E7LuhA/envparse-0.2.0/egg-dist-tmp-PnwSj5
+creating /usr/lib/python2.7/site-packages/envparse-0.2.0-py2.7.egg
+Extracting envparse-0.2.0-py2.7.egg to /usr/lib/python2.7/site-packages
+Adding envparse 0.2.0 to easy-install.pth file
+
+Installed /usr/lib/python2.7/site-packages/envparse-0.2.0-py2.7.egg
+Searching for elasticsearch
+Reading https://pypi.python.org/simple/elasticsearch/
+Downloading https://pypi.python.org/packages/43/15/790c7b24cd3dcbbc7c09c7d595ee2ad2d9e430ff04921b540209bef1ea16/elasticsearch-5.4.0.tar.gz#md5=afd95c2631d1ce332b6a2c9ab8ae0b19
+Best match: elasticsearch 5.4.0
+Processing elasticsearch-5.4.0.tar.gz
+Writing /tmp/easy_install-cOdhqp/elasticsearch-5.4.0/setup.cfg
+Running elasticsearch-5.4.0/setup.py -q bdist_egg --dist-dir /tmp/easy_install-cOdhqp/elasticsearch-5.4.0/egg-dist-tmp-Kv1qHj
+[91mwarning: no files found matching 'elasticsearch/connection/esthrift/Rest-remote'
+[0m[91mno previously-included directories found matching 'docs/_build'
+[0m[91mno previously-included directories found matching 'test_elasticsearch'
+[0m[91mwarning: no previously-included files matching '__pycache__' found under directory '*'
+[0m[91mwarning: no previously-included files matching '*.py[co]' found under directory '*'
+[0m[91mzip_safe flag not set; analyzing archive contents...
+[0mMoving elasticsearch-5.4.0-py2.7.egg to /usr/lib/python2.7/site-packages
+Adding elasticsearch 5.4.0 to easy-install.pth file
+
+Installed /usr/lib/python2.7/site-packages/elasticsearch-5.4.0-py2.7.egg
+Searching for croniter>=0.3.16
+Reading https://pypi.python.org/simple/croniter/
+Downloading https://pypi.python.org/packages/5a/c4/2bf4dc79f7d17f7d5bd9f334a951ffb3af441797ed30308467a04e010d55/croniter-0.3.19.tar.gz#md5=e8b3f4a684c64878f7c6be6c4f9352a6
+Best match: croniter 0.3.19
+Processing croniter-0.3.19.tar.gz
+Writing /tmp/easy_install-bbHO1B/croniter-0.3.19/setup.cfg
+Running croniter-0.3.19/setup.py -q bdist_egg --dist-dir /tmp/easy_install-bbHO1B/croniter-0.3.19/egg-dist-tmp-xJoVEL
+[91mfile src/croniter.py (for module croniter) not found
+[0m[91mwarning: no files found matching '*.txt'
+[0m[91mwarning: no previously-included files matching '*pyc' found anywhere in distribution
+[0m[91mfile src/croniter.py (for module croniter) not found
+[0m[91mfile src/croniter.py (for module croniter) not found
+[0m[91mzip_safe flag not set; analyzing archive contents...
+[0mMoving croniter-0.3.19-py2.7.egg to /usr/lib/python2.7/site-packages
+Adding croniter 0.3.19 to easy-install.pth file
+
+Installed /usr/lib/python2.7/site-packages/croniter-0.3.19-py2.7.egg
+Searching for configparser>=3.5.0
+Reading https://pypi.python.org/simple/configparser/
+Downloading https://pypi.python.org/packages/7c/69/c2ce7e91c89dc073eb1aa74c0621c3eefbffe8216b3f9af9d3885265c01c/configparser-3.5.0.tar.gz#md5=cfdd915a5b7a6c09917a64a573140538
+Best match: configparser 3.5.0
+Processing configparser-3.5.0.tar.gz
+Writing /tmp/easy_install-0yenIm/configparser-3.5.0/setup.cfg
+Running configparser-3.5.0/setup.py -q bdist_egg --dist-dir /tmp/easy_install-0yenIm/configparser-3.5.0/egg-dist-tmp-P4mYQJ
+creating /usr/lib/python2.7/site-packages/configparser-3.5.0-py2.7.egg
+Extracting configparser-3.5.0-py2.7.egg to /usr/lib/python2.7/site-packages
+Adding configparser 3.5.0 to easy-install.pth file
+
+Installed /usr/lib/python2.7/site-packages/configparser-3.5.0-py2.7.egg
+Searching for boto3>=1.4.4
+Reading https://pypi.python.org/simple/boto3/
+Downloading https://pypi.python.org/packages/b6/7c/b9caa157b514e0a456286172862428a83814e4eda114ea1e80267de85378/boto3-1.4.7.tar.gz#md5=eb95e700fa9e06db6e9ff4ee159adbd9
+Best match: boto3 1.4.7
+Processing boto3-1.4.7.tar.gz
+Writing /tmp/easy_install-3BJW_v/boto3-1.4.7/setup.cfg
+Running boto3-1.4.7/setup.py -q bdist_egg --dist-dir /tmp/easy_install-3BJW_v/boto3-1.4.7/egg-dist-tmp-NSzr2U
+[91mzip_safe flag not set; analyzing archive contents...
+[0m[91mboto3.session: module references __file__
+[0m[91mboto3.docs.service: module references __file__
+[0mcreating /usr/lib/python2.7/site-packages/boto3-1.4.7-py2.7.egg
+Extracting boto3-1.4.7-py2.7.egg to /usr/lib/python2.7/site-packages
+Adding boto3 1.4.7 to easy-install.pth file
+
+Installed /usr/lib/python2.7/site-packages/boto3-1.4.7-py2.7.egg
+Searching for blist>=1.3.6
+Reading https://pypi.python.org/simple/blist/
+Downloading https://pypi.python.org/packages/6b/a8/dca5224abe81ccf8db81f8a2ca3d63e7a5fa7a86adc198d4e268c67ce884/blist-1.3.6.tar.gz#md5=a538f1a24b9191e3c40252e9397408a9
+Best match: blist 1.3.6
+Processing blist-1.3.6.tar.gz
+Writing /tmp/easy_install-GPe2zp/blist-1.3.6/setup.cfg
+Running blist-1.3.6/setup.py -q bdist_egg --dist-dir /tmp/easy_install-GPe2zp/blist-1.3.6/egg-dist-tmp-HIEZEc
+[91mwarning: no files found matching 'blist.rst'
+[0mcreating /usr/lib/python2.7/site-packages/blist-1.3.6-py2.7-linux-x86_64.egg
+Extracting blist-1.3.6-py2.7-linux-x86_64.egg to /usr/lib/python2.7/site-packages
+Adding blist 1.3.6 to easy-install.pth file
+
+Installed /usr/lib/python2.7/site-packages/blist-1.3.6-py2.7-linux-x86_64.egg
+Searching for aws-requests-auth>=0.3.0
+Reading https://pypi.python.org/simple/aws-requests-auth/
+Downloading https://pypi.python.org/packages/65/ab/7d537631d32dc13fa4c77fcd5cba68bdd32c8a00a65347769b82e4dd01b3/aws-requests-auth-0.4.0.tar.gz#md5=c763c1c06ebecba6dd67f5d4a5c2b8bb
+Best match: aws-requests-auth 0.4.0
+Processing aws-requests-auth-0.4.0.tar.gz
+Writing /tmp/easy_install-BYMM8m/aws-requests-auth-0.4.0/setup.cfg
+Running aws-requests-auth-0.4.0/setup.py -q bdist_egg --dist-dir /tmp/easy_install-BYMM8m/aws-requests-auth-0.4.0/egg-dist-tmp-i52dCt
+[91mwarning: no previously-included files matching '__pycache__' found under directory '*'
+[0m[91mwarning: no previously-included files matching '*.py[co]' found under directory '*'
+[0m[91mzip_safe flag not set; analyzing archive contents...
+[0mMoving aws_requests_auth-0.4.0-py2.7.egg to /usr/lib/python2.7/site-packages
+Adding aws-requests-auth 0.4.0 to easy-install.pth file
+
+Installed /usr/lib/python2.7/site-packages/aws_requests_auth-0.4.0-py2.7.egg
+Searching for pyOpenSSL>=0.14
+Reading https://pypi.python.org/simple/pyOpenSSL/
+Downloading https://pypi.python.org/packages/ee/6a/cd78737dd990297205943cc4dcad3d3c502807fd2c5b18c5f33dc90ca214/pyOpenSSL-17.3.0.tar.gz#md5=09dcd307b8d2068f9dd5aaa3a3a88992
+Best match: pyOpenSSL 17.3.0
+Processing pyOpenSSL-17.3.0.tar.gz
+Writing /tmp/easy_install-1xwSHs/pyOpenSSL-17.3.0/setup.cfg
+Running pyOpenSSL-17.3.0/setup.py -q bdist_egg --dist-dir /tmp/easy_install-1xwSHs/pyOpenSSL-17.3.0/egg-dist-tmp-uCuNY4
+[91mwarning: no previously-included files found matching 'leakcheck'
+[0m[91mwarning: no previously-included files matching '*.py' found under directory 'leakcheck'
+[0m[91mwarning: no previously-included files matching '*.pem' found under directory 'leakcheck'
+[0m[91mwarning: no previously-included files matching '*.cert' found under directory 'examples/simple'
+[0m[91mwarning: no previously-included files matching '*.pkey' found under directory 'examples/simple'
+[0m[91mno previously-included directories found matching 'doc/_build'
+[0m[91mno previously-included directories found matching '.travis'
+[0m[91mno previously-included directories found matching '.mention-bot'
+[0m[91mzip_safe flag not set; analyzing archive contents...
+[0mMoving pyOpenSSL-17.3.0-py2.7.egg to /usr/lib/python2.7/site-packages
+Adding pyOpenSSL 17.3.0 to easy-install.pth file
+
+Installed /usr/lib/python2.7/site-packages/pyOpenSSL-17.3.0-py2.7.egg
+Searching for idna>=2.0.0
+Reading https://pypi.python.org/simple/idna/
+Downloading https://pypi.python.org/packages/f4/bd/0467d62790828c23c47fc1dfa1b1f052b24efdf5290f071c7a91d0d82fd3/idna-2.6.tar.gz#md5=c706e2790b016bd0ed4edd2d4ba4d147
+Best match: idna 2.6
+Processing idna-2.6.tar.gz
+Writing /tmp/easy_install-eySZeS/idna-2.6/setup.cfg
+Running idna-2.6/setup.py -q bdist_egg --dist-dir /tmp/easy_install-eySZeS/idna-2.6/egg-dist-tmp-m8R2P_
+[91mwarning: no previously-included files matching '*.pyc' found under directory 'tools'
+[0m[91mwarning: no previously-included files matching '*.pyc' found under directory 'tests'
+[0m[91mzip_safe flag not set; analyzing archive contents...
+[0mMoving idna-2.6-py2.7.egg to /usr/lib/python2.7/site-packages
+Adding idna 2.6 to easy-install.pth file
+
+Installed /usr/lib/python2.7/site-packages/idna-2.6-py2.7.egg
+Searching for cryptography>=1.3.4
+Reading https://pypi.python.org/simple/cryptography/
+Downloading https://pypi.python.org/packages/9c/1a/0fc8cffb04582f9ffca61b15b0681cf2e8588438e55f61403eb9880bd8e0/cryptography-2.0.3.tar.gz#md5=24cbdab3fda22be31dd3aef2808f5d2f
+Best match: cryptography 2.0.3
+Processing cryptography-2.0.3.tar.gz
+Writing /tmp/easy_install-iChWhD/cryptography-2.0.3/setup.cfg
+Running cryptography-2.0.3/setup.py -q bdist_egg --dist-dir /tmp/easy_install-iChWhD/cryptography-2.0.3/egg-dist-tmp-OUz_os
+
+Installed /tmp/easy_install-iChWhD/cryptography-2.0.3/.eggs/cffi-1.11.0-py2.7-linux-x86_64.egg
+Searching for pycparser
+Reading https://pypi.python.org/simple/pycparser/
+Downloading https://pypi.python.org/packages/8c/2d/aad7f16146f4197a11f8e91fb81df177adcc2073d36a17b1491fd09df6ed/pycparser-2.18.tar.gz#md5=72370da54358202a60130e223d488136
+Best match: pycparser 2.18
+Processing pycparser-2.18.tar.gz
+Writing /tmp/easy_install-iChWhD/cryptography-2.0.3/temp/easy_install-VfK7at/pycparser-2.18/setup.cfg
+Running pycparser-2.18/setup.py -q bdist_egg --dist-dir /tmp/easy_install-iChWhD/cryptography-2.0.3/temp/easy_install-VfK7at/pycparser-2.18/egg-dist-tmp-sMgXCV
+[91mwarning: no previously-included files matching 'yacctab.*' found under directory 'tests'
+[0m[91mwarning: no previously-included files matching 'lextab.*' found under directory 'tests'
+[0m[91mwarning: no previously-included files matching 'yacctab.*' found under directory 'examples'
+[0m[91mwarning: no previously-included files matching 'lextab.*' found under directory 'examples'
+[0m[91mzip_safe flag not set; analyzing archive contents...
+[0m[91mpycparser.ply.lex: module references __file__
+pycparser.ply.lex: module MAY be using inspect.getsourcefile
+[0m[91mpycparser.ply.yacc: module references __file__
+pycparser.ply.yacc: module MAY be using inspect.getsourcefile
+pycparser.ply.yacc: module MAY be using inspect.stack
+[0m[91mpycparser.ply.ygen: module references __file__
+[0mcreating /tmp/easy_install-iChWhD/cryptography-2.0.3/.eggs/pycparser-2.18-py2.7.egg
+Extracting pycparser-2.18-py2.7.egg to /tmp/easy_install-iChWhD/cryptography-2.0.3/.eggs
+
+Installed /tmp/easy_install-iChWhD/cryptography-2.0.3/.eggs/pycparser-2.18-py2.7.egg
+[91mno previously-included directories found matching 'docs/_build'
+[0m[91mwarning: no previously-included files matching '*' found under directory 'vectors'
+[0m[91mbuild/temp.linux-x86_64-2.7/_openssl.c: In function 'dev_urandom_read':
+[0m[91mbuild/temp.linux-x86_64-2.7/_openssl.c:1566:17: warning: conversion to 'int' from 'ssize_t {aka long int}' may alter its value [-Wconversion]
+         size -= n;
+                 ^
+[0m[91mbuild/temp.linux-x86_64-2.7/_openssl.c: In function 'osrandom_rand_bytes':
+build/temp.linux-x86_64-2.7/_openssl.c:1758:21: warning: conversion to 'int' from 'long int' may alter its value [-Wconversion]
+             size -= n;
+                     ^
+[0m[91mbuild/temp.linux-x86_64-2.7/_openssl.c: In function 'SSL_SESSION_get_master_key':
+build/temp.linux-x86_64-2.7/_openssl.c:2173:16: warning: conversion to 'size_t {aka long unsigned int}' from 'int' may change the sign of the result [-Wsign-conversion]
+         return session->master_key_length;
+                ^
+build/temp.linux-x86_64-2.7/_openssl.c:2175:18: warning: conversion to 'size_t {aka long unsigned int}' from 'int' may change the sign of the result [-Wsign-conversion]
+         outlen = session->master_key_length;
+                  ^
+[0m[91mbuild/temp.linux-x86_64-2.7/_openssl.c: In function '_setup_ssl_threads':
+build/temp.linux-x86_64-2.7/_openssl.c:2589:28: warning: conversion to 'unsigned int' from 'int' may change the sign of the result [-Wsign-conversion]
+         _ssl_locks_count = CRYPTO_num_locks();
+                            ^
+build/temp.linux-x86_64-2.7/_openssl.c: In function 'Cryptography_pem_password_cb':
+build/temp.linux-x86_64-2.7/_openssl.c:2622:35: warning: conversion to 'size_t {aka long unsigned int}' from 'int' may change the sign of the result [-Wsign-conversion]
+         memcpy(buf, st->password, st->length);
+                                   ^
+[0m[91mbuild/temp.linux-x86_64-2.7/_openssl.c: In function '_cffi_d_SSL_CTX_add_extra_chain_cert':
+[0m[91mbuild/temp.linux-x86_64-2.7/_openssl.c:47438:10: warning: conversion to 'long unsigned int' from 'long int' may change the sign of the result [-Wsign-conversion]
+   return SSL_CTX_add_extra_chain_cert(x0, x1);
+          ^
+[0m[91mbuild/temp.linux-x86_64-2.7/_openssl.c: In function '_cffi_f_SSL_CTX_add_extra_chain_cert':
+build/temp.linux-x86_64-2.7/_openssl.c:47478:14: warning: conversion to 'long unsigned int' from 'long int' may change the sign of the result [-Wsign-conversion]
+   { result = SSL_CTX_add_extra_chain_cert(x0, x1); }
+              ^
+[0m[91mbuild/temp.linux-x86_64-2.7/_openssl.c: In function '_cffi_d_SSL_CTX_clear_options':
+build/temp.linux-x86_64-2.7/_openssl.c:47527:10: warning: conversion to 'long int' from 'long unsigned int' may change the sign of the result [-Wsign-conversion]
+   return SSL_CTX_clear_options(x0, x1);
+          ^
+build/temp.linux-x86_64-2.7/_openssl.c:47527:10: warning: conversion to 'long unsigned int' from 'long int' may change the sign of the result [-Wsign-conversion]
+[0m[91mbuild/temp.linux-x86_64-2.7/_openssl.c: In function '_cffi_f_SSL_CTX_clear_options':
+build/temp.linux-x86_64-2.7/_openssl.c:47560:14: warning: conversion to 'long int' from 'long unsigned int' may change the sign of the result [-Wsign-conversion]
+   { result = SSL_CTX_clear_options(x0, x1); }
+              ^
+build/temp.linux-x86_64-2.7/_openssl.c:47560:14: warning: conversion to 'long unsigned int' from 'long int' may change the sign of the result [-Wsign-conversion]
+[0m[91mbuild/temp.linux-x86_64-2.7/_openssl.c: In function '_cffi_d_SSL_CTX_get_mode':
+build/temp.linux-x86_64-2.7/_openssl.c:47812:10: warning: conversion to 'long unsigned int' from 'long int' may change the sign of the result [-Wsign-conversion]
+   return SSL_CTX_get_mode(x0);
+          ^
+[0m[91mbuild/temp.linux-x86_64-2.7/_openssl.c: In function '_cffi_f_SSL_CTX_get_mode':
+build/temp.linux-x86_64-2.7/_openssl.c:47835:14: warning: conversion to 'long unsigned int' from 'long int' may change the sign of the result [-Wsign-conversion]
+   { result = SSL_CTX_get_mode(x0); }
+              ^
+[0m[91mbuild/temp.linux-x86_64-2.7/_openssl.c: In function '_cffi_d_SSL_CTX_get_options':
+build/temp.linux-x86_64-2.7/_openssl.c:47848:10: warning: conversion to 'long unsigned int' from 'long int' may change the sign of the result [-Wsign-conversion]
+   return SSL_CTX_get_options(x0);
+          ^
+[0m[91mbuild/temp.linux-x86_64-2.7/_openssl.c: In function '_cffi_f_SSL_CTX_get_options':
+build/temp.linux-x86_64-2.7/_openssl.c:47871:14: warning: conversion to 'long unsigned int' from 'long int' may change the sign of the result [-Wsign-conversion]
+   { result = SSL_CTX_get_options(x0); }
+              ^
+build/temp.linux-x86_64-2.7/_openssl.c: In function '_cffi_d_SSL_CTX_get_session_cache_mode':
+build/temp.linux-x86_64-2.7/_openssl.c:47884:10: warning: conversion to 'long unsigned int' from 'long int' may change the sign of the result [-Wsign-conversion]
+   return SSL_CTX_get_session_cache_mode(x0);
+          ^
+[0m[91mbuild/temp.linux-x86_64-2.7/_openssl.c: In function '_cffi_f_SSL_CTX_get_session_cache_mode':
+build/temp.linux-x86_64-2.7/_openssl.c:47907:14: warning: conversion to 'long unsigned int' from 'long int' may change the sign of the result [-Wsign-conversion]
+   { result = SSL_CTX_get_session_cache_mode(x0); }
+              ^
+[0m[91mbuild/temp.linux-x86_64-2.7/_openssl.c: In function '_cffi_d_SSL_CTX_set_mode':
+build/temp.linux-x86_64-2.7/_openssl.c:49368:10: warning: conversion to 'long int' from 'long unsigned int' may change the sign of the result [-Wsign-conversion]
+   return SSL_CTX_set_mode(x0, x1);
+          ^
+build/temp.linux-x86_64-2.7/_openssl.c:49368:10: warning: conversion to 'long unsigned int' from 'long int' may change the sign of the result [-Wsign-conversion]
+[0m[91mbuild/temp.linux-x86_64-2.7/_openssl.c: In function '_cffi_f_SSL_CTX_set_mode':
+build/temp.linux-x86_64-2.7/_openssl.c:49401:14: warning: conversion to 'long int' from 'long unsigned int' may change the sign of the result [-Wsign-conversion]
+   { result = SSL_CTX_set_mode(x0, x1); }
+              ^
+build/temp.linux-x86_64-2.7/_openssl.c:49401:14: warning: conversion to 'long unsigned int' from 'long int' may change the sign of the result [-Wsign-conversion]
+[0m[91mbuild/temp.linux-x86_64-2.7/_openssl.c: In function '_cffi_d_SSL_CTX_set_options':
+build/temp.linux-x86_64-2.7/_openssl.c:49532:10: warning: conversion to 'long int' from 'long unsigned int' may change the sign of the result [-Wsign-conversion]
+   return SSL_CTX_set_options(x0, x1);
+          ^
+build/temp.linux-x86_64-2.7/_openssl.c:49532:10: warning: conversion to 'long unsigned int' from 'long int' may change the sign of the result [-Wsign-conversion]
+[0m[91mbuild/temp.linux-x86_64-2.7/_openssl.c: In function '_cffi_f_SSL_CTX_set_options':
+build/temp.linux-x86_64-2.7/_openssl.c:49565:14: warning: conversion to 'long int' from 'long unsigned int' may change the sign of the result [-Wsign-conversion]
+   { result = SSL_CTX_set_options(x0, x1); }
+              ^
+build/temp.linux-x86_64-2.7/_openssl.c:49565:14: warning: conversion to 'long unsigned int' from 'long int' may change the sign of the result [-Wsign-conversion]
+In file included from build/temp.linux-x86_64-2.7/_openssl.c:705:0:
+build/temp.linux-x86_64-2.7/_openssl.c: In function '_cffi_d_SSL_CTX_set_session_cache_mode':
+build/temp.linux-x86_64-2.7/_openssl.c:49578:45: warning: conversion to 'long int' from 'long unsigned int' may change the sign of the result [-Wsign-conversion]
+   return SSL_CTX_set_session_cache_mode(x0, x1);
+                                             ^
+[0m[91mbuild/temp.linux-x86_64-2.7/_openssl.c:49578:10: warning: conversion to 'long unsigned int' from 'long int' may change the sign of the result [-Wsign-conversion]
+   return SSL_CTX_set_session_cache_mode(x0, x1);
+          ^
+[0m[91mIn file included from build/temp.linux-x86_64-2.7/_openssl.c:705:0:
+build/temp.linux-x86_64-2.7/_openssl.c: In function '_cffi_f_SSL_CTX_set_session_cache_mode':
+build/temp.linux-x86_64-2.7/_openssl.c:49611:49: warning: conversion to 'long int' from 'long unsigned int' may change the sign of the result [-Wsign-conversion]
+   { result = SSL_CTX_set_session_cache_mode(x0, x1); }
+                                                 ^
+[0m[91mbuild/temp.linux-x86_64-2.7/_openssl.c:49611:14: warning: conversion to 'long unsigned int' from 'long int' may change the sign of the result [-Wsign-conversion]
+   { result = SSL_CTX_set_session_cache_mode(x0, x1); }
+              ^
+[0m[91mbuild/temp.linux-x86_64-2.7/_openssl.c: In function '_cffi_d_SSL_CTX_set_tmp_dh':
+build/temp.linux-x86_64-2.7/_openssl.c:49927:10: warning: conversion to 'long unsigned int' from 'long int' may change the sign of the result [-Wsign-conversion]
+   return SSL_CTX_set_tmp_dh(x0, x1);
+          ^
+[0m[91mbuild/temp.linux-x86_64-2.7/_openssl.c: In function '_cffi_f_SSL_CTX_set_tmp_dh':
+build/temp.linux-x86_64-2.7/_openssl.c:49967:14: warning: conversion to 'long unsigned int' from 'long int' may change the sign of the result [-Wsign-conversion]
+   { result = SSL_CTX_set_tmp_dh(x0, x1); }
+              ^
+build/temp.linux-x86_64-2.7/_openssl.c: In function '_cffi_d_SSL_CTX_set_tmp_ecdh':
+build/temp.linux-x86_64-2.7/_openssl.c:49980:10: warning: conversion to 'long unsigned int' from 'long int' may change the sign of the result [-Wsign-conversion]
+   return SSL_CTX_set_tmp_ecdh(x0, x1);
+          ^
+[0m[91mbuild/temp.linux-x86_64-2.7/_openssl.c: In function '_cffi_f_SSL_CTX_set_tmp_ecdh':
+build/temp.linux-x86_64-2.7/_openssl.c:50020:14: warning: conversion to 'long unsigned int' from 'long int' may change the sign of the result [-Wsign-conversion]
+   { result = SSL_CTX_set_tmp_ecdh(x0, x1); }
+              ^
+[0m[91mbuild/temp.linux-x86_64-2.7/_openssl.c: In function '_cffi_d_SSL_get_mode':
+build/temp.linux-x86_64-2.7/_openssl.c:51721:10: warning: conversion to 'long unsigned int' from 'long int' may change the sign of the result [-Wsign-conversion]
+   return SSL_get_mode(x0);
+          ^
+[0m[91mbuild/temp.linux-x86_64-2.7/_openssl.c: In function '_cffi_f_SSL_get_mode':
+[0m[91mbuild/temp.linux-x86_64-2.7/_openssl.c:51744:14: warning: conversion to 'long unsigned int' from 'long int' may change the sign of the result [-Wsign-conversion]
+   { result = SSL_get_mode(x0); }
+              ^
+[0m[91mbuild/temp.linux-x86_64-2.7/_openssl.c: In function '_cffi_d_SSL_get_options':
+build/temp.linux-x86_64-2.7/_openssl.c:51757:10: warning: conversion to 'long unsigned int' from 'long int' may change the sign of the result [-Wsign-conversion]
+   return SSL_get_options(x0);
+          ^
+build/temp.linux-x86_64-2.7/_openssl.c: In function '_cffi_f_SSL_get_options':
+build/temp.linux-x86_64-2.7/_openssl.c:51780:14: warning: conversion to 'long unsigned int' from 'long int' may change the sign of the result [-Wsign-conversion]
+   { result = SSL_get_options(x0); }
+              ^
+[0m[91mbuild/temp.linux-x86_64-2.7/_openssl.c: In function '_cffi_d_SSL_set_mode':
+build/temp.linux-x86_64-2.7/_openssl.c:53445:10: warning: conversion to 'long int' from 'long unsigned int' may change the sign of the result [-Wsign-conversion]
+   return SSL_set_mode(x0, x1);
+          ^
+build/temp.linux-x86_64-2.7/_openssl.c:53445:10: warning: conversion to 'long unsigned int' from 'long int' may change the sign of the result [-Wsign-conversion]
+[0m[91mbuild/temp.linux-x86_64-2.7/_openssl.c: In function '_cffi_f_SSL_set_mode':
+build/temp.linux-x86_64-2.7/_openssl.c:53478:14: warning: conversion to 'long int' from 'long unsigned int' may change the sign of the result [-Wsign-conversion]
+   { result = SSL_set_mode(x0, x1); }
+              ^
+build/temp.linux-x86_64-2.7/_openssl.c:53478:14: warning: conversion to 'long unsigned int' from 'long int' may change the sign of the result [-Wsign-conversion]
+build/temp.linux-x86_64-2.7/_openssl.c: In function '_cffi_d_SSL_set_options':
+build/temp.linux-x86_64-2.7/_openssl.c:53491:10: warning: conversion to 'long int' from 'long unsigned int' may change the sign of the result [-Wsign-conversion]
+   return SSL_set_options(x0, x1);
+          ^
+build/temp.linux-x86_64-2.7/_openssl.c:53491:10: warning: conversion to 'long unsigned int' from 'long int' may change the sign of the result [-Wsign-conversion]
+[0m[91mbuild/temp.linux-x86_64-2.7/_openssl.c: In function '_cffi_f_SSL_set_options':
+build/temp.linux-x86_64-2.7/_openssl.c:53524:14: warning: conversion to 'long int' from 'long unsigned int' may change the sign of the result [-Wsign-conversion]
+   { result = SSL_set_options(x0, x1); }
+              ^
+build/temp.linux-x86_64-2.7/_openssl.c:53524:14: warning: conversion to 'long unsigned int' from 'long int' may change the sign of the result [-Wsign-conversion]
+[0mcreating /usr/lib/python2.7/site-packages/cryptography-2.0.3-py2.7-linux-x86_64.egg
+Extracting cryptography-2.0.3-py2.7-linux-x86_64.egg to /usr/lib/python2.7/site-packages
+Adding cryptography 2.0.3 to easy-install.pth file
+
+Installed /usr/lib/python2.7/site-packages/cryptography-2.0.3-py2.7-linux-x86_64.egg
+Searching for PyJWT>=1.4.2
+Reading https://pypi.python.org/simple/PyJWT/
+Downloading https://pypi.python.org/packages/c9/2a/ffd27735280696f6f244c8d1b4d2dd130511340475a29768ed317f9eaf0c/PyJWT-1.5.3.tar.gz#md5=739494379f582ca98c89fb7ac229915b
+Best match: PyJWT 1.5.3
+Processing PyJWT-1.5.3.tar.gz
+Writing /tmp/easy_install-Qa3xUc/PyJWT-1.5.3/setup.cfg
+Running PyJWT-1.5.3/setup.py -q bdist_egg --dist-dir /tmp/easy_install-Qa3xUc/PyJWT-1.5.3/egg-dist-tmp-jhF43q
+[91mwarning: no previously-included files matching '__pycache__' found under directory '*'
+[0m[91mzip_safe flag not set; analyzing archive contents...
+[0mMoving PyJWT-1.5.3-py2.7.egg to /usr/lib/python2.7/site-packages
+Adding PyJWT 1.5.3 to easy-install.pth file
+Installing pyjwt script to /usr/bin
+
+Installed /usr/lib/python2.7/site-packages/PyJWT-1.5.3-py2.7.egg
+Searching for pytz
+Reading https://pypi.python.org/simple/pytz/
+Downloading https://pypi.python.org/packages/42/76/817ef6af92ae3d077465bccfd8a1ae47d02d6db83d558711b503540ca5c7/pytz-2017.2-py2.7.egg#md5=8d7d381ad2730ab62c94caf82d80179a
+Best match: pytz 2017.2
+Processing pytz-2017.2-py2.7.egg
+Moving pytz-2017.2-py2.7.egg to /usr/lib/python2.7/site-packages
+Adding pytz 2017.2 to easy-install.pth file
+
+Installed /usr/lib/python2.7/site-packages/pytz-2017.2-py2.7.egg
+Searching for six
+Reading https://pypi.python.org/simple/six/
+Downloading https://pypi.python.org/packages/16/d8/bc6316cf98419719bd59c91742194c111b6f2e85abac88e496adefaf7afe/six-1.11.0.tar.gz#md5=d12789f9baf7e9fb2524c0c64f1773f8
+Best match: six 1.11.0
+Processing six-1.11.0.tar.gz
+Writing /tmp/easy_install-YWhK_K/six-1.11.0/setup.cfg
+Running six-1.11.0/setup.py -q bdist_egg --dist-dir /tmp/easy_install-YWhK_K/six-1.11.0/egg-dist-tmp-PqETa7
+[91mno previously-included directories found matching 'documentation/_build'
+[0m[91mzip_safe flag not set; analyzing archive contents...
+[0m[91msix: module references __path__
+[0mcreating /usr/lib/python2.7/site-packages/six-1.11.0-py2.7.egg
+Extracting six-1.11.0-py2.7.egg to /usr/lib/python2.7/site-packages
+Adding six 1.11.0 to easy-install.pth file
+
+Installed /usr/lib/python2.7/site-packages/six-1.11.0-py2.7.egg
+Searching for certifi>=2017.4.17
+Reading https://pypi.python.org/simple/certifi/
+Downloading https://pypi.python.org/packages/20/d0/3f7a84b0c5b89e94abbd073a5f00c7176089f526edb056686751d5064cbd/certifi-2017.7.27.1.tar.gz#md5=48e8370da8b370a16e223ee9c7b6b063
+Best match: certifi 2017.7.27.1
+Processing certifi-2017.7.27.1.tar.gz
+Writing /tmp/easy_install-KXokUb/certifi-2017.7.27.1/setup.cfg
+Running certifi-2017.7.27.1/setup.py -q bdist_egg --dist-dir /tmp/easy_install-KXokUb/certifi-2017.7.27.1/egg-dist-tmp-lbyorN
+[91m/usr/lib/python2.7/site-packages/setuptools/dist.py:351: UserWarning: Normalizing '2017.07.27.1' to '2017.7.27.1'
+  normalized_version,
+[0mcreating /usr/lib/python2.7/site-packages/certifi-2017.7.27.1-py2.7.egg
+Extracting certifi-2017.7.27.1-py2.7.egg to /usr/lib/python2.7/site-packages
+Adding certifi 2017.7.27.1 to easy-install.pth file
+
+Installed /usr/lib/python2.7/site-packages/certifi-2017.7.27.1-py2.7.egg
+Searching for urllib3<1.23,>=1.21.1
+Reading https://pypi.python.org/simple/urllib3/
+Downloading https://pypi.python.org/packages/ee/11/7c59620aceedcc1ef65e156cc5ce5a24ef87be4107c2b74458464e437a5d/urllib3-1.22.tar.gz#md5=0da7bed3fe94bf7dc59ae37885cc72f7
+Best match: urllib3 1.22
+Processing urllib3-1.22.tar.gz
+Writing /tmp/easy_install-RIvjbQ/urllib3-1.22/setup.cfg
+Running urllib3-1.22/setup.py -q bdist_egg --dist-dir /tmp/easy_install-RIvjbQ/urllib3-1.22/egg-dist-tmp-BlbLa2
+[91mwarning: no previously-included files matching '*' found under directory 'docs/_build'
+[0m[91mzip_safe flag not set; analyzing archive contents...
+[0m[91murllib3.packages.six: module references __path__
+[0mcreating /usr/lib/python2.7/site-packages/urllib3-1.22-py2.7.egg
+Extracting urllib3-1.22-py2.7.egg to /usr/lib/python2.7/site-packages
+Adding urllib3 1.22 to easy-install.pth file
+
+Installed /usr/lib/python2.7/site-packages/urllib3-1.22-py2.7.egg
+Searching for chardet<3.1.0,>=3.0.2
+Reading https://pypi.python.org/simple/chardet/
+Downloading https://pypi.python.org/packages/fc/bb/a5768c230f9ddb03acc9ef3f0d4a3cf93462473795d18e9535498c8f929d/chardet-3.0.4.tar.gz#md5=7dd1ba7f9c77e32351b0a0cfacf4055c
+Best match: chardet 3.0.4
+Processing chardet-3.0.4.tar.gz
+Writing /tmp/easy_install-1XbJ9L/chardet-3.0.4/setup.cfg
+Running chardet-3.0.4/setup.py -q bdist_egg --dist-dir /tmp/easy_install-1XbJ9L/chardet-3.0.4/egg-dist-tmp-MKSO4R
+[91mwarning: no files found matching 'requirements.txt'
+[0m[91mzip_safe flag not set; analyzing archive contents...
+[0mMoving chardet-3.0.4-py2.7.egg to /usr/lib/python2.7/site-packages
+Adding chardet 3.0.4 to easy-install.pth file
+Installing chardetect script to /usr/bin
+
+Installed /usr/lib/python2.7/site-packages/chardet-3.0.4-py2.7.egg
+Searching for pbr>=0.11
+Reading https://pypi.python.org/simple/pbr/
+Downloading https://pypi.python.org/packages/d5/d6/f2bf137d71e4f213b575faa9eb426a8775732432edb67588a8ee836ecb80/pbr-3.1.1.tar.gz#md5=4e82c2e07af544c56a5b71c801525b00
+Best match: pbr 3.1.1
+Processing pbr-3.1.1.tar.gz
+Writing /tmp/easy_install-nvU4Qz/pbr-3.1.1/setup.cfg
+Running pbr-3.1.1/setup.py -q bdist_egg --dist-dir /tmp/easy_install-nvU4Qz/pbr-3.1.1/egg-dist-tmp-FFbHfB
+creating /usr/lib/python2.7/site-packages/pbr-3.1.1-py2.7.egg
+Extracting pbr-3.1.1-py2.7.egg to /usr/lib/python2.7/site-packages
+Adding pbr 3.1.1 to easy-install.pth file
+Installing pbr script to /usr/bin
+
+Installed /usr/lib/python2.7/site-packages/pbr-3.1.1-py2.7.egg
+Searching for funcsigs>=1
+Reading https://pypi.python.org/simple/funcsigs/
+Downloading https://pypi.python.org/packages/94/4a/db842e7a0545de1cdb0439bb80e6e42dfe82aaeaadd4072f2263a4fbed23/funcsigs-1.0.2.tar.gz#md5=7e583285b1fb8a76305d6d68f4ccc14e
+Best match: funcsigs 1.0.2
+Processing funcsigs-1.0.2.tar.gz
+Writing /tmp/easy_install-_yFdD8/funcsigs-1.0.2/setup.cfg
+Running funcsigs-1.0.2/setup.py -q bdist_egg --dist-dir /tmp/easy_install-_yFdD8/funcsigs-1.0.2/egg-dist-tmp-eN7Djx
+creating /usr/lib/python2.7/site-packages/funcsigs-1.0.2-py2.7.egg
+Extracting funcsigs-1.0.2-py2.7.egg to /usr/lib/python2.7/site-packages
+Adding funcsigs 1.0.2 to easy-install.pth file
+
+Installed /usr/lib/python2.7/site-packages/funcsigs-1.0.2-py2.7.egg
+Searching for functools32
+Reading https://pypi.python.org/simple/functools32/
+Downloading https://pypi.python.org/packages/c5/60/6ac26ad05857c601308d8fb9e87fa36d0ebf889423f47c3502ef034365db/functools32-3.2.3-2.tar.gz#md5=09f24ffd9af9f6cd0f63cb9f4e23d4b2
+Best match: functools32 3.2.3.post2
+Processing functools32-3.2.3-2.tar.gz
+Writing /tmp/easy_install-ntBkG0/functools32-3.2.3-2/setup.cfg
+Running functools32-3.2.3-2/setup.py -q bdist_egg --dist-dir /tmp/easy_install-ntBkG0/functools32-3.2.3-2/egg-dist-tmp-6Iguwx
+[91m/usr/lib/python2.7/site-packages/setuptools/dist.py:351: UserWarning: Normalizing '3.2.3-2' to '3.2.3.post2'
+  normalized_version,
+[0m[91mwarning: no files found matching '*.txt'
+[0m[91mno previously-included directories found matching 'build'
+[0m[91mno previously-included directories found matching 'dist'
+[0m[91mno previously-included directories found matching '.git*'
+[0m[91mzip_safe flag not set; analyzing archive contents...
+[0mMoving functools32-3.2.3.post2-py2.7.egg to /usr/lib/python2.7/site-packages
+Adding functools32 3.2.3.post2 to easy-install.pth file
+
+Installed /usr/lib/python2.7/site-packages/functools32-3.2.3.post2-py2.7.egg
+Searching for defusedxml
+Reading https://pypi.python.org/simple/defusedxml/
+Downloading https://pypi.python.org/packages/74/ba/4ba4e89e21b5a2e267d80736ea674609a0a33cc4435a6d748ef04f1f9374/defusedxml-0.5.0.tar.gz#md5=7ff1501366c6d1dcd2de8514dc2b755e
+Best match: defusedxml 0.5.0
+Processing defusedxml-0.5.0.tar.gz
+Writing /tmp/easy_install-PGX2FB/defusedxml-0.5.0/setup.cfg
+Running defusedxml-0.5.0/setup.py -q bdist_egg --dist-dir /tmp/easy_install-PGX2FB/defusedxml-0.5.0/egg-dist-tmp-JJJ1Ij
+[91mzip_safe flag not set; analyzing archive contents...
+[0mMoving defusedxml-0.5.0-py2.7.egg to /usr/lib/python2.7/site-packages
+Adding defusedxml 0.5.0 to easy-install.pth file
+
+Installed /usr/lib/python2.7/site-packages/defusedxml-0.5.0-py2.7.egg
+Searching for requests_toolbelt
+Reading https://pypi.python.org/simple/requests_toolbelt/
+Downloading https://pypi.python.org/packages/86/f9/e80fa23edca6c554f1994040064760c12b51daff54b55f9e379e899cd3d4/requests-toolbelt-0.8.0.tar.gz#md5=1028a6044b175440fdc7671e94430cbe
+Best match: requests-toolbelt 0.8.0
+Processing requests-toolbelt-0.8.0.tar.gz
+Writing /tmp/easy_install-9KZtXy/requests-toolbelt-0.8.0/setup.cfg
+Running requests-toolbelt-0.8.0/setup.py -q bdist_egg --dist-dir /tmp/easy_install-9KZtXy/requests-toolbelt-0.8.0/egg-dist-tmp-Dp90Ku
+[91mno previously-included directories found matching 'docs/_build'
+[0m[91mwarning: no previously-included files matching '*.py[cdo]' found anywhere in distribution
+[0m[91mwarning: no previously-included files matching '__pycache__' found anywhere in distribution
+[0m[91mwarning: no previously-included files matching '*.so' found anywhere in distribution
+[0m[91mwarning: no previously-included files matching '*.pyd' found anywhere in distribution
+[0m[91mzip_safe flag not set; analyzing archive contents...
+[0mMoving requests_toolbelt-0.8.0-py2.7.egg to /usr/lib/python2.7/site-packages
+Adding requests-toolbelt 0.8.0 to easy-install.pth file
+
+Installed /usr/lib/python2.7/site-packages/requests_toolbelt-0.8.0-py2.7.egg
+Searching for requests-oauthlib>=0.6.1
+Reading https://pypi.python.org/simple/requests-oauthlib/
+Downloading https://pypi.python.org/packages/80/14/ad120c720f86c547ba8988010d5186102030591f71f7099f23921ca47fe5/requests-oauthlib-0.8.0.tar.gz#md5=4358a879a4377393bcfd37d0f9ae6d4d
+Best match: requests-oauthlib 0.8.0
+Processing requests-oauthlib-0.8.0.tar.gz
+Writing /tmp/easy_install-bIlwz0/requests-oauthlib-0.8.0/setup.cfg
+Running requests-oauthlib-0.8.0/setup.py -q bdist_egg --dist-dir /tmp/easy_install-bIlwz0/requests-oauthlib-0.8.0/egg-dist-tmp-bslmMn
+[91mno previously-included directories found matching '*.pyc'
+[0mcreating /usr/lib/python2.7/site-packages/requests_oauthlib-0.8.0-py2.7.egg
+Extracting requests_oauthlib-0.8.0-py2.7.egg to /usr/lib/python2.7/site-packages
+Adding requests-oauthlib 0.8.0 to easy-install.pth file
+
+Installed /usr/lib/python2.7/site-packages/requests_oauthlib-0.8.0-py2.7.egg
+Searching for argparse
+Reading https://pypi.python.org/simple/argparse/
+Downloading https://pypi.python.org/packages/18/dd/e617cfc3f6210ae183374cd9f6a26b20514bbb5a792af97949c5aacddf0f/argparse-1.4.0.tar.gz#md5=08062d2ceb6596fcbc5a7e725b53746f
+Best match: argparse 1.4.0
+Processing argparse-1.4.0.tar.gz
+Writing /tmp/easy_install-weeXnQ/argparse-1.4.0/setup.cfg
+Running argparse-1.4.0/setup.py -q bdist_egg --dist-dir /tmp/easy_install-weeXnQ/argparse-1.4.0/egg-dist-tmp-Xq74Es
+[91mwarning: no previously-included files matching '*.pyc' found anywhere in distribution
+[0m[91mwarning: no previously-included files matching '*.pyo' found anywhere in distribution
+[0m[91mwarning: no previously-included files matching '*.orig' found anywhere in distribution
+[0m[91mwarning: no previously-included files matching '*.rej' found anywhere in distribution
+[0m[91mno previously-included directories found matching 'doc/_build'
+[0m[91mno previously-included directories found matching 'env24'
+[0m[91mno previously-included directories found matching 'env25'
+[0m[91mno previously-included directories found matching 'env26'
+[0m[91mno previously-included directories found matching 'env27'
+[0m[91mzip_safe flag not set; analyzing archive contents...
+[0mMoving argparse-1.4.0-py2.7.egg to /usr/lib/python2.7/site-packages
+Adding argparse 1.4.0 to easy-install.pth file
+
+Installed /usr/lib/python2.7/site-packages/argparse-1.4.0-py2.7.egg
+Searching for ordereddict
+Reading https://pypi.python.org/simple/ordereddict/
+Downloading https://pypi.python.org/packages/53/25/ef88e8e45db141faa9598fbf7ad0062df8f50f881a36ed6a0073e1572126/ordereddict-1.1.tar.gz#md5=a0ed854ee442051b249bfad0f638bbec
+Best match: ordereddict 1.1
+Processing ordereddict-1.1.tar.gz
+Writing /tmp/easy_install-VZTo1W/ordereddict-1.1/setup.cfg
+Running ordereddict-1.1/setup.py -q bdist_egg --dist-dir /tmp/easy_install-VZTo1W/ordereddict-1.1/egg-dist-tmp-EbgMoM
+[91mzip_safe flag not set; analyzing archive contents...
+[0mMoving ordereddict-1.1-py2.7.egg to /usr/lib/python2.7/site-packages
+Adding ordereddict 1.1 to easy-install.pth file
+
+Installed /usr/lib/python2.7/site-packages/ordereddict-1.1-py2.7.egg
+Searching for s3transfer<0.2.0,>=0.1.10
+Reading https://pypi.python.org/simple/s3transfer/
+Downloading https://pypi.python.org/packages/a8/58/d264e95e1b19a811fc52ff41c95dafd9c70cc7457b658bc04d87dfad31de/s3transfer-0.1.11.tar.gz#md5=2c54c4b88bfbc48052fdbd1cb4de6151
+Best match: s3transfer 0.1.11
+Processing s3transfer-0.1.11.tar.gz
+Writing /tmp/easy_install-A4gDle/s3transfer-0.1.11/setup.cfg
+Running s3transfer-0.1.11/setup.py -q bdist_egg --dist-dir /tmp/easy_install-A4gDle/s3transfer-0.1.11/egg-dist-tmp-kRKGdu
+[91mzip_safe flag not set; analyzing archive contents...
+[0mMoving s3transfer-0.1.11-py2.7.egg to /usr/lib/python2.7/site-packages
+Adding s3transfer 0.1.11 to easy-install.pth file
+
+Installed /usr/lib/python2.7/site-packages/s3transfer-0.1.11-py2.7.egg
+Searching for jmespath<1.0.0,>=0.7.1
+Reading https://pypi.python.org/simple/jmespath/
+Downloading https://pypi.python.org/packages/e5/21/795b7549397735e911b032f255cff5fb0de58f96da794274660bca4f58ef/jmespath-0.9.3.tar.gz#md5=37a906c06de62bed25ec5cf99cee04a6
+Best match: jmespath 0.9.3
+Processing jmespath-0.9.3.tar.gz
+Writing /tmp/easy_install-8FLCiE/jmespath-0.9.3/setup.cfg
+Running jmespath-0.9.3/setup.py -q bdist_egg --dist-dir /tmp/easy_install-8FLCiE/jmespath-0.9.3/egg-dist-tmp-EHNoKR
+[91mzip_safe flag not set; analyzing archive contents...
+[0mMoving jmespath-0.9.3-py2.7.egg to /usr/lib/python2.7/site-packages
+Adding jmespath 0.9.3 to easy-install.pth file
+Installing jp.py script to /usr/bin
+
+Installed /usr/lib/python2.7/site-packages/jmespath-0.9.3-py2.7.egg
+Searching for botocore<1.8.0,>=1.7.0
+Reading https://pypi.python.org/simple/botocore/
+Downloading https://pypi.python.org/packages/a2/24/4e2ab1b6188061123cb8ed7647ae40befba5809c25b9f56e665a0616e008/botocore-1.7.18.tar.gz#md5=45f512769b0b8fdf2a98c7ff1874550f
+Best match: botocore 1.7.18
+Processing botocore-1.7.18.tar.gz
+Writing /tmp/easy_install-8w3zTY/botocore-1.7.18/setup.cfg
+Running botocore-1.7.18/setup.py -q bdist_egg --dist-dir /tmp/easy_install-8w3zTY/botocore-1.7.18/egg-dist-tmp-QZAMKc
+[91mno previously-included directories found matching 'docs/build'
+[0m[91mzip_safe flag not set; analyzing archive contents...
+[0m[91mbotocore.__init__: module references __file__
+[0m[91mbotocore.vendored.six: module references __path__
+[0m[91mbotocore.vendored.requests.certs: module references __file__
+[0mcreating /usr/lib/python2.7/site-packages/botocore-1.7.18-py2.7.egg
+Extracting botocore-1.7.18-py2.7.egg to /usr/lib/python2.7/site-packages
+Adding botocore 1.7.18 to easy-install.pth file
+
+Installed /usr/lib/python2.7/site-packages/botocore-1.7.18-py2.7.egg
+Searching for cffi>=1.7
+Reading https://pypi.python.org/simple/cffi/
+Downloading https://pypi.python.org/packages/4e/32/4070bdf32812c89eb635c80880a5caa2e0189aa7999994c265577e5154f3/cffi-1.11.0.tar.gz#md5=2c5939cc2fa0183fe0c2fcb6a4f1994d
+Best match: cffi 1.11.0
+Processing cffi-1.11.0.tar.gz
+Writing /tmp/easy_install-POUQBa/cffi-1.11.0/setup.cfg
+Running cffi-1.11.0/setup.py -q bdist_egg --dist-dir /tmp/easy_install-POUQBa/cffi-1.11.0/egg-dist-tmp-Z3RoDU
+creating /usr/lib/python2.7/site-packages/cffi-1.11.0-py2.7-linux-x86_64.egg
+Extracting cffi-1.11.0-py2.7-linux-x86_64.egg to /usr/lib/python2.7/site-packages
+Adding cffi 1.11.0 to easy-install.pth file
+
+Installed /usr/lib/python2.7/site-packages/cffi-1.11.0-py2.7-linux-x86_64.egg
+Searching for ipaddress
+Reading https://pypi.python.org/simple/ipaddress/
+Downloading https://pypi.python.org/packages/4e/13/774faf38b445d0b3a844b65747175b2e0500164b7c28d78e34987a5bfe06/ipaddress-1.0.18.tar.gz#md5=310c2dfd64eb6f0df44aa8c59f2334a7
+Best match: ipaddress 1.0.18
+Processing ipaddress-1.0.18.tar.gz
+Writing /tmp/easy_install-urQG4Q/ipaddress-1.0.18/setup.cfg
+Running ipaddress-1.0.18/setup.py -q bdist_egg --dist-dir /tmp/easy_install-urQG4Q/ipaddress-1.0.18/egg-dist-tmp-UQm5mh
+[91mzip_safe flag not set; analyzing archive contents...
+[0mMoving ipaddress-1.0.18-py2.7.egg to /usr/lib/python2.7/site-packages
+Adding ipaddress 1.0.18 to easy-install.pth file
+
+Installed /usr/lib/python2.7/site-packages/ipaddress-1.0.18-py2.7.egg
+Searching for enum34
+Reading https://pypi.python.org/simple/enum34/
+Downloading https://pypi.python.org/packages/e8/26/a6101edcf724453845c850281b96b89a10dac6bd98edebc82634fccce6a5/enum34-1.1.6.zip#md5=61ad7871532d4ce2d77fac2579237a9e
+Best match: enum34 1.1.6
+Processing enum34-1.1.6.zip
+Writing /tmp/easy_install-RTWPgR/enum34-1.1.6/setup.cfg
+Running enum34-1.1.6/setup.py -q bdist_egg --dist-dir /tmp/easy_install-RTWPgR/enum34-1.1.6/egg-dist-tmp-2e_uNx
+[91mzip_safe flag not set; analyzing archive contents...
+[0mMoving enum34-1.1.6-py2.7.egg to /usr/lib/python2.7/site-packages
+Adding enum34 1.1.6 to easy-install.pth file
+
+Installed /usr/lib/python2.7/site-packages/enum34-1.1.6-py2.7.egg
+Searching for asn1crypto>=0.21.0
+Reading https://pypi.python.org/simple/asn1crypto/
+Downloading https://pypi.python.org/packages/31/53/8bca924b30cb79d6d70dbab6a99e8731d1e4dd3b090b7f3d8412a8d8ffbc/asn1crypto-0.23.0.tar.gz#md5=97d54665c397b72b165768398dfdd876
+Best match: asn1crypto 0.23.0
+Processing asn1crypto-0.23.0.tar.gz
+Writing /tmp/easy_install-6_EhHA/asn1crypto-0.23.0/setup.cfg
+Running asn1crypto-0.23.0/setup.py -q bdist_egg --dist-dir /tmp/easy_install-6_EhHA/asn1crypto-0.23.0/egg-dist-tmp-GIUgpw
+[91mzip_safe flag not set; analyzing archive contents...
+[0mMoving asn1crypto-0.23.0-py2.7.egg to /usr/lib/python2.7/site-packages
+Adding asn1crypto 0.23.0 to easy-install.pth file
+
+Installed /usr/lib/python2.7/site-packages/asn1crypto-0.23.0-py2.7.egg
+Searching for oauthlib>=0.6.2
+Reading https://pypi.python.org/simple/oauthlib/
+Downloading https://pypi.python.org/packages/78/46/c19c2d374a37d218c551717d873670216af7242bc92958df1701dcc5e76d/oauthlib-2.0.4.tar.gz#md5=2d34c1473849f9389643f7217c8ffab6
+Best match: oauthlib 2.0.4
+Processing oauthlib-2.0.4.tar.gz
+Writing /tmp/easy_install-Lotw4r/oauthlib-2.0.4/setup.cfg
+Running oauthlib-2.0.4/setup.py -q bdist_egg --dist-dir /tmp/easy_install-Lotw4r/oauthlib-2.0.4/egg-dist-tmp-7HyzD1
+[91mzip_safe flag not set; analyzing archive contents...
+[0mMoving oauthlib-2.0.4-py2.7.egg to /usr/lib/python2.7/site-packages
+Adding oauthlib 2.0.4 to easy-install.pth file
+
+Installed /usr/lib/python2.7/site-packages/oauthlib-2.0.4-py2.7.egg
+Searching for futures<4.0.0,>=2.2.0
+Reading https://pypi.python.org/simple/futures/
+Downloading https://pypi.python.org/packages/cc/26/b61e3a4eb50653e8a7339d84eeaa46d1e93b92951978873c220ae64d0733/futures-3.1.1.tar.gz#md5=77f261ab86cc78efa2c5fe7be27c3ec8
+Best match: futures 3.1.1
+Processing futures-3.1.1.tar.gz
+Writing /tmp/easy_install-dFX6gK/futures-3.1.1/setup.cfg
+Running futures-3.1.1/setup.py -q bdist_egg --dist-dir /tmp/easy_install-dFX6gK/futures-3.1.1/egg-dist-tmp-ZX2Piq
+creating /usr/lib/python2.7/site-packages/futures-3.1.1-py2.7.egg
+Extracting futures-3.1.1-py2.7.egg to /usr/lib/python2.7/site-packages
+Adding futures 3.1.1 to easy-install.pth file
+
+Installed /usr/lib/python2.7/site-packages/futures-3.1.1-py2.7.egg
+Searching for docutils>=0.10
+Reading https://pypi.python.org/simple/docutils/
+Downloading https://pypi.python.org/packages/84/f4/5771e41fdf52aabebbadecc9381d11dea0fa34e4759b4071244fa094804c/docutils-0.14.tar.gz#md5=c53768d63db3873b7d452833553469de
+Best match: docutils 0.14
+Processing docutils-0.14.tar.gz
+Writing /tmp/easy_install-s7WmCZ/docutils-0.14/setup.cfg
+Running docutils-0.14/setup.py -q bdist_egg --dist-dir /tmp/easy_install-s7WmCZ/docutils-0.14/egg-dist-tmp-alZ3ul
+[91mwarning: no files found matching 'MANIFEST'
+[0m[91mwarning: no previously-included files matching '*.pyc' found under directory '*'
+[0m[91mwarning: no previously-included files matching '*~' found under directory '*'
+[0m[91mwarning: no previously-included files matching '.DS_Store' found under directory '*'
+[0m[91mzip_safe flag not set; analyzing archive contents...
+[0m[91mdocutils.parsers.rst.directives.misc: module references __file__
+[0m[91mdocutils.writers.docutils_xml: module references __path__
+[0m[91mdocutils.writers.html4css1.__init__: module references __file__
+[0m[91mdocutils.writers.html5_polyglot.__init__: module references __file__
+[0m[91mdocutils.writers.latex2e.__init__: module references __file__
+[0m[91mdocutils.writers.odf_odt.__init__: module references __file__
+[0m[91mdocutils.writers.pep_html.__init__: module references __file__
+[0m[91mdocutils.writers.s5_html.__init__: module references __file__
+[0mcreating /usr/lib/python2.7/site-packages/docutils-0.14-py2.7.egg
+Extracting docutils-0.14-py2.7.egg to /usr/lib/python2.7/site-packages
+Adding docutils 0.14 to easy-install.pth file
+Installing rst2pseudoxml.py script to /usr/bin
+Installing rst2odt.py script to /usr/bin
+Installing rst2html5.py script to /usr/bin
+Installing rst2latex.py script to /usr/bin
+Installing rstpep2html.py script to /usr/bin
+Installing rst2html.py script to /usr/bin
+Installing rst2s5.py script to /usr/bin
+Installing rst2odt_prepstyles.py script to /usr/bin
+Installing rst2man.py script to /usr/bin
+Installing rst2xetex.py script to /usr/bin
+Installing rst2html4.py script to /usr/bin
+Installing rst2xml.py script to /usr/bin
+
+Installed /usr/lib/python2.7/site-packages/docutils-0.14-py2.7.egg
+Searching for pycparser
+Reading https://pypi.python.org/simple/pycparser/
+Downloading https://pypi.python.org/packages/8c/2d/aad7f16146f4197a11f8e91fb81df177adcc2073d36a17b1491fd09df6ed/pycparser-2.18.tar.gz#md5=72370da54358202a60130e223d488136
+Best match: pycparser 2.18
+Processing pycparser-2.18.tar.gz
+Writing /tmp/easy_install-Wr9QFv/pycparser-2.18/setup.cfg
+Running pycparser-2.18/setup.py -q bdist_egg --dist-dir /tmp/easy_install-Wr9QFv/pycparser-2.18/egg-dist-tmp-9dQYMv
+[91mwarning: no previously-included files matching 'yacctab.*' found under directory 'tests'
+[0m[91mwarning: no previously-included files matching 'lextab.*' found under directory 'tests'
+[0m[91mwarning: no previously-included files matching 'yacctab.*' found under directory 'examples'
+[0m[91mwarning: no previously-included files matching 'lextab.*' found under directory 'examples'
+[0m[91mzip_safe flag not set; analyzing archive contents...
+[0m[91mpycparser.ply.lex: module references __file__
+pycparser.ply.lex: module MAY be using inspect.getsourcefile
+[0m[91mpycparser.ply.yacc: module references __file__
+pycparser.ply.yacc: module MAY be using inspect.getsourcefile
+pycparser.ply.yacc: module MAY be using inspect.stack
+[0m[91mpycparser.ply.ygen: module references __file__
+[0mcreating /usr/lib/python2.7/site-packages/pycparser-2.18-py2.7.egg
+Extracting pycparser-2.18-py2.7.egg to /usr/lib/python2.7/site-packages
+Adding pycparser 2.18 to easy-install.pth file
+
+Installed /usr/lib/python2.7/site-packages/pycparser-2.18-py2.7.egg
+Searching for setuptools==36.5.0
+Best match: setuptools 36.5.0
+Adding setuptools 36.5.0 to easy-install.pth file
+Installing easy_install script to /usr/bin
+Installing easy_install-3.6 script to /usr/bin
+
+Using /usr/lib/python2.7/site-packages
+Finished processing dependencies for elastalert==0.1.20
+Obtaining file:///opt/elastalert
+Requirement already satisfied: aws-requests-auth>=0.3.0 in /usr/lib/python2.7/site-packages/aws_requests_auth-0.4.0-py2.7.egg (from elastalert==0.1.20)
+Requirement already satisfied: blist>=1.3.6 in /usr/lib/python2.7/site-packages/blist-1.3.6-py2.7-linux-x86_64.egg (from elastalert==0.1.20)
+Requirement already satisfied: boto3>=1.4.4 in /usr/lib/python2.7/site-packages/boto3-1.4.7-py2.7.egg (from elastalert==0.1.20)
+Requirement already satisfied: configparser>=3.5.0 in /usr/lib/python2.7/site-packages/configparser-3.5.0-py2.7.egg (from elastalert==0.1.20)
+Requirement already satisfied: croniter>=0.3.16 in /usr/lib/python2.7/site-packages/croniter-0.3.19-py2.7.egg (from elastalert==0.1.20)
+Requirement already satisfied: elasticsearch in /usr/lib/python2.7/site-packages/elasticsearch-5.4.0-py2.7.egg (from elastalert==0.1.20)
+Requirement already satisfied: envparse>=0.2.0 in /usr/lib/python2.7/site-packages/envparse-0.2.0-py2.7.egg (from elastalert==0.1.20)
+Requirement already satisfied: exotel>=0.1.3 in /usr/lib/python2.7/site-packages/exotel-0.1.5-py2.7.egg (from elastalert==0.1.20)
+Requirement already satisfied: jira>=1.0.10 in /usr/lib/python2.7/site-packages/jira-1.0.10-py2.7.egg (from elastalert==0.1.20)
+Requirement already satisfied: jsonschema>=2.6.0 in /usr/lib/python2.7/site-packages/jsonschema-2.6.0-py2.7.egg (from elastalert==0.1.20)
+Requirement already satisfied: mock>=2.0.0 in /usr/lib/python2.7/site-packages/mock-2.0.0-py2.7.egg (from elastalert==0.1.20)
+Requirement already satisfied: PyStaticConfiguration>=0.10.3 in /usr/lib/python2.7/site-packages/PyStaticConfiguration-0.10.3-py2.7.egg (from elastalert==0.1.20)
+Requirement already satisfied: python-dateutil>=2.6.0 in /usr/lib/python2.7/site-packages/python_dateutil-2.6.1-py2.7.egg (from elastalert==0.1.20)
+Requirement already satisfied: PyYAML>=3.12 in /usr/lib/python2.7/site-packages/PyYAML-3.12-py2.7-linux-x86_64.egg (from elastalert==0.1.20)
+Requirement already satisfied: requests>=2.10.0 in /usr/lib/python2.7/site-packages/requests-2.18.4-py2.7.egg (from elastalert==0.1.20)
+Requirement already satisfied: simplejson>=3.10.0 in /usr/lib/python2.7/site-packages/simplejson-3.11.1-py2.7-linux-x86_64.egg (from elastalert==0.1.20)
+Requirement already satisfied: stomp.py>=4.1.17 in /usr/lib/python2.7/site-packages/stomp.py-4.1.18-py2.7.egg (from elastalert==0.1.20)
+Requirement already satisfied: texttable>=0.8.8 in /usr/lib/python2.7/site-packages/texttable-0.9.1-py2.7.egg (from elastalert==0.1.20)
+Requirement already satisfied: twilio<6.1,>=6.0.0 in /usr/lib/python2.7/site-packages/twilio-6.0.0-py2.7.egg (from elastalert==0.1.20)
+Requirement already satisfied: botocore<1.8.0,>=1.7.0 in /usr/lib/python2.7/site-packages/botocore-1.7.18-py2.7.egg (from boto3>=1.4.4->elastalert==0.1.20)
+Requirement already satisfied: jmespath<1.0.0,>=0.7.1 in /usr/lib/python2.7/site-packages/jmespath-0.9.3-py2.7.egg (from boto3>=1.4.4->elastalert==0.1.20)
+Requirement already satisfied: s3transfer<0.2.0,>=0.1.10 in /usr/lib/python2.7/site-packages/s3transfer-0.1.11-py2.7.egg (from boto3>=1.4.4->elastalert==0.1.20)
+Requirement already satisfied: urllib3<2.0,>=1.8 in /usr/lib/python2.7/site-packages/urllib3-1.22-py2.7.egg (from elasticsearch->elastalert==0.1.20)
+Requirement already satisfied: pbr in /usr/lib/python2.7/site-packages/pbr-3.1.1-py2.7.egg (from jira>=1.0.10->elastalert==0.1.20)
+Requirement already satisfied: ordereddict in /usr/lib/python2.7/site-packages/ordereddict-1.1-py2.7.egg (from jira>=1.0.10->elastalert==0.1.20)
+Requirement already satisfied: argparse in /usr/lib/python2.7/site-packages/argparse-1.4.0-py2.7.egg (from jira>=1.0.10->elastalert==0.1.20)
+Requirement already satisfied: requests-oauthlib>=0.6.1 in /usr/lib/python2.7/site-packages/requests_oauthlib-0.8.0-py2.7.egg (from jira>=1.0.10->elastalert==0.1.20)
+Requirement already satisfied: requests_toolbelt in /usr/lib/python2.7/site-packages/requests_toolbelt-0.8.0-py2.7.egg (from jira>=1.0.10->elastalert==0.1.20)
+Requirement already satisfied: setuptools>=20.10.1 in /usr/lib/python2.7/site-packages (from jira>=1.0.10->elastalert==0.1.20)
+Requirement already satisfied: six>=1.10.0 in /usr/lib/python2.7/site-packages/six-1.11.0-py2.7.egg (from jira>=1.0.10->elastalert==0.1.20)
+Requirement already satisfied: defusedxml in /usr/lib/python2.7/site-packages/defusedxml-0.5.0-py2.7.egg (from jira>=1.0.10->elastalert==0.1.20)
+Requirement already satisfied: functools32 in /usr/lib/python2.7/site-packages/functools32-3.2.3.post2-py2.7.egg (from jsonschema>=2.6.0->elastalert==0.1.20)
+Requirement already satisfied: funcsigs>=1 in /usr/lib/python2.7/site-packages/funcsigs-1.0.2-py2.7.egg (from mock>=2.0.0->elastalert==0.1.20)
+Requirement already satisfied: chardet<3.1.0,>=3.0.2 in /usr/lib/python2.7/site-packages/chardet-3.0.4-py2.7.egg (from requests>=2.10.0->elastalert==0.1.20)
+Requirement already satisfied: idna<2.7,>=2.5 in /usr/lib/python2.7/site-packages/idna-2.6-py2.7.egg (from requests>=2.10.0->elastalert==0.1.20)
+Requirement already satisfied: certifi>=2017.4.17 in /usr/lib/python2.7/site-packages/certifi-2017.7.27.1-py2.7.egg (from requests>=2.10.0->elastalert==0.1.20)
+Requirement already satisfied: pytz in /usr/lib/python2.7/site-packages/pytz-2017.2-py2.7.egg (from twilio<6.1,>=6.0.0->elastalert==0.1.20)
+Requirement already satisfied: PyJWT>=1.4.2 in /usr/lib/python2.7/site-packages/PyJWT-1.5.3-py2.7.egg (from twilio<6.1,>=6.0.0->elastalert==0.1.20)
+Requirement already satisfied: cryptography>=1.3.4 in /usr/lib/python2.7/site-packages/cryptography-2.0.3-py2.7-linux-x86_64.egg (from twilio<6.1,>=6.0.0->elastalert==0.1.20)
+Requirement already satisfied: pyOpenSSL>=0.14 in /usr/lib/python2.7/site-packages/pyOpenSSL-17.3.0-py2.7.egg (from twilio<6.1,>=6.0.0->elastalert==0.1.20)
+Requirement already satisfied: docutils>=0.10 in /usr/lib/python2.7/site-packages/docutils-0.14-py2.7.egg (from botocore<1.8.0,>=1.7.0->boto3>=1.4.4->elastalert==0.1.20)
+Requirement already satisfied: futures<4.0.0,>=2.2.0 in /usr/lib/python2.7/site-packages/futures-3.1.1-py2.7.egg (from s3transfer<0.2.0,>=0.1.10->boto3>=1.4.4->elastalert==0.1.20)
+Requirement already satisfied: oauthlib>=0.6.2 in /usr/lib/python2.7/site-packages/oauthlib-2.0.4-py2.7.egg (from requests-oauthlib>=0.6.1->jira>=1.0.10->elastalert==0.1.20)
+Requirement already satisfied: asn1crypto>=0.21.0 in /usr/lib/python2.7/site-packages/asn1crypto-0.23.0-py2.7.egg (from cryptography>=1.3.4->twilio<6.1,>=6.0.0->elastalert==0.1.20)
+Requirement already satisfied: enum34 in /usr/lib/python2.7/site-packages/enum34-1.1.6-py2.7.egg (from cryptography>=1.3.4->twilio<6.1,>=6.0.0->elastalert==0.1.20)
+Requirement already satisfied: ipaddress in /usr/lib/python2.7/site-packages/ipaddress-1.0.18-py2.7.egg (from cryptography>=1.3.4->twilio<6.1,>=6.0.0->elastalert==0.1.20)
+Requirement already satisfied: cffi>=1.7 in /usr/lib/python2.7/site-packages/cffi-1.11.0-py2.7-linux-x86_64.egg (from cryptography>=1.3.4->twilio<6.1,>=6.0.0->elastalert==0.1.20)
+Requirement already satisfied: pycparser in /usr/lib/python2.7/site-packages/pycparser-2.18-py2.7.egg (from cffi>=1.7->cryptography>=1.3.4->twilio<6.1,>=6.0.0->elastalert==0.1.20)
+Installing collected packages: elastalert
+  Found existing installation: elastalert 0.1.20
+    Uninstalling elastalert-0.1.20:
+      Successfully uninstalled elastalert-0.1.20
+  Running setup.py develop for elastalert
+Successfully installed elastalert
+Uninstalling twilio-6.0.0:
+  Successfully uninstalled twilio-6.0.0
+Collecting twilio==6.0.0
+  Downloading twilio-6.0.0.tar.gz (304kB)
+Requirement already satisfied: requests>=2.0.0 in /usr/lib/python2.7/site-packages/requests-2.18.4-py2.7.egg (from twilio==6.0.0)
+Requirement already satisfied: six in /usr/lib/python2.7/site-packages/six-1.11.0-py2.7.egg (from twilio==6.0.0)
+Requirement already satisfied: pytz in /usr/lib/python2.7/site-packages/pytz-2017.2-py2.7.egg (from twilio==6.0.0)
+Requirement already satisfied: PyJWT>=1.4.2 in /usr/lib/python2.7/site-packages/PyJWT-1.5.3-py2.7.egg (from twilio==6.0.0)
+Requirement already satisfied: cryptography>=1.3.4 in /usr/lib/python2.7/site-packages/cryptography-2.0.3-py2.7-linux-x86_64.egg (from twilio==6.0.0)
+Requirement already satisfied: idna>=2.0.0 in /usr/lib/python2.7/site-packages/idna-2.6-py2.7.egg (from twilio==6.0.0)
+Requirement already satisfied: pyOpenSSL>=0.14 in /usr/lib/python2.7/site-packages/pyOpenSSL-17.3.0-py2.7.egg (from twilio==6.0.0)
+Requirement already satisfied: chardet<3.1.0,>=3.0.2 in /usr/lib/python2.7/site-packages/chardet-3.0.4-py2.7.egg (from requests>=2.0.0->twilio==6.0.0)
+Requirement already satisfied: urllib3<1.23,>=1.21.1 in /usr/lib/python2.7/site-packages/urllib3-1.22-py2.7.egg (from requests>=2.0.0->twilio==6.0.0)
+Requirement already satisfied: certifi>=2017.4.17 in /usr/lib/python2.7/site-packages/certifi-2017.7.27.1-py2.7.egg (from requests>=2.0.0->twilio==6.0.0)
+Requirement already satisfied: asn1crypto>=0.21.0 in /usr/lib/python2.7/site-packages/asn1crypto-0.23.0-py2.7.egg (from cryptography>=1.3.4->twilio==6.0.0)
+Requirement already satisfied: enum34 in /usr/lib/python2.7/site-packages/enum34-1.1.6-py2.7.egg (from cryptography>=1.3.4->twilio==6.0.0)
+Requirement already satisfied: ipaddress in /usr/lib/python2.7/site-packages/ipaddress-1.0.18-py2.7.egg (from cryptography>=1.3.4->twilio==6.0.0)
+Requirement already satisfied: cffi>=1.7 in /usr/lib/python2.7/site-packages/cffi-1.11.0-py2.7-linux-x86_64.egg (from cryptography>=1.3.4->twilio==6.0.0)
+Requirement already satisfied: pycparser in /usr/lib/python2.7/site-packages/pycparser-2.18-py2.7.egg (from cffi>=1.7->cryptography>=1.3.4->twilio==6.0.0)
+Building wheels for collected packages: twilio
+  Running setup.py bdist_wheel for twilio: started
+  Running setup.py bdist_wheel for twilio: finished with status 'done'
+  Stored in directory: /root/.cache/pip/wheels/a2/5f/95/5a8fb28f8b772aa0942638adf474b73f83cbcf821e39eed16e
+Successfully built twilio
+Installing collected packages: twilio
+Successfully installed twilio-6.0.0
+Searching for supervisor
+Reading https://pypi.python.org/simple/supervisor/
+Downloading https://pypi.python.org/packages/31/7e/788fc6566211e77c395ea272058eb71299c65cc5e55b6214d479c6c2ec9a/supervisor-3.3.3.tar.gz#md5=0fe86dfec4e5c5d98324d24c4cf944bd
+Best match: supervisor 3.3.3
+Processing supervisor-3.3.3.tar.gz
+Writing /tmp/easy_install-Vw19di/supervisor-3.3.3/setup.cfg
+Running supervisor-3.3.3/setup.py -q bdist_egg --dist-dir /tmp/easy_install-Vw19di/supervisor-3.3.3/egg-dist-tmp-cn81UW
+[91mwarning: no previously-included files matching '*' found under directory 'docs/.build'
+[0mcreating /usr/lib/python2.7/site-packages/supervisor-3.3.3-py2.7.egg
+Extracting supervisor-3.3.3-py2.7.egg to /usr/lib/python2.7/site-packages
+Adding supervisor 3.3.3 to easy-install.pth file
+Installing echo_supervisord_conf script to /usr/bin
+Installing pidproxy script to /usr/bin
+Installing supervisorctl script to /usr/bin
+Installing supervisord script to /usr/bin
+
+Installed /usr/lib/python2.7/site-packages/supervisor-3.3.3-py2.7.egg
+Processing dependencies for supervisor
+Searching for meld3>=0.6.5
+Reading https://pypi.python.org/simple/meld3/
+Downloading https://pypi.python.org/packages/45/a0/317c6422b26c12fe0161e936fc35f36552069ba8e6f7ecbd99bbffe32a5f/meld3-1.0.2.tar.gz#md5=3ccc78cd79cffd63a751ad7684c02c91
+Best match: meld3 1.0.2
+Processing meld3-1.0.2.tar.gz
+Writing /tmp/easy_install-rPHx87/meld3-1.0.2/setup.cfg
+Running meld3-1.0.2/setup.py -q bdist_egg --dist-dir /tmp/easy_install-rPHx87/meld3-1.0.2/egg-dist-tmp-PL1B61
+[91mzip_safe flag not set; analyzing archive contents...
+[0mMoving meld3-1.0.2-py2.7.egg to /usr/lib/python2.7/site-packages
+Adding meld3 1.0.2 to easy-install.pth file
+
+Installed /usr/lib/python2.7/site-packages/meld3-1.0.2-py2.7.egg
+Finished processing dependencies for supervisor
+ ---> d40ff020dab8
+Removing intermediate container 01cba07f7af3
+Step 20/24 : ADD config.yaml ${ELASTALERT_HOME}/config.yaml
+ ---> eca7d4edf651
+Removing intermediate container 2ba3b869dfb5
+Step 21/24 : ADD smtp_auth_file.yaml ${CONFIG_DIR}/smtp_auth_file.yaml
+ ---> 889935a0a089
+Removing intermediate container 30c42179c9fb
+Step 22/24 : COPY frequency.yaml ${RULES_DIRECTORY}/frequency.yaml
+ ---> 40885c06238c
+Removing intermediate container bd5fa27def45
+Step 23/24 : COPY config-ms_error.yaml ${RULES_DIRECTORY}/match_error.yaml
+ ---> 78bd2e0abb29
+Removing intermediate container 3fc3335d402f
+Step 24/24 : CMD /opt/start-elastalert.sh
+ ---> Running in f3a4f8cf754d
+ ---> 28725c170ea0
+Removing intermediate container f3a4f8cf754d
+Successfully built 28725c170ea0
+Successfully tagged system/elastalert:latest
++ docker tag system/elastalert:latest 364238614392.dkr.ecr.us-east-2.amazonaws.com/system/elastalert:577492121e31d77c4b67b1ec83b138729478b408
++ docker push 364238614392.dkr.ecr.us-east-2.amazonaws.com/system/elastalert:577492121e31d77c4b67b1ec83b138729478b408
+The push refers to a repository [364238614392.dkr.ecr.us-east-2.amazonaws.com/system/elastalert]
+8de3384a6fc8: Preparing
+1772f7f04e3d: Preparing
+64a9dba48185: Preparing
+008e4ee63a81: Preparing
+e10aec633120: Preparing
+770ec11819d5: Preparing
+5cb2e68a66ce: Preparing
+0bba7836b138: Preparing
+22a34e9821d4: Preparing
+e67f7ef625c5: Preparing
+321db514ef85: Preparing
+6102f0d2ad33: Preparing
+770ec11819d5: Waiting
+5cb2e68a66ce: Waiting
+0bba7836b138: Waiting
+22a34e9821d4: Waiting
+e67f7ef625c5: Waiting
+321db514ef85: Waiting
+6102f0d2ad33: Waiting
+8de3384a6fc8: Pushed
+64a9dba48185: Pushed
+1772f7f04e3d: Pushed
+008e4ee63a81: Pushed
+22a34e9821d4: Pushed
+0bba7836b138: Pushed
+e10aec633120: Pushed
+321db514ef85: Pushed
+6102f0d2ad33: Pushed
+5cb2e68a66ce: Pushed
+e67f7ef625c5: Pushed
+770ec11819d5: Pushed
+577492121e31d77c4b67b1ec83b138729478b408: digest: sha256:a5227694e3f50135fae8363d2b3c2333d5fbbf630f1e17cc86e78649caf44a18 size: 2828
+Waiting for the completion of [8mha:////4KVeDeas30zMuguFUM6SjZ9KrVZgYGE7Zkobsbj6ccD5AAAAmh+LCAAAAAAAAP9b85aBtbiIQSajNKU4P08vOT+vOD8nVc+jsiC1KCczL9svvyTVzHb1RttJBUeZGJg8GdhyUvPSSzJ8GJhLi3JKGIR8shLLEvVzEvPS9YNLijLz0q0rihik0IxzhtAgwxgggJGJgaGiAMgQLWGQ1c/KT9JPzs/Nzc8DM1NSC3LyK3WLyxOLcvUBHxq2+qIAAAA=[0mcommon » deploy-swarm
+[8mha:////4KvJR9WvYVYCyXZlPAESufWq78zBlwQ1oivfkgFq4c6dAAAAnR+LCAAAAAAAAP9b85aBtbiIQSajNKU4P08vOT+vOD8nVc+jsiC1KCczL9svvyTVzHb1RttJBUeZGJg8GdhyUvPSSzJ8GJhLi3JKGIR8shLLEvVzEvPS9YNLijLz0q0rihik0IxzhtAgwxgggJGJgaGiAMiQLGFQ0M/KT9JPzs/Nzc8DM1NSC3LyK3WLyxOLcvVNDPQB6S7gVaUAAAA=[0mcommon » deploy-swarm #40 completed. Result was SUCCESS
+Build step 'Trigger/call builds on other projects' changed build result to SUCCESS
+Finished: SUCCESS

@@ -1,0 +1,13 @@
+Started by upstream project "[8mha:////4P6mXP7+VOngeX5+OUBLwPz/wxyV8uq0UkNxtlGQ3rG/AAAApB+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzBEgZp/az8JP3i1KKyzOTUYjCnJD8lXzexoEAfAP1K6LbQAAAA[0mservices/todo-app" build number [8mha:////4Aak/+FOBlsc0lGw+0ZBYUkvZbu6Z+B+ZoWitF5HPM69AAAAph+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAymEgZZ/az8JP3i1KKyzOTUYjCnJD8lXzexoEDf0BAAdmzf6tIAAAA=[0m11
+originally caused by:
+ Started by user [8mha:////4HSKTYekCqJtgUzvE/X25d7VYiaybRQPqPlqTWr6Yj8mAAAAmR+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAz+EgZe/dLi1CL9xOKMzOKMPAD2nB5TwgAAAA==[0mAshish Nanotkar
+Building in workspace /var/lib/jenkins/workspace/common/deploy-swarm
+[deploy-swarm] $ python /tmp/jenkins3167180530922390442.py
+Traceback (most recent call last):
+  File "/tmp/jenkins3167180530922390442.py", line 47, in <module>
+    container_env['VIRTUAL_HOST'] = os.environ['SERVICE']+'.'+os.environ['DEPLOY_ENV']+'.yashsolutions.com'
+  File "/usr/lib/python2.7/UserDict.py", line 40, in __getitem__
+    raise KeyError(key)
+KeyError: 'SERVICE'
+Build step 'Execute Python script' marked build as failure
+Finished: FAILURE

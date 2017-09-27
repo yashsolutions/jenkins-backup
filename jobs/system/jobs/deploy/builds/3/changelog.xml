@@ -1,0 +1,11 @@
+commit 1fef10f7714565a7d3b199776c107594397d5a2e
+tree 55178aa800d081925f664ebe150da5b18a432418
+parent 8767ab3cfb77a584d61c240c75148babee55a172
+author Ashish Nanotkar <nanotkarashish@users.noreply.github.com> 2017-09-27 20:41:41 +0530
+committer GitHub <noreply@github.com> 2017-09-27 20:41:41 +0530
+
+    aligning columns
+
+
+
+:100644 100644 648357d6e2af347ab986101c9002c860fab63d6b 245d325cb6b128a8cb6df520be12458e6285ce00 M	deploy/server.py

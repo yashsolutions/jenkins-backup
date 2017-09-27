@@ -1,0 +1,96 @@
+Started by user [8mha:////4HSKTYekCqJtgUzvE/X25d7VYiaybRQPqPlqTWr6Yj8mAAAAmR+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAz+EgZe/dLi1CL9xOKMzOKMPAD2nB5TwgAAAA==[0mAshish Nanotkar
+Building in workspace /var/lib/jenkins/workspace/system/status
+ > git rev-parse --is-inside-work-tree # timeout=10
+Fetching changes from the remote Git repository
+ > git config remote.origin.url git@github.com:yashsolutions/dockerfiles.git # timeout=10
+Fetching upstream changes from git@github.com:yashsolutions/dockerfiles.git
+ > git --version # timeout=10
+ > git fetch --tags --progress git@github.com:yashsolutions/dockerfiles.git +refs/heads/*:refs/remotes/origin/*
+ > git rev-parse refs/remotes/origin/master^{commit} # timeout=10
+ > git rev-parse refs/remotes/origin/origin/master^{commit} # timeout=10
+Checking out Revision 9330a6787ed41060ca4668aa2311918786698ea4 (refs/remotes/origin/master)
+Commit message: "adding logo on status page"
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f 9330a6787ed41060ca4668aa2311918786698ea4
+ > git rev-list f0e1b454b04befb5290db73c9567b955973fb1fc # timeout=10
+[status] $ /bin/sh -xe /tmp/jenkins4006930643105222383.sh
++ aws ecr get-login --region us-east-2
++ docker login -u AWS -p eyJwYXlsb2FkIjoiaDRscFc2T3BaMllienduY043TGhTTHdETndQbHZabGhiZ3lsbmVhWFg3QW9DbGFieWRmcFBVYng5d1FaUHZ3U3g4d2JYbFlNQ0VFbHRyMVdrSXB6RDdoN2ptZ3lIUEh2OXZ0ZEs3OEE0T014WGhJNHNlbjZFRGs5V2lhc2tKaU11UW1wSTQrOHNhS3plM2NiUEZTcDJsZWxnc0dEcVBjTzJJNmV4SWUwOGpvbnNKYVErSHdqek1xTzVBUWVaMGUvMlNmSlJXWGZ5WWpTS1d2Ynl5bzI5ZlJpTHAzT1FlSkhoQ29uOWpzM2tNbDRmYVJpdzk0dVVxK2FMVEJLNnh1SHN0ckgwVk5pOGdueVZWT1NlQmc3MmxpckJOSHZ2VG5LRmRRbEI2SkVPTUsvU09udW8zWjVXSWgvdHRxKzJNd1lsbFBCUG52YXFsTHJ2MnhBcERPaHMxTFFzV2dJOFdKUkYrZkY4eUNIUlVmUFJPMkFsdW02T0hwd3hsa1hFeUI1RmJLSWpseUNIcVZHOXZaU1BTSHRDb1luK1QydmNCb1BlS2JkN3UwNktnQmtHbERWYytzR0paNlZKV2ttWFVabFVEL1hLK2dKMzU4VUREc25ZTWtaVGtYejVwZjRsaC9rUlIzKzVZbitPNVBlczBNcVNSN2prSE9oUDdVeE9lWXBwdkpML2F6Nk5JY0NzNm5Ddm9SRWxtOXFZK2JyUVRiLzRVbVhqVVl5NFA3aFlKSDZ3OFZqclI5VVpDeW9Yd3JQeW02Yk9mQW12S00wSDM4RjQ4ckhOdlpPSDU5K1dLaDlWc0JLZStZeTFLbU1oMklvTmw0aFdHSnJ5R3hQK290elNacTIyRk1SdTZtMktqTXpNU3BibzA1ZWU3Y3B6ZzlzZXNFREwwM2k1ajlaaUdqa3RRQ04zWWdZeTlwZ3B6ekxmRER5L2RLTHgrdzRQL0ZwV3lRU09PWmNVTlBjV084M1BSNnJYNzBVdHVKSW1adHZocForaDJDV1FhazhJSVlXU0VySGFjTEs1YTZOa1RSQ08wMlMvRElHQlpJV2lIamw1TUQ4Y21URHhXSGNIdkVlRGFYUkNvV3pVY3V0MmNRK3VUNGpOOXl1Qm1sREtuV0lNaEdYWWlVUXlzRk5OOHMxTUcyWVhEVXZ5QjA2cE8xakN3b3dTYWZacW9HM3FVQ01yYmcxckdEL3o1aURqNGFMdEw4SXAySjNDWEs4TTdlNlZoU1hhQndDN1VHa1BqYndXU3phNmt0OFZDTTFiMGN6aUlZRkNIWjB3QURwWE40TENQS25KbnJ5dmlDdUpZcUtaWXlZd3QyL2NxbWlIVkJNUkdybXl3U1lPQk1HTXVXS29MUHlZMVRwcE9jZzN0VTZDYVlGQWJtS1VFejRpa3JCWlJiak9Bbk91a29YMHlULzNOU2lGUExyR0dlTSIsImRhdGFrZXkiOiJBUUVCQUhqQjcvaWd3TWc0TlB3YXVyeFNJWXg0SGZueHVHYy80OGJEd3Z3RHBOWVdaZ0FBQUg0d2ZBWUpLb1pJaHZjTkFRY0dvRzh3YlFJQkFEQm9CZ2txaGtpRzl3MEJCd0V3SGdZSllJWklBV1VEQkFFdU1CRUVEQ1NhdDJMTXRSblladFpNWEFJQkVJQTc4UXFyUnlGeGozVEpoeGlqSGh0L1ByNmR0eWJvb0pybVJHK0lHSFdxQlovUCtLaVh6QWZNMXcwbEM3SnRlWHlkcU55YllFSDQ4akdhSys0PSIsInZlcnNpb24iOiIxIiwidHlwZSI6IkRBVEFfS0VZIn0= -e none https://364238614392.dkr.ecr.us-east-2.amazonaws.com
+Flag --email has been deprecated, will be removed in 17.06.
+Login Succeeded
++ cd status
++ docker build -t system/status .
+Sending build context to Docker daemon  15.36kB
+Step 1/10 : FROM ubuntu
+ ---> 2d696327ab2e
+Step 2/10 : RUN apt-get update && apt-get install -y python-pip supervisor iputils-ping
+ ---> Using cache
+ ---> c13beb289da1
+Step 3/10 : RUN pip install tornado redis requests
+ ---> Using cache
+ ---> bea564e3b596
+Step 4/10 : ADD server.py /server.py
+ ---> 2deb9fbc4bdf
+Removing intermediate container 3de96bdb9541
+Step 5/10 : ADD status_check.py /status_check.py
+ ---> 43ec2cf30712
+Removing intermediate container e08a17733670
+Step 6/10 : RUN chmod +x /server.py /status_check.py
+ ---> Running in 07a5efbb65c7
+ ---> f5206907473d
+Removing intermediate container 07a5efbb65c7
+Step 7/10 : ADD server.conf /etc/supervisor/conf.d/server.conf
+ ---> 384a63c1effb
+Removing intermediate container a1ce8dd100f6
+Step 8/10 : ADD status_check.conf /etc/supervisor/conf.d/status_check.conf
+ ---> 8fd87042af99
+Removing intermediate container ca996b83128d
+Step 9/10 : EXPOSE 9000
+ ---> Running in 613b16db4ba5
+ ---> 6a8b71493bcd
+Removing intermediate container 613b16db4ba5
+Step 10/10 : CMD /usr/bin/supervisord
+ ---> Running in 34211cbbc6ac
+ ---> 576605a6a021
+Removing intermediate container 34211cbbc6ac
+Successfully built 576605a6a021
+Successfully tagged system/status:latest
++ docker tag system/status:latest 364238614392.dkr.ecr.us-east-2.amazonaws.com/system/status:9330a6787ed41060ca4668aa2311918786698ea4
++ docker push 364238614392.dkr.ecr.us-east-2.amazonaws.com/system/status:9330a6787ed41060ca4668aa2311918786698ea4
+The push refers to a repository [364238614392.dkr.ecr.us-east-2.amazonaws.com/system/status]
+c310b6e1e21b: Preparing
+c3ffc8156ff3: Preparing
+5d937736c0a4: Preparing
+af1613a43dc4: Preparing
+e5716a6a5461: Preparing
+200e6f8114f0: Preparing
+0727f648d6d2: Preparing
+7f7a065d245a: Preparing
+f96e6b25195f: Preparing
+c56153825175: Preparing
+ae620432889d: Preparing
+a2022691bf95: Preparing
+200e6f8114f0: Waiting
+0727f648d6d2: Waiting
+7f7a065d245a: Waiting
+f96e6b25195f: Waiting
+c56153825175: Waiting
+ae620432889d: Waiting
+a2022691bf95: Waiting
+af1613a43dc4: Layer already exists
+200e6f8114f0: Layer already exists
+0727f648d6d2: Layer already exists
+7f7a065d245a: Layer already exists
+f96e6b25195f: Layer already exists
+c56153825175: Layer already exists
+ae620432889d: Layer already exists
+a2022691bf95: Layer already exists
+e5716a6a5461: Pushed
+c310b6e1e21b: Pushed
+c3ffc8156ff3: Pushed
+5d937736c0a4: Pushed
+9330a6787ed41060ca4668aa2311918786698ea4: digest: sha256:38322fb3485f251faaab2effa2a008e7866ad34b13e5d8eda63a6c512a09a843 size: 2819
+Waiting for the completion of [8mha:////4KVeDeas30zMuguFUM6SjZ9KrVZgYGE7Zkobsbj6ccD5AAAAmh+LCAAAAAAAAP9b85aBtbiIQSajNKU4P08vOT+vOD8nVc+jsiC1KCczL9svvyTVzHb1RttJBUeZGJg8GdhyUvPSSzJ8GJhLi3JKGIR8shLLEvVzEvPS9YNLijLz0q0rihik0IxzhtAgwxgggJGJgaGiAMgQLWGQ1c/KT9JPzs/Nzc8DM1NSC3LyK3WLyxOLcvUBHxq2+qIAAAA=[0mcommon » deploy-swarm
+[8mha:////4LSB5ucLgOFBlI6rrKSz2qGJ2/i4sKv3riErEXkBOBv0AAAAnR+LCAAAAAAAAP9b85aBtbiIQSajNKU4P08vOT+vOD8nVc+jsiC1KCczL9svvyTVzHb1RttJBUeZGJg8GdhyUvPSSzJ8GJhLi3JKGIR8shLLEvVzEvPS9YNLijLz0q0rihik0IxzhtAgwxgggJGJgaGiAMhQLmFQ0M/KT9JPzs/Nzc8DM1NSC3LyK3WLyxOLcvVNDfQBPvqgLaUAAAA=[0mcommon » deploy-swarm system-status completed. Result was SUCCESS
+Build step 'Trigger/call builds on other projects' changed build result to SUCCESS
+Finished: SUCCESS
