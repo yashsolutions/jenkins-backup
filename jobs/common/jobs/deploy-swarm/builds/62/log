@@ -1,0 +1,83 @@
+Started by upstream project "[8mha:////4P6mXP7+VOngeX5+OUBLwPz/wxyV8uq0UkNxtlGQ3rG/AAAApB+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzBEgZp/az8JP3i1KKyzOTUYjCnJD8lXzexoEAfAP1K6LbQAAAA[0mservices/todo-app" build number [8mha:////4E0Ybt/ouuwtXIrJVUlAWg6AsvVeZ4kkSkDK0mN1f0vjAAAAph+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAymEgZZ/az8JP3i1KKyzOTUYjCnJD8lXzexoEDf0AIA0tQDk9IAAAA=[0m18
+originally caused by:
+ Started by an SCM change
+Building in workspace /var/lib/jenkins/workspace/common/deploy-swarm
+Set build name.
+New build name is 'stage-todo-app'
+[deploy-swarm] $ python /tmp/jenkins7580617728198740010.py
+[WARNING]: Found variable using reserved name: port
+[WARNING]: Found variable using reserved name: action
+
+PLAY [internal-swarm-01.ip] ****************************************************
+
+TASK [Gathering Facts] *********************************************************
+[WARNING]: Removed restricted key from module data: ansible_docker_gwbridge =
+{u'macaddress': u'02:42:85:e0:0d:2a', u'features': {u'tx_checksum_ipv4': u'off
+[fixed]', u'generic_receive_offload': u'on', u'tx_checksum_ipv6': u'off
+[fixed]', u'tx_scatter_gather_fraglist': u'on', u'rx_all': u'off [fixed]',
+u'highdma': u'on', u'rx_fcs': u'off [fixed]', u'tx_lockless': u'on [fixed]',
+u'tx_tcp_ecn_segmentation': u'on', u'tx_gso_robust': u'off [requested on]',
+u'tx_ipip_segmentation': u'on', u'tx_checksumming': u'on', u'vlan_challenged':
+u'off [fixed]', u'loopback': u'off [fixed]', u'fcoe_mtu': u'off [fixed]',
+u'tx_checksum_sctp': u'off [fixed]', u'tx_vlan_stag_hw_insert': u'on',
+u'rx_vlan_stag_hw_parse': u'off [fixed]', u'tx_nocache_copy': u'off',
+u'rx_vlan_stag_filter': u'off [fixed]', u'large_receive_offload': u'off
+[fixed]', u'tx_checksum_ip_generic': u'on', u'rx_checksumming': u'off [fixed]',
+u'tx_tcp_segmentation': u'on', u'tx_fcoe_segmentation': u'off [requested on]',
+u'busy_poll': u'off [fixed]', u'generic_segmentation_offload': u'on',
+u'tx_udp_tnl_segmentation': u'on', u'tcp_segmentation_offload': u'on',
+u'l2_fwd_offload': u'off [fixed]', u'rx_vlan_offload': u'off [fixed]',
+u'ntuple_filters': u'off [fixed]', u'rx_vlan_filter': u'off [fixed]',
+u'tx_tcp6_segmentation': u'on', u'udp_fragmentation_offload': u'on',
+u'scatter_gather': u'on', u'tx_sit_segmentation': u'on',
+u'tx_checksum_fcoe_crc': u'off [fixed]', u'hw_tc_offload': u'off [fixed]',
+u'tx_scatter_gather': u'on', u'netns_local': u'on [fixed]', u'tx_vlan_offload':
+u'on', u'receive_hashing': u'off [fixed]', u'tx_gre_segmentation': u'on'},
+u'interfaces': [u'veth6a2b9d9', u'vethfc19df6', u'veth8df9b3f', u'veth63e5d45',
+u'veth08e3a91'], u'mtu': 1500, u'active': True, u'promisc': False, u'stp':
+False, u'ipv4': {u'broadcast': u'global', u'netmask': u'255.255.0.0',
+u'network': u'172.18.0.0', u'address': u'172.18.0.1'}, u'ipv6': [{u'scope':
+u'link', u'prefix': u'64', u'address': u'fe80::42:85ff:fee0:d2a'}], u'device':
+u'docker_gwbridge', u'type': u'bridge', u'id': u'8000.024285e00d2a'}
+ok: [internal-swarm-01.ip]
+
+TASK [deploy_to_swarm : Include docker registry credentials] *******************
+ok: [internal-swarm-01.ip]
+
+TASK [deploy_to_swarm : Include required credentials] **************************
+ok: [internal-swarm-01.ip]
+
+TASK [deploy_to_swarm : login into docker registry] ****************************
+changed: [internal-swarm-01.ip]
+
+TASK [deploy_to_swarm : get available services] ********************************
+changed: [internal-swarm-01.ip]
+
+TASK [deploy_to_swarm : removing the service] **********************************
+[WARNING]: when statements should not include jinja2 templating delimiters
+such as {{ }} or {% %}. Found: reset_service == '1' and "{{ service_env }}-{{
+service }}" in docker_services.stdout
+skipping: [internal-swarm-01.ip]
+
+TASK [deploy_to_swarm : get available services] ********************************
+changed: [internal-swarm-01.ip]
+
+TASK [deploy_to_swarm : get docker command] ************************************
+ok: [internal-swarm-01.ip]
+
+TASK [deploy_to_swarm : deploying using] ***************************************
+ok: [internal-swarm-01.ip] => {
+"docker_command": "docker service update --update-delay 10s --update-failure-action pause --restart-delay 10s --with-registry-auth --log-driver fluentd --log-opt tag=stage-todo-app --replicas 1 --image 364238614392.dkr.ecr.us-east-2.amazonaws.com/services/todo-app:4397945a682147f4679513c686cf94e800216d39 stage-todo-app\n"
+}
+
+TASK [deploy_to_swarm : deploying the service] *********************************
+changed: [internal-swarm-01.ip]
+
+PLAY RECAP *********************************************************************
+internal-swarm-01.ip       : ok=9    changed=4    unreachable=0    failed=0
+
+0
+Set build name.
+New build name is 'stage-todo-app'
+Variable with name 'BUILD_DISPLAY_NAME' already exists, current value: 'stage-todo-app', new value: 'stage-todo-app'
+Finished: SUCCESS

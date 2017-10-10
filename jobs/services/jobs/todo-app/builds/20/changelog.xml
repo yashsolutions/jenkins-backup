@@ -1,0 +1,11 @@
+commit e8e8f3163bfbd739e34476914ebe5a1940c8ab2f
+tree 38cd862caa1b0b13b10bc600527656c9f268e60d
+parent 99fbf162868a6634f56428ec02893e6be49da1ac
+author Ashish Nanotkar <nanotkarashish@users.noreply.github.com> 2017-10-04 20:45:53 +0530
+committer GitHub <noreply@github.com> 2017-10-04 20:45:53 +0530
+
+    adding stage db config
+
+
+
+:000000 100644 0000000000000000000000000000000000000000 5b98905b0092455c68f23184de53a0fa04f26175 A	config/db-stage.js

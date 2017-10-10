@@ -1,0 +1,11 @@
+commit 99fbf162868a6634f56428ec02893e6be49da1ac
+tree 2b005189058a98653097c7fcfbf67bc3911f04c6
+parent 4397945a682147f4679513c686cf94e800216d39
+author Ashish Nanotkar <nanotkarashish@users.noreply.github.com> 2017-10-04 20:44:43 +0530
+committer GitHub <noreply@github.com> 2017-10-04 20:44:43 +0530
+
+    adding dev db config
+
+
+
+:000000 100644 0000000000000000000000000000000000000000 fd6c2cf764c29e4e05330cd48ccb57e7689ec06e A	config/db-dev.js

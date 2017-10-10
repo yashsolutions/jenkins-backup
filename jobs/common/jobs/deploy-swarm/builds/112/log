@@ -1,0 +1,85 @@
+Started by upstream project "[8mha:////4B6NhAHPgMPJg3YzrE5MgtZyWGwldzIKjfjjGQ5DRDBkAAAAqx+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAyJEgYl/az8JP3i1KKyzOTUYjCnJD8lXzexoEA3vygxOSdVHwAFTOH/1wAAAA==[0mservices/todo-app-oracle" build number [8mha:////4AIwSdsd5u5DHPRV8lmCryx3qZod8WO33oGebdA9DrhKAAAAqx+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLQIwSBmX9rPwk/eLUorLM5NRiMKckPyVfN7GgQDe/KDE5J1XfDAB2SLmc2AAAAA==[0m6
+originally caused by:
+ Started by user [8mha:////4HSKTYekCqJtgUzvE/X25d7VYiaybRQPqPlqTWr6Yj8mAAAAmR+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAz+EgZe/dLi1CL9xOKMzOKMPAD2nB5TwgAAAA==[0mAshish Nanotkar
+Building in workspace /var/lib/jenkins/workspace/common/deploy-swarm
+Set build name.
+New build name is 'dev-todo-app-oracle'
+[deploy-swarm] $ python /tmp/jenkins4960096991170646671.py
+[WARNING]: Found variable using reserved name: port
+[WARNING]: Found variable using reserved name: action
+
+PLAY [internal-swarm-01.ip] ****************************************************
+
+TASK [Gathering Facts] *********************************************************
+[WARNING]: Removed restricted key from module data: ansible_docker_gwbridge =
+{u'macaddress': u'02:42:f0:06:c1:fd', u'features': {u'tx_checksum_ipv4': u'off
+[fixed]', u'generic_receive_offload': u'on', u'tx_checksum_ipv6': u'off
+[fixed]', u'tx_scatter_gather_fraglist': u'on', u'rx_all': u'off [fixed]',
+u'highdma': u'on', u'rx_fcs': u'off [fixed]', u'tx_lockless': u'on [fixed]',
+u'tx_tcp_ecn_segmentation': u'on', u'tx_gso_robust': u'off [requested on]',
+u'tx_ipip_segmentation': u'on', u'tx_checksumming': u'on', u'vlan_challenged':
+u'off [fixed]', u'loopback': u'off [fixed]', u'fcoe_mtu': u'off [fixed]',
+u'tx_checksum_sctp': u'off [fixed]', u'tx_vlan_stag_hw_insert': u'on',
+u'rx_vlan_stag_hw_parse': u'off [fixed]', u'tx_nocache_copy': u'off',
+u'rx_vlan_stag_filter': u'off [fixed]', u'large_receive_offload': u'off
+[fixed]', u'tx_checksum_ip_generic': u'on', u'rx_checksumming': u'off [fixed]',
+u'tx_tcp_segmentation': u'on', u'tx_fcoe_segmentation': u'off [requested on]',
+u'busy_poll': u'off [fixed]', u'generic_segmentation_offload': u'on',
+u'tx_udp_tnl_segmentation': u'on', u'tcp_segmentation_offload': u'on',
+u'l2_fwd_offload': u'off [fixed]', u'rx_vlan_offload': u'off [fixed]',
+u'ntuple_filters': u'off [fixed]', u'rx_vlan_filter': u'off [fixed]',
+u'tx_tcp6_segmentation': u'on', u'udp_fragmentation_offload': u'on',
+u'scatter_gather': u'on', u'tx_sit_segmentation': u'on',
+u'tx_checksum_fcoe_crc': u'off [fixed]', u'hw_tc_offload': u'off [fixed]',
+u'tx_scatter_gather': u'on', u'netns_local': u'on [fixed]', u'tx_vlan_offload':
+u'on', u'receive_hashing': u'off [fixed]', u'tx_gre_segmentation': u'on'},
+u'interfaces': [u'veth5bca974', u'vethc4327b1', u'vethfdf0ac8', u'veth5661c55',
+u'vethbe462e0', u'veth9ad31ec', u'veth016a318', u'veth71ccce4', u'veth3aeef64',
+u'veth885698b', u'vethb19ed56'], u'mtu': 1500, u'active': True, u'promisc':
+False, u'stp': False, u'ipv4': {u'broadcast': u'global', u'netmask':
+u'255.255.0.0', u'network': u'172.18.0.0', u'address': u'172.18.0.1'}, u'ipv6':
+[{u'scope': u'link', u'prefix': u'64', u'address':
+u'fe80::42:f0ff:fe06:c1fd'}], u'device': u'docker_gwbridge', u'type':
+u'bridge', u'id': u'8000.0242f006c1fd'}
+ok: [internal-swarm-01.ip]
+
+TASK [deploy_to_swarm : Include docker registry credentials] *******************
+ok: [internal-swarm-01.ip]
+
+TASK [deploy_to_swarm : Include required credentials] **************************
+ok: [internal-swarm-01.ip]
+
+TASK [deploy_to_swarm : login into docker registry] ****************************
+changed: [internal-swarm-01.ip]
+
+TASK [deploy_to_swarm : get available services] ********************************
+changed: [internal-swarm-01.ip]
+
+TASK [deploy_to_swarm : removing the service] **********************************
+[WARNING]: when statements should not include jinja2 templating delimiters
+such as {{ }} or {% %}. Found: reset_service == '1' and "{{ service_env }}-{{
+service }}" in docker_services.stdout
+skipping: [internal-swarm-01.ip]
+
+TASK [deploy_to_swarm : get available services] ********************************
+changed: [internal-swarm-01.ip]
+
+TASK [deploy_to_swarm : get docker command] ************************************
+ok: [internal-swarm-01.ip]
+
+TASK [deploy_to_swarm : deploying using] ***************************************
+ok: [internal-swarm-01.ip] => {
+"docker_command": "docker service update --update-delay 10s --update-failure-action pause --restart-delay 10s --with-registry-auth --log-driver fluentd --log-opt tag=dev-todo-app-oracle --replicas 3 --image 364238614392.dkr.ecr.us-east-2.amazonaws.com/services/todo-app-oracle:145df8da760c882fee8183fbcd5c01d22b5a2186 dev-todo-app-oracle\n"
+}
+
+TASK [deploy_to_swarm : deploying the service] *********************************
+changed: [internal-swarm-01.ip]
+
+PLAY RECAP *********************************************************************
+internal-swarm-01.ip       : ok=9    changed=4    unreachable=0    failed=0
+
+0
+Set build name.
+New build name is 'dev-todo-app-oracle'
+Variable with name 'BUILD_DISPLAY_NAME' already exists, current value: 'dev-todo-app-oracle', new value: 'dev-todo-app-oracle'
+Finished: SUCCESS

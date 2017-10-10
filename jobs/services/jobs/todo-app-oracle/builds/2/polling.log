@@ -1,0 +1,7 @@
+Started on Oct 10, 2017 12:14:00 PM
+Using strategy: Default
+ > git ls-remote -h git@github.com:yashsolutions/todo-app-oracle.git # timeout=10
+Found 1 remote heads on git@github.com:yashsolutions/todo-app-oracle.git
+[poll] Latest remote head revision on refs/heads/master is: 145df8da760c882fee8183fbcd5c01d22b5a2186
+Done. Took 1.4 sec
+Changes found

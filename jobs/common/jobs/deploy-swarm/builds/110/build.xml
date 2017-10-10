@@ -1,0 +1,211 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<build>
+  <actions>
+    <hudson.model.ParametersAction>
+      <safeParameters class="sorted-set"/>
+      <parameters class="java.util.Arrays$ArrayList">
+        <a class="hudson.model.ParameterValue-array">
+          <hudson.model.StringParameterValue>
+            <name>DEPLOY_ENV</name>
+            <description>environment name to deploy service</description>
+            <value>stage</value>
+          </hudson.model.StringParameterValue>
+          <hudson.model.StringParameterValue>
+            <name>REPLICATION_MODE</name>
+            <description>docker swarm replication mode</description>
+            <value>replicated</value>
+          </hudson.model.StringParameterValue>
+          <hudson.model.StringParameterValue>
+            <name>REPLICAS</name>
+            <value>3</value>
+          </hudson.model.StringParameterValue>
+          <hudson.model.StringParameterValue>
+            <name>SERVICE</name>
+            <value>todo-app-oracle</value>
+          </hudson.model.StringParameterValue>
+          <hudson.model.StringParameterValue>
+            <name>IMAGE</name>
+            <value>364238614392.dkr.ecr.us-east-2.amazonaws.com/services/todo-app-oracle</value>
+          </hudson.model.StringParameterValue>
+          <hudson.model.StringParameterValue>
+            <name>GIT_COMMIT</name>
+            <value>145df8da760c882fee8183fbcd5c01d22b5a2186</value>
+          </hudson.model.StringParameterValue>
+          <hudson.model.StringParameterValue>
+            <name>PORT</name>
+            <value>7000</value>
+          </hudson.model.StringParameterValue>
+          <hudson.model.StringParameterValue>
+            <name>VOLUME</name>
+            <description>volume to be mounted inside docker container</description>
+            <value>0</value>
+          </hudson.model.StringParameterValue>
+          <hudson.model.StringParameterValue>
+            <name>VIRTUAL_HOST</name>
+            <description>dns record that points to this service. 0 stands for default &quot;service.env.yashsolutions.com&quot;</description>
+            <value>0</value>
+          </hudson.model.StringParameterValue>
+          <hudson.model.StringParameterValue>
+            <name>RESET_SERVICE</name>
+            <description>reset service deletes the service and redeploys it.</description>
+            <value>0</value>
+          </hudson.model.StringParameterValue>
+          <hudson.model.StringParameterValue>
+            <name>PUBLISH_PORT</name>
+            <description>whether or not to publish a port for direct access</description>
+            <value>0</value>
+          </hudson.model.StringParameterValue>
+          <hudson.model.StringParameterValue>
+            <name>CONSTRAINT</name>
+            <description>constraints to be applied on docker swarm service deployment &quot;--constraint&quot;</description>
+            <value>0</value>
+          </hudson.model.StringParameterValue>
+          <hudson.model.StringParameterValue>
+            <name>ENV_VARS</name>
+            <description>environment vars as &quot;key1=value1,key2=value2&quot;</description>
+            <value>&quot;&quot;</value>
+          </hudson.model.StringParameterValue>
+        </a>
+      </parameters>
+      <parameterDefinitionNames class="hudson.model.ParametersDefinitionProperty$1">
+        <outer-class>
+          <parameterDefinitions>
+            <hudson.model.ChoiceParameterDefinition>
+              <name>DEPLOY_ENV</name>
+              <description>environment name to deploy service</description>
+              <choices class="java.util.Arrays$ArrayList">
+                <a class="string-array">
+                  <string>dev</string>
+                  <string>qa</string>
+                  <string>stage</string>
+                  <string>prod</string>
+                  <string>system</string>
+                </a>
+              </choices>
+            </hudson.model.ChoiceParameterDefinition>
+            <hudson.model.ChoiceParameterDefinition>
+              <name>REPLICATION_MODE</name>
+              <description>docker swarm replication mode</description>
+              <choices class="java.util.Arrays$ArrayList">
+                <a class="string-array">
+                  <string>replicated</string>
+                  <string>global</string>
+                </a>
+              </choices>
+            </hudson.model.ChoiceParameterDefinition>
+            <hudson.model.StringParameterDefinition>
+              <name>REPLICAS</name>
+              <description>number of containers to be deployed if REPLICATION_MODE set to replicated</description>
+              <defaultValue>1</defaultValue>
+            </hudson.model.StringParameterDefinition>
+            <hudson.model.StringParameterDefinition>
+              <name>SERVICE</name>
+              <description>name of service to be deployed</description>
+              <defaultValue></defaultValue>
+            </hudson.model.StringParameterDefinition>
+            <hudson.model.StringParameterDefinition>
+              <name>IMAGE</name>
+              <description>docker image url</description>
+              <defaultValue></defaultValue>
+            </hudson.model.StringParameterDefinition>
+            <hudson.model.StringParameterDefinition>
+              <name>GIT_COMMIT</name>
+              <description>git commit sha of application code that was used to build docker image</description>
+              <defaultValue>latest</defaultValue>
+            </hudson.model.StringParameterDefinition>
+            <hudson.model.StringParameterDefinition>
+              <name>PORT</name>
+              <description>port to be exposed from the service</description>
+              <defaultValue>0</defaultValue>
+            </hudson.model.StringParameterDefinition>
+            <hudson.model.StringParameterDefinition>
+              <name>VOLUME</name>
+              <description>volume to be mounted inside docker container</description>
+              <defaultValue>0</defaultValue>
+            </hudson.model.StringParameterDefinition>
+            <hudson.model.StringParameterDefinition>
+              <name>VIRTUAL_HOST</name>
+              <description>dns record that points to this service. 0 stands for default &quot;service.env.yashsolutions.com&quot;</description>
+              <defaultValue>0</defaultValue>
+            </hudson.model.StringParameterDefinition>
+            <hudson.model.ChoiceParameterDefinition>
+              <name>RESET_SERVICE</name>
+              <description>reset service deletes the service and redeploys it.</description>
+              <choices class="java.util.Arrays$ArrayList">
+                <a class="string-array">
+                  <string>0</string>
+                  <string>1</string>
+                </a>
+              </choices>
+            </hudson.model.ChoiceParameterDefinition>
+            <hudson.model.ChoiceParameterDefinition>
+              <name>PUBLISH_PORT</name>
+              <description>whether or not to publish a port for direct access</description>
+              <choices class="java.util.Arrays$ArrayList">
+                <a class="string-array">
+                  <string>0</string>
+                  <string>1</string>
+                </a>
+              </choices>
+            </hudson.model.ChoiceParameterDefinition>
+            <hudson.model.StringParameterDefinition>
+              <name>CONSTRAINT</name>
+              <description>constraints to be applied on docker swarm service deployment &quot;--constraint&quot;</description>
+              <defaultValue>0</defaultValue>
+            </hudson.model.StringParameterDefinition>
+            <hudson.model.StringParameterDefinition>
+              <name>ENV_VARS</name>
+              <description>environment vars as &quot;key1=value1,key2=value2&quot;</description>
+              <defaultValue>&quot;&quot;</defaultValue>
+            </hudson.model.StringParameterDefinition>
+          </parameterDefinitions>
+        </outer-class>
+      </parameterDefinitionNames>
+    </hudson.model.ParametersAction>
+    <hudson.plugins.parameterizedtrigger.DifferentiatingAction plugin="parameterized-trigger@2.35.2"/>
+    <hudson.model.CauseAction>
+      <causeBag class="linked-hash-map">
+        <entry>
+          <hudson.model.Cause_-UpstreamCause>
+            <upstreamProject>services/todo-app-oracle</upstreamProject>
+            <upstreamUrl>job/services/job/todo-app-oracle/</upstreamUrl>
+            <upstreamBuild>5</upstreamBuild>
+            <upstreamCauses>
+              <hudson.model.Cause_-UserIdCause>
+                <userId>ashishn</userId>
+              </hudson.model.Cause_-UserIdCause>
+            </upstreamCauses>
+          </hudson.model.Cause_-UpstreamCause>
+          <int>1</int>
+        </entry>
+      </causeBag>
+    </hudson.model.CauseAction>
+    <org.jenkinsci.plugins.EnvironmentVarSetter plugin="build-name-setter@1.6.7">
+      <log>
+        <autoFlush>false</autoFlush>
+        <trouble>false</trouble>
+        <closing>true</closing>
+      </log>
+      <envVars class="concurrent-hash-map">
+        <entry>
+          <string>BUILD_DISPLAY_NAME</string>
+          <string>stage-todo-app-oracle</string>
+        </entry>
+      </envVars>
+    </org.jenkinsci.plugins.EnvironmentVarSetter>
+    <com.sonyericsson.rebuild.RebuildAction plugin="rebuild@1.25"/>
+  </actions>
+  <queueId>177</queueId>
+  <timestamp>1507641165612</timestamp>
+  <startTime>1507641165613</startTime>
+  <result>SUCCESS</result>
+  <displayName>stage-todo-app-oracle</displayName>
+  <duration>7059</duration>
+  <charset>UTF-8</charset>
+  <keepLog>false</keepLog>
+  <builtOn></builtOn>
+  <workspace>/var/lib/jenkins/workspace/common/deploy-swarm</workspace>
+  <hudsonVersion>2.73.1</hudsonVersion>
+  <scm class="hudson.scm.NullChangeLogParser"/>
+  <culprits class="com.google.common.collect.EmptyImmutableSortedSet"/>
+</build>

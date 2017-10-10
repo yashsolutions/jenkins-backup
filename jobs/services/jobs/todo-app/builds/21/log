@@ -1,0 +1,591 @@
+Started by an SCM change
+Building in workspace /var/lib/jenkins/workspace/services/todo-app
+ > git rev-parse --is-inside-work-tree # timeout=10
+Fetching changes from the remote Git repository
+ > git config remote.origin.url git@github.com:yashsolutions/todo-app.git # timeout=10
+Fetching upstream changes from git@github.com:yashsolutions/todo-app.git
+ > git --version # timeout=10
+ > git fetch --tags --progress git@github.com:yashsolutions/todo-app.git +refs/heads/*:refs/remotes/origin/*
+ > git rev-parse refs/remotes/origin/master^{commit} # timeout=10
+ > git rev-parse refs/remotes/origin/origin/master^{commit} # timeout=10
+Checking out Revision 94b7dc03e33f16aafbbb32b07ed26d8f0a8a615f (refs/remotes/origin/master)
+Commit message: "adding prod db config"
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f 94b7dc03e33f16aafbbb32b07ed26d8f0a8a615f
+ > git rev-list e8e8f3163bfbd739e34476914ebe5a1940c8ab2f # timeout=10
+[todo-app] $ /bin/sh -xe /tmp/jenkins2712316462519340256.sh
++ echo service BUILD
+service BUILD
++ echo service UNIT TEST
+service UNIT TEST
++ echo service PACKAGE
+service PACKAGE
++ aws ecr get-login --region us-east-2
++ docker login -u AWS -p eyJwYXlsb2FkIjoiUVVLc3RGcTAvdWp2Y1RuRlFTT2FEWXlyZzZKWnFDVHAzcFE2QU9oYzZyalMxWUk0bWZBMVJHVml2Zm5VSUVabUliZnFQSTlNR2gvWXZCUXR3ZlZNcHd1VjZhK2tEU3JiZ3ptV2FoUENhMlBNdkl2TWdUOXBwS0ROZTdscUxxN1hIeWdYZ0VQVGlTeVZydU1KMUI5YUpTQVo1VXNrdGlsdmg0bVFmNkgzTDNGN2swWGVObUFXTmUxWUFpbS9aOTd3MXlKN0pzVzZsT0FFSUNhS2NwdDlodE9meW0vMHJzbHk2bmZGc2RrY3RwOHNlS0JIdkR6Y2ZEc2x6ckRCT2VVVDhoeXl2eFRwRWlEekZMamxhdmZlQ2lsK1hCTURjcHBadHphRGdvb29tMGZ3aTg2cy9NMUtVMk84QlFCWXhjQytUT3FjM3dOeW9xU2dUaEVsRnJmN0R0YjJaZHNoTGlVeXlNWXhmbVNHOGRqQ3VENVRMSUJ2Y3MwdWlyM0FkSUdZRnYxc3RId0NkU1FCYTZwdmpRUkF6bWxnalBOUmZjTVZMVnp5MWFEb0VJZG9OczM3NmZTWmNLaDhmdytzRy9TTGZic3BYQzdxWVpWdlpkbGVTTGpLN0ROZ2hmV0UySk9vY1RHWGozSHRVVFRaaGtrcUlreVh1Q3piY1RaL0dQdDcrREhjN3M5dkJiV1NRWmU3YVAvK2x4UWE0SUo1VGZUbThhTTdaRzFnY0hIZEdWYjd5OXE4SE1OakliYmU3cDdCaVNhcDF3ZnVEU1ZTZHlHbThUNFJFZ2pFL2dWc2cyMFBiNnJtb2t3R0ZVQUY2RGFlT0xpb1NaOTdvNlpVUzRIYkNIZXk2akdISm9KdnpKK2U2UkF2d2NKbTIrc3BoUC8vOHFYVDNhOEZLUW1idnhEdk1aK0FGS3ZKS3JRNjQ4aWp6dXdSNXNiQ3hxdm9VVmxsRnMrcVA1T3EzN3pUaU51Nnd3NW53a2swOUxaM0RRZzZjMTBxbkZFWjBYaVZJaVRlVGhaelVWb0htZFpPbTloMEdsa1FIUkYwTGJhV29xTkFWUE9xQkVldGpYUm1WM21iSDUvSWtaK1hGd0lHcUtodFVBZ1hVc3lMbnFjL3BkcmkvQmRmaTI1M0hpQkYyM2dKczhEaFlmUnVLWXRmdS80NHRpUk8xeWYrZ200aSswUkU0Lzk1aVpQVkxjZGRIL2p5T3hVZXBQVXB2TXZnTFphbzhOWkFYeFRJMjFpWE9QTnJlQUdVYmN3emwxTDR1MS9Zenk2b1h3eXpyMmxlTFNNS1krK2xYSlB4U1l0eGlHVGFlZ2dNOFFydUpXblhIYjhrbm9NTStWc3lIa0x0aXd1bnpvNnZ4a2ZneFFUTzZqZ2hCNjBQSVpmZXZndFJsTW1YQ1Q2M2swbCtIOGk5K3pZSGJHb2MxdUtFV0tTSyIsImRhdGFrZXkiOiJBUUVCQUhqQjcvaWd3TWc0TlB3YXVyeFNJWXg0SGZueHVHYy80OGJEd3Z3RHBOWVdaZ0FBQUg0d2ZBWUpLb1pJaHZjTkFRY0dvRzh3YlFJQkFEQm9CZ2txaGtpRzl3MEJCd0V3SGdZSllJWklBV1VEQkFFdU1CRUVETjlaZTlmNjRVbjBzZE0rNGdJQkVJQTdEeE5JUERmS09GVExMalAwQjQyYmFxQXhGV2hkejJMUVhpbzhONVpyKzZKejNYd0NZV285RGtmNmFFSjhMT21BbjdkY2E2RWd2YVJIVEp3PSIsInZlcnNpb24iOiIxIiwidHlwZSI6IkRBVEFfS0VZIn0= -e none https://364238614392.dkr.ecr.us-east-2.amazonaws.com
+Flag --email has been deprecated, will be removed in 17.06.
+Login Succeeded
++ docker build -t services/todo-app .
+Sending build context to Docker daemon  210.9kB
+Step 1/6 : FROM node
+ ---> de1099630c13
+Step 2/6 : ADD ./ /app/
+ ---> 63d31c28bf30
+Removing intermediate container 13226e784ebb
+Step 3/6 : WORKDIR /app
+ ---> c62b87a53d9e
+Removing intermediate container 93a1897bec23
+Step 4/6 : RUN npm install
+ ---> Running in 412347f74c07
+[91mnpm[0m[91m info it worked if it ends with ok
+npm info[0m[91m using npm@5.3.0
+npm info using node@v8.5.0
+[0m[91mnpm info lifecycle node-todo@0.0.1~preinstall: node-todo@0.0.1
+[0m[91mnpm http fetch GET 200 https://registry.npmjs.org/body-parser 134ms
+[0m[91mnpm http fetch GET 200 https://registry.npmjs.org/method-override 127ms
+[0m[91mnpm http fetch GET 200 https://registry.npmjs.org/morgan 126ms
+[0m[91mnpm http fetch GET 200 https://registry.npmjs.org/express 133ms
+[0m[91mnpm http fetch GET 200 https://registry.npmjs.org/mongoose 138ms
+[0m[91mnpm http fetch GET 200 https://registry.npmjs.org/vary 39ms
+[0m[91mnpm http fetch GET 200 https://registry.npmjs.org/methods 41ms
+[0m[91mnpm http fetch GET 200 https://registry.npmjs.org/parseurl 41ms
+[0m[91mnpm http[0m[91m fetch GET 200 https://registry.npmjs.org/debug 43ms
+[0m[91mnpm [0m[91mhttp fetch GET 200 https://registry.npmjs.org/basic-auth 40ms
+[0m[91mnpm http fetch GET 200 https://registry.npmjs.org/content-type 31ms
+[0m[91mnpm http fetch GET 200 https://registry.npmjs.org/on-finished 67ms
+[0m[91mnpm http fetch GET 200 https://registry.npmjs.org/depd 72ms
+[0m[91mnpm http fetch GET 200 https://registry.npmjs.org/on-headers 69ms
+[0m[91mnpm http fetch GET 200 https://registry.npmjs.org/bytes 69ms
+[0m[91mnpm http fetch GET 200 https://registry.npmjs.org/http-errors 33ms
+[0m[91mnpm http fetch GET 200 https://registry.npmjs.org/iconv-lite 35ms
+[0m[91mnpm http fetch GET 200 https://registry.npmjs.org/qs 36ms
+[0m[91mnpm http fetch GET 200 https://registry.npmjs.org/type-is 37ms
+[0m[91mnpm http fetch GET 200 https://registry.npmjs.org/raw-body 39ms
+[0m[91mnpm http fetch GET 200 https://registry.npmjs.org/accepts 41ms
+[0m[91mnpm http fetch GET 200 https://registry.npmjs.org/array-flatten 43ms
+[0m[91mnpm http fetch GET 200 https://registry.npmjs.org/content-disposition 44ms
+[0m[91mnpm http fetch GET 200 https://registry.npmjs.org/cookie 36ms
+[0m[91mnpm http fetch GET 200 https://registry.npmjs.org/cookie-signature 39ms
+[0m[91mnpm http fetch GET 200 https://registry.npmjs.org/encodeurl 38ms
+[0m[91mnpm http fetch GET 200 https://registry.npmjs.org/finalhandler 36ms
+[0m[91mnpm http fetch GET 200 https://registry.npmjs.org/etag 40ms
+[0m[91mnpm http fetch GET 200 https://registry.npmjs.org/escape-html 40ms
+[0m[91mnpm http fetch GET 200 https://registry.npmjs.org/fresh 42ms
+[0m[91mnpm http fetch GET 200 https://registry.npmjs.org/merge-descriptors 36ms
+[0m[91mnpm http fetch GET 200 https://registry.npmjs.org/path-to-regexp 34ms
+[0m[91mnpm http fetch GET 200 https://registry.npmjs.org/proxy-addr 30ms
+[0m[91mnpm http fetch GET 200 https://registry.npmjs.org/safe-buffer 31ms
+[0m[91mnpm http fetch GET 200 https://registry.npmjs.org/range-parser 35ms
+[0m[91mnpm http fetch GET 200 https://registry.npmjs.org/send 35ms
+[0m[91mnpm http fetch GET 200 https://registry.npmjs.org/statuses 33ms
+[0m[91mnpm http fetch GET 200 https://registry.npmjs.org/serve-static 37ms
+[0m[91mnpm http fetch GET 200 https://registry.npmjs.org/setprototypeof 39ms
+[0m[91mnpm http fetch GET 200 https://registry.npmjs.org/utils-merge 35ms
+[0m[91mnpm http fetch GET 200 https://registry.npmjs.org/async 44ms
+[0m[91mnpm http fetch GET 200 https://registry.npmjs.org/hooks-fixed 36ms
+[0m[91mnpm http fetch GET 200 https://registry.npmjs.org/bson 44ms
+[0m[91mnpm http fetch GET 200 https://registry.npmjs.org/kareem 35ms
+[0m[91mnpm http fetch GET 200 https://registry.npmjs.org/mpath 36ms
+[0m[91mnpm http[0m[91m fetch GET 200 https://registry.npmjs.org/mpromise 36ms
+[0m[91mnpm http fetch GET 200 https://registry.npmjs.org/mongodb 53ms
+[0m[91mnpm http fetch GET 200 https://registry.npmjs.org/ms 43ms
+[0m[91mnpm http fetch GET 200 https://registry.npmjs.org/muri 45ms
+[0m[91mnpm http fetch GET 200 https://registry.npmjs.org/mquery 47ms
+[0m[91mnpm http fetch GET 200 https://registry.npmjs.org/regexp-clone 38ms
+[0m[91mnpm http[0m[91m fetch GET 200 https://registry.npmjs.org/ee-first 34ms
+[0m[91mnpm http fetch GET 200 https://registry.npmjs.org/sliced 41ms
+[0m[91mnpm http fetch GET 200 https://registry.npmjs.org/inherits 37ms
+[0m[91mnpm http fetch GET 200 https://registry.npmjs.org/media-typer 35ms
+[0m[91mnpm http fetch GET 200 https://registry.npmjs.org/mime-types 25ms
+[0m[91mnpm http fetch GET 200 https://registry.npmjs.org/mime-types 38ms
+[0m[91mnpm http fetch GET 200 https://registry.npmjs.org/unpipe 31ms
+[0m[91mnpm http fetch GET 200 https://registry.npmjs.org/negotiator 29ms
+[0m[91mnpm http fetch GET 200 https://registry.npmjs.org/unpipe 41ms
+[0m[91mnpm http fetch GET 200 https://registry.npmjs.org/forwarded 44ms
+[0m[91mnpm http fetch GET 200 https://registry.npmjs.org/ipaddr.js 42ms
+[0m[91mnpm http fetch GET 200 https://registry.npmjs.org/destroy 41ms
+[0m[91mnpm http fetch GET 200 https://registry.npmjs.org/mime 29ms
+[0m[91mnpm http fetch GET 200 https://registry.npmjs.org/lodash 35ms
+[0m[91mnpm http fetch GET 200 https://registry.npmjs.org/es6-promise 34ms
+[0m[91mnpm http fetch GET 200 https://registry.npmjs.org/readable-stream 35ms
+[0m[91mnpm http fetch GET 200 https://registry.npmjs.org/mongodb-core 37ms
+[0m[91mnpm http fetch GET 200 https://registry.npmjs.org/bluebird 44ms
+[0m[91mnpm http fetch GET 200 https://registry.npmjs.org/mime-db 38ms
+[0m[91mnpm http fetch GET 200 https://registry.npmjs.org/isarray 27ms
+[0m[91mnpm http [0m[91mfetch GET 200 https://registry.npmjs.org/core-util-is 28ms
+[0m[91mnpm http fetch GET 200 https://registry.npmjs.org/buffer-shims 30ms
+[0m[91mnpm http fetch GET 200 https://registry.npmjs.org/process-nextick-args 29ms
+[0m[91mnpm http fetch GET 200 https://registry.npmjs.org/string_decoder 30ms
+[0m[91mnpm http fetch GET 200 https://registry.npmjs.org/require_optional 27ms
+[0m[91mnpm http fetch[0m[91m GET 200 https://registry.npmjs.org/util-deprecate 31ms
+[0m[91mnpm http fetch GET 200 https://registry.npmjs.org/resolve-from 19ms
+[0m[91mnpm http fetch GET 200 https://registry.npmjs.org/semver 20ms
+[0m[91mhttp[0m[91m fetch GET 200 https://registry.npmjs.org/bytes/-/bytes-3.0.0.tgz 189ms
+[0m[91mhttp [0m[91mfetch GET 200 https://registry.npmjs.org/content-type/-/content-type-1.0.4.tgz 191ms
+[0m[91mhttp fetch[0m[91m GET 200 https://registry.npmjs.org/depd/-/depd-1.1.1.tgz 179ms
+[0m[91mhttp[0m[91m fetch GET 200 https://registry.npmjs.org/cookie-signature/-/cookie-signature-1.0.6.tgz 196ms
+[0m[91mhttp fetch GET 200 https://registry.npmjs.org/array-flatten/-/array-flatten-1.1.1.tgz 203ms
+[0m[91mhttp [0m[91mfetch GET 200 https://registry.npmjs.org/es6-promise/-/es6-promise-3.2.1.tgz 183ms
+[0m[91mhttp fetch GET 200 https://registry.npmjs.org/etag/-/etag-1.8.1.tgz 181ms
+[0m[91mhttp fetch GET 200 https://registry.npmjs.org/forwarded/-/forwarded-0.1.2.tgz 182ms
+[0m[91mhttp fetch GET 200 https://registry.npmjs.org/ee-first/-/ee-first-1.1.1.tgz 185ms
+[0m[91mhttp fetch[0m[91m GET 200 https://registry.npmjs.org/encodeurl/-/encodeurl-1.0.1.tgz 183ms
+[0m[91mhttp fetch[0m[91m GET 200 https://registry.npmjs.org/content-disposition/-/content-disposition-0.5.2.tgz 199ms
+[0m[91mhttp fetch GET 200 https://registry.npmjs.org/setprototypeof/-/setprototypeof-1.1.0.tgz 186ms
+[0m[91mhttp[0m[91m fetch GET 200 https://registry.npmjs.org/escape-html/-/escape-html-1.0.3.tgz 187ms
+[0m[91mhttp [0m[91mfetch GET 200 https://registry.npmjs.org/destroy/-/destroy-1.0.4.tgz 190ms
+[0m[91mhttp[0m[91m fetch GET 200 https://registry.npmjs.org/cookie/-/cookie-0.3.1.tgz 201ms
+[0m[91mhttp[0m[91m fetch GET 200 https://registry.npmjs.org/buffer-shims/-/buffer-shims-1.0.0.tgz 204ms
+[0m[91mhttp [0m[91mfetch GET 200 https://registry.npmjs.org/core-util-is/-/core-util-is-1.0.2.tgz 202ms
+[0m[91mhttp fetch[0m[91m GET 200 https://registry.npmjs.org/fresh/-/fresh-0.5.2.tgz 189ms
+[0m[91mhttp fetch GET 200 https://registry.npmjs.org/hooks-fixed/-/hooks-fixed-2.0.0.tgz 69ms
+[0m[91mhttp fetch GET 200 https://registry.npmjs.org/kareem/-/kareem-1.5.0.tgz 52ms
+[0m[91mhttp fetch GET 200 https://registry.npmjs.org/inherits/-/inherits-2.0.3.tgz 65ms
+[0m[91mhttp fetch GET 200 https://registry.npmjs.org/isarray/-/isarray-1.0.0.tgz 58ms
+[0m[91mhttp fetch GET 200 https://registry.npmjs.org/ipaddr.js/-/ipaddr.js-1.5.2.tgz 71ms
+[0m[91mhttp fetch GET 200 https://registry.npmjs.org/media-typer/-/media-typer-0.3.0.tgz 48ms
+[0m[91mhttp fetch GET 200 https://registry.npmjs.org/bson/-/bson-1.0.4.tgz 318ms
+[0m[91mhttp fetch GET 200 https://registry.npmjs.org/merge-descriptors/-/merge-descriptors-1.0.1.tgz 76ms
+[0m[91mhttp fetch GET 200 https://registry.npmjs.org/methods/-/methods-1.1.2.tgz 82ms
+[0m[91mhttp fetch GET 200 https://registry.npmjs.org/mime-types/-/mime-types-2.1.17.tgz 81ms
+[0m[91mhttp fetch[0m[91m GET 200 https://registry.npmjs.org/mpath/-/mpath-0.3.0.tgz 82ms
+[0m[91mhttp [0m[91mfetch GET 200 https://registry.npmjs.org/mime-db/-/mime-db-1.30.0.tgz 84ms
+[0m[91mhttp fetch GET 200 https://registry.npmjs.org/mime/-/mime-1.4.1.tgz 86ms
+[0m[91mhttp fetch GET 200 https://registry.npmjs.org/mpromise/-/mpromise-0.5.5.tgz 55ms
+[0m[91mhttp fetch GET 200 https://registry.npmjs.org/sliced/-/sliced-0.0.5.tgz 47ms
+[0m[91mhttp fetch GET 200 https://registry.npmjs.org/debug/-/debug-2.6.9.tgz 34ms
+[0m[91mhttp fetch GET 200 https://registry.npmjs.org/ms/-/ms-2.0.0.tgz 45ms
+[0m[91mhttp fetch GET 200 https://registry.npmjs.org/bluebird/-/bluebird-3.5.0.tgz 368ms
+[0m[91mhttp fetch GET 200 https://registry.npmjs.org/muri/-/muri-1.2.2.tgz 35ms
+[0m[91mhttp fetch GET 200 https://registry.npmjs.org/accepts/-/accepts-1.3.4.tgz 34ms
+[0m[91mhttp[0m[91m fetch GET 200 https://registry.npmjs.org/negotiator/-/negotiator-0.6.1.tgz 38ms
+[0m[91mhttphttp fetch GET 200 https://registry.npmjs.org/parseurl/-/parseurl-1.3.2.tgz 32ms
+ fetch GET 200 https://registry.npmjs.org/on-finished/-/on-finished-2.3.0.tgz 42ms
+[0m[91mhttp fetch GET 200 https://registry.npmjs.org/on-headers/-/on-headers-1.0.1.tgz 45ms
+[0m[91mhttp fetch GET 200 https://registry.npmjs.org/path-to-regexp/-/path-to-regexp-0.1.7.tgz 39ms
+[0m[91mhttp fetch GET 200 https://registry.npmjs.org/process-nextick-args/-/process-nextick-args-1.0.7.tgz 37ms
+[0m[91mhttp fetch GET 200 https://registry.npmjs.org/iconv-lite/-/iconv-lite-0.4.19.tgz 243ms
+[0m[91mhttp fetch GET 200 https://registry.npmjs.org/proxy-addr/-/proxy-addr-2.0.2.tgz 34ms
+[0m[91mhttp fetch GET 200 https://registry.npmjs.org/range-parser/-/range-parser-1.2.0.tgz 36ms
+[0m[91mhttp[0m[91m fetch GET 200 https://registry.npmjs.org/qs/-/qs-6.5.1.tgz 50ms
+[0m[91mhttp fetch GET 200 https://registry.npmjs.org/morgan/-/morgan-1.9.0.tgz 41ms
+[0m[91mhttp fetch GET 200 https://registry.npmjs.org/method-override/-/method-override-2.3.10.tgz 28ms
+[0m[91mhttp fetch GET 200 https://registry.npmjs.org/utils-merge/-/utils-merge-1.0.1.tgz 42ms
+[0m[91mhttp[0m[91m fetch GET 200 https://registry.npmjs.org/vary/-/vary-1.1.2.tgz 53ms
+[0m[91mhttp fetch GET 200 https://registry.npmjs.org/express/-/express-4.16.1.tgz 60ms
+[0m[91mhttp fetch GET 200 https://registry.npmjs.org/body-parser/-/body-parser-1.18.2.tgz 36ms
+[0m[91mhttp fetch GET 200 https://registry.npmjs.org/readable-stream/-/readable-stream-2.2.7.tgz 49ms
+[0m[91mhttp fetch GET 200 https://registry.npmjs.org/util-deprecate/-/util-deprecate-1.0.2.tgz 39ms
+[0m[91mhttp fetch GET 200 https://registry.npmjs.org/raw-body/-/raw-body-2.3.2.tgz 35ms
+[0m[91mhttp fetch GET 200 https://registry.npmjs.org/finalhandler/-/finalhandler-1.1.0.tgz 34ms
+[0m[91mhttp fetch GET 200 https://registry.npmjs.org/unpipe/-/unpipe-1.0.0.tgz 30ms
+[0m[91mhttp fetch GET 200 https://registry.npmjs.org/type-is/-/type-is-1.6.15.tgz 38ms
+[0m[91mhttp fetch GET 200 https://registry.npmjs.org/string_decoder/-/string_decoder-1.0.3.tgz 52ms
+[0m[91mhttp fetch GET 200 https://registry.npmjs.org/serve-static/-/serve-static-1.13.1.tgz 38ms
+[0m[91mhttp fetch GET 200 https://registry.npmjs.org/http-errors/-/http-errors-1.6.2.tgz 32ms
+[0m[91mhttp fetch GET 200 https://registry.npmjs.org/statuses/-/statuses-1.3.1.tgz 29ms
+[0m[91mhttp fetch GET 200 https://registry.npmjs.org/setprototypeof/-/setprototypeof-1.0.3.tgz 32ms
+[0m[91mhttp fetch GET 200 https://registry.npmjs.org/send/-/send-0.16.1.tgz 63ms
+[0m[91mhttp fetch GET 200 https://registry.npmjs.org/sliced/-/sliced-1.0.1.tgz 50ms
+[0m[91mhttp fetch GET 200 https://registry.npmjs.org/require_optional/-/require_optional-1.0.1.tgz 59ms
+[0m[91mhttp fetch GET 200 https://registry.npmjs.org/semver/-/semver-5.4.1.tgz 57ms
+[0m[91mhttp fetch GET 200 https://registry.npmjs.org/resolve-from/-/resolve-from-2.0.0.tgz 39ms
+[0m[91mhttp fetch GET 200 https://registry.npmjs.org/basic-auth/-/basic-auth-2.0.0.tgz 44ms
+[0m[91mhttp fetch GET 200 https://registry.npmjs.org/safe-buffer/-/safe-buffer-5.1.1.tgz 46ms
+[0m[91mhttp fetch GET 200 https://registry.npmjs.org/regexp-clone/-/regexp-clone-0.0.1.tgz 29ms
+[0m[91mhttp fetch GET 200 https://registry.npmjs.org/mquery/-/mquery-2.3.2.tgz 50ms
+[0m[91mhttp fetch GET 200 https://registry.npmjs.org/mongodb/-/mongodb-2.2.31.tgz 233ms
+[0m[91mhttp fetch GET 200 https://registry.npmjs.org/mongodb-core/-/mongodb-core-2.1.15.tgz 132ms
+[0m[91mhttp fetch GET 200 https://registry.npmjs.org/async/-/async-2.1.4.tgz 501ms
+[0m[91mhttp fetch GET 200 https://registry.npmjs.org/mongoose/-/mongoose-4.12.0.tgz 313ms
+[0m[91mhttp fetch GET 200 https://registry.npmjs.org/lodash/-/lodash-4.17.4.tgz 750ms
+[0m[91mnpm info lifecycle array-flatten@1.1.1~preinstall: array-flatten@1.1.1
+npm info lifecycle bluebird@3.5.0~preinstall: bluebird@3.5.0
+[0m[91mnpm info lifecycle[0m[91m bson@1.0.4~preinstall: bson@1.0.4
+npm info lifecycle buffer-shims@1.0.0~preinstall: buffer-shims@1.0.0
+[0m[91mnpm info lifecycle bytes@3.0.0~preinstall: bytes@3.0.0
+[0m[91mnpm info lifecycle content-disposition@0.5.2~preinstall: content-disposition@0.5.2
+npm info [0m[91mlifecycle content-type@1.0.4~preinstall: content-type@1.0.4
+[0m[91mnpm info lifecycle cookie@0.3.1~preinstall: cookie@0.3.1
+npm info lifecycle[0m[91m cookie-signature@1.0.6~preinstall: cookie-signature@1.0.6
+npm info lifecycle core-util-is@1.0.2~preinstall: core-util-is@1.0.2
+[0m[91mnpm info lifecycle depd@1.1.1~preinstall: depd@1.1.1
+[0m[91mnpm info lifecycle destroy@1.0.4~preinstall: destroy@1.0.4
+[0m[91mnpm info lifecycle ee-first@1.1.1~preinstall: ee-first@1.1.1
+[0m[91mnpm info lifecycle encodeurl@1.0.1~preinstall: encodeurl@1.0.1
+[0m[91mnpm info lifecycle es6-promise@3.2.1~preinstall: es6-promise@3.2.1
+[0m[91mnpm info lifecycle escape-html@1.0.3~preinstall: escape-html@1.0.3
+npm info[0m[91m lifecycle etag@1.8.1~preinstall: etag@1.8.1
+npm info lifecycle[0m[91m setprototypeof@1.1.0~preinstall: setprototypeof@1.1.0
+npm info lifecycle forwarded@0.1.2~preinstall: forwarded@0.1.2
+[0m[91mnpm info lifecycle fresh@0.5.2~preinstall: fresh@0.5.2
+npm [0m[91minfo lifecycle hooks-fixed@2.0.0~preinstall: hooks-fixed@2.0.0
+npm info lifecycle iconv-lite@0.4.19~preinstall: iconv-lite@0.4.19
+[0m[91mnpm info lifecycle inherits@2.0.3~preinstall: inherits@2.0.3
+[0m[91mnpm info lifecycle ipaddr.js@1.5.2~preinstall: ipaddr.js@1.5.2
+[0m[91mnpm info lifecycle isarray@1.0.0~preinstall: isarray@1.0.0
+npm info lifecycle[0m[91m kareem@1.5.0~preinstall: kareem@1.5.0
+npm info lifecycle lodash@4.17.4~preinstall: lodash@4.17.4
+[0m[91mnpm info lifecycle[0m[91m async@2.1.4~preinstall: async@2.1.4
+npm info lifecycle media-typer@0.3.0~preinstall: media-typer@0.3.0
+[0m[91mnpm info lifecycle merge-descriptors@1.0.1~preinstall: merge-descriptors@1.0.1
+[0m[91mnpm info lifecycle methods@1.1.2~preinstall: methods@1.1.2
+npm info[0m[91m lifecycle mime@1.4.1~preinstall: mime@1.4.1
+npm info lifecycle mime-db@1.30.0~preinstall: mime-db@1.30.0
+[0m[91mnpm info lifecycle mime-types@2.1.17~preinstall: mime-types@2.1.17
+[0m[91mnpm info lifecycle mpath@0.3.0~preinstall: mpath@0.3.0
+[0m[91mnpm info lifecycle mpromise@0.5.5~preinstall: mpromise@0.5.5
+[0m[91mnpm info lifecycle sliced@0.0.5~preinstall: sliced@0.0.5
+npm[0m[91m info lifecycle ms@2.0.0~preinstall: ms@2.0.0
+npm info[0m[91m lifecycle debug@2.6.9~preinstall: debug@2.6.9
+npm info lifecycle muri@1.2.2~preinstall: muri@1.2.2
+[0m[91mnpm info lifecycle negotiator@0.6.1~preinstall: negotiator@0.6.1
+[0m[91mnpm info lifecycle accepts@1.3.4~preinstall: accepts@1.3.4
+npm[0m[91m info lifecycle on-finished@2.3.0~preinstall: on-finished@2.3.0
+npm info lifecycle[0m[91m on-headers@1.0.1~preinstall: on-headers@1.0.1
+npm info lifecycle parseurl@1.3.2~preinstall: parseurl@1.3.2
+[0m[91mnpm info lifecycle path-to-regexp@0.1.7~preinstall: path-to-regexp@0.1.7
+npm info [0m[91mlifecycle process-nextick-args@1.0.7~preinstall: process-nextick-args@1.0.7
+npm info lifecycle[0m[91m proxy-addr@2.0.2~preinstall: proxy-addr@2.0.2
+npm info lifecycle qs@6.5.1~preinstall: qs@6.5.1
+[0m[91mnpm info lifecycle range-parser@1.2.0~preinstall: range-parser@1.2.0
+[0m[91mnpm info lifecycle morgan@1.9.0~preinstall: morgan@1.9.0
+[0m[91mnpm info lifecycle mongoose@4.12.0~preinstall: mongoose@4.12.0
+[0m[91mnpm info lifecycle method-override@2.3.10~preinstall: method-override@2.3.10
+[0m[91mnpm info lifecycle express@4.16.1~preinstall: express@4.16.1
+npm[0m[91m info lifecycle vary@1.1.2~preinstall: vary@1.1.2
+npm info [0m[91mlifecycle utils-merge@1.0.1~preinstall: utils-merge@1.0.1
+npm info lifecycle mongodb@2.2.31~preinstall: mongodb@2.2.31
+[0m[91mnpm info lifecycle readable-stream@2.2.7~preinstall: readable-stream@2.2.7
+[0m[91mnpm info lifecycle util-deprecate@1.0.2~preinstall: util-deprecate@1.0.2
+npm info[0m[91m lifecycle body-parser@1.18.2~preinstall: body-parser@1.18.2
+npm info lifecycle raw-body@2.3.2~preinstall: raw-body@2.3.2
+[0m[91mnpm info lifecycle finalhandler@1.1.0~preinstall: finalhandler@1.1.0
+[0m[91mnpm info lifecycle unpipe@1.0.0~preinstall: unpipe@1.0.0
+[0m[91mnpm info lifecycle type-is@1.6.15~preinstall: type-is@1.6.15
+npm info[0m[91m lifecycle string_decoder@1.0.3~preinstall: string_decoder@1.0.3
+npm info lifecycle serve-static@1.13.1~preinstall: serve-static@1.13.1
+[0m[91mnpm info lifecycle send@0.16.1~preinstall: send@0.16.1
+[0m[91mnpm info lifecycle http-errors@1.6.2~preinstall: http-errors@1.6.2
+npm info[0m[91m lifecycle statuses@1.3.1~preinstall: statuses@1.3.1
+npm info lifecycle[0m[91m sliced@1.0.1~preinstall: sliced@1.0.1
+npm info lifecycle setprototypeof@1.0.3~preinstall: setprototypeof@1.0.3
+[0m[91mnpm info lifecycle mongodb-core@2.1.15~preinstall: mongodb-core@2.1.15
+[0m[91mnpm info lifecycle[0m[91m require_optional@1.0.1~preinstall: require_optional@1.0.1
+npm info lifecycle semver@5.4.1~preinstall: semver@5.4.1
+[0m[91mnpm info lifecycle basic-auth@2.0.0~preinstall: basic-auth@2.0.0
+[0m[91mnpm info lifecycle safe-buffer@5.1.1~preinstall: safe-buffer@5.1.1
+npm info [0m[91mlifecycle resolve-from@2.0.0~preinstall: resolve-from@2.0.0
+npm info lifecycle mquery@2.3.2~preinstall: mquery@2.3.2
+[0m[91mnpm info lifecycle regexp-clone@0.0.1~preinstall: regexp-clone@0.0.1
+[0m[91mnpm info linkStuff array-flatten@1.1.1
+[0m[91mnpm info linkStuff bluebird@3.5.0
+[0m[91mnpm info linkStuff bson@1.0.4
+[0m[91mnpm info [0m[91mlinkStuff buffer-shims@1.0.0
+[0m[91mnpm info linkStuff bytes@3.0.0
+[0m[91mnpm info linkStuff content-disposition@0.5.2
+[0m[91mnpm info linkStuff content-type@1.0.4
+[0m[91mnpm info[0m[91m linkStuff cookie@0.3.1
+[0m[91mnpm info linkStuff cookie-signature@1.0.6
+[0m[91mnpm info linkStuff core-util-is@1.0.2
+[0m[91mnpm info linkStuff depd@1.1.1
+[0m[91mnpm info [0m[91mlinkStuff destroy@1.0.4
+npm[0m[91m info linkStuff ee-first@1.1.1
+[0m[91mnpm info linkStuff encodeurl@1.0.1
+[0m[91mnpm info linkStuff es6-promise@3.2.1
+[0m[91mnpm info linkStuff escape-html@1.0.3
+[0m[91mnpm info linkStuff etag@1.8.1
+[0m[91mnpm info linkStuff setprototypeof@1.1.0
+[0m[91mnpm info linkStuff forwarded@0.1.2
+[0m[91mnpm info linkStuff fresh@0.5.2
+[0m[91mnpm info linkStuff[0m[91m hooks-fixed@2.0.0
+npm[0m[91m info linkStuff iconv-lite@0.4.19
+[0m[91mnpm info linkStuff inherits@2.0.3
+[0m[91mnpm info linkStuff ipaddr.js@1.5.2
+[0m[91mnpm info linkStuff[0m[91m isarray@1.0.0
+npm info[0m[91m linkStuff kareem@1.5.0
+npm[0m[91m info linkStuff lodash@4.17.4
+[0m[91mnpm info linkStuff async@2.1.4
+[0m[91mnpm info linkStuff media-typer@0.3.0
+[0m[91mnpm info linkStuff merge-descriptors@1.0.1
+[0m[91mnpm info linkStuff[0m[91m methods@1.1.2
+npm[0m[91m info linkStuff mime@1.4.1
+[0m[91mnpm info linkStuff mime-db@1.30.0
+[0m[91mnpm info linkStuff mime-types@2.1.17
+[0m[91mnpm [0m[91minfo linkStuff mpath@0.3.0
+[0m[91mnpm info linkStuff mpromise@0.5.5
+[0m[91mnpm info [0m[91mlinkStuff sliced@0.0.5
+npm[0m[91m info linkStuff ms@2.0.0
+[0m[91mnpm info linkStuff debug@2.6.9
+[0m[91mnpm info linkStuff muri@1.2.2
+[0m[91mnpm info linkStuff negotiator@0.6.1
+[0m[91mnpm info linkStuff[0m[91m accepts@1.3.4
+npm [0m[91minfo linkStuff on-finished@2.3.0
+npm[0m[91m info linkStuff on-headers@1.0.1
+[0m[91mnpm info linkStuff parseurl@1.3.2
+[0m[91mnpm info linkStuff path-to-regexp@0.1.7
+[0m[91mnpm info [0m[91mlinkStuff process-nextick-args@1.0.7
+npm[0m[91m info linkStuff proxy-addr@2.0.2
+[0m[91mnpm info linkStuff qs@6.5.1
+[0m[91mnpm info linkStuff range-parser@1.2.0
+[0m[91mnpm info linkStuff regexp-clone@0.0.1
+[0m[91mnpm info linkStuff mquery@2.3.2
+[0m[91mnpm info[0m[91m linkStuff resolve-from@2.0.0
+npm[0m[91m info linkStuff safe-buffer@5.1.1
+npm[0m[91m info linkStuff basic-auth@2.0.0
+[0m[91mnpm info linkStuff semver@5.4.1
+[0m[91mnpm info linkStuff require_optional@1.0.1
+[0m[91mnpm info linkStuff mongodb-core@2.1.15
+[0m[91mnpm info linkStuff setprototypeof@1.0.3
+[0m[91mnpm info linkStuff sliced@1.0.1
+[0m[91mnpm info linkStuff statuses@1.3.1
+[0m[91mnpm info linkStuff[0m[91m http-errors@1.6.2
+npm[0m[91m info linkStuff send@0.16.1
+[0m[91mnpm info linkStuff serve-static@1.13.1
+[0m[91mnpm info linkStuff string_decoder@1.0.3
+[0m[91mnpm info [0m[91mlinkStuff type-is@1.6.15
+[0m[91mnpm info linkStuff unpipe@1.0.0
+[0m[91mnpm info linkStuff finalhandler@1.1.0
+[0m[91mnpm info linkStuff raw-body@2.3.2
+[0m[91mnpm info[0m[91m linkStuff body-parser@1.18.2
+npm[0m[91m info linkStuff util-deprecate@1.0.2
+[0m[91mnpm info linkStuff readable-stream@2.2.7
+[0m[91mnpm info linkStuff mongodb@2.2.31
+[0m[91mnpm info [0m[91mlinkStuff utils-merge@1.0.1
+[0m[91mnpm info linkStuff vary@1.1.2
+[0m[91mnpm info linkStuff express@4.16.1
+[0m[91mnpm info linkStuff method-override@2.3.10
+[0m[91mnpm info linkStuff mongoose@4.12.0
+[0m[91mnpm info [0m[91mlinkStuff morgan@1.9.0
+[0m[91mnpm [0m[91minfo lifecycle array-flatten@1.1.1~install: array-flatten@1.1.1
+npm info lifecycle bluebird@3.5.0~install: bluebird@3.5.0
+npm info lifecycle bson@1.0.4~install: bson@1.0.4
+npm info lifecycle buffer-shims@1.0.0~install: buffer-shims@1.0.0
+npm info lifecycle bytes@3.0.0~install: bytes@3.0.0
+npm info lifecycle content-disposition@0.5.2~install: content-disposition@0.5.2
+npm info lifecycle content-type@1.0.4~install: content-type@1.0.4
+npm info lifecycle cookie@0.3.1~install: cookie@0.3.1
+npm info lifecycle cookie-signature@1.0.6~install: cookie-signature@1.0.6
+npm info lifecycle core-util-is@1.0.2~install: core-util-is@1.0.2
+npm info lifecycle depd@1.1.1~install: depd@1.1.1
+npm info lifecycle destroy@1.0.4~install: destroy@1.0.4
+npm info lifecycle ee-first@1.1.1~install: ee-first@1.1.1
+npm info lifecycle encodeurl@1.0.1~install: encodeurl@1.0.1
+npm info lifecycle es6-promise@3.2.1~install: es6-promise@3.2.1
+npm info lifecycle escape-html@1.0.3~install: escape-html@1.0.3
+npm info lifecycle etag@1.8.1~install: etag@1.8.1
+npm info lifecycle setprototypeof@1.1.0~install: setprototypeof@1.1.0
+npm info lifecycle forwarded@0.1.2~install: forwarded@0.1.2
+npm info lifecycle fresh@0.5.2~install: fresh@0.5.2
+npm info lifecycle hooks-fixed@2.0.0~install: hooks-fixed@2.0.0
+npm info lifecycle iconv-lite@0.4.19~install: iconv-lite@0.4.19
+npm info lifecycle inherits@2.0.3~install: inherits@2.0.3
+npm info lifecycle ipaddr.js@1.5.2~install: ipaddr.js@1.5.2
+npm info lifecycle isarray@1.0.0~install: isarray@1.0.0
+npm info lifecycle kareem@1.5.0~install: kareem@1.5.0
+npm info lifecycle lodash@4.17.4~install: lodash@4.17.4
+npm info lifecycle async@2.1.4~install: async@2.1.4
+[0m[91mnpm info lifecycle media-typer@0.3.0~install: media-typer@0.3.0
+[0m[91mnpm info lifecycle merge-descriptors@1.0.1~install: merge-descriptors@1.0.1
+[0m[91mnpm info lifecycle methods@1.1.2~install: methods@1.1.2
+[0m[91mnpm info lifecycle mime@1.4.1~install: mime@1.4.1
+npm info lifecycle mime-db@1.30.0~install: mime-db@1.30.0
+[0m[91mnpm info lifecycle mime-types@2.1.17~install: mime-types@2.1.17
+[0m[91mnpm info lifecycle mpath@0.3.0~install: mpath@0.3.0
+[0m[91mnpm info lifecycle mpromise@0.5.5~install: mpromise@0.5.5
+npm info lifecycle[0m[91m sliced@0.0.5~install: sliced@0.0.5
+npm info lifecycle ms@2.0.0~install: ms@2.0.0
+[0m[91mnpm info lifecycle debug@2.6.9~install: debug@2.6.9
+[0m[91mnpm info lifecycle muri@1.2.2~install: muri@1.2.2
+[0m[91mnpm info lifecycle negotiator@0.6.1~install: negotiator@0.6.1
+npm info lifecycle accepts@1.3.4~install: accepts@1.3.4
+[0m[91mnpm info lifecycle on-finished@2.3.0~install: on-finished@2.3.0
+[0m[91mnpm info lifecycle on-headers@1.0.1~install: on-headers@1.0.1
+npm info lifecycle parseurl@1.3.2~install: parseurl@1.3.2
+[0m[91mnpm info lifecycle path-to-regexp@0.1.7~install: path-to-regexp@0.1.7
+[0m[91mnpm info lifecycle process-nextick-args@1.0.7~install: process-nextick-args@1.0.7
+[0m[91mnpm info lifecycle proxy-addr@2.0.2~install: proxy-addr@2.0.2
+npm info lifecycle qs@6.5.1~install: qs@6.5.1
+[0m[91mnpm info lifecycle range-parser@1.2.0~install: range-parser@1.2.0
+[0m[91mnpm info lifecycle regexp-clone@0.0.1~install: regexp-clone@0.0.1
+[0m[91mnpm info lifecycle mquery@2.3.2~install: mquery@2.3.2
+[0m[91mnpm info lifecycle resolve-from@2.0.0~install: resolve-from@2.0.0
+npm info [0m[91mlifecycle safe-buffer@5.1.1~install: safe-buffer@5.1.1
+[0m[91mnpm info lifecycle basic-auth@2.0.0~install: basic-auth@2.0.0
+npm info lifecycle semver@5.4.1~install: semver@5.4.1
+npm info lifecycle require_optional@1.0.1~install: require_optional@1.0.1
+npm info lifecycle mongodb-core@2.1.15~install: mongodb-core@2.1.15
+npm info lifecycle setprototypeof@1.0.3~install: setprototypeof@1.0.3
+npm info lifecycle sliced@1.0.1~install: sliced@1.0.1
+npm info lifecycle statuses@1.3.1~install: statuses@1.3.1
+npm info lifecycle http-errors@1.6.2~install: http-errors@1.6.2
+npm info lifecycle send@0.16.1~install: send@0.16.1
+npm info lifecycle serve-static@1.13.1~install: serve-static@1.13.1
+npm info lifecycle string_decoder@1.0.3~install: string_decoder@1.0.3
+npm info lifecycle type-is@1.6.15~install: type-is@1.6.15
+npm info lifecycle unpipe@1.0.0~install: unpipe@1.0.0
+npm info lifecycle finalhandler@1.1.0~install: finalhandler@1.1.0
+npm info lifecycle raw-body@2.3.2~install: raw-body@2.3.2
+npm info lifecycle body-parser@1.18.2~install: body-parser@1.18.2
+npm info lifecycle util-deprecate@1.0.2~install: util-deprecate@1.0.2
+npm info lifecycle readable-stream@2.2.7~install: readable-stream@2.2.7
+npm info lifecycle mongodb@2.2.31~install: mongodb@2.2.31
+npm info lifecycle utils-merge@1.0.1~install: utils-merge@1.0.1
+npm info lifecycle vary@1.1.2~install: vary@1.1.2
+npm info lifecycle express@4.16.1~install: express@4.16.1
+npm info lifecycle method-override@2.3.10~install: method-override@2.3.10
+npm info lifecycle mongoose@4.12.0~install: mongoose@4.12.0
+npm info lifecycle morgan@1.9.0~install: morgan@1.9.0
+[0m[91mnpm info lifecycle array-flatten@1.1.1~postinstall: array-flatten@1.1.1
+npm [0m[91minfo lifecycle bluebird@3.5.0~postinstall: bluebird@3.5.0
+npm info[0m[91m lifecycle bson@1.0.4~postinstall: bson@1.0.4
+npm info lifecycle buffer-shims@1.0.0~postinstall: buffer-shims@1.0.0
+[0m[91mnpm info lifecycle bytes@3.0.0~postinstall: bytes@3.0.0
+[0m[91mnpm info lifecycle content-disposition@0.5.2~postinstall: content-disposition@0.5.2
+[0m[91mnpm info lifecycle content-type@1.0.4~postinstall: content-type@1.0.4
+npm info[0m[91m lifecycle cookie@0.3.1~postinstall: cookie@0.3.1
+npm info lifecycle cookie-signature@1.0.6~postinstall: cookie-signature@1.0.6
+[0m[91mnpm info lifecycle core-util-is@1.0.2~postinstall: core-util-is@1.0.2
+[0m[91mnpm info lifecycle depd@1.1.1~postinstall: depd@1.1.1
+npm info [0m[91mlifecycle destroy@1.0.4~postinstall: destroy@1.0.4
+npm info lifecycle ee-first@1.1.1~postinstall: ee-first@1.1.1
+[0m[91mnpm info lifecycle encodeurl@1.0.1~postinstall: encodeurl@1.0.1
+[0m[91mnpm info lifecycle es6-promise@3.2.1~postinstall: es6-promise@3.2.1
+[0m[91mnpm info lifecycle escape-html@1.0.3~postinstall: escape-html@1.0.3
+npm[0m[91m info lifecycle etag@1.8.1~postinstall: etag@1.8.1
+npm info lifecycle setprototypeof@1.1.0~postinstall: setprototypeof@1.1.0
+[0m[91mnpm info lifecycle forwarded@0.1.2~postinstall: forwarded@0.1.2
+[0m[91mnpm info lifecycle fresh@0.5.2~postinstall: fresh@0.5.2
+npm info lifecycle hooks-fixed@2.0.0~postinstall: hooks-fixed@2.0.0
+[0m[91mnpm info lifecycle iconv-lite@0.4.19~postinstall: iconv-lite@0.4.19
+[0m[91mnpm info lifecycle inherits@2.0.3~postinstall: inherits@2.0.3
+[0m[91mnpm info lifecycle ipaddr.js@1.5.2~postinstall: ipaddr.js@1.5.2
+npm info lifecycle isarray@1.0.0~postinstall: isarray@1.0.0
+[0m[91mnpm info lifecycle kareem@1.5.0~postinstall: kareem@1.5.0
+npm[0m[91m info lifecycle lodash@4.17.4~postinstall: lodash@4.17.4
+npm info lifecycle async@2.1.4~postinstall: async@2.1.4
+[0m[91mnpm info lifecycle media-typer@0.3.0~postinstall: media-typer@0.3.0
+[0m[91mnpm info lifecycle merge-descriptors@1.0.1~postinstall: merge-descriptors@1.0.1
+[0m[91mnpm info lifecycle methods@1.1.2~postinstall: methods@1.1.2
+npm info lifecycle mime@1.4.1~postinstall: mime@1.4.1
+[0m[91mnpm info[0m[91m lifecycle mime-db@1.30.0~postinstall: mime-db@1.30.0
+npm info lifecycle mime-types@2.1.17~postinstall: mime-types@2.1.17
+[0m[91mnpm info lifecycle mpath@0.3.0~postinstall: mpath@0.3.0
+[0m[91mnpm info lifecycle mpromise@0.5.5~postinstall: mpromise@0.5.5
+[0m[91mnpm info lifecycle sliced@0.0.5~postinstall: sliced@0.0.5
+npm info lifecycle ms@2.0.0~postinstall: ms@2.0.0
+[0m[91mnpm info lifecycle debug@2.6.9~postinstall: debug@2.6.9
+[0m[91mnpm info lifecycle muri@1.2.2~postinstall: muri@1.2.2
+[0m[91mnpm info lifecycle negotiator@0.6.1~postinstall: negotiator@0.6.1
+[0m[91mnpm info lifecycle accepts@1.3.4~postinstall: accepts@1.3.4
+npm info lifecycle on-finished@2.3.0~postinstall: on-finished@2.3.0
+[0m[91mnpm info lifecycle on-headers@1.0.1~postinstall: on-headers@1.0.1
+[0m[91mnpm info lifecycle parseurl@1.3.2~postinstall: parseurl@1.3.2
+npm[0m[91m info lifecycle path-to-regexp@0.1.7~postinstall: path-to-regexp@0.1.7
+npm info lifecycle process-nextick-args@1.0.7~postinstall: process-nextick-args@1.0.7
+[0m[91mnpm info lifecycle proxy-addr@2.0.2~postinstall: proxy-addr@2.0.2
+npm info[0m[91m lifecycle qs@6.5.1~postinstall: qs@6.5.1
+npm info lifecycle range-parser@1.2.0~postinstall: range-parser@1.2.0
+[0m[91mnpm info lifecycle regexp-clone@0.0.1~postinstall: regexp-clone@0.0.1
+[0m[91mnpm[0m[91m info lifecycle mquery@2.3.2~postinstall: mquery@2.3.2
+npm info [0m[91mlifecycle resolve-from@2.0.0~postinstall: resolve-from@2.0.0
+npm info lifecycle safe-buffer@5.1.1~postinstall: safe-buffer@5.1.1
+[0m[91mnpm info lifecycle basic-auth@2.0.0~postinstall: basic-auth@2.0.0
+[0m[91mnpm info lifecycle semver@5.4.1~postinstall: semver@5.4.1
+[0m[91mnpm info lifecycle require_optional@1.0.1~postinstall: require_optional@1.0.1
+[0m[91mnpm info lifecycle mongodb-core@2.1.15~postinstall: mongodb-core@2.1.15
+[0m[91mnpm info lifecycle setprototypeof@1.0.3~postinstall: setprototypeof@1.0.3
+npm info lifecycle sliced@1.0.1~postinstall: sliced@1.0.1
+[0m[91mnpm info lifecycle statuses@1.3.1~postinstall: statuses@1.3.1
+[0m[91mnpm info lifecycle http-errors@1.6.2~postinstall: http-errors@1.6.2
+npm info lifecycle send@0.16.1~postinstall: send@0.16.1
+[0m[91mnpm info lifecycle serve-static@1.13.1~postinstall: serve-static@1.13.1
+[0m[91mnpm info lifecycle string_decoder@1.0.3~postinstall: string_decoder@1.0.3
+[0m[91mnpm info lifecycle type-is@1.6.15~postinstall: type-is@1.6.15
+npm info lifecycle unpipe@1.0.0~postinstall: unpipe@1.0.0
+[0m[91mnpm info lifecycle finalhandler@1.1.0~postinstall: finalhandler@1.1.0
+[0m[91mnpm info lifecycle raw-body@2.3.2~postinstall: raw-body@2.3.2
+[0m[91mnpm info lifecycle body-parser@1.18.2~postinstall: body-parser@1.18.2
+npm [0m[91minfo lifecycle util-deprecate@1.0.2~postinstall: util-deprecate@1.0.2
+npm info lifecycle[0m[91m readable-stream@2.2.7~postinstall: readable-stream@2.2.7
+[0m[91mnpm info lifecycle mongodb@2.2.31~postinstall: mongodb@2.2.31
+npm[0m[91m info lifecycle utils-merge@1.0.1~postinstall: utils-merge@1.0.1
+npm info lifecycle vary@1.1.2~postinstall: vary@1.1.2
+[0m[91mnpm info lifecycle express@4.16.1~postinstall: express@4.16.1
+[0m[91mnpm info lifecycle method-override@2.3.10~postinstall: method-override@2.3.10
+npm[0m[91m info lifecycle mongoose@4.12.0~postinstall: mongoose@4.12.0
+npm info lifecycle morgan@1.9.0~postinstall: morgan@1.9.0
+[0m[91mnpm info linkStuff node-todo@0.0.1
+[0m[91mnpm info lifecycle node-todo@0.0.1~install: node-todo@0.0.1
+[0m[91mnpm info lifecycle node-todo@0.0.1~postinstall: node-todo@0.0.1
+[0m[91mnpm info lifecycle node-todo@0.0.1~prepublish: node-todo@0.0.1
+npm info [0m[91mlifecycle node-todo@0.0.1~prepare: node-todo@0.0.1
+[0m[91mnpm info lifecycle undefined~preshrinkwrap: undefined
+[0m[91mnpm info lifecycle undefined~shrinkwrap: undefined
+[0m[91mnpm notice created a lockfile as package-lock.json. You should commit this file.
+npm info lifecycle undefined~postshrinkwrap: undefined
+[0m[91mnpm WARN node-todo@0.0.1 No repository field.
+npm WARN node-todo@0.0.1 No license field.
+[0m[91m
+[0madded 79 packages in 3.18s
+[91mnpm info ok 
+[0m ---> 64aa4d5f0a8c
+Removing intermediate container 412347f74c07
+Step 5/6 : EXPOSE 80
+ ---> Running in 24e6cb6fd670
+ ---> ee18750040e7
+Removing intermediate container 24e6cb6fd670
+Step 6/6 : CMD node server.js
+ ---> Running in 864455f9f58c
+ ---> 7f9f1ebc253a
+Removing intermediate container 864455f9f58c
+Successfully built 7f9f1ebc253a
+Successfully tagged services/todo-app:latest
++ docker tag services/todo-app:latest 364238614392.dkr.ecr.us-east-2.amazonaws.com/services/todo-app:94b7dc03e33f16aafbbb32b07ed26d8f0a8a615f
++ docker push 364238614392.dkr.ecr.us-east-2.amazonaws.com/services/todo-app:94b7dc03e33f16aafbbb32b07ed26d8f0a8a615f
+The push refers to a repository [364238614392.dkr.ecr.us-east-2.amazonaws.com/services/todo-app]
+64a0f60e9746: Preparing
+c94361375341: Preparing
+eaf747b8be7f: Preparing
+3a9f3dd4c49c: Preparing
+1d13cfbbfeb2: Preparing
+bfa30f97c0f4: Preparing
+7381522c58b0: Preparing
+ecd70829ec3d: Preparing
+d70ce8b0dad6: Preparing
+18f9b4e2e1bc: Preparing
+bfa30f97c0f4: Waiting
+7381522c58b0: Waiting
+ecd70829ec3d: Waiting
+d70ce8b0dad6: Waiting
+18f9b4e2e1bc: Waiting
+1d13cfbbfeb2: Layer already exists
+eaf747b8be7f: Layer already exists
+3a9f3dd4c49c: Layer already exists
+bfa30f97c0f4: Layer already exists
+7381522c58b0: Layer already exists
+d70ce8b0dad6: Layer already exists
+ecd70829ec3d: Layer already exists
+18f9b4e2e1bc: Layer already exists
+c94361375341: Pushed
+64a0f60e9746: Pushed
+94b7dc03e33f16aafbbb32b07ed26d8f0a8a615f: digest: sha256:61991fcec418fba44106edfbe86588d72d6e2e5c1980c4eca8fce38a9f8d4a6f size: 2426
++ echo service DEPLOY TO DEV
+service DEPLOY TO DEV
+Waiting for the completion of [8mha:////4KVeDeas30zMuguFUM6SjZ9KrVZgYGE7Zkobsbj6ccD5AAAAmh+LCAAAAAAAAP9b85aBtbiIQSajNKU4P08vOT+vOD8nVc+jsiC1KCczL9svvyTVzHb1RttJBUeZGJg8GdhyUvPSSzJ8GJhLi3JKGIR8shLLEvVzEvPS9YNLijLz0q0rihik0IxzhtAgwxgggJGJgaGiAMgQLWGQ1c/KT9JPzs/Nzc8DM1NSC3LyK3WLyxOLcvUBHxq2+qIAAAA=[0mcommon » deploy-swarm
+[8mha:////4IRLMLtbHG0jiMf3pRJvryRCaJVlLDcgKP0OjTZyvCd9AAAAnR+LCAAAAAAAAP9b85aBtbiIQSajNKU4P08vOT+vOD8nVc+jsiC1KCczL9svvyTVzHb1RttJBUeZGJg8GdhyUvPSSzJ8GJhLi3JKGIR8shLLEvVzEvPS9YNLijLz0q0rihik0IxzhtAgwxgggJGJgaGiAMhQKmFQ0M/KT9JPzs/Nzc8DM1NSC3LyK3WLyxOLcvXNDfQBxfpUu6UAAAA=[0mcommon » deploy-swarm dev-todo-app completed. Result was SUCCESS
+Build step 'Trigger/call builds on other projects' changed build result to SUCCESS
+[todo-app] $ /bin/sh -xe /tmp/jenkins1013142818688817728.sh
++ echo service INTEGRATION TEST
+service INTEGRATION TEST
++ echo service DEPLOY TO STAGE
+service DEPLOY TO STAGE
+Waiting for the completion of [8mha:////4KVeDeas30zMuguFUM6SjZ9KrVZgYGE7Zkobsbj6ccD5AAAAmh+LCAAAAAAAAP9b85aBtbiIQSajNKU4P08vOT+vOD8nVc+jsiC1KCczL9svvyTVzHb1RttJBUeZGJg8GdhyUvPSSzJ8GJhLi3JKGIR8shLLEvVzEvPS9YNLijLz0q0rihik0IxzhtAgwxgggJGJgaGiAMgQLWGQ1c/KT9JPzs/Nzc8DM1NSC3LyK3WLyxOLcvUBHxq2+qIAAAA=[0mcommon » deploy-swarm
+[8mha:////4DyymlLovSEl9awlZ2+wLelCGKjKZbTOMWrXEhRQvCqhAAAAnR+LCAAAAAAAAP9b85aBtbiIQSajNKU4P08vOT+vOD8nVc+jsiC1KCczL9svvyTVzHb1RttJBUeZGJg8GdhyUvPSSzJ8GJhLi3JKGIR8shLLEvVzEvPS9YNLijLz0q0rihik0IxzhtAgwxgggJGJgaGiAMhQKWFQ0M/KT9JPzs/Nzc8DM1NSC3LyK3WLyxOLcvXNDfUBeDyPa6UAAAA=[0mcommon » deploy-swarm stage-todo-app completed. Result was SUCCESS
+[todo-app] $ /bin/sh -xe /tmp/jenkins1812353082952907436.sh
++ echo service UAT / FUNCTIONAL TEST
+service UAT / FUNCTIONAL TEST
++ echo service DEPLOY TO PROD
+service DEPLOY TO PROD
+Waiting for the completion of [8mha:////4KVeDeas30zMuguFUM6SjZ9KrVZgYGE7Zkobsbj6ccD5AAAAmh+LCAAAAAAAAP9b85aBtbiIQSajNKU4P08vOT+vOD8nVc+jsiC1KCczL9svvyTVzHb1RttJBUeZGJg8GdhyUvPSSzJ8GJhLi3JKGIR8shLLEvVzEvPS9YNLijLz0q0rihik0IxzhtAgwxgggJGJgaGiAMgQLWGQ1c/KT9JPzs/Nzc8DM1NSC3LyK3WLyxOLcvUBHxq2+qIAAAA=[0mcommon » deploy-swarm
+[8mha:////4OI0Sgnozj5QO5P7Y5QiMmclmN1lgMPpuT1z3m32drYIAAAAnR+LCAAAAAAAAP9b85aBtbiIQSajNKU4P08vOT+vOD8nVc+jsiC1KCczL9svvyTVzHb1RttJBUeZGJg8GdhyUvPSSzJ8GJhLi3JKGIR8shLLEvVzEvPS9YNLijLz0q0rihik0IxzhtAgwxgggJGJgaGiAMhQLmFQ0M/KT9JPzs/Nzc8DM1NSC3LyK3WLyxOLcvXNjfQB0kwSHKUAAAA=[0mcommon » deploy-swarm prod-todo-app completed. Result was SUCCESS
+Finished: SUCCESS

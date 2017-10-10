@@ -1,0 +1,24 @@
+Started by upstream project "[8mha:////4B6NhAHPgMPJg3YzrE5MgtZyWGwldzIKjfjjGQ5DRDBkAAAAqx+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAyJEgYl/az8JP3i1KKyzOTUYjCnJD8lXzexoEA3vygxOSdVHwAFTOH/1wAAAA==[0mservices/todo-app-oracle" build number [8mha:////4J2mnZLU8w4anFocqt+F4LjbvdEYMR4HrvOUWlg02yhxAAAAqx+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLQIwSBmX9rPwk/eLUorLM5NRiMKckPyVfN7GgQDe/KDE5J1XfBABaKbdy2AAAAA==[0m4
+originally caused by:
+ Started by user [8mha:////4HSKTYekCqJtgUzvE/X25d7VYiaybRQPqPlqTWr6Yj8mAAAAmR+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAz+EgZe/dLi1CL9xOKMzOKMPAD2nB5TwgAAAA==[0mAshish Nanotkar
+Building in workspace /var/lib/jenkins/workspace/common/delphix-refresh-vdb
+Set build name.
+New build name is 'devdb'
+[delphix-refresh-vdb] $ python /tmp/jenkins914178947339274851.py
+[WARNING]: Found variable using reserved name: action
+
+PLAY [localhost] ***************************************************************
+
+TASK [Gathering Facts] *********************************************************
+fatal: [localhost]: FAILED! => {"failed": true, "msg": "failed to transfer file to ~/.ansible/tmp/ansible-tmp-1507640550.65-243562686602191/setup.py: [Errno 2] No such file or directory: '~/.ansible/tmp/ansible-tmp-1507640550.65-243562686602191/setup.py'"}
+to retry, use: --limit @/home/ubuntu/ansible-bot/playbooks/delphix_refresh_vdb.retry
+
+PLAY RECAP *********************************************************************
+localhost                  : ok=0    changed=0    unreachable=0    failed=1
+
+0
+Build step 'Execute Python script' marked build as failure
+Set build name.
+New build name is 'devdb'
+Variable with name 'BUILD_DISPLAY_NAME' already exists, current value: 'devdb', new value: 'devdb'
+Finished: FAILURE

@@ -56,7 +56,8 @@ echo &quot;service DEPLOY TO DEV&quot;</command>
 IMAGE=364238614392.dkr.ecr.us-east-2.amazonaws.com/services/todo-app
 GIT_COMMIT=${GIT_COMMIT}
 DEPLOY_ENV=dev
-PORT=80</properties>
+PORT=80
+REPLICAS=3</properties>
               <textParamValueOnNewLine>false</textParamValueOnNewLine>
             </hudson.plugins.parameterizedtrigger.PredefinedBuildParameters>
           </configs>
@@ -101,7 +102,8 @@ echo &quot;service DEPLOY TO STAGE&quot;</command>
 IMAGE=364238614392.dkr.ecr.us-east-2.amazonaws.com/services/todo-app
 GIT_COMMIT=${GIT_COMMIT}
 DEPLOY_ENV=stage
-PORT=80</properties>
+PORT=80
+REPLICAS=3</properties>
               <textParamValueOnNewLine>false</textParamValueOnNewLine>
             </hudson.plugins.parameterizedtrigger.PredefinedBuildParameters>
           </configs>
@@ -146,7 +148,8 @@ echo &quot;service DEPLOY TO PROD&quot;</command>
 IMAGE=364238614392.dkr.ecr.us-east-2.amazonaws.com/services/todo-app
 GIT_COMMIT=${GIT_COMMIT}
 DEPLOY_ENV=prod
-PORT=80</properties>
+PORT=80
+REPLICAS=3</properties>
               <textParamValueOnNewLine>false</textParamValueOnNewLine>
             </hudson.plugins.parameterizedtrigger.PredefinedBuildParameters>
           </configs>

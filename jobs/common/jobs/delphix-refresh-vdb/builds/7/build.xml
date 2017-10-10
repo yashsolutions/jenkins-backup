@@ -1,0 +1,72 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<build>
+  <actions>
+    <hudson.model.ParametersAction>
+      <safeParameters class="sorted-set"/>
+      <parameters class="java.util.Arrays$ArrayList">
+        <a class="hudson.model.ParameterValue-array">
+          <hudson.model.StringParameterValue>
+            <name>VDB_NAME</name>
+            <value>devdb</value>
+          </hudson.model.StringParameterValue>
+        </a>
+      </parameters>
+      <parameterDefinitionNames class="hudson.model.ParametersDefinitionProperty$1">
+        <outer-class>
+          <parameterDefinitions>
+            <hudson.model.StringParameterDefinition>
+              <name>VDB_NAME</name>
+              <description>virtual database name to refresh</description>
+              <defaultValue>&quot;&quot;</defaultValue>
+            </hudson.model.StringParameterDefinition>
+          </parameterDefinitions>
+        </outer-class>
+      </parameterDefinitionNames>
+    </hudson.model.ParametersAction>
+    <hudson.plugins.parameterizedtrigger.DifferentiatingAction plugin="parameterized-trigger@2.35.2"/>
+    <hudson.model.CauseAction>
+      <causeBag class="linked-hash-map">
+        <entry>
+          <hudson.model.Cause_-UpstreamCause>
+            <upstreamProject>services/todo-app-oracle</upstreamProject>
+            <upstreamUrl>job/services/job/todo-app-oracle/</upstreamUrl>
+            <upstreamBuild>6</upstreamBuild>
+            <upstreamCauses>
+              <hudson.model.Cause_-UserIdCause>
+                <userId>ashishn</userId>
+              </hudson.model.Cause_-UserIdCause>
+            </upstreamCauses>
+          </hudson.model.Cause_-UpstreamCause>
+          <int>1</int>
+        </entry>
+      </causeBag>
+    </hudson.model.CauseAction>
+    <org.jenkinsci.plugins.EnvironmentVarSetter plugin="build-name-setter@1.6.7">
+      <log>
+        <autoFlush>false</autoFlush>
+        <trouble>false</trouble>
+        <closing>true</closing>
+      </log>
+      <envVars class="concurrent-hash-map">
+        <entry>
+          <string>BUILD_DISPLAY_NAME</string>
+          <string>devdb</string>
+        </entry>
+      </envVars>
+    </org.jenkinsci.plugins.EnvironmentVarSetter>
+    <com.sonyericsson.rebuild.RebuildAction plugin="rebuild@1.25"/>
+  </actions>
+  <queueId>180</queueId>
+  <timestamp>1507643196234</timestamp>
+  <startTime>1507643196234</startTime>
+  <result>SUCCESS</result>
+  <displayName>devdb</displayName>
+  <duration>105476</duration>
+  <charset>UTF-8</charset>
+  <keepLog>false</keepLog>
+  <builtOn></builtOn>
+  <workspace>/var/lib/jenkins/workspace/common/delphix-refresh-vdb</workspace>
+  <hudsonVersion>2.73.1</hudsonVersion>
+  <scm class="hudson.scm.NullChangeLogParser"/>
+  <culprits class="com.google.common.collect.EmptyImmutableSortedSet"/>
+</build>
