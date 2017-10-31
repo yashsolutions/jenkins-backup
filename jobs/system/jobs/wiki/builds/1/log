@@ -1,0 +1,76 @@
+Started by user [8mha:////4HSKTYekCqJtgUzvE/X25d7VYiaybRQPqPlqTWr6Yj8mAAAAmR+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAz+EgZe/dLi1CL9xOKMzOKMPAD2nB5TwgAAAA==[0mAshish Nanotkar
+Building in workspace /var/lib/jenkins/workspace/system/wiki
+Cloning the remote Git repository
+Cloning repository git@github.com:yashsolutions/dockerfiles.git
+ > git init /var/lib/jenkins/workspace/system/wiki # timeout=10
+Fetching upstream changes from git@github.com:yashsolutions/dockerfiles.git
+ > git --version # timeout=10
+ > git fetch --tags --progress git@github.com:yashsolutions/dockerfiles.git +refs/heads/*:refs/remotes/origin/*
+ > git config remote.origin.url git@github.com:yashsolutions/dockerfiles.git # timeout=10
+ > git config --add remote.origin.fetch +refs/heads/*:refs/remotes/origin/* # timeout=10
+ > git config remote.origin.url git@github.com:yashsolutions/dockerfiles.git # timeout=10
+Fetching upstream changes from git@github.com:yashsolutions/dockerfiles.git
+ > git fetch --tags --progress git@github.com:yashsolutions/dockerfiles.git +refs/heads/*:refs/remotes/origin/*
+ > git rev-parse refs/remotes/origin/master^{commit} # timeout=10
+ > git rev-parse refs/remotes/origin/origin/master^{commit} # timeout=10
+Checking out Revision ba9e78c00088ebba3ca7bdec0ede8f45330c7e3f (refs/remotes/origin/master)
+Commit message: "added wiki"
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f ba9e78c00088ebba3ca7bdec0ede8f45330c7e3f
+First time build. Skipping changelog.
+[wiki] $ /bin/sh -xe /tmp/jenkins9044957883029289900.sh
++ aws ecr get-login --region us-east-2
++ docker login -u AWS -p eyJwYXlsb2FkIjoiajNQaTBMb1FRR3gvMFpJOWovKzYwZzhCUmdxbHN6d2Rqc3VZdndJUmVFbE5oeld3WFFqMzUwNW9IcDZvdTM3MXdYa2V0dlpGc3FUdVZCakErK0s4SmFxeWNxRjlJUDljQUNJK1N6a3R2ZFk0RG9qL0toVGM0aGhMK1U0UnZTNGZFYjFRbnVjVXBPODBBQVpyNnN2ZXJVc1dzZjVNblc0NmtTdU1UQUI5eXhwWURXVWxNMmVMMkpzQ1ZocU5DZGtIM1BpdDNFNWRyUE9jRU5LcElxRzBaNklRRkhyTnFybE51WVYweDlhQXlhWmdwdTJyV201TmMyc214dnIzTG92QTZIQUR5cys1Qm5wT2hFRjA2SCtMZFdGU1dGeVUyNmJmZDdodHV5bUNVdWllaCtFTTROT3RXS0VvMHJ6bkp1R3dEZzdwV0pEOXR2aWtvMVZIMS93VkhQblNXNXRVVjRkeGptRktpMCtCR2tGQWN4S1paZEsvdytnb0YyWC84WkhPNk4zdUYxWXB2UitIMFdrUFZWMjhlejVmOWRIVE5ibm8xSnVvTDNqd3gvTExFcTFXZE4xMTdkMU0vTHBzeHVUSjE2MklNVUVsdFZGOWJkUVRrT0ZyRkpsNlQyWjdUL0EvV1pTS2JSUE1KNDJWYjk4ejV2cmVBY3ZzZGFBNW9WaS9YQ052aHFKTFpjeDhTejZYQWNaSUU0MVdoRDBDaXNQV0RpT2VNU0xnVWdIaCtFcENqeFFkc2RJaFBONUZ4S1E1bHU5TkcvQ1pkYmlsZDUyRnFIeVBKRGRXT3dEaEV5bVkrc2ExSHFVSHFKSmlQeVFoenFzNkovUTB1K0lCbW90WmM5cFU2R2U5M1l0eDFPVjV4TjVqRkdTWFQ1N2ticjVCQWhoSjlROEovWWNzaExqUUFOOHRkKzROVk1jVS9QdmRlaTFVNGxCSjhDd0JnVVdwdW82b3FIVnJtN255M24xS0ZoM05URUNyUlpPZkRvL0FSeElFSnhyQVd5M2Zkb2wyQ3hWUXFrSFhlRkVCYmFSNlhFZW4xS1ZLRXIwUTZaUWNmYTFjTktabUJEV0x4elBva1RVZGZCZ0NEbzRPeFkwMldvQ3pzU2E2SHU0azRqbXFNeW9nV1NLUzVNOHQvU25GWFBLbTVPL2NOcXhmME54Q0ZhZ3orUFk4YWdzejllMXRuSlJzekFYZjJ0bFQxSGtwaytVY01FUDRISzBHMjlhZEVET3lPby85Qkwrb1NuVTlRcWptUjJNZlBHUXVGYnJVd3FZa3NZSWJkWmN4aTFFRGlEUitLL3Q1V3NUK0FWMFIyKzFpOWNCblVjdVVweDBjVm9sWGtFRmVIWkRVYzVXRmlBN3lMcmEwR2d4bWF2ZVVhSFl3YVdaV1hJWFRYTDdEb1Q5bS9odVNUL0RyWEp6RXJZYk8wa0t3bHZKd004RDB5c3RrZjlDd29qbFMiLCJkYXRha2V5IjoiQVFFQkFIakI3L2lnd01nNE5Qd2F1cnhTSVl4NEhmbnh1R2MvNDhiRHd2d0RwTllXWmdBQUFINHdmQVlKS29aSWh2Y05BUWNHb0c4d2JRSUJBREJvQmdrcWhraUc5dzBCQndFd0hnWUpZSVpJQVdVREJBRXVNQkVFREJ2azFibm1jSnA0ekRPVUpnSUJFSUE3a1dVUGhocVMwWWFucXpCY2hMVEZrbHdVWHlXZnV1c3l0UjJFZHJxczlYUHNvUTVVNmlUdGhGdHdYa3hHNFJWamhBQ1V4MmxhSnBOL05aaz0iLCJ2ZXJzaW9uIjoiMSIsInR5cGUiOiJEQVRBX0tFWSJ9 -e none https://364238614392.dkr.ecr.us-east-2.amazonaws.com
+Flag --email has been deprecated, will be removed in 17.06.
+Login Succeeded
++ cd wiki
++ docker build -t system/wiki .
+Sending build context to Docker daemon   7.68kB
+Step 1/3 : FROM requarks/wiki
+latest: Pulling from requarks/wiki
+88286f41530e: Pulling fs layer
+d0e8a23136b3: Pulling fs layer
+5ad5b12a980e: Pulling fs layer
+651d92ba46d8: Pulling fs layer
+651d92ba46d8: Waiting
+5ad5b12a980e: Verifying Checksum
+5ad5b12a980e: Download complete
+88286f41530e: Verifying Checksum
+88286f41530e: Download complete
+88286f41530e: Pull complete
+d0e8a23136b3: Download complete
+651d92ba46d8: Verifying Checksum
+651d92ba46d8: Download complete
+d0e8a23136b3: Pull complete
+5ad5b12a980e: Pull complete
+651d92ba46d8: Pull complete
+Digest: sha256:89e21122753b778b33005ac029c72428180fcba3795e631b83eb7520b10fb7bd
+Status: Downloaded newer image for requarks/wiki:latest
+ ---> da4eca46eb88
+Step 2/3 : ADD ./config.yml /var/wiki/config.yml
+ ---> d98c937c20f0
+Removing intermediate container c2e72915cd08
+Step 3/3 : EXPOSE 3000
+ ---> Running in 42366272611a
+ ---> 3505a30e7d3f
+Removing intermediate container 42366272611a
+Successfully built 3505a30e7d3f
+Successfully tagged system/wiki:latest
++ docker tag system/wiki:latest 364238614392.dkr.ecr.us-east-2.amazonaws.com/system/wiki:ba9e78c00088ebba3ca7bdec0ede8f45330c7e3f
++ docker push 364238614392.dkr.ecr.us-east-2.amazonaws.com/system/wiki:ba9e78c00088ebba3ca7bdec0ede8f45330c7e3f
+The push refers to a repository [364238614392.dkr.ecr.us-east-2.amazonaws.com/system/wiki]
+ad272633eb56: Preparing
+184ca92d78ca: Preparing
+757844ae961b: Preparing
+78ce99ee35de: Preparing
+5bef08742407: Preparing
+ad272633eb56: Pushed
+5bef08742407: Pushed
+757844ae961b: Pushed
+78ce99ee35de: Pushed
+184ca92d78ca: Pushed
+ba9e78c00088ebba3ca7bdec0ede8f45330c7e3f: digest: sha256:eb76db6fffe697c4ca261e01c22629d3a077455b2f03105233e6462838744859 size: 1371
+Waiting for the completion of [8mha:////4KVeDeas30zMuguFUM6SjZ9KrVZgYGE7Zkobsbj6ccD5AAAAmh+LCAAAAAAAAP9b85aBtbiIQSajNKU4P08vOT+vOD8nVc+jsiC1KCczL9svvyTVzHb1RttJBUeZGJg8GdhyUvPSSzJ8GJhLi3JKGIR8shLLEvVzEvPS9YNLijLz0q0rihik0IxzhtAgwxgggJGJgaGiAMgQLWGQ1c/KT9JPzs/Nzc8DM1NSC3LyK3WLyxOLcvUBHxq2+qIAAAA=[0mcommon » deploy-swarm
+[8mha:////4CuXg4PnB6adC0T2YqNOvjKccI6tvUX6Kba8FtMZE+jbAAAAnh+LCAAAAAAAAP9b85aBtbiIQSajNKU4P08vOT+vOD8nVc+jsiC1KCczL9svvyTVzHb1RttJBUeZGJg8GdhyUvPSSzJ8GJhLi3JKGIR8shLLEvVzEvPS9YNLijLz0q0rihik0IxzhtAgwxgggJGJgaGiAMhQLGFQ1M/KT9JPzs/Nzc8DM1NSC3LyK3WLyxOLcvUNjUz0AW+eXGOmAAAA[0mcommon » deploy-swarm system-wiki completed. Result was SUCCESS
+Build step 'Trigger/call builds on other projects' changed build result to SUCCESS
+Finished: SUCCESS

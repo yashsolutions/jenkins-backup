@@ -1,0 +1,201 @@
+Started by an SCM change
+Building in workspace /var/lib/jenkins/workspace/services/oracle-app
+Cloning the remote Git repository
+Cloning repository git@github.com:yashsolutions/oracle-app.git
+ > git init /var/lib/jenkins/workspace/services/oracle-app # timeout=10
+Fetching upstream changes from git@github.com:yashsolutions/oracle-app.git
+ > git --version # timeout=10
+ > git fetch --tags --progress git@github.com:yashsolutions/oracle-app.git +refs/heads/*:refs/remotes/origin/*
+ > git config remote.origin.url git@github.com:yashsolutions/oracle-app.git # timeout=10
+ > git config --add remote.origin.fetch +refs/heads/*:refs/remotes/origin/* # timeout=10
+ > git config remote.origin.url git@github.com:yashsolutions/oracle-app.git # timeout=10
+Fetching upstream changes from git@github.com:yashsolutions/oracle-app.git
+ > git fetch --tags --progress git@github.com:yashsolutions/oracle-app.git +refs/heads/*:refs/remotes/origin/*
+ > git rev-parse refs/remotes/origin/master^{commit} # timeout=10
+ > git rev-parse refs/remotes/origin/origin/master^{commit} # timeout=10
+Checking out Revision 7f1203935bd5a7e40cff68fa8852184f4a670b91 (refs/remotes/origin/master)
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f 7f1203935bd5a7e40cff68fa8852184f4a670b91
+Commit message: "Update webapp.js"
+First time build. Skipping changelog.
+[oracle-app] $ /bin/sh -xe /tmp/jenkins2753882419713042918.sh
++ echo service BUILD
+service BUILD
++ echo service UNIT TEST
+service UNIT TEST
++ echo service PACKAGE
+service PACKAGE
++ aws ecr get-login --region us-east-2
++ docker login -u AWS -p eyJwYXlsb2FkIjoiT3pNcEN5RW1FK0xISG84K2FOYWFXa3ZmTis5NDEzbkhKUU82aXFOVUUrcHBkNUZxU0t2QTJkM2lmdTdyYzI0ZnBlb2FQODhaMnFFWTBheXhQUG5STHdDNkl6VjNHMzhqcGxPelB2UGhydTVrMnJBcmRjQlNDeWRZamM5UERiZmIxdzFUc1hUTDBwY0lkazZWS1ViQ21WRWFQS0xvempUN1Nab0o1b0JnYmszNng1eElkRy84K2RDT1pUMURQNmlKSDUrc3E5MEtJd3ZTUGpxTFUraU16T2J4K0w0WGNwVk1tRHNjc3YvQ2tVd3JMVUdGS1dxUktIUHV4cFhKQmdOV0p3c1dDdG9GbmduUzNXMlNGM2dqN2FDTEM0SVdESVlNQm02NHN5bkQ1MWVTcml6ZHVmcDNaOUFJSHh6MnpKVU91T0FjaFh5VnRhRUE0VlpzOTZ3bDhHeWMvQVdubEhRS1RHRGltT2M4SGVPWG5MN3VNRXdsbGJZRzdkbzVNd3lWNWVBd1VveTlmSGEyTlFBMFErSnVNSzhzTlpicVp1ZTdCVjJGSXBwckIzaWppOXJNWGQ4KzdsQ013VkZzZEN2K2ZVbVBIYVJyVTA3RlQ0UWkzRVBOYVBOREROOVFUV2V4V1hmOGwrS1dKQ0grcUluclA2QWt1YXBBSHIyYVRUZ0JyL2FGYUNneTJuSTRhNHZ5TGxic2NaQ2tvRFFSY0hXUXh4YXpmYlRWRWhNeTFPT0VlZXlsdWJQN05CTDFKR0k4WFVZWVBucWFFWkpTODBiaU9IWDhCNG9sR21iQlZEMXk5MmRITzBySWlsSmhaSDMzeG5CSkJVYmhMd1JKMlJNTkQ5Kzd4KytsRUlXcENpbzgrVWNaaGdCVXl3SFFXR05YRVZBbDR5TGxlZDlOc1VQa3ZOYkIxK0RIZWptODRRdlpvL2pnNjRWZ2VwOW16V1pPSkdkNWhxb0hQSXYvSHAybzlaVVFteEpVVVJZS1lmZitzQU5NSDM0c3Rxa3g5OHB4OFZZaFBDRExEOHVodis5U3RWNUdBbGduYTdzVUV2UVY1a2tYdTV2YnRPSitMUWZWbE81T2YrTXJROXozUEV2QTdOMGlnVE80UTlWMjVYMFc0U2p6QXpjK3l6VzZ5RThSVko5QlM4OXZlNm5UZ29WcDNCSTRYY1AxSHF4YXMycG1OM3NqRVovWElDL1JDM2Zmelc5dUlSOGR0QmZ1clYzZzRpK2VSSUpTTWVzMTc1Zm4wTkNBbmtGTFQzOHg4VkNlRFhOVTQzcE9xd1B6UklnZVNDQ1lmVVhIUTNBd2ZITW1TMC9zbHA2RTlQRXVVKzNJR3prUWtIak9rdC9pRkxwbjJwTFQveVk3N0dHTXdGQTJRME16RlgwQTNRQ3BwL2tYVGhQb3lQSEp4L0xNZ3pFTllybHQ1MUt4Z1BPNFpkQjYxV3doVmJxVVg0SW8iLCJkYXRha2V5IjoiQVFFQkFIakI3L2lnd01nNE5Qd2F1cnhTSVl4NEhmbnh1R2MvNDhiRHd2d0RwTllXWmdBQUFINHdmQVlKS29aSWh2Y05BUWNHb0c4d2JRSUJBREJvQmdrcWhraUc5dzBCQndFd0hnWUpZSVpJQVdVREJBRXVNQkVFRE9zUVZLNzRJYjU0K3ExKzd3SUJFSUE3L2l6QVdOdnBSaE1PR0xzazdWc2haTFYzc2FJT1BWN0NueWFlYXFNZGVlV1VBNUhmMVpKWUdqbzgyb3JFU2p4UEx1M29aK0kzSHpKZk9aZz0iLCJ2ZXJzaW9uIjoiMiIsInR5cGUiOiJEQVRBX0tFWSIsImV4cGlyYXRpb24iOjE1MDk0OTYyMTJ9 -e none https://364238614392.dkr.ecr.us-east-2.amazonaws.com
+Flag --email has been deprecated, will be removed in 17.06.
+Login Succeeded
++ docker build -t services/oracle-app .
+Sending build context to Docker daemon  80.38kB
+Step 1/6 : FROM collinestes/docker-node-oracle
+ ---> 4f60bcfbde39
+Step 2/6 : ADD ./ /app
+ ---> d28f18e1ab40
+Removing intermediate container 33b568237246
+Step 3/6 : WORKDIR /app
+ ---> e4db8ee49120
+Removing intermediate container 9097ec4714bd
+Step 4/6 : RUN npm install async oracledb --save
+ ---> Running in 78404289d77e
+[91mnpm[0m[91m info it worked if it ends with ok
+npm info using npm@3.10.3
+npm[0m[91m info using node@v6.3.0
+[0m[91mnpm info attempt registry request try #1 at 12:30:14 PM
+[0m[91mnpm http request GET https://registry.npmjs.org/async
+[0m[91mnpm info attempt registry request try #1 at 12:30:14 PM
+[0m[91mnpm http[0m[91m request GET https://registry.npmjs.org/oracledb
+[0m[91mnpm http 200 https://registry.npmjs.org/oracledb
+[0m[91mnpm http 200 https://registry.npmjs.org/async
+[0m[91mnpm info addNameTag [ 'oracledb', 'latest' ]
+[0m[91mnpm info [0m[91maddNameTag [ 'async', 'latest' ]
+[0m[91mnpm info retry fetch attempt 1 at 12:30:14 PM
+[0m[91mnpm info attempt registry request try #1 at 12:30:14 PM
+[0m[91mnpm http fetch GET https://registry.npmjs.org/oracledb/-/oracledb-1.13.1.tgz
+[0m[91mnpm info retry fetch attempt 1 at 12:30:14 PM
+[0m[91mnpm info attempt registry request try #1 at 12:30:14 PM
+npm http fetch GET https://registry.npmjs.org/async/-/async-2.5.0.tgz
+[0m[91mnpm http fetch 200 https://registry.npmjs.org/oracledb/-/oracledb-1.13.1.tgz
+[0m[91mnpm http fetch 200 https://registry.npmjs.org/async/-/async-2.5.0.tgz
+[0m[91mnpm info attempt registry request try #1 at 12:30:14 PM
+npm http request GET https://registry.npmjs.org/lodash
+[0m[91mnpm http 200[0m[91m https://registry.npmjs.org/lodash
+[0m[91mnpm info retry fetch attempt 1 at 12:30:15 PM
+npm info attempt registry request try #1 at 12:30:15 PM
+npm http fetch[0m[91m GET https://registry.npmjs.org/lodash/-/lodash-4.17.4.tgz
+[0m[91mnpm http fetch 200 https://registry.npmjs.org/lodash/-/lodash-4.17.4.tgz
+[0m[91mnpm info attempt registry request try #1 at 12:30:15 PM
+npm http request GET https://registry.npmjs.org/nan
+[0m[91mnpm http 200 https://registry.npmjs.org/nan
+[0m[91mnpm info retry fetch attempt 1 at 12:30:15 PM
+npm info attempt registry request try #1 at 12:30:15 PM
+[0m[91mnpm http fetch GET https://registry.npmjs.org/nan/-/nan-2.5.1.tgz
+[0m[91mnpm http fetch 200 https://registry.npmjs.org/nan/-/nan-2.5.1.tgz
+[0m[91mnpm info lifecycle lodash@4.17.4~preinstall: lodash@4.17.4
+[0m[91mnpm info lifecycle async@2.5.0~preinstall: async@2.5.0
+npm info lifecycle nan@2.5.1~preinstall: nan@2.5.1
+npm info lifecycle oracledb@1.13.1~preinstall: oracledb@1.13.1
+[0m[91mnpm info linkStuff lodash@4.17.4
+[0m[91mnpm info linkStuff async@2.5.0
+[0m[91mnpm info linkStuff nan@2.5.1
+[0m[91mnpm info linkStuff oracledb@1.13.1
+[0m[91mnpm info lifecycle lodash@4.17.4~install: lodash@4.17.4
+[0m[91mnpm info lifecycle async@2.5.0~install: async@2.5.0
+[0m[91mnpm info lifecycle nan@2.5.1~install: nan@2.5.1
+[0m[91mnpm info lifecycle oracledb@1.13.1~install: oracledb@1.13.1
+[0m
+> oracledb@1.13.1 install /app/node_modules/oracledb
+> node-gyp rebuild
+
+[91mgyp[0m[91m [0m[91minfo [0m[91mit worked if it ends with ok
+[0m[91mgyp info using[0m[91m node-gyp@3.3.1
+gyp info using node@6.3.0 | linux | x64
+[0m[91mgyp http GET https://nodejs.org/download/release/v6.3.0/node-v6.3.0-headers.tar.gz
+[0m[91mgyp http 200 https://nodejs.org/download/release/v6.3.0/node-v6.3.0-headers.tar.gz
+[0m[91mgyp http GET https://nodejs.org/download/release/v6.3.0/SHASUMS256.txt
+[0m[91mgyp http 200 https://nodejs.org/download/release/v6.3.0/SHASUMS256.txt
+[0m[91mgyp info spawn[0m[91m /usr/bin/python2
+[0m[91mgyp info spawn args[0m[91m [ '/usr/local/lib/node_modules/npm/node_modules/node-gyp/gyp/gyp_main.py',
+gyp [0m[91minfo spawn args[0m[91m   'binding.gyp',
+gyp [0m[91minfo spawn args   '-f',
+[0m[91mgyp info[0m[91m spawn args   'make',
+gyp[0m[91m info spawn args[0m[91m   '-I',
+gyp info[0m[91m spawn args   '/app/node_modules/oracledb/build/config.gypi',
+gyp[0m[91m info spawn args[0m[91m   '-I',
+gyp [0m[91minfo spawn args   '/usr/local/lib/node_modules/npm/node_modules/node-gyp/addon.gypi',
+[0m[91mgyp info [0m[91mspawn args   '-I',
+gyp [0m[91minfo spawn args   '/root/.node-gyp/6.3.0/include/node/common.gypi',
+[0m[91mgyp info[0m[91m spawn args   '-Dlibrary=shared_library',
+gyp[0m[91m info spawn args[0m[91m   '-Dvisibility=default',
+gyp [0m[91minfo spawn args   '-Dnode_root_dir=/root/.node-gyp/6.3.0',
+[0m[91mgyp info[0m[91m spawn args[0m[91m   '-Dnode_gyp_dir=/usr/local/lib/node_modules/npm/node_modules/node-gyp',
+[0m[91mgyp [0m[91minfo spawn args   '-Dnode_lib_file=node.lib',
+[0m[91mgyp info[0m[91m spawn args   '-Dmodule_root_dir=/app/node_modules/oracledb',
+[0m[91mgyp info [0m[91mspawn args   '--depth=.',
+gyp [0m[91minfo [0m[91mspawn args   '--no-parallel',
+gyp[0m[91m [0m[91minfo spawn args   '--generator-output',
+[0m[91mgyp[0m[91m info [0m[91mspawn args   'build',
+gyp info spawn args   '-Goutput_dir=.' ]
+[0m[91mgyp info spawn make
+gyp info[0m[91m spawn args [ 'BUILDTYPE=Release', '-C', 'build' ]
+[0mmake: Entering directory '/app/node_modules/oracledb/build'
+  CXX(target) Release/obj.target/oracledb/src/njs/src/njsOracle.o
+  CXX(target) Release/obj.target/oracledb/src/njs/src/njsPool.o
+  CXX(target) Release/obj.target/oracledb/src/njs/src/njsConnection.o
+  CXX(target) Release/obj.target/oracledb/src/njs/src/njsResultSet.o
+  CXX(target) Release/obj.target/oracledb/src/njs/src/njsMessages.o
+  CXX(target) Release/obj.target/oracledb/src/njs/src/njsIntLob.o
+  CXX(target) Release/obj.target/oracledb/src/dpi/src/dpiEnv.o
+  CXX(target) Release/obj.target/oracledb/src/dpi/src/dpiEnvImpl.o
+  CXX(target) Release/obj.target/oracledb/src/dpi/src/dpiException.o
+  CXX(target) Release/obj.target/oracledb/src/dpi/src/dpiExceptionImpl.o
+  CXX(target) Release/obj.target/oracledb/src/dpi/src/dpiConnImpl.o
+  CXX(target) Release/obj.target/oracledb/src/dpi/src/dpiDateTimeArrayImpl.o
+  CXX(target) Release/obj.target/oracledb/src/dpi/src/dpiPoolImpl.o
+  CXX(target) Release/obj.target/oracledb/src/dpi/src/dpiStmtImpl.o
+  CXX(target) Release/obj.target/oracledb/src/dpi/src/dpiUtils.o
+  CXX(target) Release/obj.target/oracledb/src/dpi/src/dpiLob.o
+  CXX(target) Release/obj.target/oracledb/src/dpi/src/dpiCommon.o
+  SOLINK_MODULE(target) Release/obj.target/oracledb.node
+  COPY Release/oracledb.node
+make: Leaving directory '/app/node_modules/oracledb/build'
+[91mgyp info ok 
+[0m[91mnpm info lifecycle lodash@4.17.4~postinstall: lodash@4.17.4
+[0m[91mnpm info lifecycle async@2.5.0~postinstall: async@2.5.0
+[0m[91mnpm info lifecycle nan@2.5.1~postinstall: nan@2.5.1
+[0m[91mnpm info lifecycle oracledb@1.13.1~postinstall: oracledb@1.13.1
+[0m[91mnpm WARN saveError ENOENT: no such file or directory, open '/app/package.json'
+[0m/app
++-- async@2.5.0 
+| `-- lodash@4.17.4 
+`-- oracledb@1.13.1 
+  `-- nan@2.5.1 
+
+[91mnpm WARN enoent ENOENT: no such file or directory, open '/app/package.json'
+npm WARN app No description
+npm WARN app No repository field.
+npm WARN app No README data
+npm WARN app No license field.
+npm info ok 
+[0m ---> 1c9696eb6e6d
+Removing intermediate container 78404289d77e
+Step 5/6 : EXPOSE 7000
+ ---> Running in 43d3f4f6d862
+ ---> 0144cc0f914b
+Removing intermediate container 43d3f4f6d862
+Step 6/6 : CMD node webapp.js
+ ---> Running in 4c1958261954
+ ---> 35fb98fc7b59
+Removing intermediate container 4c1958261954
+Successfully built 35fb98fc7b59
+Successfully tagged services/oracle-app:latest
++ docker tag services/oracle-app:latest 364238614392.dkr.ecr.us-east-2.amazonaws.com/services/oracle-app:7f1203935bd5a7e40cff68fa8852184f4a670b91
++ docker push 364238614392.dkr.ecr.us-east-2.amazonaws.com/services/oracle-app:7f1203935bd5a7e40cff68fa8852184f4a670b91
+The push refers to a repository [364238614392.dkr.ecr.us-east-2.amazonaws.com/services/oracle-app]
+23caa4908b86: Preparing
+c2292479bd9e: Preparing
+69525a94c3cb: Preparing
+75fa63451eba: Preparing
+183d2a837e00: Preparing
+1c08a0143f10: Preparing
+5a930102ee49: Preparing
+765e7b2efe23: Preparing
+5f2f91b41de9: Preparing
+ec0200a19d76: Preparing
+338cb8e0e9ed: Preparing
+d1c800db26c7: Preparing
+42755cf4ee95: Preparing
+765e7b2efe23: Waiting
+5f2f91b41de9: Waiting
+ec0200a19d76: Waiting
+338cb8e0e9ed: Waiting
+d1c800db26c7: Waiting
+42755cf4ee95: Waiting
+1c08a0143f10: Waiting
+5a930102ee49: Waiting
+name unknown: The repository with name 'services/oracle-app' does not exist in the registry with id '364238614392'
+Build step 'Execute shell' marked build as failure
+Finished: FAILURE

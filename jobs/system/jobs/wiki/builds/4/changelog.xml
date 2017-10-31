@@ -1,0 +1,11 @@
+commit feee71adfee8ff1185d4ab3b5e21cb02c1fdd41f
+tree 20a5f09edb01eba9850a9f38ac77b4cd77d4de04
+parent 0adedb97e5163360d953950c48c565f18ee6f606
+author ashish.nanotkar <ashish.nanotkar@srkay.com> 2017-10-11 00:05:40 +0530
+committer ashish.nanotkar <ashish.nanotkar@srkay.com> 2017-10-11 00:05:40 +0530
+
+    making wiki public
+
+
+
+:100644 100644 55d76d81d633077317b8450471ed7c12b5adb437 36a85a3701f185cd89232de976a1e6c8e85327b9 M	wiki/config.yml

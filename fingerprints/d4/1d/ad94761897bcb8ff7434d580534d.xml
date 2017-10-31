@@ -1,0 +1,21 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<fingerprint>
+  <timestamp>2017-10-31 14:36:16.513 UTC</timestamp>
+  <original>
+    <name>services/maven-counter/com.mkyong:CounterWebApp</name>
+    <number>4</number>
+  </original>
+  <md5sum>d41dad94761897bcb8ff7434d580534d</md5sum>
+  <fileName>com.mkyong:CounterWebApp.war</fileName>
+  <usages>
+    <entry>
+      <string>services/maven-counter</string>
+      <ranges>4</ranges>
+    </entry>
+    <entry>
+      <string>services/maven-counter/com.mkyong:CounterWebApp</string>
+      <ranges>4</ranges>
+    </entry>
+  </usages>
+  <facets/>
+</fingerprint>

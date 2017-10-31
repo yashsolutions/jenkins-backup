@@ -1,0 +1,11 @@
+commit f6a3f40b38aa448bde8acdc93ced4e59a59e9163
+tree 699281faf0802dc083c5ae8cd366f8151256809f
+parent df373580c16474b083434dde981ad31de7d0a8cd
+author ashish.nanotkar <ashish.nanotkar@srkay.com> 2017-10-11 00:09:42 +0530
+committer ashish.nanotkar <ashish.nanotkar@srkay.com> 2017-10-11 00:09:42 +0530
+
+    testing public config
+
+
+
+:100644 100644 d45ab95b17595868c1655e4a9d54723007d04ee1 3cf632edeee294c4a4a47f9da87e9fce023cf581 M	wiki/config.yml

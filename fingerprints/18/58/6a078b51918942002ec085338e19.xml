@@ -1,0 +1,17 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<fingerprint>
+  <timestamp>2017-10-31 14:30:23.621 UTC</timestamp>
+  <md5sum>18586a078b51918942002ec085338e19</md5sum>
+  <fileName>ch.qos.logback:logback-classic-1.0.13.jar</fileName>
+  <usages>
+    <entry>
+      <string>services/maven-counter/com.mkyong:CounterWebApp</string>
+      <ranges>3-5</ranges>
+    </entry>
+    <entry>
+      <string>services/maven-counter</string>
+      <ranges>3-5</ranges>
+    </entry>
+  </usages>
+  <facets/>
+</fingerprint>

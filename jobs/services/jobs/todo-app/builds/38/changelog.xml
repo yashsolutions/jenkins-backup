@@ -1,0 +1,11 @@
+commit 0f817fb433fc8d0e923132a9593f20fe1f8b65ce
+tree f4b7df0a6dd552aee27741c67f04add22a33c7ff
+parent c7ee7d560201e5dc5ce7e924a041e390fc3fec6c
+author ashish.nanotkar <ashish.nanotkar@srkay.com> 2017-10-12 02:03:58 +0530
+committer ashish.nanotkar <ashish.nanotkar@srkay.com> 2017-10-12 02:03:58 +0530
+
+    demonstrating app
+
+
+
+:100644 100644 0a97afae1df3498c49dc57969873a65df2249e8d 8e7ec0676ad7717d247aef8706aa498ebdc62438 M	public/index.html

@@ -1,0 +1,11 @@
+commit cef6be1c44a84ddee668e2e131aa41f1ce2cf478
+tree f4b7df0a6dd552aee27741c67f04add22a33c7ff
+parent a3fbbcc6b8aa8a3197428520452dbff0cfc90e98
+author ashish.nanotkar <ashish.nanotkar@srkay.com> 2017-10-20 22:24:57 +0530
+committer ashish.nanotkar <ashish.nanotkar@srkay.com> 2017-10-20 22:24:57 +0530
+
+    testing the pipeline
+
+
+
+:100644 100644 0a97afae1df3498c49dc57969873a65df2249e8d 8e7ec0676ad7717d247aef8706aa498ebdc62438 M	public/index.html

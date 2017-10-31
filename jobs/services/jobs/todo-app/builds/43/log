@@ -1,0 +1,54 @@
+Started by user [8mha:////4HSKTYekCqJtgUzvE/X25d7VYiaybRQPqPlqTWr6Yj8mAAAAmR+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAz+EgZe/dLi1CL9xOKMzOKMPAD2nB5TwgAAAA==[0mAshish Nanotkar
+Building in workspace /var/lib/jenkins/workspace/services/todo-app
+ > git rev-parse --is-inside-work-tree # timeout=10
+Fetching changes from the remote Git repository
+ > git config remote.origin.url git@github.com:yashsolutions/todo-app.git # timeout=10
+Fetching upstream changes from git@github.com:yashsolutions/todo-app.git
+ > git --version # timeout=10
+ > git fetch --tags --progress git@github.com:yashsolutions/todo-app.git +refs/heads/*:refs/remotes/origin/*
+ > git rev-parse refs/remotes/origin/master^{commit} # timeout=10
+ > git rev-parse refs/remotes/origin/origin/master^{commit} # timeout=10
+Checking out Revision 80f9c7ba8bd7a2ad6c9be9598645a31b322e6ac3 (refs/remotes/origin/master)
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f 80f9c7ba8bd7a2ad6c9be9598645a31b322e6ac3
+Commit message: "demo"
+ > git rev-list 80f9c7ba8bd7a2ad6c9be9598645a31b322e6ac3 # timeout=10
+Unpacking https://repo1.maven.org/maven2/org/sonarsource/scanner/cli/sonar-scanner-cli/3.0.3.778/sonar-scanner-cli-3.0.3.778.zip to /var/lib/jenkins/tools/hudson.plugins.sonar.SonarRunnerInstallation/sonar on Jenkins
+[todo-app] $ /var/lib/jenkins/tools/hudson.plugins.sonar.SonarRunnerInstallation/sonar/bin/sonar-scanner -e -Dsonar.host.url=http://10.1.2.13:9000 ******** -Dsonar.projectBaseDir=/var/lib/jenkins/workspace/services/todo-app
+INFO: Option -e/--errors is no longer supported and will be ignored
+INFO: Scanner configuration file: /var/lib/jenkins/tools/hudson.plugins.sonar.SonarRunnerInstallation/sonar/conf/sonar-scanner.properties
+INFO: Project root configuration file: NONE
+INFO: SonarQube Scanner 3.0.3.778
+INFO: Java 1.8.0_131 Oracle Corporation (64-bit)
+INFO: Linux 4.4.0-1035-aws amd64
+INFO: User cache: /var/lib/jenkins/.sonar/cache
+INFO: Publish mode
+INFO: Load global settings
+INFO: Load global settings (done) | time=82ms
+INFO: User cache: /var/lib/jenkins/.sonar/cache
+INFO: Load plugins index
+INFO: Load plugins index (done) | time=43ms
+INFO: Download sonar-csharp-plugin-5.10.1.1411.jar
+INFO: Download sonar-flex-plugin-2.3.jar
+INFO: Download sonar-scm-git-plugin-1.2.jar
+INFO: Download sonar-scm-svn-plugin-1.5.0.715.jar
+INFO: Download sonar-javascript-plugin-3.1.1.5128.jar
+INFO: Download sonar-java-plugin-4.12.0.11033.jar
+INFO: Download sonar-php-plugin-2.10.0.2087.jar
+INFO: Download sonar-python-plugin-1.8.0.1496.jar
+INFO: Download sonar-xml-plugin-1.4.3.1027.jar
+INFO: SonarQube server 6.6.0
+INFO: Default locale: "en_US", source code encoding: "UTF-8" (analysis is platform dependent)
+INFO: Process project properties
+INFO: ------------------------------------------------------------------------
+INFO: EXECUTION FAILURE
+INFO: ------------------------------------------------------------------------
+INFO: Total time: 2.605s
+INFO: Final Memory: 44M/152M
+INFO: ------------------------------------------------------------------------
+ERROR: Error during SonarQube Scanner execution
+ERROR: You must define the following mandatory properties for 'Unknown': sonar.projectKey, sonar.sources
+ERROR: 
+ERROR: Re-run SonarQube Scanner using the -X switch to enable full debug logging.
+ERROR: SonarQube scanner exited with non-zero code: 1
+[8mha:////4A9Q6UfVWredEx5ZECSAQetQN0FUve+DAHspCfTkJesfAAAAVx+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P08vOT+vOD8nVc8DzHWtSE4tKMnMz/PLL0mV3NWzufebKBsTA0NFEYMUmgZnCA1SyAABjCCFBQC2xNaiYAAAAA==[0mFinished: FAILURE

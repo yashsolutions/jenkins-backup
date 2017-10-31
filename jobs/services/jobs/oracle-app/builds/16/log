@@ -1,0 +1,74 @@
+Started by user [8mha:////4HSKTYekCqJtgUzvE/X25d7VYiaybRQPqPlqTWr6Yj8mAAAAmR+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAz+EgZe/dLi1CL9xOKMzOKMPAD2nB5TwgAAAA==[0mAshish Nanotkar
+Building in workspace /var/lib/jenkins/workspace/services/oracle-app
+ > git rev-parse --is-inside-work-tree # timeout=10
+Fetching changes from the remote Git repository
+ > git config remote.origin.url git@github.com:yashsolutions/oracle-app.git # timeout=10
+Fetching upstream changes from git@github.com:yashsolutions/oracle-app.git
+ > git --version # timeout=10
+ > git fetch --tags --progress git@github.com:yashsolutions/oracle-app.git +refs/heads/*:refs/remotes/origin/*
+ > git rev-parse refs/remotes/origin/master^{commit} # timeout=10
+ > git rev-parse refs/remotes/origin/origin/master^{commit} # timeout=10
+Checking out Revision 7f1203935bd5a7e40cff68fa8852184f4a670b91 (refs/remotes/origin/master)
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f 7f1203935bd5a7e40cff68fa8852184f4a670b91
+Commit message: "Update webapp.js"
+ > git rev-list 7f1203935bd5a7e40cff68fa8852184f4a670b91 # timeout=10
+[oracle-app] $ /bin/sh -xe /tmp/jenkins1620061426895087413.sh
++ echo service BUILD
+service BUILD
++ echo service UNIT TEST
+service UNIT TEST
++ echo service PACKAGE
+service PACKAGE
++ aws ecr get-login --region us-east-2
++ docker login -u AWS -p eyJwYXlsb2FkIjoibWxHL3BVS05MTXNnVzlYU0hHUmE1ckRvYUxCUWUzNU5ZMjlxK2M4QVVnWGZCUEtGbzhHTE8rK0h6T200OVlPNkI4MFp3OTNqKzlmYVFmY3FKUUVzak1XOGg2RTBTc29vbWRHMENCK2h1N0tTUzFkaU4rVDB2cW96My9nNHNmK0hrblQrSEFRTVFtK2h4NlZxaFNEc1BhWGNQVHp2bWh4ZVE5SmV1TjhhdWgxeW1yNGN2RXZBWUxod0F5ekFTSFRUR0d4NnZieDAzQW5ZVTkwWHRoUUNhcEl4Y3pUOUhsWS9ZYTI2VVg0ZnR6dGtkR1JlUTJuQi9oMUFqNzhpTW9NNWIrSEM4S3JNTEFoVlpKb042K0lkMEZBcFBSUWlRMDNvbU05dlVJMGFJR1FqV1BuaGpXL1ZwVThXWHpkajBHZTN3SVkyT2JhL0tCVHh3WEhBZ2YrSXhybjQ0NWlyTnpJWnBrNVpnM2kzc25ZQXVaMmgvSkE2TG14amcrci90UElsQzdkeXVLMFF4cVJ6MFZxVFFDRGRsN282a0VDYTdBS1Mza0t6cGJhYkxGd25uenZSeUhId2wzMlQrSGdwdzZBZE80SGhiQ2lVNlhRVW1jT3RNZTIwV0MwV1YrNkRVRUl5MHk1ZTNwK25HRHZIMDhnQ0FITDEvZ1lDZ0p1QXREaVkyWUJjNUUvKzBjMDFvcXp2dm9wSzBiV3RTM1I0TUF4dFhxeWIyUTg1YzVVRUV0ald4TExhVzZIUnlJQXRaNGRDN01mSWROVlkzeFNPWGxsdjUrU0RXRWU5SldEcWhzUVdUVVU0b0ZtWG9wSUNteVJMVi84MXRZZjY5anZQbk5ESkFxVnFsdG9zSWNXUlRkbGNET3gyVlhFbkl1OGM3NFFJLzBlTzBTZUZhai9UeXd3bmlJNVBiMnNCTWpFRzVoS2VwVEplcDZwUkFJaUdSaXZhYldaTHIvQXNLSUpDVGE2MXhReGlxWGdRQ01VT0h0L2U0ZXVFUG9FZWFSQ1FBa0tnWE5EV0hoYjZJT2w4SE4wejZYWXM5bW9zSlBPY2NONW9mRnk0aFQ1MGtWODhEN2cwWG96VlRidTZOcXc4ME1XV1BZK2dDcFg5VTFFNVVIMWZaam5RZU96MjZ5QUYrczREc2NqT2lrRkYyOVYzam5qL0Y2VTZud3lOUElMdGxkSFJVWVN6dlF4UDlJQ2lSS1RBaWkzSDErVUxVaDltbzUxM1dSbjNBdkpqMC9vTlFmMytEL3dTU3RCUjRzdEdUV2VrQU5Fd1ZjUzZlUisvTjhUaFBqNDJIT0x4Rmg4ZHdEZlV3OWZRbFgzTGR6bC9tTXlYMGpYeE1KUXMzbVZsWGZsVlFSbGpWWi9idk93VjZJWkpRc2lHb0tSUnRXUVhNVlJmRHZ2NndrTzhVQlVUR3hGRlo5V1hYemNOdWxGckU3clUvWU4wRkszRjJxNlEiLCJkYXRha2V5IjoiQVFFQkFIakI3L2lnd01nNE5Qd2F1cnhTSVl4NEhmbnh1R2MvNDhiRHd2d0RwTllXWmdBQUFINHdmQVlKS29aSWh2Y05BUWNHb0c4d2JRSUJBREJvQmdrcWhraUc5dzBCQndFd0hnWUpZSVpJQVdVREJBRXVNQkVFRFB0U1pvYjZnalV5UkFaakJRSUJFSUE3b0I3NXB0Wk5IWHYwTGkrVGVCbXBwYUZuVUR6Vnhmc3c5VHdvbkNudmN1blhTUXRsYllTVXdaTFQxYU5MblBLV1liM3RBTDZBUS90YWo5bz0iLCJ2ZXJzaW9uIjoiMiIsInR5cGUiOiJEQVRBX0tFWSIsImV4cGlyYXRpb24iOjE1MDk0OTY0ODF9 -e none https://364238614392.dkr.ecr.us-east-2.amazonaws.com
+Flag --email has been deprecated, will be removed in 17.06.
+Login Succeeded
++ docker build -t services/oracle-app .
+Sending build context to Docker daemon  80.38kB
+Step 1/6 : FROM collinestes/docker-node-oracle
+ ---> 4f60bcfbde39
+Step 2/6 : ADD ./ /app
+ ---> Using cache
+ ---> d28f18e1ab40
+Step 3/6 : WORKDIR /app
+ ---> Using cache
+ ---> e4db8ee49120
+Step 4/6 : RUN npm install async oracledb --save
+ ---> Using cache
+ ---> 1c9696eb6e6d
+Step 5/6 : EXPOSE 7000
+ ---> Using cache
+ ---> 0144cc0f914b
+Step 6/6 : CMD node webapp.js
+ ---> Using cache
+ ---> 35fb98fc7b59
+Successfully built 35fb98fc7b59
+Successfully tagged services/oracle-app:latest
++ docker tag services/oracle-app:latest 364238614392.dkr.ecr.us-east-2.amazonaws.com/services/oracle-app:7f1203935bd5a7e40cff68fa8852184f4a670b91
++ docker push 364238614392.dkr.ecr.us-east-2.amazonaws.com/services/oracle-app:7f1203935bd5a7e40cff68fa8852184f4a670b91
+The push refers to a repository [364238614392.dkr.ecr.us-east-2.amazonaws.com/services/oracle-app]
+23caa4908b86: Preparing
+c2292479bd9e: Preparing
+69525a94c3cb: Preparing
+75fa63451eba: Preparing
+183d2a837e00: Preparing
+1c08a0143f10: Preparing
+5a930102ee49: Preparing
+765e7b2efe23: Preparing
+5f2f91b41de9: Preparing
+ec0200a19d76: Preparing
+338cb8e0e9ed: Preparing
+d1c800db26c7: Preparing
+42755cf4ee95: Preparing
+1c08a0143f10: Waiting
+5a930102ee49: Waiting
+765e7b2efe23: Waiting
+5f2f91b41de9: Waiting
+ec0200a19d76: Waiting
+338cb8e0e9ed: Waiting
+d1c800db26c7: Waiting
+42755cf4ee95: Waiting
+name unknown: The repository with name 'services/oracle-app' does not exist in the registry with id '364238614392'
+Build step 'Execute shell' marked build as failure
+Finished: FAILURE

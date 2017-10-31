@@ -1,0 +1,107 @@
+Started by user [8mha:////4HSKTYekCqJtgUzvE/X25d7VYiaybRQPqPlqTWr6Yj8mAAAAmR+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAz+EgZe/dLi1CL9xOKMzOKMPAD2nB5TwgAAAA==[0mAshish Nanotkar
+Building in workspace /var/lib/jenkins/workspace/services/oracle-app
+ > git rev-parse --is-inside-work-tree # timeout=10
+Fetching changes from the remote Git repository
+ > git config remote.origin.url git@github.com:yashsolutions/oracle-app.git # timeout=10
+Fetching upstream changes from git@github.com:yashsolutions/oracle-app.git
+ > git --version # timeout=10
+ > git fetch --tags --progress git@github.com:yashsolutions/oracle-app.git +refs/heads/*:refs/remotes/origin/*
+ > git rev-parse refs/remotes/origin/master^{commit} # timeout=10
+ > git rev-parse refs/remotes/origin/origin/master^{commit} # timeout=10
+Checking out Revision 7f1203935bd5a7e40cff68fa8852184f4a670b91 (refs/remotes/origin/master)
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f 7f1203935bd5a7e40cff68fa8852184f4a670b91
+Commit message: "Update webapp.js"
+ > git rev-list 7f1203935bd5a7e40cff68fa8852184f4a670b91 # timeout=10
+[oracle-app] $ /bin/sh -xe /tmp/jenkins6336103006923033433.sh
++ echo service BUILD
+service BUILD
++ echo service UNIT TEST
+service UNIT TEST
++ echo service PACKAGE
+service PACKAGE
++ aws ecr get-login --region us-east-2
++ docker login -u AWS -p eyJwYXlsb2FkIjoiWGdZQTNkUUNjQi9hbE5kbmFzVlZnWnFQZXJLc0VaM3FTRzJRL1AwVTVaRWtUbWF5aGJmbzVmd3cvblBaa05aOTdjRVQ3bXZJSVVnb3B3cDVCU3oxbnh0ZXo2YVVSTkF4ekhrNk42dTExRHczN2dwSzRCN2RRbEpMOVl4TVFBYnpDN21tZFRNV1dzOXlYNmxaOUo4OW9ZOFlHZ0c0MmNUbTBPREV2a285dlRCYXNXL0g1ZUo0WnBKaXdsOGxMc3RET0FGVWt2L0V1ajRDS3dXQWt3aDM4YVUwZ0JoS1hRNlNUTVdKRmlJQlBMcER0UEIzS1J0d1gweVF2eXhMb1dZZXdzOTBwZlBGcTN5VmViakZ6ekhOZFhpWGx5WGZoMncvY3o1R1A5dnpna0pkbUk0bUVxYVo3aFk1VmxVR0ZJRXgzUEFRUGhQaFdaWU9ubXRsL3JubHU2bzBxL1JEeTk0NUovczEycXc3dDE5c25aa1M5alBWNUJNTjk1U3I1d0d5MmZBdGxHd1RxZGJISlFNazh5dDV2OWFQS3RDaFBzZEs2M0ZJNW43VEZlY05vV1Ewcm91bkNiM3UwMDRWdi85Vnk1N0NsRUVXenQyT0JOdXNsdnd4bm0vd0JmNzVId05NR2NSYmZ4V0RlOFhDV3o2WWREblRreU9pekRNaWhVTE8zTTYyMzZGV1ZZM1BHcGtiNFlpRnZvSGxoWUVSZ0h4TkhXOWhKY24rQjBKeGdLT0k1NHI5Mm9FanFqY1hCQXVrQktqb1RLSTNOZit1NUNMRXJmcjRvMlNvQS9FRy9RWmUvU1A4cGNMdjliMmxmZEIwN28vczBsM3JiOHUvc01vZlpqTWdXSFJ5bW9uQXBWQ1UzM0l4N0RBR3lhNnFmVzg1SkhGc3dTM2MwV0RsdVVSQnNwUjc5a0hrbThqbklXU09lSlhtNXNGMUI4T1d6QVozYWlLRnFOS3ZTQ3hFZ1dpVkVES1ovKzFlbHF5R0hGWm5wRnlIK3FZdXhhdWdpM3ZxTi9teXF5bVNoZVBXeGkySzYzeWJWNURhR3NaRzZzb2ZiTmd5MEpHRkk5TC9VWGRNWnlTQVVRNGxJdTA5MG0xQmY1aWtTZk42VjZzNmk4YnNMZnh4TEZCa3F5Nm9ZRkVjeTdKTk5nUXVjdXBKeURzSnV5WDRweG9QOXExOFhNbEFEMnhwRWVLdDhOeWdYa1pkM3YzTUhIYUVCZFh2WVExci9KTTF6SHBvL1J1Z0Jaa0JZVWY0RE82cTBHRmhOcEJPRkhZdGZ1aThpVDRKUEQwOUw3RDAxbkRGUFNIaTdEUlNQODQ5RUdqTGVuVmhKR0ZZb3RaNzl5em5VckdvQXNweDBVL2hIQy9vc0grREh5dzBMZWY4VXVoK1FpSjVnZDJEcGgxaHNpUEdyTTlQSVlERVEza05ZK21DNFdIR3VpM21Fa0hlMXY5YjRKbGIiLCJkYXRha2V5IjoiQVFFQkFIakI3L2lnd01nNE5Qd2F1cnhTSVl4NEhmbnh1R2MvNDhiRHd2d0RwTllXWmdBQUFINHdmQVlKS29aSWh2Y05BUWNHb0c4d2JRSUJBREJvQmdrcWhraUc5dzBCQndFd0hnWUpZSVpJQVdVREJBRXVNQkVFRENDdE4rcW4xZUVaS1IvNytBSUJFSUE3OUU1QTREejdPMkdHdlNMVHR1a0xaY0RPUDJ1eVdTSWZLWTZSaTIxTlhEeDU4RktBK000cmRwTGtMMFVpd2lKYmZrWVRHcXUrSzlic2gwST0iLCJ2ZXJzaW9uIjoiMiIsInR5cGUiOiJEQVRBX0tFWSIsImV4cGlyYXRpb24iOjE1MDk0OTY1Mzh9 -e none https://364238614392.dkr.ecr.us-east-2.amazonaws.com
+Flag --email has been deprecated, will be removed in 17.06.
+Login Succeeded
++ docker build -t services/oracle-app .
+Sending build context to Docker daemon  80.38kB
+Step 1/6 : FROM collinestes/docker-node-oracle
+ ---> 4f60bcfbde39
+Step 2/6 : ADD ./ /app
+ ---> Using cache
+ ---> d28f18e1ab40
+Step 3/6 : WORKDIR /app
+ ---> Using cache
+ ---> e4db8ee49120
+Step 4/6 : RUN npm install async oracledb --save
+ ---> Using cache
+ ---> 1c9696eb6e6d
+Step 5/6 : EXPOSE 7000
+ ---> Using cache
+ ---> 0144cc0f914b
+Step 6/6 : CMD node webapp.js
+ ---> Using cache
+ ---> 35fb98fc7b59
+Successfully built 35fb98fc7b59
+Successfully tagged services/oracle-app:latest
++ docker tag services/oracle-app:latest 364238614392.dkr.ecr.us-east-2.amazonaws.com/services/oracle-app:7f1203935bd5a7e40cff68fa8852184f4a670b91
++ docker push 364238614392.dkr.ecr.us-east-2.amazonaws.com/services/oracle-app:7f1203935bd5a7e40cff68fa8852184f4a670b91
+The push refers to a repository [364238614392.dkr.ecr.us-east-2.amazonaws.com/services/oracle-app]
+23caa4908b86: Preparing
+c2292479bd9e: Preparing
+69525a94c3cb: Preparing
+75fa63451eba: Preparing
+183d2a837e00: Preparing
+1c08a0143f10: Preparing
+5a930102ee49: Preparing
+765e7b2efe23: Preparing
+5f2f91b41de9: Preparing
+ec0200a19d76: Preparing
+338cb8e0e9ed: Preparing
+d1c800db26c7: Preparing
+42755cf4ee95: Preparing
+1c08a0143f10: Waiting
+5a930102ee49: Waiting
+765e7b2efe23: Waiting
+5f2f91b41de9: Waiting
+ec0200a19d76: Waiting
+338cb8e0e9ed: Waiting
+d1c800db26c7: Waiting
+42755cf4ee95: Waiting
+c2292479bd9e: Pushed
+69525a94c3cb: Pushed
+23caa4908b86: Pushed
+1c08a0143f10: Pushed
+5f2f91b41de9: Pushed
+5a930102ee49: Pushed
+183d2a837e00: Pushed
+765e7b2efe23: Pushed
+75fa63451eba: Pushed
+d1c800db26c7: Pushed
+338cb8e0e9ed: Pushed
+42755cf4ee95: Pushed
+ec0200a19d76: Pushed
+7f1203935bd5a7e40cff68fa8852184f4a670b91: digest: sha256:80da6b30f8a53f5d0ee30d56c737985e1c6b9bc4a52fd8f473a3bfc8e84ad6c4 size: 3059
++ echo service DEPLOY TO DEV
+service DEPLOY TO DEV
+Waiting for the completion of [8mha:////4J0PL5G5X7i8P8qnf+h749q98uTd560WT9C4DB4H4RLGAAAAmR+LCAAAAAAAAP9b85aBtbiIQSajNKU4P08vOT+vOD8nVc+jsiC1KCczL9svvyTVzHb1RttJBUeZGJg8GdhyUvPSSzJ8GJhLi3JKGIR8shLLEvVzEvPS9YNLijLz0q0rihik0IxzhtAgwxgggJGJgaGiAMgQKWGQ0c/KT9JPzs/Nzc8DM4tS04pSizN0y1KS9AFZzmYIoQAAAA==[0mcommon » refresh-vdb
+[8mha:////4DU1cbNCfDNnNCRKDxXkimpWkVnPMdWkyHRWv84iPIagAAAAnB+LCAAAAAAAAP9b85aBtbiIQSajNKU4P08vOT+vOD8nVc+jsiC1KCczL9svvyTVzHb1RttJBUeZGJg8GdhyUvPSSzJ8GJhLi3JKGIR8shLLEvVzEvPS9YNLijLz0q0rihik0IxzhtAgwxgggJGJgaGiAMiQKmGQ18/KT9JPzs/Nzc8DM4tS04pSizN0y1KS9A3N9AHKAm2lpAAAAA==[0mcommon » refresh-vdb devdb completed. Result was SUCCESS
+Build step 'Trigger/call builds on other projects' changed build result to SUCCESS
+Waiting for the completion of [8mha:////4KVeDeas30zMuguFUM6SjZ9KrVZgYGE7Zkobsbj6ccD5AAAAmh+LCAAAAAAAAP9b85aBtbiIQSajNKU4P08vOT+vOD8nVc+jsiC1KCczL9svvyTVzHb1RttJBUeZGJg8GdhyUvPSSzJ8GJhLi3JKGIR8shLLEvVzEvPS9YNLijLz0q0rihik0IxzhtAgwxgggJGJgaGiAMgQLWGQ1c/KT9JPzs/Nzc8DM1NSC3LyK3WLyxOLcvUBHxq2+qIAAAA=[0mcommon » deploy-swarm
+[8mha:////4NZ7yFE3YztNepNi4c3W+twaWTHb04U/0GG6w3/oOWEdAAAAnh+LCAAAAAAAAP9b85aBtbiIQSajNKU4P08vOT+vOD8nVc+jsiC1KCczL9svvyTVzHb1RttJBUeZGJg8GdhyUvPSSzJ8GJhLi3JKGIR8shLLEvVzEvPS9YNLijLz0q0rihik0IxzhtAgwxgggJGJgaGiAMhQKWFQ1M/KT9JPzs/Nzc8DM1NSC3LyK3WLyxOLcvUNzU30ASQdNIumAAAA[0mcommon » deploy-swarm dev-oracle-app completed. Result was SUCCESS
+[oracle-app] $ /bin/sh -xe /tmp/jenkins5916727791678276541.sh
++ echo service INTEGRATION TEST
+service INTEGRATION TEST
++ echo service DEPLOY TO STAGE
+service DEPLOY TO STAGE
+Waiting for the completion of [8mha:////4KVeDeas30zMuguFUM6SjZ9KrVZgYGE7Zkobsbj6ccD5AAAAmh+LCAAAAAAAAP9b85aBtbiIQSajNKU4P08vOT+vOD8nVc+jsiC1KCczL9svvyTVzHb1RttJBUeZGJg8GdhyUvPSSzJ8GJhLi3JKGIR8shLLEvVzEvPS9YNLijLz0q0rihik0IxzhtAgwxgggJGJgaGiAMgQLWGQ1c/KT9JPzs/Nzc8DM1NSC3LyK3WLyxOLcvUBHxq2+qIAAAA=[0mcommon » deploy-swarm
+[8mha:////4Lt0UbbtkM4uCHd7h7epBA+pjilKCQXldqWuPY9raCyKAAAAnh+LCAAAAAAAAP9b85aBtbiIQSajNKU4P08vOT+vOD8nVc+jsiC1KCczL9svvyTVzHb1RttJBUeZGJg8GdhyUvPSSzJ8GJhLi3JKGIR8shLLEvVzEvPS9YNLijLz0q0rihik0IxzhtAgwxgggJGJgaGiAMhQK2FQ1M/KT9JPzs/Nzc8DM1NSC3LyK3WLyxOLcvUNzU31ARoEvkimAAAA[0mcommon » deploy-swarm stage-oracle-app completed. Result was SUCCESS
+[oracle-app] $ /bin/sh -xe /tmp/jenkins2619062928236406184.sh
++ echo service UAT / FUNCTIONAL TEST
+service UAT / FUNCTIONAL TEST
++ echo service DEPLOY TO PROD
+service DEPLOY TO PROD
+Waiting for the completion of [8mha:////4KVeDeas30zMuguFUM6SjZ9KrVZgYGE7Zkobsbj6ccD5AAAAmh+LCAAAAAAAAP9b85aBtbiIQSajNKU4P08vOT+vOD8nVc+jsiC1KCczL9svvyTVzHb1RttJBUeZGJg8GdhyUvPSSzJ8GJhLi3JKGIR8shLLEvVzEvPS9YNLijLz0q0rihik0IxzhtAgwxgggJGJgaGiAMgQLWGQ1c/KT9JPzs/Nzc8DM1NSC3LyK3WLyxOLcvUBHxq2+qIAAAA=[0mcommon » deploy-swarm
+[8mha:////4DMqEsG7IjdUDF+yY93nwLkXJbHl8VbQq2/ewAHQ6c3/AAAAnh+LCAAAAAAAAP9b85aBtbiIQSajNKU4P08vOT+vOD8nVc+jsiC1KCczL9svvyTVzHb1RttJBUeZGJg8GdhyUvPSSzJ8GJhLi3JKGIR8shLLEvVzEvPS9YNLijLz0q0rihik0IxzhtAgwxgggJGJgaGiAMhQLWFQ1M/KT9JPzs/Nzc8DM1NSC3LyK3WLyxOLcvUNzc30Ablo8jmmAAAA[0mcommon » deploy-swarm prod-oracle-app completed. Result was SUCCESS
+Finished: SUCCESS

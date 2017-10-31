@@ -1,0 +1,17 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<fingerprint>
+  <timestamp>2017-10-31 14:30:23.622 UTC</timestamp>
+  <md5sum>51e15f798e69358cb893e38c50596b9b</md5sum>
+  <fileName>jstl:jstl-1.2.jar</fileName>
+  <usages>
+    <entry>
+      <string>services/maven-counter/com.mkyong:CounterWebApp</string>
+      <ranges>3-5</ranges>
+    </entry>
+    <entry>
+      <string>services/maven-counter</string>
+      <ranges>3-5</ranges>
+    </entry>
+  </usages>
+  <facets/>
+</fingerprint>

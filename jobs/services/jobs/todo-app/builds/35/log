@@ -1,0 +1,87 @@
+Started by user [8mha:////4HSKTYekCqJtgUzvE/X25d7VYiaybRQPqPlqTWr6Yj8mAAAAmR+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAz+EgZe/dLi1CL9xOKMzOKMPAD2nB5TwgAAAA==[0mAshish Nanotkar
+Building in workspace /var/lib/jenkins/workspace/services/todo-app
+ > git rev-parse --is-inside-work-tree # timeout=10
+Fetching changes from the remote Git repository
+ > git config remote.origin.url git@github.com:yashsolutions/todo-app.git # timeout=10
+Fetching upstream changes from git@github.com:yashsolutions/todo-app.git
+ > git --version # timeout=10
+ > git fetch --tags --progress git@github.com:yashsolutions/todo-app.git +refs/heads/*:refs/remotes/origin/*
+ > git rev-parse refs/remotes/origin/master^{commit} # timeout=10
+ > git rev-parse refs/remotes/origin/origin/master^{commit} # timeout=10
+Checking out Revision 60d6e69e8d869530e33864ca83d4ad73a90353f3 (refs/remotes/origin/master)
+Commit message: "Yash dmeo"
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f 60d6e69e8d869530e33864ca83d4ad73a90353f3
+ > git rev-list 60d6e69e8d869530e33864ca83d4ad73a90353f3 # timeout=10
+[todo-app] $ /bin/sh -xe /tmp/jenkins5399379601578417476.sh
++ echo service BUILD
+service BUILD
++ echo service UNIT TEST
+service UNIT TEST
++ echo service PACKAGE
+service PACKAGE
++ aws ecr get-login --region us-east-2
++ docker login -u AWS -p eyJwYXlsb2FkIjoiV0hNOFZta3hQUEJRRHFTMTlIT08wSGpNazNoK2IxTlpKZjE5cTduTjV3RE53YW0wNllaMDNCT00rNnpCdHp2ZmZxZUV2QkU5TmZHTmpNUlZnUXBtSlkzS2tBaW5TeVcwZ0UwS3hveFIwYmhibnZ6ZWQ0eUt2S2lEc3FuQ25qbWNhZnQ2T3Nmc1NhcWxqUXFDbWNqY3B0ZVppa0oyTGlWM3FzNjZtZjJYR0trRnRzbmZXeCsrNTlvWjQwUkNRR2puMHAxNkE1eXg1MTlDOGdoS2pYVG5zSEtQTE1oSFQrczhzVUVhYTJtWVhHVVFZZ0tkYkxrMVdFNklhdllqdmlIUnR0TGF3QS8wMTFTbEI2eWo3QkI1aE9SRDlNWXFrMVdOaWVmdU9hOVh6bnNaQk1HWHNxQU9vdkNKcmtMdFBhWlZKaDNtRUoyeDhqNjlZbEl0aVpSNkRPRmhZbi9mQStxRDZrTENodUZ4eThJOURXK0J0Umg1N095emhDbmV5QzRLb0pxQk9lcm9OLy9LNVNWTnlXZHdjVDh3MVNYZWpKLzZnN0h5Y1ZOcXdEd1V6MURXdVpNNkJrYlpnMXZYaWs5Zk5HZVEvb0duSTIxYTBKSU5EbG9NeUNXdG5GaFFUd0NXdlBiQnV5K2lnWDVUcUVoYVBsM1RKZXJEcVhWMElUOHhVZE94U21JSlJvVmVDanpwWHdsMndTTllHVm9UUHBuNXU4WjF0RlVGY1lHT0JqUGhKK2VwZUpUcXNzUUtydUhzOGdscXFtR25KSXE2L2tVTVE0WHgrb2NPNHFDRkc0bnluNUtWemtRU2lUQzNUeU5TUVFuZExyWS9RQzNXTEZhZ25vbGN0bGpoZHJGZWhack9DdllwYmVRT1plc1dpL3FNLzZrWVp6TWJadzl0VEFvMzZOUjdYTUtFeXN3VWQzYWV6UnB6cWRIUlhTc2EwVFRPTjc5WjM5NlZrWlZpaU5LV09nODhSRjBqQnlra3hSLzE5OVMrNnh0ZjRiZC9KTDltWHdocG5iWmFKKzNKaUhHdlFtYzVsRDA5MWlxZk93Y3BQRUJPaGtOOWkrTDVSNFF0VkJ3UVNCQ2ZQZmZsc2lOQ3ZDQXVNWUlqS0tDNFNuL0ZrMHNaWWpsUUhLNmIzdmpZeXZLS01zcUVLc2JpeTQ2QTMwTHB4bUh1RmhWeDdTN2VFU1RXRlczTktEWXd3eEFtNmx5UXhvRWg2aHV2TmVVRU5EKzdqNmJmbkRkRE1oZVFjMll2SUdSRTNPVStGcmJURkVpUWE5UXJZcmVkTFIyaElQVXVoczZuQ0tJY2MrdTJKalpUS3dSdnlOMkFyMTI4Z1Q5Yms1bHIySGpqTEpPT1JyT0pVY3ZmMzV5S3p3N3FYdWwwVmNtZEdMakwzL3BUMkZlRkNmL1U2RXRMZ1BWbWNVNEl5M1ZnQzVZdGZaZGg1Y3U3enJSZU03SUwiLCJkYXRha2V5IjoiQVFFQkFIakI3L2lnd01nNE5Qd2F1cnhTSVl4NEhmbnh1R2MvNDhiRHd2d0RwTllXWmdBQUFINHdmQVlKS29aSWh2Y05BUWNHb0c4d2JRSUJBREJvQmdrcWhraUc5dzBCQndFd0hnWUpZSVpJQVdVREJBRXVNQkVFRFBGTmxpaXZHZWxNSWR0VExnSUJFSUE3SFBHWUo5V1E3b2NSZGFuRDIrN3IzeEd2cWVjMVhJS0VzSXBmK21UTDFpaWVFNmVPOVZobFAzWHNteW5zcGlkay8wZjQvNklkN0J4NTR6Zz0iLCJ2ZXJzaW9uIjoiMSIsInR5cGUiOiJEQVRBX0tFWSJ9 -e none https://364238614392.dkr.ecr.us-east-2.amazonaws.com
+Flag --email has been deprecated, will be removed in 17.06.
+Login Succeeded
++ docker build -t services/todo-app .
+Sending build context to Docker daemon  259.6kB
+Step 1/6 : FROM node
+ ---> de1099630c13
+Step 2/6 : ADD ./ /app/
+ ---> Using cache
+ ---> ae320938020f
+Step 3/6 : WORKDIR /app
+ ---> Using cache
+ ---> b3d2d8e9d096
+Step 4/6 : RUN npm install
+ ---> Using cache
+ ---> 8709011f67a8
+Step 5/6 : EXPOSE 80
+ ---> Using cache
+ ---> ed120ecc90b9
+Step 6/6 : CMD node server.js
+ ---> Using cache
+ ---> 1c7d04b39afa
+Successfully built 1c7d04b39afa
+Successfully tagged services/todo-app:latest
++ docker tag services/todo-app:latest 364238614392.dkr.ecr.us-east-2.amazonaws.com/services/todo-app:60d6e69e8d869530e33864ca83d4ad73a90353f3
++ docker push 364238614392.dkr.ecr.us-east-2.amazonaws.com/services/todo-app:60d6e69e8d869530e33864ca83d4ad73a90353f3
+The push refers to a repository [364238614392.dkr.ecr.us-east-2.amazonaws.com/services/todo-app]
+46b0d6179f8d: Preparing
+8c48bed3bb52: Preparing
+eaf747b8be7f: Preparing
+3a9f3dd4c49c: Preparing
+1d13cfbbfeb2: Preparing
+bfa30f97c0f4: Preparing
+7381522c58b0: Preparing
+ecd70829ec3d: Preparing
+d70ce8b0dad6: Preparing
+18f9b4e2e1bc: Preparing
+46b0d6179f8d: Waiting
+bfa30f97c0f4: Waiting
+8c48bed3bb52: Waiting
+7381522c58b0: Waiting
+eaf747b8be7f: Waiting
+ecd70829ec3d: Waiting
+3a9f3dd4c49c: Waiting
+d70ce8b0dad6: Waiting
+18f9b4e2e1bc: Waiting
+1d13cfbbfeb2: Waiting
+8c48bed3bb52: Layer already exists
+46b0d6179f8d: Layer already exists
+eaf747b8be7f: Layer already exists
+3a9f3dd4c49c: Layer already exists
+bfa30f97c0f4: Layer already exists
+1d13cfbbfeb2: Layer already exists
+7381522c58b0: Layer already exists
+ecd70829ec3d: Layer already exists
+d70ce8b0dad6: Layer already exists
+18f9b4e2e1bc: Layer already exists
+60d6e69e8d869530e33864ca83d4ad73a90353f3: digest: sha256:fba5174c53163cb9684077c78f17524f4eddc42742ae76edff4b740292148d98 size: 2427
++ echo service DEPLOY TO DEV
+service DEPLOY TO DEV
+Waiting for the completion of [8mha:////4KVeDeas30zMuguFUM6SjZ9KrVZgYGE7Zkobsbj6ccD5AAAAmh+LCAAAAAAAAP9b85aBtbiIQSajNKU4P08vOT+vOD8nVc+jsiC1KCczL9svvyTVzHb1RttJBUeZGJg8GdhyUvPSSzJ8GJhLi3JKGIR8shLLEvVzEvPS9YNLijLz0q0rihik0IxzhtAgwxgggJGJgaGiAMgQLWGQ1c/KT9JPzs/Nzc8DM1NSC3LyK3WLyxOLcvUBHxq2+qIAAAA=[0mcommon » deploy-swarm
+Build was aborted
+Aborted by [8mha:////4HSKTYekCqJtgUzvE/X25d7VYiaybRQPqPlqTWr6Yj8mAAAAmR+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAz+EgZe/dLi1CL9xOKMzOKMPAD2nB5TwgAAAA==[0mAshish Nanotkar
+Finished: ABORTED

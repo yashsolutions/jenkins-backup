@@ -1,0 +1,17 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<fingerprint>
+  <timestamp>2017-10-31 14:30:23.618 UTC</timestamp>
+  <md5sum>ab2642735f873c4761313b795155a952</md5sum>
+  <fileName>org.springframework:spring-aop-4.1.1.RELEASE.jar</fileName>
+  <usages>
+    <entry>
+      <string>services/maven-counter/com.mkyong:CounterWebApp</string>
+      <ranges>3-5</ranges>
+    </entry>
+    <entry>
+      <string>services/maven-counter</string>
+      <ranges>3-5</ranges>
+    </entry>
+  </usages>
+  <facets/>
+</fingerprint>

@@ -1,0 +1,81 @@
+Started by user [8mha:////4HSKTYekCqJtgUzvE/X25d7VYiaybRQPqPlqTWr6Yj8mAAAAmR+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAz+EgZe/dLi1CL9xOKMzOKMPAD2nB5TwgAAAA==[0mAshish Nanotkar
+Building in workspace /var/lib/jenkins/workspace/system/deploy
+ > git rev-parse --is-inside-work-tree # timeout=10
+Fetching changes from the remote Git repository
+ > git config remote.origin.url git@github.com:yashsolutions/dockerfiles.git # timeout=10
+Fetching upstream changes from git@github.com:yashsolutions/dockerfiles.git
+ > git --version # timeout=10
+ > git fetch --tags --progress git@github.com:yashsolutions/dockerfiles.git +refs/heads/*:refs/remotes/origin/*
+ > git rev-parse refs/remotes/origin/master^{commit} # timeout=10
+ > git rev-parse refs/remotes/origin/origin/master^{commit} # timeout=10
+Checking out Revision 1fef10f7714565a7d3b199776c107594397d5a2e (refs/remotes/origin/master)
+Commit message: "aligning columns"
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f 1fef10f7714565a7d3b199776c107594397d5a2e
+ > git rev-list 1fef10f7714565a7d3b199776c107594397d5a2e # timeout=10
+[deploy] $ /bin/sh -xe /tmp/jenkins2728818535875495004.sh
++ aws ecr get-login --region us-east-2
++ docker login -u AWS -p eyJwYXlsb2FkIjoiZlV1eHJlb0dyT0RHdUxtVDkvektUR2ZBSGxoQTV0SFJiWlpTWFR4OGVadmozd3Y2V2l4SHRNbmpzb21oYkI0RXJNc3Nzd1VQYUtVdkV3V0lmU294ZStsMlFnUVBxVU9reHhaaGFVaVNMMWsrVk9zNzJ0dnBYOUx4aWREeEcvWTA0Vjd2Umw5NVhxemRmUW1UTlkzdktEZWh4V2ZESmU0a2xhWnZqcTROZlFBNlhQM3JGNlFWd3hnT0duUjVEM2t4M0JPcVF1Wi8yZklSeXhmbGZlREl2dTdJZ25rMkcrMFNyT0hvcHJwMENIY0pneW85MktrRVhXWjN4UnBZakpJNE1mSW9OS21TMmY3ekJKbTd3S0NQdEJVdGJZOGRzMnlWcjNqc2w5bmZTVVRkaldkNW00cThBNFVUUDVKbDZpZ3Q3WkFBY3JCelNuN2tIUVBrZXloWFRCb3RkRml4Y3hWaUhBcnV5ZXc3bmFidUdtdVorWnNabSs1TUFBUnpzQ3JoejRpLzBBTDhUeUNDMGFUcWpwUy9QQU4wczd6ZXlVR01kcVJZZS9ORytSZ04vQjhreE82SlhtZENxY2hFNU0wVnlaeTNWZkhIRFZZcUlLbEpTQXRaSHVXSDFwNU9PTzNGMUx5SEVETmc5VU1kTXJ4MzBPV0IrN29rYlRlTVZwaUZreG5oZXBONHhpU2VpOGFjYzg1T1kweFo1d2FuMUJudlFiY2NvNHpPMzJFSEcvY3F2aFVKc3hvSngzUjJpamR1Unc5K3pZT1NBaVdqMEVUWGtUYW1nQS9KUk8xRHNpTkdKeDhyam1nby81WXhVcGQ2U2ZFRDA3UWp0UCtUUHRoWVdlazE2SldLMTBxUUdLR01OL0pHRmZscWp6blR0Q1ptNzV2TlV6SGtCZmtpREpLNEwwT2swSzNINVVoY2ZXSDNlNVlrYUVZSGVORXU0VjM1STRnVHVUL0FMSXBkamJjVGx6OVIwK1VxbmFDZDhlclYvd2FkTWF4b2twOFAwUUdDb0dPMm85dGpVb0RSNkFYTFZwQlhRa1EvdlBjRDJ4VTRKeEh4TFUwSTF5Vzh3OXdqcTJwbzNYajZ0YnFVOGU1N2w5UU9ZSjhzeFZQaFNkbEF3TWcwbnBYRTlOQWwwVEV0Uk5OK0ZvZm5LenduSU9KcUVQVWkxZFI2WHpGRzYvQzY0ZDRMR2FZNW1UK1lQczJnaUJyclVHUmw1SXkxK0Juejg2L3dLNzRKbEZJaURJMkh4d0tEcnRZalVKMStCcEN0RjZ3ZVpRaFlRMWwwcGM0bHlEUThCVmNMcHBTaHNwa0NxcmVuc3lBQ0kvS2tHNks0RHVkZFcvam1VaUpVRGNOTE12eW42YWhTMnluUFhLOSsraDc2eC9RUFJvaTRKck1UR2g2U2QyejFyQzJQaytXQXBIazJPT0JDcVoveVNuTUdhVkZqVldoQkNjaXgiLCJkYXRha2V5IjoiQVFFQkFIakI3L2lnd01nNE5Qd2F1cnhTSVl4NEhmbnh1R2MvNDhiRHd2d0RwTllXWmdBQUFINHdmQVlKS29aSWh2Y05BUWNHb0c4d2JRSUJBREJvQmdrcWhraUc5dzBCQndFd0hnWUpZSVpJQVdVREJBRXVNQkVFREptTGJJeUs5ZWpzWGllVExRSUJFSUE3UkYyRk1Oc0x3S1lWaEwza2pEQVFGRUI3aWtxZXNkNjhnTXRFcDNIalZEWmQ5RnNWbmhka1ZDaDJKZTBxai9ZdVBzTUV1SVNWUGZvT2tMQT0iLCJ2ZXJzaW9uIjoiMSIsInR5cGUiOiJEQVRBX0tFWSJ9 -e none https://364238614392.dkr.ecr.us-east-2.amazonaws.com
+Flag --email has been deprecated, will be removed in 17.06.
+Login Succeeded
++ cd deploy
++ docker build -t system/deploy .
+Sending build context to Docker daemon  11.26kB
+Step 1/8 : FROM ubuntu
+ ---> 2d696327ab2e
+Step 2/8 : RUN apt-get update && apt-get install -y python-pip supervisor iputils-ping
+ ---> Using cache
+ ---> c13beb289da1
+Step 3/8 : RUN pip install tornado redis requests python-jenkins
+ ---> Using cache
+ ---> 1ba4e2289a38
+Step 4/8 : ADD server.py /server.py
+ ---> Using cache
+ ---> 65eaa6003359
+Step 5/8 : RUN chmod +x /server.py
+ ---> Using cache
+ ---> df3b77ce510a
+Step 6/8 : ADD server.conf /etc/supervisor/conf.d/server.conf
+ ---> Using cache
+ ---> 4bfa6a161e23
+Step 7/8 : EXPOSE 9000
+ ---> Using cache
+ ---> e919a6499e7f
+Step 8/8 : CMD /usr/bin/supervisord
+ ---> Using cache
+ ---> 2ae7529138af
+Successfully built 2ae7529138af
+Successfully tagged system/deploy:latest
++ docker tag system/deploy:latest 364238614392.dkr.ecr.us-east-2.amazonaws.com/system/deploy:1fef10f7714565a7d3b199776c107594397d5a2e
++ docker push 364238614392.dkr.ecr.us-east-2.amazonaws.com/system/deploy:1fef10f7714565a7d3b199776c107594397d5a2e
+The push refers to a repository [364238614392.dkr.ecr.us-east-2.amazonaws.com/system/deploy]
+8f95d32a03e0: Preparing
+cfb28d493df8: Preparing
+6c6d3a5b1fcf: Preparing
+124eefde3d63: Preparing
+0727f648d6d2: Preparing
+7f7a065d245a: Preparing
+f96e6b25195f: Preparing
+c56153825175: Preparing
+ae620432889d: Preparing
+a2022691bf95: Preparing
+c56153825175: Waiting
+ae620432889d: Waiting
+7f7a065d245a: Waiting
+a2022691bf95: Waiting
+f96e6b25195f: Waiting
+6c6d3a5b1fcf: Layer already exists
+0727f648d6d2: Layer already exists
+cfb28d493df8: Layer already exists
+8f95d32a03e0: Layer already exists
+124eefde3d63: Layer already exists
+f96e6b25195f: Layer already exists
+ae620432889d: Layer already exists
+7f7a065d245a: Layer already exists
+c56153825175: Layer already exists
+a2022691bf95: Layer already exists
+1fef10f7714565a7d3b199776c107594397d5a2e: digest: sha256:87bc7e6fcf33fbec94f15c84573c4c2e2a229710aac084320f3cbc371ed5d701 size: 2404
+Waiting for the completion of [8mha:////4KVeDeas30zMuguFUM6SjZ9KrVZgYGE7Zkobsbj6ccD5AAAAmh+LCAAAAAAAAP9b85aBtbiIQSajNKU4P08vOT+vOD8nVc+jsiC1KCczL9svvyTVzHb1RttJBUeZGJg8GdhyUvPSSzJ8GJhLi3JKGIR8shLLEvVzEvPS9YNLijLz0q0rihik0IxzhtAgwxgggJGJgaGiAMgQLWGQ1c/KT9JPzs/Nzc8DM1NSC3LyK3WLyxOLcvUBHxq2+qIAAAA=[0mcommon » deploy-swarm
+[8mha:////4LbM4kOPo3kRys7FWOpvxxsvvN7VOaAjovDOBpTzfcd7AAAAnh+LCAAAAAAAAP9b85aBtbiIQSajNKU4P08vOT+vOD8nVc+jsiC1KCczL9svvyTVzHb1RttJBUeZGJg8GdhyUvPSSzJ8GJhLi3JKGIR8shLLEvVzEvPS9YNLijLz0q0rihik0IxzhtAgwxgggJGJgaGiAMhQLmFQ1M/KT9JPzs/Nzc8DM1NSC3LyK3WLyxOLcvUNjYz0AZYRl++mAAAA[0mcommon » deploy-swarm system-deploy completed. Result was SUCCESS
+Build step 'Trigger/call builds on other projects' changed build result to SUCCESS
+Finished: SUCCESS

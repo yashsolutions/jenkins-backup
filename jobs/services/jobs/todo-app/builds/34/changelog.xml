@@ -1,0 +1,11 @@
+commit 60d6e69e8d869530e33864ca83d4ad73a90353f3
+tree f4b7df0a6dd552aee27741c67f04add22a33c7ff
+parent 427c26fa461b4af58bed479d49d0e2dbc5f3060d
+author ashish.nanotkar <ashish.nanotkar@srkay.com> 2017-10-11 00:57:46 +0530
+committer ashish.nanotkar <ashish.nanotkar@srkay.com> 2017-10-11 00:57:46 +0530
+
+    Yash dmeo
+
+
+
+:100644 100644 87754a7ee004d393cff5f9ab5508b735fe15b69c 8e7ec0676ad7717d247aef8706aa498ebdc62438 M	public/index.html

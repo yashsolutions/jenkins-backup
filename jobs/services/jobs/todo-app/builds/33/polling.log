@@ -1,0 +1,8 @@
+Started on Oct 10, 2017 3:49:00 PM
+Using strategy: Default
+[poll] Last Built Revision: Revision bbc63f564ae24b36fd5f4db86e85fea88d599071 (refs/remotes/origin/master)
+ > git ls-remote -h git@github.com:yashsolutions/todo-app.git # timeout=10
+Found 1 remote heads on git@github.com:yashsolutions/todo-app.git
+[poll] Latest remote head revision on refs/heads/master is: 427c26fa461b4af58bed479d49d0e2dbc5f3060d
+Done. Took 0.29 sec
+Changes found

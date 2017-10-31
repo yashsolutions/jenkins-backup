@@ -1,0 +1,22 @@
+commit 0adedb97e5163360d953950c48c565f18ee6f606
+tree e22dee00cc43b5b182452d29613a083a6f36424c
+parent 6266330066aa692bcc650618b45af8445b70f128
+author ashish.nanotkar <ashish.nanotkar@srkay.com> 2017-10-10 23:58:26 +0530
+committer ashish.nanotkar <ashish.nanotkar@srkay.com> 2017-10-10 23:58:26 +0530
+
+    wiki port defaulted to 80
+
+
+
+:100644 100644 207dd285cb30cb74ce6f1c126c6ffba39a056c35 0c9531108ad48ec20a81e49686503c35abe030c5 M	wiki/Dockerfile
+commit 6266330066aa692bcc650618b45af8445b70f128
+tree 9660d56b258936f1aec47837795e752898125be5
+parent ba9e78c00088ebba3ca7bdec0ede8f45330c7e3f
+author ashish.nanotkar <ashish.nanotkar@srkay.com> 2017-10-10 23:58:02 +0530
+committer ashish.nanotkar <ashish.nanotkar@srkay.com> 2017-10-10 23:58:02 +0530
+
+    added mongo for wiki
+
+
+
+:100644 100644 3cb51966ec7a080cfea56706b67f517b20d13837 55d76d81d633077317b8450471ed7c12b5adb437 M	wiki/config.yml

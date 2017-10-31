@@ -1,0 +1,11 @@
+commit df373580c16474b083434dde981ad31de7d0a8cd
+tree 80269553c4f32b6c5c826417e85d191ab7030383
+parent feee71adfee8ff1185d4ab3b5e21cb02c1fdd41f
+author ashish.nanotkar <ashish.nanotkar@srkay.com> 2017-10-11 00:07:20 +0530
+committer ashish.nanotkar <ashish.nanotkar@srkay.com> 2017-10-11 00:07:20 +0530
+
+    config fix for wiki
+
+
+
+:100644 100644 36a85a3701f185cd89232de976a1e6c8e85327b9 d45ab95b17595868c1655e4a9d54723007d04ee1 M	wiki/config.yml

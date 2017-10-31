@@ -1,4 +1,4 @@
-Started at Tue Oct 10 12:23:54 UTC 2017
+Started at Tue Oct 31 05:26:55 UTC 2017
 Checking system » deploy
 Checking system » elastalert
 Checking system » haproxy
@@ -7,9 +7,11 @@ Checking system » logstash-es-indexer
 Checking system » logstash-redis-forwarder
 Checking system » prometheus
 Checking system » status
+Checking system » wiki
 Checking services » todo-app
 Checking services » todo-app-oracle
 Checking maintenance » jenkins-backup
+Checking maintenance » run-playbook
 Checking common » delphix-refresh-vdb
 Checking common » deploy-swarm
-Finished at Tue Oct 10 12:23:54 UTC 2017. 4ms
+Finished at Tue Oct 31 05:26:55 UTC 2017. 7ms

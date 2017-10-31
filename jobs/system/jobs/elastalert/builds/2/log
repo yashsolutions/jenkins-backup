@@ -1,0 +1,135 @@
+Started by user [8mha:////4HSKTYekCqJtgUzvE/X25d7VYiaybRQPqPlqTWr6Yj8mAAAAmR+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAz+EgZe/dLi1CL9xOKMzOKMPAD2nB5TwgAAAA==[0mAshish Nanotkar
+Building in workspace /var/lib/jenkins/workspace/system/elastalert
+ > git rev-parse --is-inside-work-tree # timeout=10
+Fetching changes from the remote Git repository
+ > git config remote.origin.url git@github.com:yashsolutions/dockerfiles.git # timeout=10
+Fetching upstream changes from git@github.com:yashsolutions/dockerfiles.git
+ > git --version # timeout=10
+ > git fetch --tags --progress git@github.com:yashsolutions/dockerfiles.git +refs/heads/*:refs/remotes/origin/*
+ > git rev-parse refs/remotes/origin/master^{commit} # timeout=10
+ > git rev-parse refs/remotes/origin/origin/master^{commit} # timeout=10
+Checking out Revision 1fef10f7714565a7d3b199776c107594397d5a2e (refs/remotes/origin/master)
+Commit message: "aligning columns"
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f 1fef10f7714565a7d3b199776c107594397d5a2e
+ > git rev-list 577492121e31d77c4b67b1ec83b138729478b408 # timeout=10
+[elastalert] $ /bin/sh -xe /tmp/jenkins1926403904271540969.sh
++ aws ecr get-login --region us-east-2
++ docker login -u AWS -p eyJwYXlsb2FkIjoiRmF3a01WRFBWTEtQRlZwb1ZzMnl5d1AxdkdOUlZGbHNqaEpEVGhDTHlyeHpaa3FQZkREZmplMFZ1V2YzUlFrYTRIb0JBZkdlZHdiQk4vWHJDUmRqVkUzSkpERHR3N3RieEg2MmlUeDVSbGVLVEwvcGZxblQwSklzVXF6M2pLR05PaGxZQ3FyQlIyNGNzbFFUV05BYnViaTU5MW90UHByUFNJWXMveU1uQUZHbVBJSU1LbnNqRzFyaHhZZTJYYWEvdHUxaDdTR2dINTZTNjUxaGV2VXJoY1ZBRU1JOW9FQUlOa2hqVTR3M2dPK2tTWngzYTF4emZyRllLdGJCbXJqaFZkdnJLR0htTHhZbFpkdktzTTJIRjVLM0hOUCttaE1ENm5yb2h4UUtpRWdraVo2bXl0Z0o3ZTRhd1o5YkJLT2NKcjVtUWZ2UUpQNkFjbDk4UHN3Nk9GZW1neFBTWkFWUEVaNktSOFYrYzlSZXFpVEEyREhUOFRvRytKcmsvQVFLRnRXUDlqNG9oZ09Sbm1aTnlBSVB4OWtJVGY3OU1pRW9FRnRRMGdTRGRobkRpUXpIWlVkamtyY2MyUGJMSEpzOGxEcjl6aVAyWUtpdGdxajhGalpOL3YyYTViYm9oNmVPRG44VWhWRVVIRDFzZTNPc3YwSzdTdTU1R0ZGSDZXdEFSUXhsL1FRUi9laUdudmhFMHA4YzFESWxkZktjalRXVXJxWi9IY0NWZ2NIQlFxODZmbFVWTzNVSSsrYXRHSHNENnhwd29pVUxRWG42QnlIUVl2eklIODFnYXNtaW93WEVpaVNpM0dzajdrSHN5Y2tueWx1TCtLNjBYaFJITHhEbVl0THhLczVGYjgrZDdINHBhcyt6SHdLMHVUWkRrUmhQbEJRTWYwMTBOeEdlNFVRUTJFRllDQjNHQU9TNnpFT013N0gxUnd5eTlTVUh4YmY0bUpPS1VvbkhncE53N1RPMXhqcU5rbVJRSTcwNENXcDJpRy9SaFRZU0VVTkRId0pNWkZmbS9PcE9uQUptaG14TGp0OThJTExmRWZWZmRZZjRLam1kQ2VsMml3UzRxWXlaUndtbXMxVzhCRWZDY2g4enY1ZXpoNi85WkxtdFdOTmgxVVNUd3NXVFlvL3BHVHhJdjZDNlJ3QS83K0x6RmZWRkF1YkNvNm44SG5wTnlKbkx6ZTFnNFo3cTQwUXFIblpiSlFsOHBRQ0pzOUYwWXlkQTUvNVJIcHA1U0llNnRyV3FnVDFnTVc5cGhlV09saHhrbkEvQXFPYktzeVFZU1Z2MVh5aXFlZ0wwV09QcGx4eWl6QU5iY3l1QkZIMkszaTh0YXZaZGMxelQ1MEhDVkEzallCcXJYQXhSNDBlWGVBaUlVZE5lVXF6YTRacDEwVVUwbGtUdTlreitkeWI3YkhhSXZ1OURXcnU0Y3A3M2MwQ1BSTm5tMDF3VGNSdGUiLCJkYXRha2V5IjoiQVFFQkFIakI3L2lnd01nNE5Qd2F1cnhTSVl4NEhmbnh1R2MvNDhiRHd2d0RwTllXWmdBQUFINHdmQVlKS29aSWh2Y05BUWNHb0c4d2JRSUJBREJvQmdrcWhraUc5dzBCQndFd0hnWUpZSVpJQVdVREJBRXVNQkVFREdzN1JCY28wYjJMR2k4UGVBSUJFSUE3UWZwVEdwdmdCbU5Zc1VZKysrMTBZVEowOTlXTnBKSS9EcGdGTGFhQnpad2w2WGhsVDBnUi9JZ25ZSS9QU2RLUXdPWXBJT1pYK3pCdWU1TT0iLCJ2ZXJzaW9uIjoiMSIsInR5cGUiOiJEQVRBX0tFWSJ9 -e none https://364238614392.dkr.ecr.us-east-2.amazonaws.com
+Flag --email has been deprecated, will be removed in 17.06.
+Login Succeeded
++ cd elastalert
++ docker build -t system/elastalert .
+Sending build context to Docker daemon  20.99kB
+Step 1/24 : FROM iron/python:2
+ ---> 4c72ca003fce
+Step 2/24 : ENV SET_CONTAINER_TIMEZONE false
+ ---> Using cache
+ ---> cba5ce14a732
+Step 3/24 : ENV CONTAINER_TIMEZONE Asia/Kolkata
+ ---> Using cache
+ ---> 703104b0ecaa
+Step 4/24 : ENV ELASTALERT_URL https://github.com/Yelp/elastalert/archive/master.zip
+ ---> Using cache
+ ---> b6ec6952a6d4
+Step 5/24 : ENV CONFIG_DIR /opt/config
+ ---> Using cache
+ ---> edfd751394af
+Step 6/24 : ENV RULES_DIRECTORY /opt/rules
+ ---> Using cache
+ ---> ad1b0c325c2a
+Step 7/24 : ENV ELASTALERT_CONFIG ${CONFIG_DIR}/elastalert_config.yaml
+ ---> Using cache
+ ---> 6991cc6eb7f4
+Step 8/24 : ENV LOG_DIR /opt/logs
+ ---> Using cache
+ ---> c895132ba74c
+Step 9/24 : ENV ELASTALERT_DIRECTORY_NAME elastalert
+ ---> Using cache
+ ---> c168d0973d7a
+Step 10/24 : ENV ELASTALERT_HOME /opt/${ELASTALERT_DIRECTORY_NAME}
+ ---> Using cache
+ ---> cb0b52d3824c
+Step 11/24 : ENV ELASTALERT_SUPERVISOR_CONF ${CONFIG_DIR}/elastalert_supervisord.conf
+ ---> Using cache
+ ---> cc5c84ac80db
+Step 12/24 : ENV ELASTICSEARCH_HOST 10.0.5.4
+ ---> Using cache
+ ---> 2fb219f326ea
+Step 13/24 : ENV ELASTICSEARCH_PORT 9200
+ ---> Using cache
+ ---> 8429c5f31f5e
+Step 14/24 : WORKDIR /opt
+ ---> Using cache
+ ---> 5aa1d7dbcaaa
+Step 15/24 : COPY ./start-elastalert.sh /opt/
+ ---> Using cache
+ ---> 9aca5db78c05
+Step 16/24 : RUN apk update && apk upgrade
+ ---> Using cache
+ ---> edca96a73fb2
+Step 17/24 : RUN apk add ca-certificates openssl-dev libffi-dev python-dev gcc musl-dev tzdata openntpd &&     rm -rf /var/cache/apk/* &&     wget https://bootstrap.pypa.io/get-pip.py &&     python get-pip.py &&     rm get-pip.py &&     wget ${ELASTALERT_URL} &&     unzip *.zip &&     rm *.zip &&     mv e* ${ELASTALERT_DIRECTORY_NAME}
+ ---> Using cache
+ ---> cf1fedf2bffc
+Step 18/24 : WORKDIR ${ELASTALERT_HOME}
+ ---> Using cache
+ ---> 06e26195a808
+Step 19/24 : RUN python setup.py install &&     pip install -e . &&     pip uninstall twilio --yes &&     pip install twilio==6.0.0 &&     easy_install supervisor &&     chmod +x /opt/start-elastalert.sh &&     mkdir -p ${RULES_DIRECTORY} &&     mkdir -p ${LOG_DIR} &&     mkdir -p /var/empty
+ ---> Using cache
+ ---> d40ff020dab8
+Step 20/24 : ADD config.yaml ${ELASTALERT_HOME}/config.yaml
+ ---> Using cache
+ ---> eca7d4edf651
+Step 21/24 : ADD smtp_auth_file.yaml ${CONFIG_DIR}/smtp_auth_file.yaml
+ ---> Using cache
+ ---> 889935a0a089
+Step 22/24 : COPY frequency.yaml ${RULES_DIRECTORY}/frequency.yaml
+ ---> Using cache
+ ---> 40885c06238c
+Step 23/24 : COPY config-ms_error.yaml ${RULES_DIRECTORY}/match_error.yaml
+ ---> Using cache
+ ---> 78bd2e0abb29
+Step 24/24 : CMD /opt/start-elastalert.sh
+ ---> Using cache
+ ---> 28725c170ea0
+Successfully built 28725c170ea0
+Successfully tagged system/elastalert:latest
++ docker tag system/elastalert:latest 364238614392.dkr.ecr.us-east-2.amazonaws.com/system/elastalert:1fef10f7714565a7d3b199776c107594397d5a2e
++ docker push 364238614392.dkr.ecr.us-east-2.amazonaws.com/system/elastalert:1fef10f7714565a7d3b199776c107594397d5a2e
+The push refers to a repository [364238614392.dkr.ecr.us-east-2.amazonaws.com/system/elastalert]
+8de3384a6fc8: Preparing
+1772f7f04e3d: Preparing
+64a9dba48185: Preparing
+008e4ee63a81: Preparing
+e10aec633120: Preparing
+770ec11819d5: Preparing
+5cb2e68a66ce: Preparing
+0bba7836b138: Preparing
+22a34e9821d4: Preparing
+e67f7ef625c5: Preparing
+321db514ef85: Preparing
+6102f0d2ad33: Preparing
+5cb2e68a66ce: Waiting
+0bba7836b138: Waiting
+22a34e9821d4: Waiting
+e67f7ef625c5: Waiting
+321db514ef85: Waiting
+6102f0d2ad33: Waiting
+770ec11819d5: Waiting
+8de3384a6fc8: Layer already exists
+64a9dba48185: Layer already exists
+008e4ee63a81: Layer already exists
+1772f7f04e3d: Layer already exists
+770ec11819d5: Layer already exists
+5cb2e68a66ce: Layer already exists
+22a34e9821d4: Layer already exists
+e10aec633120: Layer already exists
+e67f7ef625c5: Layer already exists
+0bba7836b138: Layer already exists
+6102f0d2ad33: Layer already exists
+321db514ef85: Layer already exists
+1fef10f7714565a7d3b199776c107594397d5a2e: digest: sha256:a5227694e3f50135fae8363d2b3c2333d5fbbf630f1e17cc86e78649caf44a18 size: 2828
+Waiting for the completion of [8mha:////4KVeDeas30zMuguFUM6SjZ9KrVZgYGE7Zkobsbj6ccD5AAAAmh+LCAAAAAAAAP9b85aBtbiIQSajNKU4P08vOT+vOD8nVc+jsiC1KCczL9svvyTVzHb1RttJBUeZGJg8GdhyUvPSSzJ8GJhLi3JKGIR8shLLEvVzEvPS9YNLijLz0q0rihik0IxzhtAgwxgggJGJgaGiAMgQLWGQ1c/KT9JPzs/Nzc8DM1NSC3LyK3WLyxOLcvUBHxq2+qIAAAA=[0mcommon » deploy-swarm
+[8mha:////4LhTraUO+NYU+NJiwsWvlPqU1DxVU/Fy/NeSEdFyOxBmAAAAnh+LCAAAAAAAAP9b85aBtbiIQSajNKU4P08vOT+vOD8nVc+jsiC1KCczL9svvyTVzHb1RttJBUeZGJg8GdhyUvPSSzJ8GJhLi3JKGIR8shLLEvVzEvPS9YNLijLz0q0rihik0IxzhtAgwxgggJGJgaGiAMhQL2FQ1M/KT9JPzs/Nzc8DM1NSC3LyK3WLyxOLcvUNjQz1AeoU6aqmAAAA[0mcommon » deploy-swarm system-elastalert completed. Result was SUCCESS
+Build step 'Trigger/call builds on other projects' changed build result to SUCCESS
+Finished: SUCCESS

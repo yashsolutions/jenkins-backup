@@ -13,7 +13,7 @@
 
     <groupId>com.sonyericsson.hudson.plugins.rebuild</groupId>
     <artifactId>rebuild</artifactId>
-    <version>1.25</version>
+    <version>1.27</version>
     <packaging>hpi</packaging>
     <name>Rebuilder</name>
 
@@ -21,10 +21,6 @@
         <repository>
             <id>repo.jenkins-ci.org</id>
             <url>http://repo.jenkins-ci.org/public/</url>
-        </repository>
-        <repository>
-            <id>maven.jenkins-ci.org</id>
-            <url>http://maven.jenkins-ci.org/content/repositories/releases</url>
         </repository>
     </repositories>
 
@@ -73,8 +69,8 @@
 
     <pluginRepositories>
         <pluginRepository>
-            <id>maven.jenkins-ci.org</id>
-            <url>http://maven.jenkins-ci.org/content/repositories/releases</url>
+            <id>repo.jenkins-ci.org</id>
+            <url>http://repo.jenkins-ci.org/public/</url>
         </pluginRepository>
     </pluginRepositories>
     <build>
@@ -132,7 +128,7 @@
     <distributionManagement>
         <repository>
             <id>maven.jenkins-ci.org</id>
-            <url>http://maven.jenkins-ci.org:8081/content/repositories/releases</url>
+            <url>https://repo.jenkins-ci.org/releases</url>
         </repository>
     </distributionManagement>
     <reporting>
@@ -178,6 +174,6 @@
         <connection>scm:git:ssh://github.com/jenkinsci/rebuild-plugin.git</connection>
         <developerConnection>scm:git:ssh://git@github.com/jenkinsci/rebuild-plugin.git</developerConnection>
         <url>http://github.com/jenkinsci/rebuild-plugin</url>
-      <tag>rebuild-1.25</tag>
+      <tag>rebuild-1.27</tag>
   </scm>
 </project>

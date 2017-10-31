@@ -1,0 +1,141 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<hudson.maven.MavenModuleSetBuild plugin="maven-plugin@3.0">
+  <actions>
+    <hudson.model.CauseAction>
+      <causeBag class="linked-hash-map">
+        <entry>
+          <hudson.model.Cause_-UserIdCause>
+            <userId>ashishn</userId>
+          </hudson.model.Cause_-UserIdCause>
+          <int>1</int>
+        </entry>
+      </causeBag>
+    </hudson.model.CauseAction>
+    <hudson.plugins.git.util.BuildData plugin="git@3.6.3">
+      <buildsByBranchName>
+        <entry>
+          <string>refs/remotes/origin/master</string>
+          <hudson.plugins.git.util.Build>
+            <marked plugin="git-client@2.6.0">
+              <sha1>3fbdcef8c3e61cc357a85c2487ff7b3d07ecda01</sha1>
+              <branches class="list">
+                <hudson.plugins.git.Branch>
+                  <sha1 reference="../../../sha1"/>
+                  <name>refs/remotes/origin/master</name>
+                </hudson.plugins.git.Branch>
+              </branches>
+            </marked>
+            <revision reference="../marked"/>
+            <hudsonBuildNumber>4</hudsonBuildNumber>
+          </hudson.plugins.git.util.Build>
+        </entry>
+      </buildsByBranchName>
+      <lastBuild reference="../buildsByBranchName/entry/hudson.plugins.git.util.Build"/>
+      <remoteUrls>
+        <string>git@github.com:yashsolutions/maven-counter.git</string>
+      </remoteUrls>
+    </hudson.plugins.git.util.BuildData>
+    <hudson.plugins.git.GitTagAction plugin="git@3.6.3">
+      <tags class="hudson.util.CopyOnWriteMap$Tree">
+        <entry>
+          <string>refs/remotes/origin/master</string>
+          <list/>
+        </entry>
+      </tags>
+      <ws>/var/lib/jenkins/workspace/services/maven-counter</ws>
+    </hudson.plugins.git.GitTagAction>
+    <hudson.scm.SCMRevisionState_-None/>
+    <hudson.maven.reporters.MavenAggregatedArtifactRecord>
+      <records/>
+      <parent reference="../../.."/>
+    </hudson.maven.reporters.MavenAggregatedArtifactRecord>
+    <hudson.tasks.Fingerprinter_-FingerprintAction>
+      <record>
+        <entry>
+          <string>junit:junit-4.11.jar</string>
+          <string>3c42be5ea7cbf3635716abbb429cb90d</string>
+        </entry>
+        <entry>
+          <string>org.springframework:spring-beans-4.1.1.RELEASE.jar</string>
+          <string>3ce14c55850f0106a8e256471ff59ec3</string>
+        </entry>
+        <entry>
+          <string>org.slf4j:jcl-over-slf4j-1.7.5.jar</string>
+          <string>4dde0990b45d1bbba6ee141da8fa9c25</string>
+        </entry>
+        <entry>
+          <string>aopalliance:aopalliance-1.0.jar</string>
+          <string>04177054e180d09e3998808efa0401c7</string>
+        </entry>
+        <entry>
+          <string>com.mkyong:CounterWebApp:pom.xml</string>
+          <string>3f132496dd71e4a656de87ddcdf48935</string>
+        </entry>
+        <entry>
+          <string>org.springframework:spring-webmvc-4.1.1.RELEASE.jar</string>
+          <string>8fcc8709d1082c3d496216f779565ffa</string>
+        </entry>
+        <entry>
+          <string>org.springframework:spring-core-4.1.1.RELEASE.jar</string>
+          <string>5dc7833cd0558fbd6a92ba1f0d44dd18</string>
+        </entry>
+        <entry>
+          <string>org.hamcrest:hamcrest-core-1.3.jar</string>
+          <string>6393363b47ddcbba82321110c3e07519</string>
+        </entry>
+        <entry>
+          <string>ch.qos.logback:logback-core-1.0.13.jar</string>
+          <string>945c6dc3c10d3ce784d456a8bbbd0262</string>
+        </entry>
+        <entry>
+          <string>org.springframework:spring-aop-4.1.1.RELEASE.jar</string>
+          <string>ab2642735f873c4761313b795155a952</string>
+        </entry>
+        <entry>
+          <string>org.springframework:spring-context-4.1.1.RELEASE.jar</string>
+          <string>5169ac4c99afe5e1cf2eefd9fe02aea3</string>
+        </entry>
+        <entry>
+          <string>org.springframework:spring-expression-4.1.1.RELEASE.jar</string>
+          <string>041a51c0b0be07bd2d488f6f51c5c8b5</string>
+        </entry>
+        <entry>
+          <string>org.slf4j:slf4j-api-1.7.5.jar</string>
+          <string>3b1ececad9ebc3fbad2953ccf4a070ca</string>
+        </entry>
+        <entry>
+          <string>ch.qos.logback:logback-classic-1.0.13.jar</string>
+          <string>18586a078b51918942002ec085338e19</string>
+        </entry>
+        <entry>
+          <string>com.mkyong:CounterWebApp.war</string>
+          <string>d41dad94761897bcb8ff7434d580534d</string>
+        </entry>
+        <entry>
+          <string>jstl:jstl-1.2.jar</string>
+          <string>51e15f798e69358cb893e38c50596b9b</string>
+        </entry>
+        <entry>
+          <string>org.springframework:spring-web-4.1.1.RELEASE.jar</string>
+          <string>5d906e6fbc54ee59c62e533e9d5b3c7a</string>
+        </entry>
+      </record>
+    </hudson.tasks.Fingerprinter_-FingerprintAction>
+    <com.sonyericsson.rebuild.RebuildAction plugin="rebuild@1.27"/>
+  </actions>
+  <queueId>82</queueId>
+  <timestamp>1509460563140</timestamp>
+  <startTime>1509460563151</startTime>
+  <result>FAILURE</result>
+  <duration>14521</duration>
+  <charset>UTF-8</charset>
+  <keepLog>false</keepLog>
+  <builtOn></builtOn>
+  <workspace>/var/lib/jenkins/workspace/services/maven-counter</workspace>
+  <hudsonVersion>2.73.2</hudsonVersion>
+  <scm class="hudson.plugins.git.GitChangeLogParser" plugin="git@3.6.3">
+    <authorOrCommitter>false</authorOrCommitter>
+  </scm>
+  <culprits class="com.google.common.collect.EmptyImmutableSortedSet"/>
+  <mavenVersionUsed>3.5.2</mavenVersionUsed>
+</hudson.maven.MavenModuleSetBuild>

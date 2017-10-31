@@ -1,0 +1,51 @@
+Started by user [8mha:////4HSKTYekCqJtgUzvE/X25d7VYiaybRQPqPlqTWr6Yj8mAAAAmR+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAz+EgZe/dLi1CL9xOKMzOKMPAD2nB5TwgAAAA==[0mAshish Nanotkar
+Building in workspace /var/lib/jenkins/workspace/system/wiki
+ > git rev-parse --is-inside-work-tree # timeout=10
+Fetching changes from the remote Git repository
+ > git config remote.origin.url git@github.com:yashsolutions/dockerfiles.git # timeout=10
+Fetching upstream changes from git@github.com:yashsolutions/dockerfiles.git
+ > git --version # timeout=10
+ > git fetch --tags --progress git@github.com:yashsolutions/dockerfiles.git +refs/heads/*:refs/remotes/origin/*
+ > git rev-parse refs/remotes/origin/master^{commit} # timeout=10
+ > git rev-parse refs/remotes/origin/origin/master^{commit} # timeout=10
+Checking out Revision 0adedb97e5163360d953950c48c565f18ee6f606 (refs/remotes/origin/master)
+Commit message: "wiki port defaulted to 80"
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f 0adedb97e5163360d953950c48c565f18ee6f606
+ > git rev-list 0adedb97e5163360d953950c48c565f18ee6f606 # timeout=10
+[wiki] $ /bin/sh -xe /tmp/jenkins964351631999722808.sh
++ aws ecr get-login --region us-east-2
++ docker login -u AWS -p eyJwYXlsb2FkIjoiZW5vNDNTVTU4bk5ldFh6anZZekY2K0ZSSllZNkFhMmljU0o1RkgvZEI1WTJvUklSdWl5UitvNERCNTVFbFp2UHpjS2hLeXZ3QzFvV0NVSEF2N1pFSk9IUzBlQVY5NkpjZUp3Njg0MkFtZHNWRnNzSzA3VDZvRDVBNkNoNDFCQjI1OHdXVUhqeS9ZeXN0aEk0MzBhQnV5cExzUmhSUUlsS2lsbEZsTStPWHNvMFRBdDJkSGtqZEFLQjZjSmpOM3NiUUMvNXNCMU45Z1pwWGc5YmMyNDFBTnY4bGlLbGNFMUNQSmN5WmEwMStzVTRIN1pZUlN0YUhzVEdKZkcyczJTNS9sc2tqcUljVXJUaTNiWU9WZEFFTWRDUUJTOFhJcUtYOFIrUjZJajZBWURncTBzbTIzTVdidDVSMWlJaG5HYkVjNElIODk4ZUExRVI2VU1CUllkK0J6Y1pOalA3MGJpRktvdzRFQzFXaU1uQ0J3dUxnYTg4NmpvQXBkQ0cvbytNaXk5Y1RCeU1MVW9CSElVNHE5MU00UzJVTkNneWZTazQzdTU0aDZ4QjNLWmxoTnlGTHVlZGlCY2N0UVhwVUgyVjlDNkVUWUF4MDNhcWdBUk5haXZuUCtqbUZFYUpUYWw0TFNtUWVQTEVjc0pBcldZZ2JQV01OdDY1RDNUdDRGMktuQzAxeTZjdkJwd2pUa0VwNzc2T2F1SHNzOFY0aW80ejlnV1lIbTIwMkxwSTNxVE5ucmxwV25GWjhlKzFpUHlNTGVSYVRoRzhiRU9ZZW5kODFDbmJvS1E1NDJDKzY3UUZPRTdTL2V6WWJsb1lEdDhUa3ZtMUxlNEJscU1xL0xPaUdRN0dxNHpLMk1nbnhwd2JCUlRaZ3FheFR3TlNLajZtZEp3R0lCaVZGQWRKeFNwQ0NwU2l3RWNXblB1bklkVUhuV0ltSmNnOERZQVVFM0VzYnFkUi81YXBVQWd2TEVmMnBpeGlBSCtlM2pxWjhBSFlCQkp2Y2FlUkRlSklhVWRQanB2akpFcFZxRnhyTWs2N0JCOUhIMEt2c1k5d1VvY0RwOEdkeU5aVGtJeXh5amdIekJ2eDBIanFsdzlEV3Y2MzQxVmRLaTQ5c2k1WEJ2aHRtNHdyeXNIaDIrWmJ1V21YQ3UwTll3UnBTUzZIR29XZThTeGRoTGxuU3dPSG9Ud1B0MXlPMFFvcDhGRW1iazBiME9lMzhYYVZRYXhNTUJPSVlEVXB0N2NYMGZIYVcrb01nUWN4QlE5UGViM0RTdmt2Mklvd1NaRUs1REliVFBDT0NyV05WcitnalVkdk5nSndqL2I5bzhQMHd6VFNwcTNiZkNSYlVLSVlwaXJxRy8wY1dsOC9Mazg0WUN2YWJaTXJqQVY1TEg1dkdsREVhNmhLeklaTDdpVWRydm1TaEQxdjIwczV2U2pDQnVHZDk5enRoM0ZQWW5GVEpoQ1oiLCJkYXRha2V5IjoiQVFFQkFIakI3L2lnd01nNE5Qd2F1cnhTSVl4NEhmbnh1R2MvNDhiRHd2d0RwTllXWmdBQUFINHdmQVlKS29aSWh2Y05BUWNHb0c4d2JRSUJBREJvQmdrcWhraUc5dzBCQndFd0hnWUpZSVpJQVdVREJBRXVNQkVFRE5lL1JKUEc0d3BNc25PLzJ3SUJFSUE3WDdHbTBLS014RjNxSHRNVTJWWFhldjJuQlY5YkhSQWVzUlBRZ3hDUE1yQm9MUGxEMzFGSUJEMjFyd2pYa0F2c29iNHFXNmhzdWhYYTE0Zz0iLCJ2ZXJzaW9uIjoiMSIsInR5cGUiOiJEQVRBX0tFWSJ9 -e none https://364238614392.dkr.ecr.us-east-2.amazonaws.com
+Flag --email has been deprecated, will be removed in 17.06.
+Login Succeeded
++ cd wiki
++ docker build -t system/wiki .
+Sending build context to Docker daemon   7.68kB
+Step 1/3 : FROM requarks/wiki
+ ---> da4eca46eb88
+Step 2/3 : ADD ./config.yml /var/wiki/config.yml
+ ---> Using cache
+ ---> 987659cc98e4
+Step 3/3 : EXPOSE 80
+ ---> Using cache
+ ---> d32728d024e7
+Successfully built d32728d024e7
+Successfully tagged system/wiki:latest
++ docker tag system/wiki:latest 364238614392.dkr.ecr.us-east-2.amazonaws.com/system/wiki:0adedb97e5163360d953950c48c565f18ee6f606
++ docker push 364238614392.dkr.ecr.us-east-2.amazonaws.com/system/wiki:0adedb97e5163360d953950c48c565f18ee6f606
+The push refers to a repository [364238614392.dkr.ecr.us-east-2.amazonaws.com/system/wiki]
+cff82455aab7: Preparing
+184ca92d78ca: Preparing
+757844ae961b: Preparing
+78ce99ee35de: Preparing
+5bef08742407: Preparing
+184ca92d78ca: Layer already exists
+757844ae961b: Layer already exists
+cff82455aab7: Layer already exists
+78ce99ee35de: Layer already exists
+5bef08742407: Layer already exists
+0adedb97e5163360d953950c48c565f18ee6f606: digest: sha256:f2b5807962e9387c189a985f03c06a1df3d1867b3b9dce5f21290fada02635bf size: 1371
+Waiting for the completion of [8mha:////4KVeDeas30zMuguFUM6SjZ9KrVZgYGE7Zkobsbj6ccD5AAAAmh+LCAAAAAAAAP9b85aBtbiIQSajNKU4P08vOT+vOD8nVc+jsiC1KCczL9svvyTVzHb1RttJBUeZGJg8GdhyUvPSSzJ8GJhLi3JKGIR8shLLEvVzEvPS9YNLijLz0q0rihik0IxzhtAgwxgggJGJgaGiAMgQLWGQ1c/KT9JPzs/Nzc8DM1NSC3LyK3WLyxOLcvUBHxq2+qIAAAA=[0mcommon » deploy-swarm
+[8mha:////4Kewlc7IRjHNaE7HoklJrOHTCwSw/ebI4JgUl9XujUcgAAAAnh+LCAAAAAAAAP9b85aBtbiIQSajNKU4P08vOT+vOD8nVc+jsiC1KCczL9svvyTVzHb1RttJBUeZGJg8GdhyUvPSSzJ8GJhLi3JKGIR8shLLEvVzEvPS9YNLijLz0q0rihik0IxzhtAgwxgggJGJgaGiAMhQLGFQ1M/KT9JPzs/Nzc8DM1NSC3LyK3WLyxOLcvUNjcz1AazNcUimAAAA[0mcommon » deploy-swarm system-wiki completed. Result was SUCCESS
+Build step 'Trigger/call builds on other projects' changed build result to SUCCESS
+Finished: SUCCESS

@@ -1,0 +1,25 @@
+Started by upstream project "[8mha:////4Nxvo86Ygkxig6/otSteUh1r1cTd5yAqJ+Zz9KdANpSvAAAAph+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzhEgZZ/az8JP3i1KKyzOTUYjAnvygxOSdVN7GgQB8AEcsfYtIAAAA=[0mservices/oracle-app" build number [8mha:////4MsQfo32lObm32bO+JPI1oHVZtufWG7utL3jYQnx6LAzAAAAqB+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAymEgZ5/az8JP3i1KKyzOTUYjAnvygxOSdVN7GgQN/QAgByqUhI1AAAAA==[0m18
+originally caused by:
+ Started by user [8mha:////4HSKTYekCqJtgUzvE/X25d7VYiaybRQPqPlqTWr6Yj8mAAAAmR+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAz+EgZe/dLi1CL9xOKMzOKMPAD2nB5TwgAAAA==[0mAshish Nanotkar
+Building in workspace /var/lib/jenkins/workspace/common/refresh-vdb
+Set build name.
+New build name is 'devdb'
+[refresh-vdb] $ python /tmp/jenkins5652377530164680068.py
+[WARNING]: Found variable using reserved name: action
+
+PLAY [ansible.ip] **************************************************************
+
+TASK [Gathering Facts] *********************************************************
+ok: [ansible.ip]
+
+TASK [command] *****************************************************************
+changed: [ansible.ip]
+
+PLAY RECAP *********************************************************************
+ansible.ip                 : ok=2    changed=1    unreachable=0    failed=0
+
+0
+Set build name.
+New build name is 'devdb'
+Variable with name 'BUILD_DISPLAY_NAME' already exists, current value: 'devdb', new value: 'devdb'
+Finished: SUCCESS

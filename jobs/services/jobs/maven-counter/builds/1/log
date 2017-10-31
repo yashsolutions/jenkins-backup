@@ -1,0 +1,4 @@
+Started by an SCM change
+Building in workspace /var/lib/jenkins/workspace/services/maven-counter
+ERROR: A Maven installation needs to be available for this project to be built.Either your server has no Maven installations defined, or the requested Maven version does not exist.
+[8mha:////4A9Q6UfVWredEx5ZECSAQetQN0FUve+DAHspCfTkJesfAAAAVx+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P08vOT+vOD8nVc8DzHWtSE4tKMnMz/PLL0mV3NWzufebKBsTA0NFEYMUmgZnCA1SyAABjCCFBQC2xNaiYAAAAA==[0mFinished: FAILURE

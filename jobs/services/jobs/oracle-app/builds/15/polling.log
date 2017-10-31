@@ -1,0 +1,8 @@
+Started on Oct 31, 2017 12:30:00 PM
+Using strategy: Default
+ > git --version # timeout=10
+ > git ls-remote -h git@github.com:yashsolutions/oracle-app.git # timeout=10
+Found 1 remote heads on git@github.com:yashsolutions/oracle-app.git
+[poll] Latest remote head revision on refs/heads/master is: 7f1203935bd5a7e40cff68fa8852184f4a670b91
+Done. Took 0.53 sec
+Changes found

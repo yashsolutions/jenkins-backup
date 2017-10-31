@@ -1,0 +1,56 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<build>
+  <actions>
+    <hudson.model.ParametersAction>
+      <safeParameters class="sorted-set"/>
+      <parameters>
+        <hudson.model.StringParameterValue>
+          <name>PLAYBOOK</name>
+          <description>choose a playbook to run</description>
+          <value>setup_prometheus_node_exporter</value>
+        </hudson.model.StringParameterValue>
+      </parameters>
+      <parameterDefinitionNames class="hudson.model.ParametersDefinitionProperty$1">
+        <outer-class>
+          <parameterDefinitions>
+            <hudson.model.ChoiceParameterDefinition>
+              <name>PLAYBOOK</name>
+              <description>choose a playbook to run</description>
+              <choices class="java.util.Arrays$ArrayList">
+                <a class="string-array">
+                  <string>delphix_refresh_vdb</string>
+                  <string>docker_cleanup</string>
+                  <string>setup_prometheus_node_exporter</string>
+                  <string>setup_openvpn</string>
+                </a>
+              </choices>
+            </hudson.model.ChoiceParameterDefinition>
+          </parameterDefinitions>
+        </outer-class>
+      </parameterDefinitionNames>
+    </hudson.model.ParametersAction>
+    <hudson.model.CauseAction>
+      <causeBag class="linked-hash-map">
+        <entry>
+          <hudson.model.Cause_-UserIdCause>
+            <userId>ashishn</userId>
+          </hudson.model.Cause_-UserIdCause>
+          <int>1</int>
+        </entry>
+      </causeBag>
+    </hudson.model.CauseAction>
+    <com.sonyericsson.rebuild.RebuildAction plugin="rebuild@1.25"/>
+  </actions>
+  <queueId>185</queueId>
+  <timestamp>1507645059341</timestamp>
+  <startTime>1507645059344</startTime>
+  <result>SUCCESS</result>
+  <duration>19504</duration>
+  <charset>UTF-8</charset>
+  <keepLog>false</keepLog>
+  <builtOn></builtOn>
+  <workspace>/var/lib/jenkins/workspace/maintenance/run-playbook</workspace>
+  <hudsonVersion>2.73.1</hudsonVersion>
+  <scm class="hudson.scm.NullChangeLogParser"/>
+  <culprits class="com.google.common.collect.EmptyImmutableSortedSet"/>
+</build>

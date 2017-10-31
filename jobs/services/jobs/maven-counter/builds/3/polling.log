@@ -1,0 +1,8 @@
+Started on Oct 31, 2017 2:30:00 PM
+Using strategy: Default
+ > git --version # timeout=10
+ > git ls-remote -h git@github.com:yashsolutions/maven-counter.git # timeout=10
+Found 1 remote heads on git@github.com:yashsolutions/maven-counter.git
+[poll] Latest remote head revision on refs/heads/master is: 3fbdcef8c3e61cc357a85c2487ff7b3d07ecda01
+Done. Took 0.4 sec
+Changes found

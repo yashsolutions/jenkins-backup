@@ -1,0 +1,25 @@
+Started by upstream project "[8mha:////4B6NhAHPgMPJg3YzrE5MgtZyWGwldzIKjfjjGQ5DRDBkAAAAqx+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAyJEgYl/az8JP3i1KKyzOTUYjCnJD8lXzexoEA3vygxOSdVHwAFTOH/1wAAAA==[0mservices/todo-app-oracle" build number [8mha:////4GQsd1IMcF9I9sWnZk+ajbZF4VxXTIOmIW3LSDVLutRmAAAArR+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAymEgYV/az8JP3i1KKyzOTUYjCnJD8lXzexoEA3vygxOSdV39AEAOk5gxvZAAAA[0m14
+originally caused by:
+ Started by an SCM change
+Building in workspace /var/lib/jenkins/workspace/common/delphix-refresh-vdb
+Set build name.
+New build name is 'devdb'
+[delphix-refresh-vdb] $ python /tmp/jenkins9046874268336011565.py
+[WARNING]: Found variable using reserved name: action
+
+PLAY [ansible.ip] **************************************************************
+
+TASK [Gathering Facts] *********************************************************
+ok: [ansible.ip]
+
+TASK [command] *****************************************************************
+changed: [ansible.ip]
+
+PLAY RECAP *********************************************************************
+ansible.ip                 : ok=2    changed=1    unreachable=0    failed=0
+
+0
+Set build name.
+New build name is 'devdb'
+Variable with name 'BUILD_DISPLAY_NAME' already exists, current value: 'devdb', new value: 'devdb'
+Finished: SUCCESS

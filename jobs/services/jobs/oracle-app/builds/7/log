@@ -1,0 +1,107 @@
+Started by user [8mha:////4HSKTYekCqJtgUzvE/X25d7VYiaybRQPqPlqTWr6Yj8mAAAAmR+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAz+EgZe/dLi1CL9xOKMzOKMPAD2nB5TwgAAAA==[0mAshish Nanotkar
+Building in workspace /var/lib/jenkins/workspace/services/todo-app-oracle
+ > git rev-parse --is-inside-work-tree # timeout=10
+Fetching changes from the remote Git repository
+ > git config remote.origin.url git@github.com:yashsolutions/todo-app-oracle.git # timeout=10
+Fetching upstream changes from git@github.com:yashsolutions/todo-app-oracle.git
+ > git --version # timeout=10
+ > git fetch --tags --progress git@github.com:yashsolutions/todo-app-oracle.git +refs/heads/*:refs/remotes/origin/*
+ > git rev-parse refs/remotes/origin/master^{commit} # timeout=10
+ > git rev-parse refs/remotes/origin/origin/master^{commit} # timeout=10
+Checking out Revision 145df8da760c882fee8183fbcd5c01d22b5a2186 (refs/remotes/origin/master)
+Commit message: "enabled env specific configs"
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f 145df8da760c882fee8183fbcd5c01d22b5a2186
+ > git rev-list 145df8da760c882fee8183fbcd5c01d22b5a2186 # timeout=10
+[todo-app-oracle] $ /bin/sh -xe /tmp/jenkins3989177511200111293.sh
++ echo service BUILD
+service BUILD
++ echo service UNIT TEST
+service UNIT TEST
++ echo service PACKAGE
+service PACKAGE
++ aws ecr get-login --region us-east-2
++ docker login -u AWS -p eyJwYXlsb2FkIjoiMjlCZ1BOZklGWVYyYm8zY0loaENtR3lEZEx3VU1lRURwQjJCOFhRZFNPUzVYWko0bWdKMDIrTjgzQ1M5YzNDVlYrUXM0M2JyQ3hFQUxlNWhXUElKclByemFyWTh3d0NQdUErclFEUFNRRlpOek1TcXVTekNnbzJodFI1eDdoVllldXpzc1B5OEpGR051VDI4K2xKalRrcHY2VGJxOFdHMzRJOXU5SExkdGx2SHdSbG1kNzY0MEorN3J6QkdGS3dURGZ0SFhZQVBHNVFtcG5wbHdOVU1oZCtadUNiSlh2dzBiRDQ1T0svSzVFakUwdEpEWEZvdmR3c1c3Vy96aW9MMWR1ZEp2dG5ZbDh4NWl4dGQxZU1CbDkxNFo0RzFBb0gxRVRiZEdJYTRpRkpUdTBSeEcxU2xqWXJ1cDA3a1BIZWtwRTlMaW5ZRE04emhDUzVsa0hsbW5PU2hlbkNyNFp3elYwU0plYWJWN2R2YVU1eWVDTlgwak9lbTdVR3JvVHM0NnJocHlZeGMrZ0dqSlNySkpnNEVpV0FGZ2FhcjlDbnpCYksyTmZzTit1RFRQQmdyRmQ1TEV3SnFWNTVuSEtSeVVhYW9GdFNrTU5vcjcycFlzSDVWelh4OExHZWNGL1cxZ3ZZNkloVDZhcE5rcnFCUHI3c0prSG9ncm5rTDNuSVVUUU1kZHhzMithSXlPeS9qTDZTc2lNV0lDdElxVkdnbGlrOVdCU0VCVm1wZSt3VGlBS3lMZ0NaMFRENEZOQXo4TjBJdEtUTW1FenZPQXRjRjZQYy80NDBCNkRnSk0wejlLbXFVRk85aFBDREdINUJ5dk0rdEVCK0pvN29KM2lReUVmMmxFV3hKakd4MlNSTUhTNzNKNDV6YXV0a203UzBIMll3dGlPMDlFQk9aQjcrSXlmdG50M0RZNTdtUkl5ZWljRHMvdXMrWHJaUlp6anByZ21FdnMvcml6VnVpc1VaYVV2MkpHKzRHSTh0TWkvbXo4dlNlL2ZQUDhVaHlTQnBXSDhRWlRmbkdHZXVzU0kyWU5XNi9MbDZJZ0RJNWdDVFo2QWZIUzNxQWhUd2JvUkxuTFlRRk1aYW9lWmxuSjFPYWkraW5LWkRlUStLRytLK21IOHBSenN3WmVUSzB0RXAvQTlMKzhELy82bWdpZUkwK2h3M2czQ3hwMHF1ZGh3c05wbElsSXhHS0tuMk0yc05tTVd3Z1dmUE9OOEpyK2IrMzJUeW5xN3dubzRXKzBQZUt4RXBwS0lRSklkM1ZkMkFwV01KaURoQlp1d3Y0TUhPTks5QndUMUFLdTQzMFJuS3VTeTBZVUlqZlg2NmdSUHh6VGlrRGpTMDZyM2NqYWJrelVXRks4dUFneEFyNTlBOENQc0JFS3hwTHE3c2g0bTNuRG81L29DMnJYTmNKZGxxZkxjYm90QnUyTjNDRmYycWU4QjZCMDliM2hFdzEiLCJkYXRha2V5IjoiQVFFQkFIakI3L2lnd01nNE5Qd2F1cnhTSVl4NEhmbnh1R2MvNDhiRHd2d0RwTllXWmdBQUFINHdmQVlKS29aSWh2Y05BUWNHb0c4d2JRSUJBREJvQmdrcWhraUc5dzBCQndFd0hnWUpZSVpJQVdVREJBRXVNQkVFRElEc1J4OHp5OEg0UjIyeWJBSUJFSUE3U3JnbFJuWVRUUGpKVnVlMmZxeDV3NjJrbTBRU0hacGhNeEtGWlUwb1VxQkowMllIZDZQcEdjUHNSZ0QvMlgrcGdsMURrck4ySVdueTBWYz0iLCJ2ZXJzaW9uIjoiMSIsInR5cGUiOiJEQVRBX0tFWSJ9 -e none https://364238614392.dkr.ecr.us-east-2.amazonaws.com
+Flag --email has been deprecated, will be removed in 17.06.
+Login Succeeded
++ docker build -t services/todo-app-oracle .
+Sending build context to Docker daemon  158.7kB
+Step 1/6 : FROM collinestes/docker-node-oracle
+ ---> 4f60bcfbde39
+Step 2/6 : ADD ./ /app
+ ---> Using cache
+ ---> e12f9a792208
+Step 3/6 : WORKDIR /app
+ ---> Using cache
+ ---> e5a351497858
+Step 4/6 : RUN npm install async oracledb --save
+ ---> Using cache
+ ---> e68e37f12d10
+Step 5/6 : EXPOSE 7000
+ ---> Using cache
+ ---> 7f7fda0323c8
+Step 6/6 : CMD node webapp.js
+ ---> Using cache
+ ---> 054ea6fbcdfb
+Successfully built 054ea6fbcdfb
+Successfully tagged services/todo-app-oracle:latest
++ docker tag services/todo-app-oracle:latest 364238614392.dkr.ecr.us-east-2.amazonaws.com/services/todo-app-oracle:145df8da760c882fee8183fbcd5c01d22b5a2186
++ docker push 364238614392.dkr.ecr.us-east-2.amazonaws.com/services/todo-app-oracle:145df8da760c882fee8183fbcd5c01d22b5a2186
+The push refers to a repository [364238614392.dkr.ecr.us-east-2.amazonaws.com/services/todo-app-oracle]
+611f8923f98d: Preparing
+ac7224dfeafa: Preparing
+69525a94c3cb: Preparing
+75fa63451eba: Preparing
+183d2a837e00: Preparing
+1c08a0143f10: Preparing
+5a930102ee49: Preparing
+765e7b2efe23: Preparing
+5f2f91b41de9: Preparing
+ec0200a19d76: Preparing
+338cb8e0e9ed: Preparing
+d1c800db26c7: Preparing
+42755cf4ee95: Preparing
+1c08a0143f10: Waiting
+5a930102ee49: Waiting
+765e7b2efe23: Waiting
+ec0200a19d76: Waiting
+5f2f91b41de9: Waiting
+42755cf4ee95: Waiting
+338cb8e0e9ed: Waiting
+d1c800db26c7: Waiting
+611f8923f98d: Layer already exists
+ac7224dfeafa: Layer already exists
+75fa63451eba: Layer already exists
+69525a94c3cb: Layer already exists
+183d2a837e00: Layer already exists
+765e7b2efe23: Layer already exists
+5a930102ee49: Layer already exists
+1c08a0143f10: Layer already exists
+ec0200a19d76: Layer already exists
+5f2f91b41de9: Layer already exists
+338cb8e0e9ed: Layer already exists
+d1c800db26c7: Layer already exists
+42755cf4ee95: Layer already exists
+145df8da760c882fee8183fbcd5c01d22b5a2186: digest: sha256:a2c9c63350ad07223f8c18269922a7670ded461c95f411c9734a226f732c9b87 size: 3059
++ echo service DEPLOY TO DEV
+service DEPLOY TO DEV
+Waiting for the completion of [8mha:////4FlhJIAUJyKMopR8NpmKnqfZuTcjajzVI3cyhrbcpk8SAAAAoR+LCAAAAAAAAP9b85aBtbiIQSajNKU4P08vOT+vOD8nVc+jsiC1KCczL9svvyTVzHb1RttJBUeZGJg8GdhyUvPSSzJ8GJhLi3JKGIR8shLLEvVzEvPS9YNLijLz0q0rihik0IxzhtAgwxgggJGJgaGiAMiQKWFQ0c/KT9JPzs/Nzc8DM1NScwoyMit0i1LTilKLM3TLUpL0AYkKf56pAAAA[0mcommon » delphix-refresh-vdb
+[8mha:////4ABDL8Yw+WwAPGmq+yN3nKzdmpFnF318rmZZ/++7L0CEAAAAox+LCAAAAAAAAP9b85aBtbiIQSajNKU4P08vOT+vOD8nVc+jsiC1KCczL9svvyTVzHb1RttJBUeZGJg8GdhyUvPSSzJ8GJhLi3JKGIR8shLLEvVzEvPS9YNLijLz0q0rihik0IxzhtAgwxgggJGJgaGiAMhQKmFQ08/KT9JPzs/Nzc8DM1NScwoyMit0i1LTilKLM3TLUpL0LfQBj0mnJqsAAAA=[0mcommon » delphix-refresh-vdb devdb completed. Result was SUCCESS
+Build step 'Trigger/call builds on other projects' changed build result to SUCCESS
+Waiting for the completion of [8mha:////4KVeDeas30zMuguFUM6SjZ9KrVZgYGE7Zkobsbj6ccD5AAAAmh+LCAAAAAAAAP9b85aBtbiIQSajNKU4P08vOT+vOD8nVc+jsiC1KCczL9svvyTVzHb1RttJBUeZGJg8GdhyUvPSSzJ8GJhLi3JKGIR8shLLEvVzEvPS9YNLijLz0q0rihik0IxzhtAgwxgggJGJgaGiAMgQLWGQ1c/KT9JPzs/Nzc8DM1NSC3LyK3WLyxOLcvUBHxq2+qIAAAA=[0mcommon » deploy-swarm
+[8mha:////4EVMyg3el4Di6JhkUTWEnFhHE8BjJi7l2sxhbBfshnQlAAAAnh+LCAAAAAAAAP9b85aBtbiIQSajNKU4P08vOT+vOD8nVc+jsiC1KCczL9svvyTVzHb1RttJBUeZGJg8GdhyUvPSSzJ8GJhLi3JKGIR8shLLEvVzEvPS9YNLijLz0q0rihik0IxzhtAgwxgggJGJgaGiAMjQLGFQ1M/KT9JPzs/Nzc8DM1NSC3LyK3WLyxOLcvUNDU31AQm8p6SmAAAA[0mcommon » deploy-swarm dev-todo-app-oracle completed. Result was SUCCESS
+[todo-app-oracle] $ /bin/sh -xe /tmp/jenkins3785619384776636435.sh
++ echo service INTEGRATION TEST
+service INTEGRATION TEST
++ echo service DEPLOY TO STAGE
+service DEPLOY TO STAGE
+Waiting for the completion of [8mha:////4KVeDeas30zMuguFUM6SjZ9KrVZgYGE7Zkobsbj6ccD5AAAAmh+LCAAAAAAAAP9b85aBtbiIQSajNKU4P08vOT+vOD8nVc+jsiC1KCczL9svvyTVzHb1RttJBUeZGJg8GdhyUvPSSzJ8GJhLi3JKGIR8shLLEvVzEvPS9YNLijLz0q0rihik0IxzhtAgwxgggJGJgaGiAMgQLWGQ1c/KT9JPzs/Nzc8DM1NSC3LyK3WLyxOLcvUBHxq2+qIAAAA=[0mcommon » deploy-swarm
+[8mha:////4Nf5xG1Mnu9azIByGfLM0QlhjyoEH8Nddx4eFD1KW0X0AAAAnh+LCAAAAAAAAP9b85aBtbiIQSajNKU4P08vOT+vOD8nVc+jsiC1KCczL9svvyTVzHb1RttJBUeZGJg8GdhyUvPSSzJ8GJhLi3JKGIR8shLLEvVzEvPS9YNLijLz0q0rihik0IxzhtAgwxgggJGJgaGiAMjQLmFQ1M/KT9JPzs/Nzc8DM1NSC3LyK3WLyxOLcvUNDc30AbXHG1WmAAAA[0mcommon » deploy-swarm stage-todo-app-oracle completed. Result was SUCCESS
+[todo-app-oracle] $ /bin/sh -xe /tmp/jenkins4920393513542846455.sh
++ echo service UAT / FUNCTIONAL TEST
+service UAT / FUNCTIONAL TEST
++ echo service DEPLOY TO PROD
+service DEPLOY TO PROD
+Waiting for the completion of [8mha:////4KVeDeas30zMuguFUM6SjZ9KrVZgYGE7Zkobsbj6ccD5AAAAmh+LCAAAAAAAAP9b85aBtbiIQSajNKU4P08vOT+vOD8nVc+jsiC1KCczL9svvyTVzHb1RttJBUeZGJg8GdhyUvPSSzJ8GJhLi3JKGIR8shLLEvVzEvPS9YNLijLz0q0rihik0IxzhtAgwxgggJGJgaGiAMgQLWGQ1c/KT9JPzs/Nzc8DM1NSC3LyK3WLyxOLcvUBHxq2+qIAAAA=[0mcommon » deploy-swarm
+[8mha:////4B/Of72NGvQRVyeqHpDNsI/4WjvoARATfwozyyMFFSkNAAAAnh+LCAAAAAAAAP9b85aBtbiIQSajNKU4P08vOT+vOD8nVc+jsiC1KCczL9svvyTVzHb1RttJBUeZGJg8GdhyUvPSSzJ8GJhLi3JKGIR8shLLEvVzEvPS9YNLijLz0q0rihik0IxzhtAgwxgggJGJgaGiAMjQKmFQ1M/KT9JPzs/Nzc8DM1NSC3LyK3WLyxOLcvUNDc31Aevh8MymAAAA[0mcommon » deploy-swarm prod-todo-app-oracle completed. Result was SUCCESS
+Finished: SUCCESS
